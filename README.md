@@ -80,8 +80,10 @@ These are deliberately placeholders — nothing was invented:
   Plan names, inclusions and the comparison table are placeholders too.
 - **Contact details** — `src/data/site.ts` → `SITE.contact`: email is assumed (`hello@fsmflow.in`); phone, address and hours are empty and hidden until set.
 - **Legal entity & policies** — `SITE.legalEntity` and the `CONFIRM:` constants at the top of `src/data/legal.ts` (refund window, notice period…). The policy text is a sensible starting draft; have it reviewed before publishing.
-- **Forms** — set `VITE_LEAD_ENDPOINT` (an HTTPS URL that accepts a JSON POST) at build time to deliver demo/contact submissions.
-  Without it, production falls back to opening a pre-filled email to `SITE.contact.email`.
+- **Forms** — on Netlify, demo and contact submissions go to **Netlify Forms** automatically (`VITE_NETLIFY_FORMS=true` in `netlify.toml`;
+  the forms are registered by the hidden `public/__forms.html`). After the first deploy open Netlify → *Forms → Form notifications → Add
+  notification → Email* to get each submission by email (they are also stored in the dashboard). To use your own API instead, set
+  `VITE_LEAD_ENDPOINT` (JSON POST; it takes precedence). With neither, production opens a pre-filled email to `SITE.contact.email`.
 - **Blog** — posts in `src/data/blog.ts` are `status: 'upcoming'` placeholders (shown on `/blog`, no article URLs yet). Set a post to
   `'published'` and add `publishedAt`, `author` and `body` to give it a `/blog/<slug>` page, sitemap entry and link automatically.
 - **Social image** — `public/og-image.png` (1200×630) is generated artwork; replace if you prefer your own.

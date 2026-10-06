@@ -8,7 +8,10 @@
 [build.environment]
   NODE_VERSION = "22"          # Vite 8 needs Node 20.19+ or 22.12+
   NPM_FLAGS = "--no-audit --no-fund"
-  # Optional: set VITE_LEAD_ENDPOINT in Site settings → Environment variables to deliver demo/contact submissions.
+  # Demo + contact form submissions go to Netlify Forms (forms are registered by public/__forms.html).
+  # After the first deploy: Netlify → Forms → Form notifications → Add notification → Email, to receive them by email.
+  VITE_NETLIFY_FORMS = "true"
+  # To use your own endpoint instead, set VITE_LEAD_ENDPOINT in Site settings → Environment variables (it takes precedence).
 
 # Canonical host: www → apex. (Takes effect once both domains are attached to the site.)
 [[redirects]]

@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en-IN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Form registration</title>
+  </head>
+  <body>
+    <!--
+      Netlify Forms registration. The site's real forms are rendered by React, which Netlify's deploy bot cannot see,
+      so these hidden static copies tell Netlify which forms and fields exist. The names must match
+      DEMO_FORM / CONTACT_FORM in src/lib/forms.ts. Visitors never see this file (it is noindex and not linked).
+      Submissions appear in Netlify → Forms; add an email notification there to receive them by email.
+    -->
+    <form name="demo-request" method="POST" data-netlify="true" netlify-honeypot="contact_url" hidden>
+      <input type="hidden" name="form-name" value="demo-request" />
+      <input name="name" />
+      <input name="company" />
+      <input name="email" />
+      <input name="phone" />
+      <input name="industry" />
+      <input name="technicians" />
+      <textarea name="message"></textarea>
+      <input name="page" />
+      <input name="contact_url" />
+    </form>
+
+    <form name="contact-request" method="POST" data-netlify="true" netlify-honeypot="contact_url" hidden>
+      <input type="hidden" name="form-name" value="contact-request" />
+      <input name="name" />
+      <input name="email" />
+      <input name="phone" />
+      <input name="topic" />
+      <textarea name="message"></textarea>
+      <input name="page" />
+      <input name="contact_url" />
+    </form>
+  </body>
+</html>

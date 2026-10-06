@@ -28,6 +28,14 @@ export type LeadResult = { ok: true; via: 'endpoint' | 'mailto' | 'dev' } | { ok
 
 const TIMEOUT_MS = 12_000
 
+/** Netlify Forms names — must match the hidden static forms in public/__forms.html. */
+const NETLIFY_FORM: Record<LeadKind, string> = { demo: 'demo-request', contact: 'contact-request' }
+
+/** True on Netlify builds (netlify.toml sets VITE_NETLIFY_FORMS=true): submissions go to Netlify Forms. */
+function useNetlifyForms(): boolean {
+  return import.meta.env.VITE_NETLIFY_FORMS === 'true'
+}
+
 const FIELD_LABELS: Record<keyof LeadPayload, string> = {
   name: 'Name',
   email: 'Work email',
@@ -46,9 +54,9 @@ function endpoint(): string {
   return typeof value === 'string' ? value.trim() : ''
 }
 
-/** True when a real endpoint is configured (so submissions are received, not emailed by the visitor). */
+/** True when submissions are delivered to us (custom endpoint or Netlify Forms), not emailed by the visitor. */
 export function hasLeadEndpoint(): boolean {
-  return endpoint() !== ''
+  return endpoint() !== '' || useNetlifyForms()
 }
 
 /** Builds the pre-filled mailto: link used when no endpoint is configured. */
@@ -67,28 +75,40 @@ export function buildMailto(payload: LeadPayload, kind: LeadKind): string {
 /**
  * Delivers a demo / contact submission.
  *
- * - VITE_LEAD_ENDPOINT set  -> JSON POST with a timeout and friendly errors.
- * - not set, development    -> logs the payload and resolves (no mail app pops open while testing).
- * - not set, production     -> opens a pre-filled mailto: to SITE.contact.email.
+ * - VITE_LEAD_ENDPOINT set    -> JSON POST to that URL.
+ * - VITE_NETLIFY_FORMS=true   -> urlencoded POST that Netlify Forms captures (set automatically by netlify.toml).
+ * - neither, development      -> logs the payload and resolves (no mail app pops open while testing).
+ * - neither, production       -> opens a pre-filled mailto: to SITE.contact.email.
+ * All network paths share one timeout and friendly error handling.
  */
 export async function submitLead(payload: LeadPayload, kind: LeadKind): Promise<LeadResult> {
   const url = endpoint()
+  const page = window.location.pathname
 
+  let request: { url: string; init: RequestInit } | null = null
   if (url) {
+    request = {
+      url,
+      init: {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
+        body: JSON.stringify({ kind, ...payload, page, submittedAt: new Date().toISOString() }),
+      },
+    }
+  } else if (useNetlifyForms()) {
+    const body = new URLSearchParams({ 'form-name': NETLIFY_FORM[kind], page })
+    for (const key of ORDER) if (payload[key]) body.set(key, payload[key] as string)
+    request = {
+      url: '/',
+      init: { method: 'POST', headers: { 'Content-Type': 'application/x-www-form-urlencoded' }, body: body.toString() },
+    }
+  }
+
+  if (request) {
     const controller = new AbortController()
     const timer = window.setTimeout(() => controller.abort(), TIMEOUT_MS)
     try {
-      const response = await fetch(url, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json', Accept: 'application/json' },
-        body: JSON.stringify({
-          kind,
-          ...payload,
-          page: window.location.pathname,
-          submittedAt: new Date().toISOString(),
-        }),
-        signal: controller.signal,
-      })
+      const response = await fetch(request.url, { ...request.init, signal: controller.signal })
       if (!response.ok) {
         return { ok: false, error: `The server could not take your request just now (error ${response.status}). Please try again.` }
       }
