@@ -1,0 +1,235 @@
+FSMFlow.in Final Website Structure & SEO Keyword Plan
+Finalized: 06 October 2026
+[Heading1] 1. Website Positioning
+FSMFlow is a Field Service Management Software platform for Indian service businesses, with a focus on AC & HVAC, CCTV, Solar, Construction and other field-service teams.
+[Heading1] 2. Final Header Navigation
+Home | Solutions | Features | Pricing | Blog
+Right-side CTA: Book a Demo
+IMPORTANT: Login has been removed from the public website header.
+[Heading1] 3. Final Website Structure
+[Heading2] HOME
+/
+[ListBullet] Primary: field service management software
+[ListBullet2] field service software
+[ListBullet2] service management software
+[ListBullet2] field service management software India
+[Heading2] SOLUTIONS
+/solutions/hvac-field-service-software
+[ListBullet] Primary: HVAC field service software
+[ListBullet2] HVAC software
+[ListBullet2] HVAC service management software
+[ListBullet2] HVAC service software
+[ListBullet2] AC service management software
+/solutions/cctv-software
+[ListBullet] Primary: CCTV software
+[ListBullet2] camera CCTV software
+[ListBullet2] security CCTV software
+[ListBullet2] CCTV management system
+[ListBullet2] CCTV installation software
+/solutions/solar-software
+[ListBullet] Primary: solar software
+[ListBullet2] solar CRM software
+[ListBullet2] solar project management software
+[ListBullet2] solar EPC software
+[ListBullet2] solar field service software
+/solutions/construction-management-software
+[ListBullet] Primary: construction management software
+[ListBullet2] contractor management software
+[ListBullet2] construction project management software
+[ListBullet2] construction software
+[ListBullet2] construction CRM software
+/solutions/service-business-management-software
+[ListBullet] Primary: service business management software
+[ListBullet2] field service management software
+[ListBullet2] field service software
+[ListBullet2] service management software
+[ListBullet2] service scheduling software
+[Heading2] FEATURES
+/features/sales-crm-software
+[ListBullet] Primary: sales CRM software
+[ListBullet2] CRM software
+[ListBullet2] sales management software
+[ListBullet2] lead management software
+[ListBullet2] sales pipeline software
+/features/asset-management-software
+[ListBullet] Primary: asset management software
+[ListBullet2] asset tracking software
+[ListBullet2] equipment management software
+[ListBullet2] customer management software
+/features/quotation-software
+[ListBullet] Primary: quotation software
+[ListBullet2] estimate software
+[ListBullet2] quotation and invoice software
+[ListBullet2] payment management software
+[ListBullet2] invoicing software
+/features/work-order-management-software
+[ListBullet] Primary: work order management software
+[ListBullet2] job management software
+/features/warranty-management-software
+[ListBullet] Primary: warranty management software
+[ListBullet2] AMC management software
+/features/inventory-management-software
+[ListBullet] Primary: inventory management software
+[ListBullet2] stock management software
+[ListBullet2] spare parts inventory software
+[ListBullet2] parts management software
+[ListBullet2] parts inventory software
+/features/field-service-app
+[ListBullet] Primary: field service app
+[ListBullet2] technician app
+[ListBullet2] field service mobile app
+[ListBullet2] field service technician app
+[ListBullet2] service technician app
+/features/employee-management-software
+[ListBullet] Primary: employee management software
+[ListBullet2] workforce management software
+[ListBullet2] team management software
+[ListBullet2] technician scheduling software
+/features/reporting-software
+[ListBullet] Primary: reporting software
+[ListBullet2] field service reporting software
+[ListBullet2] business reporting software
+[ListBullet2] service reporting software
+[Heading2] OTHER PUBLIC PAGES
+/pricing
+[ListBullet] Pricing
+/blog
+[ListBullet] Blog
+/demo
+[ListBullet] Book a Demo
+[Heading2] FOOTER / COMPANY & LEGAL
+/about
+[ListBullet] About Us
+/contact
+[ListBullet] Contact Us
+/privacy-policy
+[ListBullet] Privacy Policy
+/terms-and-conditions
+[ListBullet] Terms & Conditions
+/refund-policy
+[ListBullet] Refund / Cancellation Policy
+[Heading1] 4. SEO Keyword Rules
+[ListBullet] Primary keyword is mapped to one page only wherever possible to avoid keyword cannibalization.
+[ListBullet] Primary keyword is intended to be used as the exact-match URL and H1 for its page.
+[ListBullet] Secondary keywords are used within page content and are not added to the URL.
+[ListBullet] Do not create a separate Field Service Management page; Field Service Management is covered on the Home page.
+[ListBullet] Do not create Guides or Free Templates pages.
+[ListBullet] Do not create Settings as a public SEO feature page.
+[ListBullet] Do not pad keyword lists with zero-volume keywords.
+[ListBullet] Keyword metrics already researched are based on Ubersuggest India data; additional unverified secondary terms are marked by the document structure but should be live-verified before final SEO targeting.
+[Heading1] 5. Final Header & Footer
+HEADER
+Home | Solutions ▼ | Features ▼ | Pricing | Blog | Book a Demo
+No Login link.
+FOOTER
+Solutions: HVAC • CCTV • Solar • Construction • Service Businesses Features: Sales & CRM • Job Management • AMC & Warranty • Inventory • Technician App • Reports Company: About Us • Contact Us • Pricing • Book a Demo Legal: Privacy Policy • Terms & Conditions • Refund / Cancellation Policy
+[Heading1] 6. Removed / Not Included
+[ListBullet] Login from public header
+[ListBullet] Separate Field Service Management page
+[ListBullet] Guides
+[ListBullet] Free Templates
+[ListBullet] Public Settings feature page
+[Heading1] 7. Primary Keyword — Must-Use SEO Locations
+Each page's primary keyword should be used naturally in the following important SEO locations. Exact wording should be preserved where practical, without keyword stuffing.
+1. URL / Slug — MUST
+[ListBullet] Use the primary keyword in the page URL/slug where the approved URL structure allows it.
+2. H1 — MUST
+[ListBullet] Use the primary keyword as the main H1, preferably as an exact match.
+3. SEO Title / Meta Title — MUST
+[ListBullet] Include the primary keyword, preferably near the beginning when it reads naturally.
+4. Meta Description — MUST
+[ListBullet] Include the primary keyword naturally and write a compelling description for search users.
+5. Opening Content — MUST
+[ListBullet] Use the primary keyword naturally within the first section/introductory paragraph.
+6. One H2 Heading — Recommended
+[ListBullet] Use the primary keyword or a close natural variation in an important H2 when it fits the page.
+7. Image ALT Text — Recommended
+[ListBullet] Use the primary keyword only where the image genuinely describes that topic; do not force it into every image.
+8. Internal Links — MUST
+[ListBullet] Use relevant internal links pointing to the page. Anchor text can use the primary keyword or a natural variation where appropriate.
+9. Body Content — MUST
+[ListBullet] Use the primary keyword naturally throughout the page where relevant; avoid repetitive keyword stuffing.
+10. Schema / Structured Data — Recommended
+[ListBullet] Where applicable, keep the page/topic and relevant name fields aligned with the page's primary topic/keyword.
+[Heading1] 8. Primary Keyword Implementation Rules
+[ListBullet] One primary keyword = one main target page.
+[ListBullet] Do not use another page's primary keyword as the main target for this page.
+[ListBullet] Keep the exact primary keyword in the URL and H1 as already approved in this document.
+[ListBullet] Use secondary keywords in supporting headings and body content where they genuinely fit.
+[ListBullet] Do not repeat the primary keyword unnaturally just to increase keyword density.
+[ListBullet] Do not add the primary keyword to every image ALT, every heading, or every link.
+[ListBullet] Write for users first; keyword placement should remain natural and relevant.
+[ListBullet] For legal pages such as Privacy Policy and Terms & Conditions, do not force commercial SEO keywords.
+[ListBullet] FSMFlow.in
+[ListBullet] │
+[ListBullet] ├── HOME
+[ListBullet] │   └── /
+[ListBullet] │
+[ListBullet] ├── SOLUTIONS
+[ListBullet] │   ├── HVAC Field Service Software
+[ListBullet] │   │   └── /solutions/hvac-field-service-software
+[ListBullet] │   │
+[ListBullet] │   ├── CCTV Software
+[ListBullet] │   │   └── /solutions/cctv-software
+[ListBullet] │   │
+[ListBullet] │   ├── Solar Software
+[ListBullet] │   │   └── /solutions/solar-software
+[ListBullet] │   │
+[ListBullet] │   ├── Construction Management Software
+[ListBullet] │   │   └── /solutions/construction-management-software
+[ListBullet] │   │
+[ListBullet] │   └── Service Business Management Software
+[ListBullet] │       └── /solutions/service-business-management-software
+[ListBullet] │
+[ListBullet] ├── FEATURES
+[ListBullet] │   ├── Sales CRM Software
+[ListBullet] │   │   └── /features/sales-crm-software
+[ListBullet] │   │
+[ListBullet] │   ├── Asset Management Software
+[ListBullet] │   │   └── /features/asset-management-software
+[ListBullet] │   │
+[ListBullet] │   ├── Quotation Software
+[ListBullet] │   │   └── /features/quotation-software
+[ListBullet] │   │
+[ListBullet] │   ├── Work Order Management Software
+[ListBullet] │   │   └── /features/work-order-management-software
+[ListBullet] │   │
+[ListBullet] │   ├── Warranty Management Software
+[ListBullet] │   │   └── /features/warranty-management-software
+[ListBullet] │   │
+[ListBullet] │   ├── Inventory Management Software
+[ListBullet] │   │   └── /features/inventory-management-software
+[ListBullet] │   │
+[ListBullet] │   ├── Field Service App
+[ListBullet] │   │   └── /features/field-service-app
+[ListBullet] │   │
+[ListBullet] │   ├── Employee Management Software
+[ListBullet] │   │   └── /features/employee-management-software
+[ListBullet] │   │
+[ListBullet] │   └── Reporting Software
+[ListBullet] │       └── /features/reporting-software
+[ListBullet] │
+[ListBullet] ├── PRICING
+[ListBullet] │   └── /pricing
+[ListBullet] │
+[ListBullet] ├── BLOG
+[ListBullet] │   └── /blog
+[ListBullet] │
+[ListBullet] ├── DEMO
+[ListBullet] │   └── /demo
+[ListBullet] │
+[ListBullet] └── FOOTER / LEGAL
+[ListBullet] ├── About Us
+[ListBullet] │   └── /about
+[ListBullet] │
+[ListBullet] ├── Contact Us
+[ListBullet] │   └── /contact
+[ListBullet] │
+[ListBullet] ├── Privacy Policy
+[ListBullet] │   └── /privacy-policy
+[ListBullet] │
+[ListBullet] ├── Terms & Conditions
+[ListBullet] │   └── /terms-and-conditions
+[ListBullet] │
+[ListBullet] └── Refund / Cancellation Policy
+[ListBullet] * └── /refund-policy

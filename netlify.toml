@@ -1,0 +1,47 @@
+# Netlify build + hosting configuration for FSMFlow.in
+# Netlify reads this file automatically — no build settings need to be entered in the UI.
+
+[build]
+  command = "npm run build"   # typecheck → client build → server build → prerender all 23 pages + sitemap + 404.html
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "22"          # Vite 8 needs Node 20.19+ or 22.12+
+  NPM_FLAGS = "--no-audit --no-fund"
+  # Optional: set VITE_LEAD_ENDPOINT in Site settings → Environment variables to deliver demo/contact submissions.
+
+# Canonical host: www → apex. (Takes effect once both domains are attached to the site.)
+[[redirects]]
+  from = "https://www.fsmflow.in/*"
+  to = "https://fsmflow.in/:splat"
+  status = 301
+  force = true
+
+# Clean URLs (/pricing, /solutions/…) are served from dist/<route>/index.html by rules in dist/_redirects,
+# which scripts/prerender.mjs generates from the approved route list. Unknown URLs get dist/404.html (HTTP 404).
+
+# Hashed build assets (JS, CSS, fonts) never change → cache for a year.
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Static brand files change rarely.
+[[headers]]
+  for = "/*.png"
+  [headers.values]
+    Cache-Control = "public, max-age=86400"
+
+[[headers]]
+  for = "/favicon.svg"
+  [headers.values]
+    Cache-Control = "public, max-age=86400"
+
+# Baseline security headers for every response.
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    X-Frame-Options = "SAMEORIGIN"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=(), payment=()"

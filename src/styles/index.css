@@ -1,0 +1,477 @@
+@import 'tailwindcss';
+@import '@fontsource-variable/bricolage-grotesque/wght.css';
+@import '@fontsource-variable/figtree/wght.css';
+@import '@fontsource-variable/jetbrains-mono/wght.css';
+
+/* ==========================================================================
+   FSMFlow design tokens
+   Light-only. Navy ink on white / mist paper, electric-blue + iris accents,
+   aqua for "cooling", heat (amber) for "heating", mint only for success.
+   ========================================================================== */
+@theme {
+  --font-display: 'Bricolage Grotesque Variable', 'Figtree Variable', ui-sans-serif, system-ui, sans-serif;
+  --font-sans: 'Figtree Variable', ui-sans-serif, system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-mono: 'JetBrains Mono Variable', ui-monospace, 'SFMono-Regular', Menlo, monospace;
+
+  /* Ink — navy text & neutrals */
+  --color-ink-50: #f3f6fb;
+  --color-ink-100: #e7ecf6;
+  --color-ink-200: #d3daea;
+  --color-ink-300: #b1bbd2;
+  --color-ink-400: #8793b3;
+  --color-ink-500: #5a6a92;
+  --color-ink-600: #3e4e7a;
+  --color-ink-700: #263661;
+  --color-ink-800: #14224a;
+  --color-ink-900: #0b1736;
+  --color-ink-950: #070f26;
+
+  /* Brand — electric blue */
+  --color-brand-50: #eef4ff;
+  --color-brand-100: #dde9ff;
+  --color-brand-200: #bdd3ff;
+  --color-brand-300: #8db2ff;
+  --color-brand-400: #5a8bff;
+  --color-brand-500: #2f66ff;
+  --color-brand-600: #1b4fef;
+  --color-brand-700: #1640c4;
+  --color-brand-800: #183599;
+  --color-brand-900: #19307a;
+
+  /* Iris — vibrant indigo */
+  --color-iris-50: #f3f1ff;
+  --color-iris-100: #e6e2ff;
+  --color-iris-200: #cfc8ff;
+  --color-iris-300: #aea2ff;
+  --color-iris-400: #8676fb;
+  --color-iris-500: #6554f3;
+  --color-iris-600: #5340e0;
+  --color-iris-700: #4331bd;
+
+  /* Aqua — cooling / cyan-teal. The 600 shades of aqua / heat / mint / coral are tuned to pass WCAG AA (≥ 4.5:1) as small text on their 50 tints and on white. */
+  --color-aqua-50: #e6faff;
+  --color-aqua-100: #c6f1ff;
+  --color-aqua-200: #92e4fa;
+  --color-aqua-300: #52d1f0;
+  --color-aqua-400: #1ebde3;
+  --color-aqua-500: #00a5cf;
+  --color-aqua-600: #00708f;
+
+  /* Mint — success / completed */
+  --color-mint-50: #e7f9f1;
+  --color-mint-100: #c4f0dc;
+  --color-mint-400: #2fcb8a;
+  --color-mint-500: #12b76a;
+  --color-mint-600: #07763f;
+
+  /* Heat — heating / warnings / pending */
+  --color-heat-50: #fff5e3;
+  --color-heat-100: #ffe8bf;
+  --color-heat-400: #ffb547;
+  --color-heat-500: #ff9f1c;
+  --color-heat-600: #9a5400;
+
+  /* Coral — alerts / overdue (used sparingly) */
+  --color-coral-50: #ffefec;
+  --color-coral-100: #ffd9d3;
+  --color-coral-500: #f4533f;
+  --color-coral-600: #c42d1a;
+
+  /* Paper */
+  --color-mist: #f6f8fd;
+  --color-wash: #eef3ff;
+
+  /* Type scale */
+  --text-hero: clamp(2.6rem, 1.55rem + 3.9vw, 4.6rem);
+  --text-hero--line-height: 1.02;
+  --text-hero--letter-spacing: -0.038em;
+  --text-h1: clamp(2.35rem, 1.5rem + 3.2vw, 3.9rem);
+  --text-h1--line-height: 1.04;
+  --text-h1--letter-spacing: -0.034em;
+  --text-h2: clamp(1.9rem, 1.4rem + 1.9vw, 2.9rem);
+  --text-h2--line-height: 1.1;
+  --text-h2--letter-spacing: -0.03em;
+  --text-h3: clamp(1.2rem, 1.08rem + 0.6vw, 1.5rem);
+  --text-h3--line-height: 1.25;
+  --text-h3--letter-spacing: -0.02em;
+  --text-lead: clamp(1.0625rem, 1rem + 0.3vw, 1.25rem);
+  --text-lead--line-height: 1.6;
+
+  /* Soft, blue-tinted elevation (never harsh grey drop shadows) */
+  --shadow-card: 0 1px 2px rgb(11 23 54 / 0.04), 0 10px 28px -12px rgb(11 23 54 / 0.1);
+  --shadow-lift: 0 2px 6px rgb(11 23 54 / 0.05), 0 28px 56px -22px rgb(36 87 255 / 0.28);
+  --shadow-float: 0 2px 8px rgb(11 23 54 / 0.05), 0 40px 90px -36px rgb(11 23 54 / 0.34);
+  --shadow-pop: 0 1px 2px rgb(11 23 54 / 0.06), 0 14px 32px -12px rgb(11 23 54 / 0.2);
+  --shadow-cta: 0 1px 0 rgb(255 255 255 / 0.35) inset, 0 12px 28px -10px rgb(47 102 255 / 0.55);
+
+  --ease-premium: cubic-bezier(0.32, 0.72, 0, 1);
+  --ease-out-soft: cubic-bezier(0.22, 1, 0.36, 1);
+
+  /* Ambient motion — used with restraint */
+  --animate-pulse-ring: pulse-ring 2.6s cubic-bezier(0.2, 0.6, 0.2, 1) infinite;
+  --animate-flow-dash: flow-dash 2.4s linear infinite;
+  --animate-flow-dash-slow: flow-dash 6s linear infinite;
+  --animate-float-y: float-y 7s ease-in-out infinite;
+  --animate-marquee: marquee 38s linear infinite;
+  --animate-blink: blink 1.6s ease-in-out infinite;
+  --animate-shimmer: shimmer 2.6s ease-in-out infinite;
+  --animate-wave: wave 3.4s ease-in-out infinite;
+  --animate-fan: fan-spin 5s linear infinite;
+  --animate-panel-in: panel-in 0.6s var(--ease-premium) both;
+
+  @keyframes panel-in {
+    from {
+      opacity: 0;
+      transform: translate3d(0, 10px, 0);
+    }
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+
+  @keyframes fan-spin {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  @keyframes pulse-ring {
+    0% {
+      transform: scale(0.55);
+      opacity: 0.55;
+    }
+    100% {
+      transform: scale(2.4);
+      opacity: 0;
+    }
+  }
+  @keyframes flow-dash {
+    to {
+      stroke-dashoffset: -48;
+    }
+  }
+  @keyframes float-y {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-7px);
+    }
+  }
+  @keyframes marquee {
+    to {
+      transform: translateX(-50%);
+    }
+  }
+  @keyframes blink {
+    0%,
+    100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.35;
+    }
+  }
+  @keyframes shimmer {
+    0% {
+      transform: translateX(-100%);
+    }
+    60%,
+    100% {
+      transform: translateX(100%);
+    }
+  }
+  @keyframes wave {
+    0%,
+    100% {
+      transform: scaleY(0.45);
+    }
+    50% {
+      transform: scaleY(1);
+    }
+  }
+}
+
+/* ==========================================================================
+   Base
+   ========================================================================== */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 6.5rem;
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+  }
+  body {
+    background: #fff;
+    color: var(--color-ink-900);
+    font-family: var(--font-sans);
+    font-size: 1rem;
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+    overflow-x: clip;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: var(--font-display);
+    color: var(--color-ink-900);
+    text-wrap: balance;
+  }
+  p {
+    text-wrap: pretty;
+  }
+  ::selection {
+    background: var(--color-brand-100);
+    color: var(--color-brand-900);
+  }
+  :focus-visible {
+    outline: 2px solid var(--color-brand-500);
+    outline-offset: 3px;
+    border-radius: 6px;
+  }
+  button {
+    cursor: pointer;
+  }
+  img,
+  svg {
+    display: block;
+    max-width: 100%;
+  }
+}
+
+/* ==========================================================================
+   Custom utilities
+   ========================================================================== */
+@utility bg-dots {
+  background-image: radial-gradient(circle at 1px 1px, rgb(11 23 54 / 0.11) 1px, transparent 0);
+  background-size: 22px 22px;
+}
+@utility bg-dots-brand {
+  background-image: radial-gradient(circle at 1px 1px, rgb(47 102 255 / 0.22) 1px, transparent 0);
+  background-size: 20px 20px;
+}
+@utility bg-blueprint {
+  background-image:
+    linear-gradient(rgb(47 102 255 / 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgb(47 102 255 / 0.06) 1px, transparent 1px);
+  background-size: 32px 32px;
+}
+@utility text-gradient {
+  background-image: linear-gradient(100deg, var(--color-brand-600) 0%, var(--color-iris-500) 52%, var(--color-aqua-500) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+@utility text-gradient-cool {
+  background-image: linear-gradient(100deg, var(--color-brand-600) 0%, var(--color-aqua-500) 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+@utility bg-brand-gradient {
+  background-image: linear-gradient(135deg, var(--color-brand-500) 0%, var(--color-iris-500) 100%);
+}
+@utility bg-wash-gradient {
+  background-image: linear-gradient(180deg, var(--color-wash) 0%, #fff 100%);
+}
+@utility mask-fade-b {
+  -webkit-mask-image: linear-gradient(to bottom, #000 55%, transparent 100%);
+  mask-image: linear-gradient(to bottom, #000 55%, transparent 100%);
+}
+@utility mask-fade-edges {
+  -webkit-mask-image: radial-gradient(ellipse 70% 70% at 50% 50%, #000 40%, transparent 100%);
+  mask-image: radial-gradient(ellipse 70% 70% at 50% 50%, #000 40%, transparent 100%);
+}
+@utility mask-fade-x {
+  -webkit-mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent);
+  mask-image: linear-gradient(to right, transparent, #000 8%, #000 92%, transparent);
+}
+@utility no-scrollbar {
+  scrollbar-width: none;
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+@utility tabular {
+  font-variant-numeric: tabular-nums;
+}
+@utility eyebrow-mono {
+  font-family: var(--font-mono);
+  font-size: 0.6875rem;
+  line-height: 1;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+/* ==========================================================================
+   Motion primitives
+   Scroll reveals are class-driven (Reveal.tsx) so SSR markup is identical to
+   the hydrated tree. They only hide content once the `js` class is present.
+   ========================================================================== */
+@layer components {
+  .js .reveal {
+    opacity: 0;
+    transform: translate3d(0, 22px, 0);
+    transition:
+      opacity 0.9s var(--ease-premium),
+      transform 0.9s var(--ease-premium);
+    transition-delay: var(--d, 0ms);
+  }
+  .js .reveal-scale {
+    transform: translate3d(0, 14px, 0) scale(0.97);
+  }
+  /* Sideways entrances only from tablet up — on phones they would push content past the viewport edge. */
+  @media (min-width: 768px) {
+    .js .reveal-left {
+      transform: translate3d(-24px, 0, 0);
+    }
+    .js .reveal-right {
+      transform: translate3d(24px, 0, 0);
+    }
+  }
+  .js .reveal.is-in {
+    opacity: 1;
+    transform: none;
+  }
+
+  /* Above-the-fold entrance: pure CSS so it never waits for JavaScript. */
+  .hero-in {
+    opacity: 0;
+    transform: translate3d(0, 16px, 0);
+    animation: hero-in 0.9s var(--ease-premium) forwards;
+    animation-delay: var(--d, 0ms);
+  }
+  .hero-in-scale {
+    opacity: 0;
+    transform: translate3d(0, 28px, 0) scale(0.97);
+    animation: hero-in-scale 1.1s var(--ease-premium) forwards;
+    animation-delay: var(--d, 0ms);
+  }
+  @keyframes hero-in {
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+  @keyframes hero-in-scale {
+    to {
+      opacity: 1;
+      transform: none;
+    }
+  }
+
+  /* Dashed flow lines (the brand's "airflow" motif) */
+  /* Stepped (~10 fps) on purpose: animating stroke-dashoffset repaints on the main thread every frame,
+     and profiling showed smooth 60 fps dashes were the single most expensive ambient effect. */
+  .flow-line {
+    stroke-dasharray: 6 10;
+    animation: flow-dash 2.4s steps(24, end) infinite;
+  }
+  .flow-line-slow {
+    stroke-dasharray: 4 12;
+    animation: flow-dash 7s steps(28, end) infinite;
+  }
+
+  /* Bars / meters that grow in when their Reveal parent enters the viewport. */
+  .js .grow-y {
+    transform: scaleY(0);
+    transform-origin: bottom;
+    transition: transform 1s var(--ease-premium);
+    transition-delay: var(--d, 0ms);
+  }
+  .js .grow-x {
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 1.1s var(--ease-premium);
+    transition-delay: var(--d, 0ms);
+  }
+  .js .is-in .grow-y,
+  .js .is-in .grow-x,
+  .js .grow-y.is-in,
+  .js .grow-x.is-in {
+    transform: none;
+  }
+
+  /* Progress track used by workflow steppers */
+  .track-fill {
+    transform-origin: left center;
+    transition: transform 0.9s var(--ease-premium);
+  }
+
+  /* Legal / long-form copy */
+  .prose-fsm {
+    color: var(--color-ink-700);
+    font-size: 1.0625rem;
+    line-height: 1.75;
+  }
+  .prose-fsm h2 {
+    margin: 2.75rem 0 0.9rem;
+    font-size: 1.6rem;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+    font-weight: 650;
+  }
+  .prose-fsm h3 {
+    margin: 1.75rem 0 0.5rem;
+    font-size: 1.15rem;
+    font-weight: 650;
+    letter-spacing: -0.01em;
+  }
+  .prose-fsm p {
+    margin: 0 0 1.1rem;
+  }
+  .prose-fsm ul {
+    margin: 0 0 1.25rem;
+    padding-left: 1.25rem;
+    list-style: disc;
+  }
+  .prose-fsm ul li {
+    margin-bottom: 0.4rem;
+    padding-left: 0.25rem;
+  }
+  .prose-fsm ul li::marker {
+    color: var(--color-brand-500);
+  }
+  .prose-fsm a {
+    color: var(--color-brand-600);
+    text-decoration: underline;
+    text-decoration-color: var(--color-brand-200);
+    text-underline-offset: 3px;
+    transition: text-decoration-color 0.2s;
+  }
+  .prose-fsm a:hover {
+    text-decoration-color: var(--color-brand-600);
+  }
+  .prose-fsm strong {
+    color: var(--color-ink-900);
+    font-weight: 650;
+  }
+}
+
+/* Respect reduced-motion: keep final states, drop movement. */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    transition-delay: 0ms !important;
+  }
+  .js .reveal {
+    opacity: 1;
+    transform: none;
+  }
+}
