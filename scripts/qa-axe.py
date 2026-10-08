@@ -14,11 +14,35 @@ root = pathlib.Path(__file__).resolve().parent.parent
 routes = json.loads((root / "dist" / ".routes.json").read_text(encoding="utf8"))
 axe_src = (root / "node_modules" / "axe-core" / "axe.min.js").read_text(encoding="utf8")
 vp = {"width": 390, "height": 844} if mobile else {"width": 1440, "height": 900}
+
+# --- Analytics guard ---------------------------------------------------------------------------
+# The site loads Google Analytics 4 and Microsoft Clarity. The real third-party tags still download and run
+# here, but every other third-party request (collection, sync, diagnostics) is answered locally (HTTP 204),
+# so running QA never adds test traffic to the production GA4 property / Clarity project.
+from urllib.parse import urlsplit
+
+
+def analytics_guard(route, request):
+    """Default-deny for third-party hosts: only the two tag *downloads* reach the network."""
+    url = urlsplit(request.url)
+    host = url.netloc
+    if host.split(":")[0] in ("localhost", "127.0.0.1"):
+        return route.continue_()
+    is_tag_download = request.method == "GET" and (
+        (host == "www.googletagmanager.com" and url.path.startswith("/gtag/"))
+        or (host == "www.clarity.ms" and url.path.startswith("/tag/"))
+        or host == "scripts.clarity.ms"
+    )
+    if is_tag_download:
+        return route.continue_()
+    return route.fulfill(status=204, body="")  # any collection / sync / diagnostics request stays local
+
 total = 0
 with sync_playwright() as p:
     b = p.chromium.launch()
     for route in routes:
         ctx = b.new_context(viewport=vp, is_mobile=mobile, has_touch=mobile)
+        ctx.route("**/*", analytics_guard)
         page = ctx.new_page()
         page.goto(base + route, wait_until="networkidle")
         page.wait_for_timeout(600)

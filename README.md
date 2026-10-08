@@ -104,6 +104,21 @@ These are deliberately placeholders — nothing was invented:
 - **nginx**: `location / { try_files $uri $uri/index.html =404; } error_page 404 /404.html;`
 - Canonical URLs are `https://fsmflow.in/<path>` with no trailing slash. Submit `https://fsmflow.in/sitemap.xml` in Google Search Console.
 
+## Analytics
+
+- **Google Analytics 4** (`G-N5EPDY3KSC`) and **Microsoft Clarity** (`yudy593p95`) are installed once, verbatim, in the `<head>` of `index.html`.
+  Every prerendered page and `404.html` is built from that template, so each gets exactly one copy; nothing is added per page or per component.
+- **SPA page views:** there is deliberately **no manual `page_view` code**. The GA4 data stream's *Enhanced measurement → Page views →
+  "Page changes based on browser history events"* option (on by default) already sends one `page_view` per client-side navigation with the
+  right URL and title (verified in a browser: 4 navigations → 4 page_views, no duplicates; `#anchor` clicks send nothing). Adding our own
+  `page_view` calls would double-count. If that option is ever switched off in GA4, SPA navigations stop being tracked.
+  Clarity follows client-side navigation by itself.
+- **No CSP** is configured (`netlify.toml`, `.htaccess`), so no policy changes were needed. If you add a Content-Security-Policy later it must allow
+  `googletagmanager.com`, `*.google-analytics.com`, `*.analytics.google.com`, `*.clarity.ms` and `c.bing.com`.
+- **Local traffic:** the tags also run under `npm run dev` / `npm run preview`, so those visits are recorded under hostname `localhost`.
+  Filter by hostname in GA4, or use *Admin → Data filters* for internal traffic. The QA scripts (`scripts/qa-browser.py`, `scripts/qa-axe.py`) load the
+  real tags but answer all collection requests locally, so running QA adds nothing to your analytics.
+
 ## SEO implementation notes
 
 - Every page is prerendered with its own `<title>`, meta description, canonical, Open Graph / Twitter tags and JSON-LD

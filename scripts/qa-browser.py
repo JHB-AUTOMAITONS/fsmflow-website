@@ -55,17 +55,48 @@ CHECK_JS = """
 }
 """
 
+
+# --- Analytics guard ---------------------------------------------------------------------------
+# The site loads Google Analytics 4 and Microsoft Clarity. The real third-party tags still download and run
+# here, but every other third-party request (collection, sync, diagnostics) is answered locally (HTTP 204),
+# so running QA never adds test traffic to the production GA4 property / Clarity project.
+from urllib.parse import urlsplit
+
+
+def is_intercepted_beacon(request):
+    """Chromium/Playwright report locally-answered opaque no-cors/keepalive beacons as net::ERR_ABORTED
+    (reproduced with a generic fetch to an unrelated host) — not a site problem, so ignore only those."""
+    host = urlsplit(request.url).netloc
+    return request.method == "POST" and request.resource_type in ("fetch", "ping", "other") and not host.startswith("localhost")
+
+
+def analytics_guard(route, request):
+    """Default-deny for third-party hosts: only the two tag *downloads* reach the network."""
+    url = urlsplit(request.url)
+    host = url.netloc
+    if host.split(":")[0] in ("localhost", "127.0.0.1"):
+        return route.continue_()
+    is_tag_download = request.method == "GET" and (
+        (host == "www.googletagmanager.com" and url.path.startswith("/gtag/"))
+        or (host == "www.clarity.ms" and url.path.startswith("/tag/"))
+        or host == "scripts.clarity.ms"
+    )
+    if is_tag_download:
+        return route.continue_()
+    return route.fulfill(status=204, body="")  # any collection / sync / diagnostics request stays local
+
 failures = 0
 with sync_playwright() as p:
     browser = p.chromium.launch()
     for route in routes:
         for name, w, h in viewports:
             ctx = browser.new_context(viewport={"width": w, "height": h}, has_touch=(name == "mobile"), is_mobile=(name == "mobile"))
+            ctx.route("**/*", analytics_guard)
             page = ctx.new_page()
             problems = []
             page.on("console", lambda m, problems=problems: problems.append(f"console.{m.type}: {m.text[:160]}") if m.type in ("error", "warning") else None)
             page.on("pageerror", lambda e, problems=problems: problems.append(f"pageerror: {str(e)[:160]}"))
-            page.on("requestfailed", lambda r, problems=problems: problems.append(f"requestfailed: {r.url[-60:]}"))
+            page.on("requestfailed", lambda r, problems=problems: None if is_intercepted_beacon(r) else problems.append(f"requestfailed: {r.url[-60:]}"))
             page.on("response", lambda r, problems=problems: problems.append(f"http {r.status}: {r.url[-60:]}") if r.status >= 400 else None)
             page.goto(base + route, wait_until="networkidle")
             page.wait_for_timeout(500)
