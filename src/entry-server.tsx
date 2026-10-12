@@ -4,6 +4,7 @@ import { matchPage } from '@/routes'
 import App from './App'
 import { SeoCollectorContext, type SeoCollector } from './components/seo/Seo'
 import { FEATURES } from './data/features'
+import { BLOG_POSTS } from './data/blog'
 import { getAllRoutes } from './data/routes'
 import { SOLUTIONS } from './data/solutions'
 import { buildHead, headToHtml, type SeoInput } from './lib/seo'
@@ -33,4 +34,4 @@ export async function render(url: string): Promise<RenderResult> {
 }
 
 // Re-exported for the prerender / audit scripts.
-export { buildHead, headToHtml, getAllRoutes, FEATURES, SOLUTIONS }
+export { buildHead, headToHtml, getAllRoutes, BLOG_POSTS, FEATURES, SOLUTIONS }

@@ -40,10 +40,33 @@ function slugify(text: string): string {
     .replace(/(^-|-$)/g, '')
 }
 
+const LINK = /\[([^\]]+)\]\((\/[^)\s]*)\)/g
+
+/** Renders `[anchor](/internal-path)` as router links; everything else stays plain text. */
+function Inline({ text }: { text: string }) {
+  const nodes: React.ReactNode[] = []
+  let last = 0
+  for (const m of text.matchAll(LINK)) {
+    if (m.index > last) nodes.push(text.slice(last, m.index))
+    nodes.push(
+      <Link key={m.index} to={m[2]}>
+        {m[1]}
+      </Link>,
+    )
+    last = m.index + m[0].length
+  }
+  if (last < text.length) nodes.push(text.slice(last))
+  return <>{nodes}</>
+}
+
 function Block({ block }: { block: BlogBlock }) {
   switch (block.type) {
     case 'p':
-      return <p>{block.text}</p>
+      return (
+        <p>
+          <Inline text={block.text} />
+        </p>
+      )
     case 'h2':
       return <h2 id={slugify(block.text)}>{block.text}</h2>
     case 'h3':
@@ -52,7 +75,9 @@ function Block({ block }: { block: BlogBlock }) {
       return (
         <ul>
           {block.items.map((item) => (
-            <li key={item}>{item}</li>
+            <li key={item}>
+              <Inline text={item} />
+            </li>
           ))}
         </ul>
       )
@@ -62,7 +87,9 @@ function Block({ block }: { block: BlogBlock }) {
           <span className="flex size-10 shrink-0 items-center justify-center rounded-xl bg-white text-brand-600 shadow-card ring-1 ring-brand-100">
             <Lightbulb className="size-5" strokeWidth={1.6} aria-hidden="true" />
           </span>
-          <div className="text-[1.0625rem] leading-relaxed text-ink-800">{block.text}</div>
+          <div className="text-[1.0625rem] leading-relaxed text-ink-800">
+            <Inline text={block.text} />
+          </div>
         </div>
       )
   }
@@ -71,7 +98,7 @@ function Block({ block }: { block: BlogBlock }) {
 /** Article template. Rendered only for published posts (see BlogPostPage). */
 export function BlogArticle({ post }: { post: BlogPost }) {
   const path = `/blog/${post.slug}`
-  const description = trimDescription(post.excerpt)
+  const description = trimDescription(post.seoDescription ?? post.excerpt)
   const related = [
     ...PUBLISHED_POSTS.filter((p) => p.slug !== post.slug && p.category === post.category),
     ...PUBLISHED_POSTS.filter((p) => p.slug !== post.slug && p.category !== post.category),
@@ -90,7 +117,7 @@ export function BlogArticle({ post }: { post: BlogPost }) {
 
   return (
     <>
-      <Seo title={seoTitle(post.title)} description={description} path={path} ogType="article" jsonLd={jsonLd} />
+      <Seo title={post.seoTitle ?? seoTitle(post.title)} description={description} path={path} ogType="article" jsonLd={jsonLd} />
 
       <article aria-labelledby="post-title">
         <header className="relative isolate overflow-hidden pt-8 pb-10 md:pt-14 md:pb-14">

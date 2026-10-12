@@ -117,6 +117,22 @@ for (const route of routes) {
     if (!h2WithKw) warn('no H2/H3 with the primary keyword or a close variation')
   }
 
+  // ---- blog post keyword rules
+  const post = server.BLOG_POSTS.find((x) => x.status === 'published' && `/blog/${x.slug}` === route)
+  if (post?.primaryKeyword) {
+    const k = norm(post.primaryKeyword)
+    const h1 = norm(h1s[0]?.text ?? '')
+    if (!h1.includes(k)) err(`blog H1 does not contain primary keyword "${post.primaryKeyword}"`)
+    if (!norm(title).includes(k)) warn(`blog title does not contain primary keyword "${post.primaryKeyword}"`)
+    if (!norm(description).includes(k)) warn(`blog description does not contain primary keyword "${post.primaryKeyword}"`)
+    if (!norm(post.slug.replace(/-/g, ' ')).includes(k.split(' ').slice(0, 3).join(' '))) warn('blog slug does not contain the start of the primary keyword')
+    if (!headings.some((h) => h.level === 2 && norm(h.text).includes(k.split(' ').slice(0, 2).join(' ')))) warn('no blog H2 with the primary keyword or a close variation')
+    const opening = norm(strip(body.slice(body.indexOf('<main'), body.indexOf('<main') + 9000))).slice(0, 2500)
+    if (!opening.includes(k)) warn('primary keyword not found in the opening content')
+    if (post.supports && !html.includes(`href="${post.supports}"`)) err(`blog does not link to its solution page ${post.supports}`)
+    if (!/"@type":"BlogPosting"/.test(html)) err('missing BlogPosting JSON-LD')
+  }
+
   // ---- images
   for (const m of html.matchAll(/<img\b[^>]*>/g)) {
     if (!/\balt="/.test(m[0])) err(`<img> without alt: ${m[0].slice(0, 80)}`)

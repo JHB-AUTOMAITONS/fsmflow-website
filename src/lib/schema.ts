@@ -86,13 +86,15 @@ export const articleSchema = (opts: {
   author: string
 }): Json => ({
   '@context': 'https://schema.org',
-  '@type': 'Article',
+  '@type': 'BlogPosting',
   headline: opts.title,
+  image: absoluteUrl(SITE.ogImage),
+  inLanguage: 'en-IN',
   description: opts.description,
   url: absoluteUrl(opts.path),
   datePublished: opts.published,
   dateModified: opts.modified ?? opts.published,
-  author: { '@type': 'Person', name: opts.author },
+  author: { '@type': 'Organization', name: opts.author, url: SITE.url },
   publisher: { '@id': `${SITE.url}/#organization` },
   mainEntityOfPage: absoluteUrl(opts.path),
 })

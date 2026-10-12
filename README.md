@@ -84,8 +84,10 @@ These are deliberately placeholders — nothing was invented:
   the forms are registered by the hidden `public/__forms.html`). After the first deploy open Netlify → *Forms → Form notifications → Add
   notification → Email* to get each submission by email (they are also stored in the dashboard). To use your own API instead, set
   `VITE_LEAD_ENDPOINT` (JSON POST; it takes precedence). With neither, production opens a pre-filled email to `SITE.contact.email`.
-- **Blog** — posts in `src/data/blog.ts` are `status: 'upcoming'` placeholders (shown on `/blog`, no article URLs yet). Set a post to
-  `'published'` and add `publishedAt`, `author` and `body` to give it a `/blog/<slug>` page, sitemap entry and link automatically.
+- **Blog** — five supporting posts (HVAC, CCTV, solar, construction, general service) are `status: 'published'` in `src/data/blog.ts` with bodies in
+  `src/data/blogArticles.ts`; the other posts are `'upcoming'` placeholders (no URL). Body text supports `[anchor](/internal-path)` links. Per-post
+  `seoTitle` / `seoDescription` / `primaryKeyword` / `supports` fields drive the metadata and `npm run audit:seo` checks. Keyword metrics for these posts
+  must be re-verified in Ubersuggest before the branch is merged and deployed.
 - **Social image** — `public/og-image.png` (1200×630) is generated artwork; replace if you prefer your own.
 - Product visuals use **fictional sample data** (labelled "sample data" on the pages). No customer logos, testimonials or statistics are shown.
 
