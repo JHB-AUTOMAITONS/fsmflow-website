@@ -1,5 +1,5 @@
-import { AirVent, BarChart3, Briefcase, Cctv, ClipboardList, HardHat, Package, ReceiptText, Route, SunMedium, Users, type LucideIcon } from 'lucide-react'
-import { CCTV_ARTICLE, CONSTRUCTION_ARTICLE, HVAC_ARTICLE, SERVICE_BUSINESS_ARTICLE, SOLAR_ARTICLE } from './blogArticles'
+import { AirVent, BarChart3, Briefcase, Cctv, ClipboardList, Compass, HardHat, Package, ReceiptText, Route, SunMedium, Users, type LucideIcon } from 'lucide-react'
+import { CCTV_ARTICLE, CONSTRUCTION_ARTICLE, HVAC_ARTICLE, SERVICE_BUSINESS_ARTICLE, SOLAR_ARTICLE, WHAT_IS_FSM_ARTICLE } from './blogArticles'
 
 /**
  * Blog content model.
@@ -169,6 +169,25 @@ export const BLOG_POSTS: BlogPost[] = [
     primaryKeyword: 'best field service management software for small business',
     supports: '/solutions/service-business-management-software',
     body: SERVICE_BUSINESS_ARTICLE,
+  },
+  {
+    slug: 'what-is-field-service-management',
+    title: "What Is Field Service Management? A Beginner's Guide",
+    seoTitle: 'What Is Field Service Management? A Beginner Guide | FSMFlow',
+    seoDescription:
+      'What is field service management? Learn the process, key benefits, common challenges and how software helps improve field service technician productivity.',
+    excerpt:
+      'A clear, practical introduction to field service management: what it means, how the process works, its real benefits and challenges, and where software fits in.',
+    category: 'Industry Insights',
+    readMinutes: 7,
+    status: 'published',
+    icon: Compass,
+    accent: 'brand',
+    publishedAt: '2026-10-16',
+    author: 'FSMFlow Team',
+    primaryKeyword: 'what is field service management',
+    supports: '/solutions/service-business-management-software',
+    body: WHAT_IS_FSM_ARTICLE,
   },
   {
     slug: 'run-amc-renewals-without-spreadsheets',

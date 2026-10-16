@@ -650,3 +650,118 @@ export const SERVICE_BUSINESS_ARTICLE: BlogBlock[] = [
   ),
   p('If you would like to see whether FSMFlow suits your service business, [book a demo](/demo) and we will walk through your use case.'),
 ]
+
+/* -------------------------------------------------------------------------- */
+/* What is field service management (beginner's guide)                       */
+/* -------------------------------------------------------------------------- */
+
+export const WHAT_IS_FSM_ARTICLE: BlogBlock[] = [
+  p(
+    'If a technician has ever visited your home to fix an AC, install a CCTV camera, service a solar panel or repair an appliance, you have already seen field service management in action — you just saw the customer-facing half of it. So what is field service management? In short, it is how a business plans, assigns and tracks the work its technicians do at customer locations, from the first enquiry to the final invoice.',
+  ),
+  p(
+    'This guide is written for anyone new to the term: a service business owner, an office manager who just inherited the scheduling WhatsApp group, or someone comparing software for the first time. We will cover what field service management means, how the process actually works, its real benefits and challenges, and where software fits in.',
+  ),
+  h2('What is field service management, in practice?'),
+  p(
+    'Field service management is the set of processes a business uses to coordinate work that happens away from its office — at a customer’s home, site or premises — rather than at a fixed location like a shop or a clinic.',
+  ),
+  p('That covers a wide range of trades, including:'),
+  ul(
+    'HVAC and AC servicing, installation and AMC visits',
+    'CCTV and security camera installation and maintenance',
+    'Solar panel installation and after-sales service',
+    'Construction and contracting site work',
+    'Appliance repair, plumbing, electrical and pest control',
+    'Any business that sends people out to do work, rather than waiting for customers to walk in',
+  ),
+  p(
+    'In every one of these, the same questions repeat: who should go, when, with what parts and information, and how does the business know the job was done properly and get paid for it? Field service management is the answer to those questions, whether it is handled on paper, in spreadsheets, or in dedicated software.',
+  ),
+  h2('How does field service management work?'),
+  p(
+    'At a basic level, field service management connects three things that otherwise live in separate places: the customer and their request, the technician who does the work, and the record of what happened. When those three stay connected — instead of scattered across phone calls, notebooks and chat messages — the business can see its field service operations clearly instead of guessing.',
+  ),
+  p(
+    'It does not require expensive tools to start. A small business can manage this with a shared spreadsheet and a group chat. The ideas below describe the same process whether you run it manually or with software — the difference is mostly how much manual effort it takes to keep it accurate.',
+  ),
+  h2('The field service management process, step by step'),
+  p('Most field service work follows a similar sequence, whatever the trade:'),
+  ul(
+    'Enquiry or lead — a customer calls, messages or submits a form describing what they need.',
+    'Scheduling and dispatch — the request is turned into a job and assigned to a technician based on skill, location and availability.',
+    'Preparation — the technician checks the job details, the site history (if there is one) and which spare parts or tools to carry.',
+    'The visit — the technician travels to site, carries out the work, and records what was done, often with photos or notes.',
+    'Completion and sign-off — the customer confirms the work, and the job is marked complete.',
+    'Invoicing and payment — a quotation or invoice is raised based on the work and parts used.',
+    'Follow-up — for contracts like AMC or warranty work, the next visit is scheduled and reminders are set so renewals are not missed.',
+  ),
+  p(
+    'Written out, this looks straightforward. In a real business handling dozens of jobs a week across several technicians, the hard part is keeping every step accurate and visible without someone having to chase each one individually. That is what a [work order management system](/features/work-order-management-software) is built to hold together — the request, the assignment, the technician’s updates and the completion record, all attached to the same job.',
+  ),
+  h2('Key benefits of field service management'),
+  p(
+    'Businesses that manage field service deliberately — rather than reactively — tend to see the same set of benefits:',
+  ),
+  ul(
+    'Faster response times, because dispatch is a quick decision instead of a round of phone calls to find out who is free.',
+    'Fewer repeat visits, because the technician arrives with the right job details and the parts the visit is likely to need.',
+    'Better field service technician productivity, since less of the day is lost to paperwork, waiting for instructions, or travelling to the wrong address.',
+    'More accurate billing, because the parts and time used on a job are recorded while the work is fresh rather than reconstructed later.',
+    'Stronger customer relationships, since customers get clear updates and do not have to repeat their issue on every call.',
+    'Visibility for the owner or manager, who can see what is actually happening across the team instead of relying on individual updates.',
+  ),
+  p(
+    'None of these benefits depend on having the biggest or most expensive system. They depend on the business agreeing on one process and sticking to it — software just makes that process easier to keep up as the team grows.',
+  ),
+  h2('Common challenges in field service operations'),
+  p('The same handful of problems shows up across almost every field service business as it grows past a handful of technicians:'),
+  ul(
+    'Manual, phone-based scheduling that depends on one person remembering who is free and where.',
+    'Information that lives in someone’s head or a notebook, so the next technician on a job starts from zero.',
+    'Spare parts or stock that run out mid-visit because nobody tracked what was used on the last job.',
+    'Paperwork completed at the end of the day from memory, instead of on-site while details are accurate.',
+    'No easy way to see which jobs are overdue, which contracts are expiring, or which technician is overloaded.',
+  ),
+  p(
+    'These are not failures of the technicians doing the work. They are gaps in the process connecting the office, the technician and the customer — and they get wider, not smaller, as a business adds more jobs and more people.',
+  ),
+  h2('How software helps manage field service operations'),
+  p(
+    'Field service management software exists to close those gaps without hiring more office staff to manage them. In practice, it usually covers a few connected pieces:',
+  ),
+  ul(
+    'A shared view of jobs, so dispatch is based on real availability instead of memory.',
+    'A [field service app](/features/field-service-app) technicians use on-site to see job details and record what was done.',
+    'Stock tracking through [inventory management software](/features/inventory-management-software), so parts used on a job are linked back to it.',
+    'Quotations and invoices built with [quotation software](/features/quotation-software), using the same job and customer details rather than starting from scratch.',
+    'Simple [reporting](/features/reporting-software) that shows completed jobs, repeat visits and pending renewals without manual spreadsheet work.',
+  ),
+  callout(
+    'Software is not the starting point — the process is. If a business has not agreed on how a job moves from enquiry to invoice, moving that confusion into an app just makes it digital, not better. Fix the process first, then let software remove the manual effort of running it.',
+  ),
+  p(
+    'If you are past the point where a spreadsheet and a group chat can keep up, a dedicated platform built for this kind of work — one that holds jobs, technicians, customers, parts and invoices together, such as [FSMFlow’s service business management software](/solutions/service-business-management-software) — is usually the next step, rather than adding more manual checks to the existing process.',
+  ),
+  h2('Frequently asked questions'),
+  h3('What is field service management in simple terms?'),
+  p(
+    'It is how a business organises work that happens at a customer’s location rather than its own premises — deciding who goes, when, with what information, and recording what happened so the job can be billed and followed up correctly.',
+  ),
+  h3('What industries use field service management?'),
+  p(
+    'Any business that sends people to customer sites: HVAC and AC servicing, CCTV and security installation, solar installation, construction and contracting, plumbing, electrical work, appliance repair, pest control and similar trades.',
+  ),
+  h3('What is the difference between field service management and a CRM?'),
+  p(
+    'A CRM focuses on tracking leads, contacts and the sales relationship. Field service management covers what happens after the sale too — scheduling the visit, equipping the technician, tracking parts used, and completing and billing the job. Some platforms, including FSMFlow, combine both.',
+  ),
+  h3('Do small businesses really need field service management software?'),
+  p(
+    'Not immediately. A small team can run this process on a shared sheet and a phone. It usually becomes worth adopting software once missed appointments, repeat visits or billing delays start costing more time than learning a new tool would take.',
+  ),
+  h3('How do I get started with field service management if I currently use notebooks or spreadsheets?'),
+  p(
+    'Start by writing down your actual process end to end — enquiry, scheduling, the visit, completion and invoicing — and agree on it as a team. Once that is consistent, decide which step causes the most repeated problems, and look for a tool that fixes that step specifically rather than replacing everything at once.',
+  ),
+]
