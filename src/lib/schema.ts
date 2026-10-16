@@ -84,11 +84,12 @@ export const articleSchema = (opts: {
   published: string
   modified?: string
   author: string
+  image?: string
 }): Json => ({
   '@context': 'https://schema.org',
   '@type': 'BlogPosting',
   headline: opts.title,
-  image: absoluteUrl(SITE.ogImage),
+  image: absoluteUrl(opts.image ?? SITE.ogImage),
   inLanguage: 'en-IN',
   description: opts.description,
   url: absoluteUrl(opts.path),

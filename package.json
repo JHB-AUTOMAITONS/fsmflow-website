@@ -13,6 +13,7 @@
     "build": "tsc -b && npm run build:client && npm run build:server && npm run prerender",
     "preview": "node scripts/serve.mjs",
     "audit:seo": "node scripts/audit-seo.mjs",
+    "audit:images": "node scripts/audit-blog-images.mjs",
     "lint": "oxlint"
   },
   "dependencies": {

@@ -5,12 +5,22 @@ import { CCTV_ARTICLE, CONSTRUCTION_ARTICLE, HVAC_ARTICLE, SERVICE_BUSINESS_ARTI
  * Blog content model.
  *
  * To publish a real article: set `status: 'published'`, add `publishedAt`
- * (ISO date), `author` and a `body`. The article then automatically gets
- * a /blog/<slug> page, a sitemap entry and a link from the /blog listing.
+ * (ISO date), `author`, a `body` and an `image`. The article then automatically
+ * gets a /blog/<slug> page, a sitemap entry and a link from the /blog listing.
+ * `npm run audit:images` fails the build if a published post has no `image`
+ * or the file it points to is missing from `public/`.
  *
  * While `status` is 'upcoming' the post is shown on /blog as a placeholder
  * card and NO public URL is created (the approved site structure in FSM.docx
- * contains /blog only — no article pages yet).
+ * contains /blog only — no article pages yet). Give upcoming posts an `image`
+ * too once one is available, since the placeholder card already renders it.
+ *
+ * `image` must depict the post's actual subject (see BlogImage.tsx) — never
+ * reuse one post's photo for an unrelated topic. If a post's topic changes
+ * materially during an edit, re-check (and if needed replace) its `image`
+ * rather than leaving the old one in place. Until a suitable photo exists,
+ * leave `image` unset: BlogCard/FeaturedBlogCard/BlogArticle fall back to the
+ * decorative PostArt cover rather than showing a broken or misleading image.
  */
 export const BLOG_CATEGORIES = [
   'HVAC',
@@ -42,6 +52,14 @@ export interface BlogPost {
   status: 'published' | 'upcoming'
   icon: LucideIcon
   accent: 'brand' | 'aqua' | 'iris' | 'mint' | 'heat'
+  /**
+   * The real featured photo. `src` is a root-relative path to a file under
+   * `public/` (e.g. "/blog-images/hvac-technician-amc.jpg"). `alt` must describe
+   * what the photo actually shows, in context — not the post title restated.
+   * `position` is a CSS object-position value for when the aspect ratio crops
+   * the photo (defaults to "center"); use it to keep the real subject in frame.
+   */
+  image?: { src: string; alt: string; position?: string }
   publishedAt?: string
   updatedAt?: string
   author?: string

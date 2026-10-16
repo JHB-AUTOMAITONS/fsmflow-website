@@ -10,7 +10,7 @@ import { Section } from '@/components/ui/Section'
 import { PUBLISHED_POSTS, type BlogBlock, type BlogPost } from '@/data/blog'
 import { articleSchema, breadcrumbSchema } from '@/lib/schema'
 import { BlogCard } from './BlogCard'
-import { PostArt } from './PostArt'
+import { BlogImage } from './BlogImage'
 
 const SUFFIX = ' | FSMFlow'
 
@@ -111,13 +111,30 @@ export function BlogArticle({ post }: { post: BlogPost }) {
       { name: post.title, path },
     ]),
     ...(post.publishedAt && post.author
-      ? [articleSchema({ title: post.title, description, path, published: post.publishedAt, modified: post.updatedAt, author: post.author })]
+      ? [
+          articleSchema({
+            title: post.title,
+            description,
+            path,
+            published: post.publishedAt,
+            modified: post.updatedAt,
+            author: post.author,
+            image: post.image?.src,
+          }),
+        ]
       : []),
   ]
 
   return (
     <>
-      <Seo title={post.seoTitle ?? seoTitle(post.title)} description={description} path={path} ogType="article" jsonLd={jsonLd} />
+      <Seo
+        title={post.seoTitle ?? seoTitle(post.title)}
+        description={description}
+        path={path}
+        ogType="article"
+        jsonLd={jsonLd}
+        image={post.image?.src}
+      />
 
       <article aria-labelledby="post-title">
         <header className="relative isolate overflow-hidden pt-8 pb-10 md:pt-14 md:pb-14">
@@ -171,7 +188,7 @@ export function BlogArticle({ post }: { post: BlogPost }) {
 
         <Container size="wide">
           <div className="hero-in-scale overflow-hidden rounded-[28px] ring-1 ring-ink-900/[0.06] shadow-card md:rounded-[36px]" style={{ '--d': '300ms' } as React.CSSProperties}>
-            <PostArt post={post} animated className="aspect-[16/9] md:aspect-[21/9]" />
+            <BlogImage post={post} animated priority className="aspect-[16/9]" />
           </div>
         </Container>
 

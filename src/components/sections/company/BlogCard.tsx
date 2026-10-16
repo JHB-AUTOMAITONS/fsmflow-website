@@ -4,7 +4,7 @@ import { Tag } from '@/components/product/StatusPill'
 import { Bezel } from '@/components/ui/Bezel'
 import type { BlogPost } from '@/data/blog'
 import { cn } from '@/lib/cn'
-import { PostArt } from './PostArt'
+import { BlogImage } from './BlogImage'
 
 function ReadTime({ minutes }: { minutes: number }) {
   return (
@@ -49,7 +49,7 @@ export function BlogCard({ post }: { post: BlogPost }) {
   return (
     <article className="group relative h-full">
       <Bezel interactive={published} className="h-full" coreClassName="flex h-full flex-col overflow-hidden">
-        <PostArt post={post} className="aspect-[16/10]" />
+        <BlogImage post={post} className="aspect-[16/9]" />
         <div className="flex flex-1 flex-col p-5 sm:p-6">
           <div className="flex flex-wrap items-center gap-x-3 gap-y-2">
             <Tag tone={post.accent} className="px-2 py-1 text-xs">
@@ -76,7 +76,7 @@ export function FeaturedBlogCard({ post }: { post: BlogPost }) {
   return (
     <article className="group relative">
       <Bezel radius="xl" interactive={published} coreClassName="grid overflow-hidden lg:grid-cols-[1.05fr_1fr]">
-        <PostArt post={post} animated className="aspect-[16/10] lg:aspect-auto lg:min-h-[22rem]" />
+        <BlogImage post={post} animated priority className="aspect-[16/9] lg:aspect-auto lg:min-h-[22rem]" />
         <div className="flex flex-col justify-center p-6 sm:p-9 lg:p-12">
           <div className="flex flex-wrap items-center gap-x-3 gap-y-2">
             <span className="eyebrow-mono text-brand-600">{published ? 'Latest article' : 'Up next'}</span>

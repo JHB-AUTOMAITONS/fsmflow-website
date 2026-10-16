@@ -9,6 +9,8 @@ export interface SeoInput {
   ogType?: 'website' | 'article'
   noindex?: boolean
   jsonLd?: Record<string, unknown>[]
+  /** Root-relative path to an image to use for og:image/twitter:image instead of SITE.ogImage (e.g. a post's real featured photo). */
+  image?: string
 }
 
 export interface HeadTag {
@@ -26,7 +28,7 @@ export function absoluteUrl(path: string): string {
 /** Builds the full set of head tags for a page. Shared by the server prerender and the client. */
 export function buildHead(input: SeoInput) {
   const url = absoluteUrl(input.path)
-  const image = absoluteUrl(SITE.ogImage)
+  const image = absoluteUrl(input.image ?? SITE.ogImage)
   const robots = input.noindex ? 'noindex, nofollow' : 'index, follow, max-image-preview:large'
   const tags: HeadTag[] = [
     { tag: 'meta', attrs: { name: 'description', content: input.description } },
@@ -39,8 +41,13 @@ export function buildHead(input: SeoInput) {
     { tag: 'meta', attrs: { property: 'og:description', content: input.description } },
     { tag: 'meta', attrs: { property: 'og:url', content: url } },
     { tag: 'meta', attrs: { property: 'og:image', content: image } },
-    { tag: 'meta', attrs: { property: 'og:image:width', content: '1200' } },
-    { tag: 'meta', attrs: { property: 'og:image:height', content: '630' } },
+    // Dimensions are only known for the site-wide default; a post's own photo may differ.
+    ...(input.image
+      ? []
+      : [
+          { tag: 'meta' as const, attrs: { property: 'og:image:width', content: '1200' } },
+          { tag: 'meta' as const, attrs: { property: 'og:image:height', content: '630' } },
+        ]),
     { tag: 'meta', attrs: { name: 'twitter:card', content: 'summary_large_image' } },
     { tag: 'meta', attrs: { name: 'twitter:title', content: input.title } },
     { tag: 'meta', attrs: { name: 'twitter:description', content: input.description } },
