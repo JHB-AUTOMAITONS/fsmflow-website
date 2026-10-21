@@ -916,6 +916,27 @@ export const PREVENTIVE_MAINTENANCE_ARTICLE: BlogBlock[] = [
   p(
     'Related reading: [HVAC technician management and AMC renewals](/blog/hvac-technician-management-amc-renewals), [CCTV AMC format and management](/blog/cctv-amc-format-installation-service-renewals) and [solar installation project management](/blog/solar-installation-project-management).',
   ),
+  h2('Frequently asked questions'),
+  h3('What is the difference between preventive and reactive maintenance?'),
+  p(
+    'Preventive maintenance is planned work done before equipment fails, on a schedule. Reactive maintenance is repair work done after a breakdown. Most service businesses need both, but a healthy balance keeps emergencies from taking over the calendar.',
+  ),
+  h3('How often should preventive maintenance be done?'),
+  p(
+    'It depends on the equipment, how heavily it is used and the environment it runs in. Start from the manufacturer’s guidance, then adjust using your own service history. Critical equipment and harsher sites usually need shorter intervals.',
+  ),
+  h3('What should a preventive maintenance record include?'),
+  p(
+    'The equipment and site, the date, the technician, the tasks completed, readings or observations, parts replaced, problems found and the recommended next step. Keeping these in one place builds the service history you will want for warranty questions and repeat faults.',
+  ),
+  h3('Do small service businesses need software for planned maintenance?'),
+  p(
+    'Not on day one. A shared spreadsheet and a standard checklist can work for a small team. Software becomes useful when customers, sites and technicians outgrow what one person can track, or when planned visits keep slipping.',
+  ),
+  h3('Is preventive maintenance the same as an AMC?'),
+  p(
+    'Not exactly. Preventive maintenance is the work. An AMC (annual maintenance contract) is a commercial agreement that usually promises a set number of planned visits for a year. What each AMC covers is defined in its own terms.',
+  ),
   h2('Putting Preventive Maintenance Into Practice'),
   p(
     'Preventive maintenance works when you know what equipment you are responsible for, planned visits sit on a calendar with a named technician, and every visit leaves a record. Start with the equipment list and one checklist, then build the schedule around them.',
