@@ -2,12 +2,13 @@ import { FileSearch, Info } from 'lucide-react'
 import { useMemo, useState } from 'react'
 import { Button } from '@/components/ui/Button'
 import { Reveal } from '@/components/ui/Reveal'
-import { BLOG_CATEGORIES, BLOG_POSTS, PUBLISHED_POSTS, type BlogCategory } from '@/data/blog'
+import { BLOG_CATEGORIES, PUBLISHED_POSTS, type BlogCategory } from '@/data/blog'
 import { cn } from '@/lib/cn'
 import { BlogCard, FeaturedBlogCard } from './BlogCard'
 
 type Filter = 'All' | BlogCategory
-const FILTERS: Filter[] = ['All', ...BLOG_CATEGORIES]
+// Only published posts are listed; categories with no published post get no chip.
+const FILTERS: Filter[] = ['All', ...BLOG_CATEGORIES.filter((c) => PUBLISHED_POSTS.some((p) => p.category === c))]
 
 /**
  * Category chips + featured card + grid. Filtering is client-side; the server
@@ -16,7 +17,7 @@ const FILTERS: Filter[] = ['All', ...BLOG_CATEGORIES]
 export function BlogIndex() {
   const [filter, setFilter] = useState<Filter>('All')
 
-  const posts = useMemo(() => (filter === 'All' ? BLOG_POSTS : BLOG_POSTS.filter((p) => p.category === filter)), [filter])
+  const posts = useMemo(() => (filter === 'All' ? PUBLISHED_POSTS : PUBLISHED_POSTS.filter((p) => p.category === filter)), [filter])
   const featured = posts.find((p) => p.status === 'published') ?? posts[0]
   const rest = posts.filter((p) => p !== featured)
 
