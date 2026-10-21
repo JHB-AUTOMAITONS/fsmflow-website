@@ -1,5 +1,5 @@
-import { AirVent, BarChart3, Briefcase, Cctv, ClipboardList, Compass, HardHat, Package, ReceiptText, Route, SunMedium, Users, type LucideIcon } from 'lucide-react'
-import { CCTV_ARTICLE, CONSTRUCTION_ARTICLE, HVAC_ARTICLE, SERVICE_BUSINESS_ARTICLE, SOLAR_ARTICLE, WHAT_IS_FSM_ARTICLE } from './blogArticles'
+import { AirVent, BarChart3, Briefcase, Cctv, ClipboardList, Compass, HardHat, Package, ReceiptText, Route, SunMedium, Users, Wrench, type LucideIcon } from 'lucide-react'
+import { CCTV_ARTICLE, CONSTRUCTION_ARTICLE, HVAC_ARTICLE, SERVICE_BUSINESS_ARTICLE, SOLAR_ARTICLE, PREVENTIVE_MAINTENANCE_ARTICLE, WHAT_IS_FSM_ARTICLE } from './blogArticles'
 
 /**
  * Blog content model.
@@ -188,6 +188,25 @@ export const BLOG_POSTS: BlogPost[] = [
     primaryKeyword: 'what is field service management',
     supports: '/solutions/service-business-management-software',
     body: WHAT_IS_FSM_ARTICLE,
+  },
+  {
+    slug: 'preventive-maintenance-guide-sri-lanka',
+    title: 'Preventive Maintenance: A Practical Guide for Service Businesses in Sri Lanka',
+    seoTitle: 'Preventive Maintenance Guide for Sri Lanka Service Teams',
+    seoDescription:
+      'Learn how preventive maintenance helps Sri Lankan service businesses reduce equipment downtime, plan maintenance schedules and manage service work.',
+    excerpt:
+      'What preventive maintenance is, how it differs from reactive maintenance, and how to build a schedule, checklist and service records that a Sri Lankan service team can keep up.',
+    category: 'Service Management',
+    readMinutes: 8,
+    status: 'published',
+    icon: Wrench,
+    accent: 'aqua',
+    publishedAt: '2026-10-21',
+    author: 'FSMFlow Team',
+    primaryKeyword: 'preventive maintenance',
+    supports: '/features/warranty-management-software',
+    body: PREVENTIVE_MAINTENANCE_ARTICLE,
   },
   {
     slug: 'run-amc-renewals-without-spreadsheets',

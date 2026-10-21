@@ -765,3 +765,162 @@ export const WHAT_IS_FSM_ARTICLE: BlogBlock[] = [
     'Start by writing down your actual process end to end — enquiry, scheduling, the visit, completion and invoicing — and agree on it as a team. Once that is consistent, decide which step causes the most repeated problems, and look for a tool that fixes that step specifically rather than replacing everything at once.',
   ),
 ]
+
+/* -------------------------------------------------------------------------- */
+/* Preventive maintenance guide (Sri Lanka)                                    */
+/* -------------------------------------------------------------------------- */
+
+export const PREVENTIVE_MAINTENANCE_ARTICLE: BlogBlock[] = [
+  p(
+    'Equipment rarely fails at a convenient time. An air conditioner stops on the hottest afternoon of the week, a CCTV recorder is found to have stopped recording only when footage is needed, and a solar inverter fault goes unnoticed for weeks. Each failure disrupts the customer, and each one pulls your technicians away from the work they had planned.',
+  ),
+  p(
+    'Preventive maintenance is the discipline that reduces these surprises. This guide explains what it is, how it differs from reactive maintenance, and how a service business in Sri Lanka can build a practical preventive maintenance schedule, a working checklist and the maintenance records to support both.',
+  ),
+  h2('What Is Preventive Maintenance?'),
+  p(
+    'Preventive maintenance is routine, planned work carried out on equipment before it fails, so that wear and faults are found during a scheduled visit instead of an emergency call. It is often called planned maintenance. The work itself is usually simple: inspect, clean, test, adjust and replace consumable parts.',
+  ),
+  p('There are two common ways to decide when that work happens:'),
+  ul(
+    'Time-based: a task is due at a fixed interval, such as every three months or once a year.',
+    'Usage- or condition-based: a task is due after a certain amount of running time, or when an inspection shows that something needs attention.',
+  ),
+  p(
+    'Most service businesses start with time-based planning, because it is easy to explain and easy to schedule. It is also what many service contracts, including AMCs (annual maintenance contracts), promise: a set number of planned visits a year.',
+  ),
+  h2('Why Preventive Maintenance Matters for Service Businesses'),
+  p(
+    'The benefits are practical rather than dramatic:',
+  ),
+  ul(
+    'Fewer emergency callouts, because problems are found early while the repair is still small and the part can be ordered in advance.',
+    'A more predictable workload, because planned visits can be scheduled in advance and spread across the week.',
+    'Steadier income from service contracts, as long as the visits you promised are actually delivered.',
+    'Cleaner maintenance records, which make warranty questions and repeat faults easier to answer, and let customers see the care they are paying for.',
+  ),
+  callout(
+    'Preventive maintenance lowers the chance of failure; it does not remove it. Say this plainly when you sell a service contract, so that customers expect fewer breakdowns, not none.',
+  ),
+  h2('Preventive Maintenance vs Reactive Maintenance'),
+  p(
+    'Reactive maintenance means fixing equipment after it has failed. Every service business does some of it, because some faults cannot be predicted. The problem starts when reactive work is the only kind of equipment maintenance a team does.',
+  ),
+  ul(
+    'Trigger: reactive work starts with a breakdown call; preventive work starts with a schedule.',
+    'Timing: reactive work is urgent and unpredictable; preventive work can be planned around the customer’s operating hours.',
+    'Customer experience: reactive work is judged on how fast you arrive; preventive work is judged on how rarely you are needed at short notice.',
+  ),
+  p(
+    'The aim is balance. Keep capacity free for genuine emergencies, and protect planned visits so urgent calls do not push them out week after week.',
+  ),
+  h2('How to Create a Preventive Maintenance Schedule'),
+  p(
+    'A preventive maintenance schedule needs to be complete, realistic and visible to the whole team. Work through these steps in order.',
+  ),
+  h3('1. List every piece of equipment you look after'),
+  p(
+    'Start with an equipment list. For each item, note the customer, site, equipment type, model, serial number, installation date and warranty or contract status. If you cannot say what you are maintaining, you cannot plan how often to maintain it.',
+  ),
+  h3('2. Decide the tasks and the frequency'),
+  p(
+    'For each equipment type, agree the tasks and how often they are due. Use the manufacturer’s guidance as the starting point and adjust with your own experience of the site. Do not copy a frequency from another business without checking that it suits the equipment and its environment.',
+  ),
+  h3('3. Prioritise by how much a failure would hurt'),
+  p(
+    'The cooling for a server room, the CCTV at a warehouse entrance or the refrigeration at a clinic deserves more attention than a spare office unit. Give critical equipment shorter intervals and earlier calendar slots.',
+  ),
+  h3('4. Turn the plan into dated visits'),
+  p(
+    'This is where plans most often stop. Convert each task into a dated visit with a technician, an expected duration and the parts to carry. Group visits by area to reduce travel, and check for public holidays and closures. Many sites slow down or close around the Sinhala and Tamil New Year in April, for example, so plan those visits early or move them.',
+  ),
+  h3('5. Confirm with the customer'),
+  p(
+    'Tell the customer a few days ahead, confirm access, and ask about any problems since the last visit. It saves wasted trips and gives you useful information before you arrive.',
+  ),
+  h3('6. Record the visit and review the schedule'),
+  p(
+    'After each visit, record what was checked, found and replaced, and what you recommend next. Review the schedule every few months: if a unit keeps failing between visits, its interval or task list needs to change.',
+  ),
+  h2('Preventive Maintenance Checklist for Service Teams'),
+  p(
+    'A preventive maintenance checklist keeps every visit to the same standard, whoever attends. Start with a general structure, then add equipment-specific steps.',
+  ),
+  h3('Before the visit'),
+  ul(
+    'Review the equipment record and the notes from the previous visit.',
+    'Confirm the appointment and site access with the customer.',
+    'Collect the parts, tools and safety equipment for the job.',
+  ),
+  h3('During the visit'),
+  ul(
+    'Inspect the equipment visually and note anything unusual.',
+    'Carry out the cleaning, testing and adjustment steps on the checklist.',
+    'Take before-and-after photos where they help to show the condition of the equipment.',
+    'Note anything that needs a quotation, such as a worn part or a recommended repair.',
+  ),
+  h3('After the visit'),
+  ul(
+    'Update the maintenance record and service history for the equipment.',
+    'Share a short service report with the customer and get their acknowledgement.',
+    'Schedule the next visit and any follow-up work.',
+  ),
+  h3('Examples of equipment-specific steps'),
+  p(
+    'These are starting points only. Always follow the manufacturer’s instructions and the safety rules that apply to the equipment and the site.',
+  ),
+  ul(
+    'Air conditioning: check and clean filters, inspect coils, clear the drain line, check electrical connections and review cooling performance. See [HVAC field service software](/solutions/hvac-field-service-software) for how this fits into a wider job workflow.',
+    'CCTV: clean lenses and housings, confirm each camera view, check that the recorder is actually recording, review storage health and inspect connectors and power supplies. See [CCTV software](/solutions/cctv-software) for how survey, installation and service records connect.',
+    'Solar: check panels for dirt and new shading, inspect mounting and cabling visually, review inverter alerts and logs, and leave electrical protection checks to suitably qualified staff. See [solar software](/solutions/solar-software) for after-sales service.',
+  ),
+  h2('Common Preventive Maintenance Planning Mistakes'),
+  ul(
+    'No equipment list, so some customers are visited often and others are forgotten.',
+    'The schedule lives in someone’s head or a chat thread. When that person is away, planned work stops.',
+    'Planned visits give way to emergencies every time, with no rule for rescheduling them.',
+    'Findings are written down but never followed up, so the same fault is recorded visit after visit.',
+    'Maintenance records are incomplete, which makes it hard to settle a warranty question or explain a repeat fault.',
+  ),
+  h2('How Software Can Support Preventive Maintenance'),
+  p(
+    'A well-kept spreadsheet can carry a small team a long way. Software helps once customers, technicians and sites outgrow what one person can hold in their head. Four areas matter most.',
+  ),
+  h3('Equipment records and service history'),
+  p(
+    'Planned visits depend on knowing what is installed and what has been done. [Asset management software](/features/asset-management-software) keeps each unit’s model, serial number, warranty and AMC status and complete service history in one place, with next-service dates showing what is coming up.',
+  ),
+  h3('Maintenance scheduling and job assignment'),
+  p(
+    'Maintenance scheduling means every planned visit becomes a job with a date, a technician and a status. With [work order management software](/features/work-order-management-software), each job can carry a checklist, the parts used, photos and a service report. For customers on service contracts, [warranty and AMC management software](/features/warranty-management-software) tracks scheduled visits and renewals alongside the contract.',
+  ),
+  h3('Checklists on the technician’s phone'),
+  p(
+    'A [field service app](/features/field-service-app) puts the day’s jobs, equipment details and checklist on the technician’s phone, so notes and photos are captured on site.',
+  ),
+  h3('Reports that show whether the plan is working'),
+  p(
+    '[Reporting software](/features/reporting-software) turns completed jobs into figures you can review, such as jobs done, technician productivity and AMC renewals, so you can see whether planned visits are actually being delivered.',
+  ),
+  h2('How Sri Lankan Service Businesses Can Improve Maintenance Planning'),
+  p(
+    'A few habits suit service businesses in Sri Lanka particularly well.',
+  ),
+  ul(
+    'Start small. Pick one equipment type, such as air conditioning at a few hotel, clinic or factory sites, and run a proper schedule for three months before widening it. Sites with many similar units suit a shared checklist.',
+    'Plan around the calendar. Schedule outdoor work, such as solar panel checks and outdoor CCTV inspections, with the monsoon periods in mind, and allow for public holidays when sites are closed.',
+    'Cluster visits by area. Travel time is a real cost when customers are spread across Colombo and other towns, so group planned visits geographically.',
+    'Pay attention to the environment. Humid or coastal sites can be harder on equipment, so ask whether the intervals and cleaning steps for those sites need to be tighter.',
+    'Measure a few numbers. Track planned visits completed against planned visits due, repeat visits for the same fault, and emergency callouts from contract customers.',
+  ),
+  p(
+    'Related reading: [HVAC technician management and AMC renewals](/blog/hvac-technician-management-amc-renewals), [CCTV AMC format and management](/blog/cctv-amc-format-installation-service-renewals) and [solar installation project management](/blog/solar-installation-project-management).',
+  ),
+  h2('Putting Preventive Maintenance Into Practice'),
+  p(
+    'Preventive maintenance works when you know what equipment you are responsible for, planned visits sit on a calendar with a named technician, and every visit leaves a record. Start with the equipment list and one checklist, then build the schedule around them.',
+  ),
+  p(
+    'If you want to see how scheduled visits, checklists, service history and reports can sit together for your own team, [book a demo](/demo) and we will walk through it using the equipment you look after.',
+  ),
+]
