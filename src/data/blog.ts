@@ -1,5 +1,5 @@
-import { AirVent, BarChart3, Briefcase, Cctv, ClipboardList, Compass, HardHat, Package, ReceiptText, Route, SunMedium, Users, Wrench, type LucideIcon } from 'lucide-react'
-import { CCTV_ARTICLE, CONSTRUCTION_ARTICLE, HVAC_ARTICLE, SERVICE_BUSINESS_ARTICLE, SOLAR_ARTICLE, PREVENTIVE_MAINTENANCE_ARTICLE, WHAT_IS_FSM_ARTICLE } from './blogArticles'
+import { AirVent, BarChart3, Briefcase, Cctv, ClipboardList, Compass, HardHat, Navigation, Package, ReceiptText, Route, SunMedium, Users, Wrench, type LucideIcon } from 'lucide-react'
+import { CCTV_ARTICLE, CONSTRUCTION_ARTICLE, HVAC_ARTICLE, SERVICE_BUSINESS_ARTICLE, SOLAR_ARTICLE, DISPATCH_SOFTWARE_ARTICLE, PREVENTIVE_MAINTENANCE_ARTICLE, WHAT_IS_FSM_ARTICLE } from './blogArticles'
 
 /**
  * Blog content model.
@@ -42,6 +42,7 @@ export type BlogBlock =
   | { type: 'h3'; text: string }
   | { type: 'ul'; items: string[] }
   | { type: 'callout'; text: string }
+  | { type: 'table'; caption: string; head: string[]; rows: string[][] }
 
 export interface BlogPost {
   slug: string
@@ -207,6 +208,25 @@ export const BLOG_POSTS: BlogPost[] = [
     primaryKeyword: 'preventive maintenance',
     supports: '/features/warranty-management-software',
     body: PREVENTIVE_MAINTENANCE_ARTICLE,
+  },
+  {
+    slug: 'field-service-dispatch-software-malaysia',
+    title: 'How Field Service Dispatch Software Helps Malaysian Businesses Improve Service Efficiency',
+    seoTitle: 'Field Service Dispatch Software for Malaysian Businesses',
+    seoDescription:
+      'Field service dispatch software helps Malaysian teams assign jobs faster, schedule technicians and track progress. See how it works and what to look for.',
+    excerpt:
+      'How dispatch software helps Malaysian AC, CCTV, solar and maintenance teams assign jobs, schedule technicians and see job status, plus what to look for when choosing one.',
+    category: 'Field Service',
+    readMinutes: 8,
+    status: 'published',
+    icon: Navigation,
+    accent: 'brand',
+    publishedAt: '2026-10-22',
+    author: 'FSMFlow Team',
+    primaryKeyword: 'field service dispatch software',
+    supports: '/features/work-order-management-software',
+    body: DISPATCH_SOFTWARE_ARTICLE,
   },
   {
     slug: 'run-amc-renewals-without-spreadsheets',

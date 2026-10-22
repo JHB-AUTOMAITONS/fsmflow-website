@@ -945,3 +945,145 @@ export const PREVENTIVE_MAINTENANCE_ARTICLE: BlogBlock[] = [
     'If you want to see how scheduled visits, checklists, service history and reports can sit together for your own team, [book a demo](/demo) and we will walk through it using the equipment you look after.',
   ),
 ]
+
+/* -------------------------------------------------------------------------- */
+/* Field service dispatch software (Malaysia)                                  */
+/* -------------------------------------------------------------------------- */
+
+export const DISPATCH_SOFTWARE_ARTICLE: BlogBlock[] = [
+  p(
+    'Field service dispatch software helps a service business decide which technician goes to which job, and then keeps that decision visible until the work is finished. For Malaysian companies sending technicians between homes, shops, offices and industrial sites, that decision is made many times a week, often through phone calls, chat groups or memory.',
+  ),
+  p(
+    'The cost shows up in familiar ways. The nearest technician is not the one who gets the job, two visits clash, a customer waits for an arrival nobody confirmed, and the office cannot say where a job stands. This article explains what dispatch software does, how it improves service efficiency, which features matter, and how to choose one for an AC, CCTV, solar or maintenance team.',
+  ),
+  h2('What Is Field Service Dispatch Software?'),
+  p(
+    'Field service dispatch software, sometimes called service dispatch software, is a tool for assigning jobs to technicians who work at customer locations and tracking those jobs until completion. At its core it combines a queue of jobs, a view of who is available and what they are skilled at, and status updates sent back from the field.',
+  ),
+  p(
+    'People often use three terms as if they meant the same thing. They do not, and the difference helps you decide what you actually need.',
+  ),
+  {
+    type: 'table',
+    caption: 'Dispatch management compared with technician scheduling and field service management',
+    head: ['Term', 'The question it answers', 'Example'],
+    rows: [
+      ['Dispatch management', 'Who should take this job right now?', 'A breakdown call arrives at 11 am and you reassign the nearest qualified technician.'],
+      ['Technician scheduling', 'Who is booked where over the coming days and weeks?', 'A quarterly servicing round for a set of customers is planned across the month.'],
+      ['Field service management', 'How does the whole service business run, from enquiry to payment?', 'Quotations, jobs, equipment records, AMC contracts, parts and reports in one system.'],
+    ],
+  },
+  p(
+    'Dispatch and scheduling are parts of the wider practice, which our guide to [what field service management is](/blog/what-is-field-service-management) covers. This article stays with the dispatch end: allocating technicians and following jobs through the day.',
+  ),
+  h2('Why Malaysian Service Businesses Need Better Dispatch Management'),
+  p(
+    'Service teams in Malaysia often cover a spread of customers: condominiums and shop lots in one part of a city, factories in another, and sites in nearby towns. In dense urban areas such as the Klang Valley, a short distance on a map can still be a long drive, so the order of visits matters. Demand also arrives in bursts, for example when customers want servicing finished before a festive holiday, or when heavy rain forces outdoor work to be moved.',
+  ),
+  p('Without a shared system, the same problems repeat:'),
+  ul(
+    'Technician allocation depends on whoever the dispatcher remembers is free.',
+    'Two jobs are booked for the same technician at the same time.',
+    'A job sits unassigned for hours because the message was missed.',
+    'Technicians criss-cross the city because visits are not grouped by area.',
+    'Customers miss or lose confidence in appointments when nobody confirms the arrival.',
+    'The office cannot answer “where is my technician?” without making a call.',
+  ),
+  p(
+    'Picture an AC servicing company with a dozen technicians. A customer in Petaling Jaya reports a faulty unit at 10 am. The dispatcher phones three technicians to find out who is nearby and free, and by the time the job is assigned the customer has called twice. Better dispatch management shortens exactly this loop.',
+  ),
+  h2('How Field Service Dispatch Software Improves Service Efficiency'),
+  p(
+    'Dispatch software does not make technicians work faster. It removes the waiting and searching around the work.',
+  ),
+  h3('Faster Job Assignment'),
+  p(
+    'The job is entered once, with the customer, site and problem. The dispatcher can then see who is free and who has the right skills, assign the job, and the technician receives it on their phone straight away. In FSMFlow this assignment step is part of [work order management](/features/work-order-management-software).',
+  ),
+  h3('Better Technician Scheduling'),
+  p(
+    'Good scheduling uses real information about each person: their skills, service area, leave and current workload. When those sit in one place, a VRF fault can go to the VRF engineer and an installation to the installation lead, and visits in the same area can be grouped to cut travel. FSMFlow keeps these details in its [technician scheduling and workload tools](/features/employee-management-software).',
+  ),
+  h3('Improved Job Tracking and Visibility'),
+  p(
+    'Field service job tracking means every job has a status that is true. In FSMFlow, jobs move through assigned, en route, in progress and completed as the technician updates them, and the office can see who is on a job, who is travelling and who is free. That replaces the status calls that interrupt everybody’s day.',
+  ),
+  h3('Fewer Scheduling Conflicts and Delays'),
+  p(
+    'When the whole team works from one shared schedule, double bookings become visible before they happen. If an urgent job arrives, the dispatcher can see which visit to move and tell the customer, instead of finding out about the clash when someone fails to turn up.',
+  ),
+  h3('Better Customer Communication'),
+  p(
+    'Customers mostly want to know when someone is coming and what was done. When the office has an accurate status, staff can answer honestly. Technicians can also call the customer from the job screen, and at the end of the visit the customer signs on the phone and a service report is generated from the checklist, parts and photos. This article does not claim automatic customer notifications, which should be confirmed in a demo.',
+  ),
+  h2('Industries in Malaysia That Can Benefit from Dispatch Software'),
+  h3('AC and HVAC Service Providers'),
+  p(
+    'AC companies juggle urgent breakdown calls with planned servicing, and the two compete for the same technicians. Matching the job to the skill (split unit, VRF or chiller) prevents repeat visits. For more on running the team side, see our guide to [HVAC technician management](/blog/hvac-technician-management-amc-renewals) and the [HVAC field service software](/solutions/hvac-field-service-software) page.',
+  ),
+  h3('CCTV Installation and Maintenance Companies'),
+  p(
+    'CCTV businesses run installation crews and maintenance visits at the same time. Dispatch software helps assign crews, keep service visits on the calendar and record what was done at each site. See [CCTV software](/solutions/cctv-software).',
+  ),
+  h3('Solar Service Businesses'),
+  p(
+    'Solar companies manage installation projects and after-sales service visits. Outdoor work depends on the weather, so being able to see the schedule and move a visit quickly matters. The [solar software](/solutions/solar-software) page explains how leads, installation and service connect.',
+  ),
+  h3('Construction and Maintenance Teams'),
+  p(
+    'Contractors and building maintenance teams run several crews across several sites. A shared view of who is where reduces calls between the office and the site. See [construction management software](/solutions/construction-management-software).',
+  ),
+  h2('Key Features to Look for in Field Service Dispatch Software'),
+  p('Test any product against these points rather than a long feature list:'),
+  ul(
+    'A single job queue, so new jobs and unassigned work are easy to see.',
+    'Technician profiles with skills, service areas and availability, so allocation is not guesswork.',
+    'A mobile app that technicians can use easily, with job details, directions and status updates.',
+    'A live view of who is free, travelling or on a job.',
+    'Job history tied to the customer and the equipment, so the technician arrives informed.',
+    'Reports on jobs completed and technician workload, so you can see whether dispatch is improving. FSMFlow’s [reporting software](/features/reporting-software) covers jobs, revenue and technician productivity.',
+  ),
+  h2('How to Choose the Right Dispatch Software for Your Business'),
+  p(
+    'Start with your own workflow, not a vendor’s demo: write down how a job moves from first call to completion and mark the two places it most often goes wrong. Then:',
+  ),
+  ul(
+    'Run a trial with a real week of your own jobs, customers and technicians.',
+    'Ask the dispatcher and two or three technicians to try it and give honest feedback.',
+    'Check how the app behaves on a typical phone and on a weak mobile signal, such as inside a basement car park or plant room.',
+    'Ask for clear pricing, what support is included, and how pricing changes as your team grows.',
+    'Begin with one team or service line, then expand once it is working.',
+  ),
+  h2('How FSMFlow Can Help Manage Field Service Operations'),
+  p(
+    'FSMFlow is field service management software built around the daily work of service teams. For dispatch, that means creating and assigning jobs by technician skill and availability, sending them to the technician’s phone, following status from assigned to completed, and keeping checklists, photos, parts and customer sign-off on the job. The [field service app](/features/field-service-app) is where technicians see and update that work, and the [service business management software](/solutions/service-business-management-software) page shows how it fits a general service team.',
+  ),
+  p(
+    'If you need anything specific to Malaysia, such as local tax invoicing or payment methods, ask about it during a demo; this article does not claim such features.',
+  ),
+  h2('Frequently Asked Questions'),
+  h3('What is field service dispatch software?'),
+  p(
+    'It is software that helps a service business assign jobs to technicians, schedule their visits and follow each job until completion. It usually includes a view of availability and skills and a mobile app for technicians.',
+  ),
+  h3('What is the difference between dispatch and technician scheduling?'),
+  p(
+    'Dispatch decides who takes a job now, often at short notice. Technician scheduling plans who is booked when over days or weeks. Most teams need both, and good software connects them.',
+  ),
+  h3('Do small service teams need dispatch software?'),
+  p(
+    'Not always. A small team can manage with a shared calendar and clear habits. Software starts to help when jobs, technicians and sites outgrow what one person can track, or when missed appointments and double bookings become regular.',
+  ),
+  h3('Can dispatch software work for AC, CCTV and solar companies?'),
+  p(
+    'Yes, because the core workflow is the same: take the job, assign the right person, track progress and record the result. The checklists, equipment and visit types differ by trade.',
+  ),
+  h2('Conclusion'),
+  p(
+    'Field service dispatch software gives Malaysian service teams a shared, accurate picture of jobs and technicians, which means faster assignment, fewer clashes and clearer answers for customers. Start by mapping how your own jobs are dispatched today, fix the biggest gap first, and judge any tool by how well your team can use it.',
+  ),
+  p(
+    'To see how job assignment, technician scheduling and live job status work together, [book a demo](/demo) and bring a typical week of jobs.',
+  ),
+]

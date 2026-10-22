@@ -81,6 +81,38 @@ function Block({ block }: { block: BlogBlock }) {
           ))}
         </ul>
       )
+    case 'table':
+      return (
+        <div className="my-8 overflow-x-auto rounded-2xl ring-1 ring-ink-900/[0.08]" role="region" aria-label={block.caption} tabIndex={0}>
+          <table>
+            <caption className="sr-only">{block.caption}</caption>
+            <thead>
+              <tr>
+                {block.head.map((h) => (
+                  <th key={h} scope="col">
+                    {h}
+                  </th>
+                ))}
+              </tr>
+            </thead>
+            <tbody>
+              {block.rows.map((row) => (
+                <tr key={row[0]}>
+                  {row.map((cell, i) =>
+                    i === 0 ? (
+                      <th key={cell} scope="row">
+                        {cell}
+                      </th>
+                    ) : (
+                      <td key={cell}>{cell}</td>
+                    ),
+                  )}
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+      )
     case 'callout':
       return (
         <div role="note" className="my-8 flex gap-4 rounded-[22px] bg-brand-50 p-5 ring-1 ring-brand-100 sm:p-6">
