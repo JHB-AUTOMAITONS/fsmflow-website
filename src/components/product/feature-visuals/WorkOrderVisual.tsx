@@ -10,10 +10,10 @@ import type { FeatureVisualProps } from './types'
 
 const JOB = JOBS[1] // JOB-1027 · AC Repair · Metro Café, T. Nagar · Arun Selvam
 
-const LIFECYCLE = [
-  { label: 'Created', meta: '08:10 · by Priya', state: 'done' },
-  { label: 'Assigned', meta: '08:25 · Arun Selvam', state: 'done' },
-  { label: 'En route', meta: '10:50 · 2.4 km', state: 'done' },
+const lifecycle = (neutral: boolean) => [
+  { label: 'Created', meta: neutral ? '08:10 · by dispatcher' : '08:10 · by Priya', state: 'done' },
+  { label: 'Assigned', meta: neutral ? '08:25 · Technician A' : '08:25 · Arun Selvam', state: 'done' },
+  { label: 'En route', meta: neutral ? '10:50' : '10:50 · 2.4 km', state: 'done' },
   { label: 'In progress', meta: 'Started 11:32', state: 'current' },
   { label: 'Completed', meta: 'Checklist + report', state: 'todo' },
   { label: 'Invoiced', meta: 'From the quotation', state: 'todo' },
@@ -29,14 +29,19 @@ const CHECKLIST: [string, boolean][] = [
 ]
 
 /** Work order detail: lifecycle timeline, SLA and priority, assigned technician, checklist and parts. */
-export function WorkOrderVisual({ className, compact }: FeatureVisualProps) {
+export function WorkOrderVisual({ className, compact, neutral = false }: FeatureVisualProps & { neutral?: boolean }) {
+  const LIFECYCLE = lifecycle(neutral)
   const steps = compact ? LIFECYCLE.slice(1, 5) : LIFECYCLE
+  const customer = neutral ? 'Sample Café' : JOB.customer
+  const area = neutral ? 'Sample district' : JOB.area
+  const techName = neutral ? 'Technician A' : 'Arun Selvam'
+  const techInitials = neutral ? 'TA' : 'AS'
   const done = CHECKLIST.filter(([, d]) => d).length
   return (
     <VisualRoot className={className}>
       <ProductWindow
         title={`Work order ${JOB.id}`}
-        subtitle={`${JOB.customer} · ${JOB.area}`}
+        subtitle={`${customer} · ${area}`}
         icon={ClipboardCheck}
         actions={<StatusPill status="in-progress" />}
         label="FSMFlow work order for an AC repair showing high priority, an SLA countdown, a lifecycle timeline from created to invoiced, the assigned technician, a service checklist, parts used and photos"
@@ -88,11 +93,11 @@ export function WorkOrderVisual({ className, compact }: FeatureVisualProps) {
             {!compact && (
               <div className="min-w-0 space-y-3">
                 <div className="flex items-center gap-3 rounded-2xl bg-white p-3 ring-1 ring-ink-900/[0.08]">
-                  <Avatar initials="AS" tone="aqua" size="md" />
+                  <Avatar initials={techInitials} tone="aqua" size="md" />
                   <div className="min-w-0 flex-1">
-                    <p className="text-[12.5px] leading-tight font-semibold text-ink-900">Arun Selvam</p>
+                    <p className="text-[12.5px] leading-tight font-semibold text-ink-900">{techName}</p>
                     <p className="mt-0.5 flex items-center gap-1 truncate text-[11px] text-ink-500">
-                      <MapPin className="size-3 shrink-0 text-ink-500" aria-hidden="true" /> T. Nagar · AC technician
+                      <MapPin className="size-3 shrink-0 text-ink-500" aria-hidden="true" /> {area} · AC technician
                     </p>
                   </div>
                   <span className="flex size-8 shrink-0 items-center justify-center rounded-full bg-mint-50 text-mint-600">
@@ -152,7 +157,7 @@ export function WorkOrderVisual({ className, compact }: FeatureVisualProps) {
               <MapPin className="size-4" aria-hidden="true" />
             </span>
             <div className="min-w-0">
-              <p className="text-[12px] leading-tight font-semibold text-ink-900">Arun arrived on site</p>
+              <p className="text-[12px] leading-tight font-semibold text-ink-900">{neutral ? 'Technician on site' : 'Arun arrived on site'}</p>
               <p className="mt-0.5 font-mono text-[10.5px] text-ink-500">11:32 · status updated</p>
             </div>
           </div>

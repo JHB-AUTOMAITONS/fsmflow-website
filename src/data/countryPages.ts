@@ -115,7 +115,7 @@ const malaysia: CountryContent = {
       { solution: 'solar-software', text: 'Leads, installations and after-sales service for solar installation companies.' },
       { solution: 'construction-management-software', text: 'Site crews, equipment maintenance and client follow-ups for contractors.' },
     ],
-    other: 'Other maintenance and facility service teams can start from the general service business management software page.',
+    other: 'Other maintenance and facility service teams can use the same workflow.',
   },
   benefits: {
     title: 'What a more organised service operation gives you',
@@ -192,7 +192,7 @@ const sriLanka: CountryContent = {
       { solution: 'solar-software', text: 'Installation projects and after-sales servicing for solar companies.' },
       { solution: 'construction-management-software', text: 'Equipment maintenance and site work for contractors.' },
     ],
-    other: 'Other service businesses can use the service business management software page as a starting point.',
+    other: 'Other service businesses can use the same workflow.',
   },
   benefits: {
     title: 'What better service records and planning give you',
@@ -269,7 +269,7 @@ const singapore: CountryContent = {
       { solution: 'solar-software', text: 'Installation projects and after-sales visits for solar providers.' },
       { solution: 'construction-management-software', text: 'Crews, equipment maintenance and client updates for contractors.' },
     ],
-    other: 'Facilities and general maintenance teams can start with the service business management software page.',
+    other: 'Facilities and general maintenance teams can use the same workflow.',
   },
   benefits: {
     title: 'What visibility changes day to day',
@@ -346,7 +346,7 @@ const southAfrica: CountryContent = {
       { solution: 'solar-software', text: 'Solar installation projects and after-sales service.' },
       { solution: 'construction-management-software', text: 'Site crews, materials and equipment maintenance for contractors.' },
     ],
-    other: 'Other multi-site service providers can start from the service business management software page.',
+    other: 'Other multi-site service providers can use the same workflow.',
   },
   benefits: {
     title: 'What a shared view gives distributed teams',
@@ -423,7 +423,7 @@ const nigeria: CountryContent = {
       { solution: 'solar-software', text: 'Solar installation projects and after-sales service.' },
       { solution: 'construction-management-software', text: 'Site work, crews and client follow-ups for contractors.' },
     ],
-    other: 'Appliance repair, electrical, plumbing and other maintenance teams can start from the service business management software page.',
+    other: 'Appliance repair, electrical, plumbing and other maintenance teams can use the same workflow.',
   },
   benefits: {
     title: 'What organised coordination changes',

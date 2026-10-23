@@ -20,6 +20,7 @@ import { COUNTRIES, getCountryByPath } from '@/data/countries'
 import { COUNTRY_PAGES } from '@/data/countryPages'
 import { getFeature } from '@/data/features'
 import { getSolution } from '@/data/solutions'
+import { cn } from '@/lib/cn'
 import { breadcrumbSchema, faqSchema, softwareSchema, webPageSchema } from '@/lib/schema'
 
 /**
@@ -108,12 +109,20 @@ export default function CountryPage() {
           <Reveal>
             <SectionTitle id="help-heading" accent="brand" eyebrow="How FSMFlow helps" title={content.help.title} lead={content.help.lead} />
           </Reveal>
-          <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+          <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-6">
             {content.help.items.map((item, i) => {
+              const n = content.help.items.length
               const feature = getFeature(item.feature)
               if (!feature) return null
               return (
-                <Reveal key={item.title} delay={i * 60}>
+                <Reveal
+                  key={item.title}
+                  delay={i * 60}
+                  className={cn(
+                    n % 2 === 1 && i === n - 1 && 'md:col-span-2',
+                    n % 3 === 2 && i >= n - 2 ? 'lg:col-span-3' : 'lg:col-span-2',
+                  )}
+                >
                   <Bezel className="h-full" coreClassName="flex h-full flex-col p-5 md:p-6">
                     <IconTile icon={feature.icon} tone="brand" size="lg" />
                     <h3 className="mt-5 text-[1.125rem] font-semibold tracking-[-0.02em] text-ink-900">{item.title}</h3>
@@ -158,7 +167,7 @@ export default function CountryPage() {
           <p className="mt-8 max-w-3xl text-[1.0625rem] leading-relaxed text-ink-600">
             {content.industries.other}{' '}
             <Link to="/solutions/service-business-management-software" className="font-semibold text-brand-600 hover:text-brand-800">
-              Service business management software
+              See service business management software
             </Link>
             .
           </p>
@@ -194,7 +203,7 @@ export default function CountryPage() {
           </Reveal>
           <StageFlow className="mt-14" stages={content.workflow.stages} variant="line" nodes="icon" accent="brand" />
           <Reveal className="mx-auto mt-14 max-w-4xl">
-            <WorkOrderVisual />
+            <WorkOrderVisual neutral />
             <p className="mt-4 text-center text-[11px] text-ink-500">Illustrative product visual · sample data</p>
           </Reveal>
         </Container>
