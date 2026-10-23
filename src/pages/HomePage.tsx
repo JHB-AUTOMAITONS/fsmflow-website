@@ -3,6 +3,7 @@ import { CtaBand } from '@/components/ui/CtaBand'
 import { SITE } from '@/data/site'
 import { faqSchema, organizationSchema, softwareSchema, webPageSchema, websiteSchema } from '@/lib/schema'
 import { BeforeAfter } from '@/sections/home/BeforeAfter'
+import { CountriesSection } from '@/sections/home/CountriesSection'
 import { FeaturesSection } from '@/sections/home/FeaturesSection'
 import { Hero } from '@/sections/home/Hero'
 import { HOME_FAQS, HomeFaq } from '@/sections/home/HomeFaq'
@@ -37,6 +38,7 @@ export default function HomePage() {
       <FeaturesSection />
       <SolutionsSection />
       <BeforeAfter />
+      <CountriesSection />
       <HomeFaq />
       <CtaBand
         title="See FSMFlow run your service business"

@@ -2,6 +2,7 @@ import type { ComponentType } from 'react'
 import AboutPage from '@/pages/AboutPage'
 import BlogPage from '@/pages/BlogPage'
 import BlogPostPage from '@/pages/BlogPostPage'
+import CountryPage from '@/pages/CountryPage'
 import ContactPage from '@/pages/ContactPage'
 import DemoPage from '@/pages/DemoPage'
 import FeaturePage from '@/pages/FeaturePage'
@@ -27,6 +28,7 @@ const components: Record<PageFile, ComponentType> = {
   'src/pages/HvacSolutionPage.tsx': HvacSolutionPage,
   'src/pages/SolutionPage.tsx': SolutionPage,
   'src/pages/FeaturePage.tsx': FeaturePage,
+  'src/pages/CountryPage.tsx': CountryPage,
   'src/pages/PricingPage.tsx': PricingPage,
   'src/pages/BlogPage.tsx': BlogPage,
   'src/pages/BlogPostPage.tsx': BlogPostPage,

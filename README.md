@@ -8,7 +8,7 @@ Built with **React 19 · TypeScript · Vite · Tailwind CSS v4 · react-router �
 hydrates into a fast single-page app.
 
 The site structure, URLs, navigation and SEO rules come from `FSM.docx` (extracted copy:
-[`docs/FSM-extracted.txt`](docs/FSM-extracted.txt)). **23 approved pages — no more, no fewer.**
+[`docs/FSM-extracted.txt`](docs/FSM-extracted.txt)). **23 approved pages plus 5 country landing pages (28 static pages; blog posts add more).** The country pages were added after FSM.docx, by request.
 
 ## Commands
 
@@ -41,11 +41,16 @@ The site structure, URLs, navigation and SEO rules come from `FSM.docx` (extract
 /features/field-service-app                    │
 /features/employee-management-software         │
 /features/reporting-software                   ┘
+/field-service-management-software-malaysia    ┐
+/field-service-management-software-sri-lanka   │ country landing pages
+/field-service-management-software-singapore   │ (src/pages/CountryPage.tsx,
+/field-service-management-software-south-africa│  src/data/countries.ts + countryPages.ts)
+/field-service-management-software-nigeria     ┘
 /pricing  /blog  /demo  /about  /contact
 /privacy-policy  /terms-and-conditions  /refund-policy
 ```
 
-Header: `Home | Solutions ▼ | Features ▼ | Pricing | Blog | Book a Demo` — **no Login link**. There are intentionally
+Header: `Home | Solutions ▼ | Features ▼ | Countries ▼ | Pricing | Blog | Book a Demo` — **no Login link**. There are intentionally
 no `/solutions` or `/features` index pages (they are dropdowns only), and no Guides, Free Templates, public
 Settings or standalone "Field Service Management" page, as the document specifies.
 

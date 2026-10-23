@@ -25,6 +25,7 @@ const routeSet = new Set(routes)
 const keywordByPath = new Map()
 for (const s of server.SOLUTIONS) keywordByPath.set(s.path, { keyword: s.primaryKeyword, h1: s.h1 })
 for (const f of server.FEATURES) keywordByPath.set(f.path, { keyword: f.primaryKeyword, h1: f.h1 })
+for (const c of server.COUNTRIES) keywordByPath.set(c.path, { keyword: c.primaryKeyword, h1: c.h1, inKeyword: c.primaryKeyword.replace('field service management software', 'field service management software in') })
 keywordByPath.set('/', { keyword: 'field service management software', h1: null })
 
 const FORBIDDEN = ['/login', '/guides', '/free-templates', '/templates', '/settings', '/field-service-management', '/solutions', '/features']
@@ -105,12 +106,12 @@ for (const route of routes) {
     if (!norm(title).includes(norm(kw.keyword)) && !(route === '/' && norm(title).includes('field service management software'))) {
       err(`title "${title}" does not include the primary keyword "${kw.keyword}"`)
     }
-    if (!norm(description).includes(norm(kw.keyword))) err(`meta description does not include "${kw.keyword}"`)
+    if (!norm(description).includes(norm(kw.keyword)) && !(kw.inKeyword && norm(description).includes(norm(kw.inKeyword)))) err(`meta description does not include "${kw.keyword}"`)
     const mainText = norm(strip(body))
     // opening content: keyword within the first ~900 chars of main content
     const mainStart = body.indexOf('<main')
     const opening = norm(strip(body.slice(mainStart, mainStart + 9000))).slice(0, 1400)
-    if (!opening.includes(norm(kw.keyword))) err(`primary keyword missing from the opening content`)
+    if (!opening.includes(norm(kw.keyword)) && !(kw.inKeyword && opening.includes(norm(kw.inKeyword)))) err(`primary keyword missing from the opening content`)
     const count = mainText.split(norm(kw.keyword)).length - 1
     if (count > 25) warn(`primary keyword appears ${count} times — check for stuffing`)
     const h2WithKw = headings.some((h) => h.level >= 2 && h.level <= 3 && norm(h.text).includes(norm(kw.keyword).split(' ').slice(0, 2).join(' ')))
@@ -165,6 +166,7 @@ const expected = [
   '/', '/pricing', '/blog', '/demo', '/about', '/contact', '/privacy-policy', '/terms-and-conditions', '/refund-policy',
   ...server.SOLUTIONS.map((s) => s.path),
   ...server.FEATURES.map((f) => f.path),
+  ...server.COUNTRIES.map((c) => c.path),
 ]
 for (const e of expected) if (!routeSet.has(e)) errors.push(`approved page missing from build: ${e}`)
 for (const r of routes) {

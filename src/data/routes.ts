@@ -1,4 +1,5 @@
 import { PUBLISHED_POSTS } from './blog'
+import { COUNTRIES } from './countries'
 import { FEATURES } from './features'
 import { SOLUTIONS } from './solutions'
 
@@ -18,6 +19,7 @@ export const STATIC_ROUTES: RouteEntry[] = [
   { path: '/', priority: 1, changefreq: 'weekly' },
   ...SOLUTIONS.map((s, i) => ({ path: s.path, priority: i === 0 ? 0.95 : 0.8, changefreq: 'monthly' as const })),
   ...FEATURES.map((f) => ({ path: f.path, priority: 0.8, changefreq: 'monthly' as const })),
+  ...COUNTRIES.map((c) => ({ path: c.path, priority: 0.8, changefreq: 'monthly' as const })),
   { path: '/pricing', priority: 0.9, changefreq: 'monthly' },
   { path: '/blog', priority: 0.7, changefreq: 'weekly' },
   { path: '/demo', priority: 0.9, changefreq: 'yearly' },

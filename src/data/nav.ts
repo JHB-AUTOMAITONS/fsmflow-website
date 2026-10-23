@@ -1,3 +1,4 @@
+import { COUNTRIES } from './countries'
 import { FEATURES, getFeature } from './features'
 import { SOLUTIONS } from './solutions'
 
@@ -8,12 +9,13 @@ import { SOLUTIONS } from './solutions'
  */
 export type NavItem =
   | { kind: 'link'; label: string; href: string }
-  | { kind: 'menu'; label: string; menu: 'solutions' | 'features' }
+  | { kind: 'menu'; label: string; menu: 'solutions' | 'features' | 'countries' }
 
 export const PRIMARY_NAV: NavItem[] = [
   { kind: 'link', label: 'Home', href: '/' },
   { kind: 'menu', label: 'Solutions', menu: 'solutions' },
   { kind: 'menu', label: 'Features', menu: 'features' },
+  { kind: 'menu', label: 'Countries', menu: 'countries' },
   { kind: 'link', label: 'Pricing', href: '/pricing' },
   { kind: 'link', label: 'Blog', href: '/blog' },
 ]
@@ -51,6 +53,10 @@ export const FOOTER_COLUMNS: FooterColumn[] = [
       footerFeature('field-service-app'),
       footerFeature('reporting-software'),
     ],
+  },
+  {
+    title: 'Countries',
+    links: COUNTRIES.map((c) => ({ label: c.name, href: c.path })),
   },
   {
     title: 'Company',

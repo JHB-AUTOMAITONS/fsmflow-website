@@ -3,6 +3,7 @@ import { StaticRouter } from 'react-router'
 import { matchPage } from '@/routes'
 import App from './App'
 import { SeoCollectorContext, type SeoCollector } from './components/seo/Seo'
+import { COUNTRIES } from './data/countries'
 import { FEATURES } from './data/features'
 import { BLOG_POSTS } from './data/blog'
 import { getAllRoutes } from './data/routes'
@@ -34,4 +35,4 @@ export async function render(url: string): Promise<RenderResult> {
 }
 
 // Re-exported for the prerender / audit scripts.
-export { buildHead, headToHtml, getAllRoutes, BLOG_POSTS, FEATURES, SOLUTIONS }
+export { buildHead, headToHtml, getAllRoutes, BLOG_POSTS, COUNTRIES, FEATURES, SOLUTIONS }

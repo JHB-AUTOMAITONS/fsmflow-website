@@ -3,6 +3,7 @@ import { useEffect, useRef, useState, type CSSProperties } from 'react'
 import { Link } from 'react-router'
 import { ButtonLink } from '@/components/ui/Button'
 import { IconTile } from '@/components/ui/IconTile'
+import { COUNTRIES } from '@/data/countries'
 import { FEATURES } from '@/data/features'
 import { HEADER_CTA } from '@/data/nav'
 import { SOLUTIONS } from '@/data/solutions'
@@ -21,7 +22,7 @@ const stagger = (i: number): CSSProperties => ({ '--i': i }) as CSSProperties
  * with visibility + `inert` while closed. Items rise in with a staggered delay.
  */
 export function MobileMenu({ id, open, onClose }: Props) {
-  const [section, setSection] = useState<'solutions' | 'features' | null>('solutions')
+  const [section, setSection] = useState<'solutions' | 'features' | 'countries' | null>('solutions')
   const panelRef = useRef<HTMLDivElement>(null)
 
   // Lock page scroll while open; close on Escape.
@@ -116,18 +117,50 @@ export function MobileMenu({ id, open, onClose }: Props) {
           })}
 
           <li className={item} style={stagger(3)}>
+            <button
+              type="button"
+              aria-expanded={section === 'countries'}
+              aria-controls={`${id}-countries`}
+              onClick={() => setSection(section === 'countries' ? null : 'countries')}
+              className="flex w-full items-center justify-between py-4 font-display text-2xl font-semibold tracking-[-0.02em] text-ink-900"
+            >
+              Countries
+              <ChevronDown
+                className={cn('size-5 text-ink-500 transition-transform duration-500 ease-premium', section === 'countries' && 'rotate-180 text-brand-600')}
+                aria-hidden="true"
+              />
+            </button>
+            <div
+              id={`${id}-countries`}
+              inert={section !== 'countries'}
+              className={cn('grid transition-[grid-template-rows] duration-500 ease-premium', section === 'countries' ? 'grid-rows-[1fr]' : 'grid-rows-[0fr]')}
+            >
+              <ul className="overflow-hidden">
+                {COUNTRIES.map((c) => (
+                  <li key={c.slug}>
+                    <Link to={c.path} onClick={onClose} className="flex items-center rounded-2xl px-1 py-2.5 active:bg-brand-50">
+                      <span className="text-[1.0625rem] font-medium text-ink-800">{c.name}</span>
+                    </Link>
+                  </li>
+                ))}
+                <li className="h-3" aria-hidden="true" />
+              </ul>
+            </div>
+          </li>
+
+          <li className={item} style={stagger(4)}>
             <Link to="/pricing" onClick={onClose} className="flex items-center py-4 font-display text-2xl font-semibold tracking-[-0.02em] text-ink-900">
               Pricing
             </Link>
           </li>
-          <li className={item} style={stagger(4)}>
+          <li className={item} style={stagger(5)}>
             <Link to="/blog" onClick={onClose} className="flex items-center py-4 font-display text-2xl font-semibold tracking-[-0.02em] text-ink-900">
               Blog
             </Link>
           </li>
         </ul>
 
-        <div className={cn('mt-auto pt-8', item)} style={stagger(5)}>
+        <div className={cn('mt-auto pt-8', item)} style={stagger(6)}>
           <ButtonLink href={HEADER_CTA.href} size="lg" className="w-full justify-between" onClick={onClose}>
             {HEADER_CTA.label}
           </ButtonLink>

@@ -942,7 +942,7 @@ export const PREVENTIVE_MAINTENANCE_ARTICLE: BlogBlock[] = [
     'Preventive maintenance works when you know what equipment you are responsible for, planned visits sit on a calendar with a named technician, and every visit leaves a record. Start with the equipment list and one checklist, then build the schedule around them.',
   ),
   p(
-    'If you want to see how scheduled visits, checklists, service history and reports can sit together for your own team, [book a demo](/demo) and we will walk through it using the equipment you look after.',
+    'FSMFlow’s approach to maintenance-led service work is summarised on the [field service management software for Sri Lanka](/field-service-management-software-sri-lanka) page. If you want to see how scheduled visits, checklists, service history and reports can sit together for your own team, [book a demo](/demo) and we will walk through it using the equipment you look after.',
   ),
 ]
 
@@ -1084,6 +1084,6 @@ export const DISPATCH_SOFTWARE_ARTICLE: BlogBlock[] = [
     'Field service dispatch software gives Malaysian service teams a shared, accurate picture of jobs and technicians, which means faster assignment, fewer clashes and clearer answers for customers. Start by mapping how your own jobs are dispatched today, fix the biggest gap first, and judge any tool by how well your team can use it.',
   ),
   p(
-    'To see how job assignment, technician scheduling and live job status work together, [book a demo](/demo) and bring a typical week of jobs.',
+    'For a summary of how FSMFlow fits a Malaysian service operation, see [field service management software in Malaysia](/field-service-management-software-malaysia). To see how job assignment, technician scheduling and live job status work together, [book a demo](/demo) and bring a typical week of jobs.',
   ),
 ]

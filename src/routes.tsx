@@ -9,6 +9,7 @@ const loaders: Record<PageFile, () => Promise<PageModule>> = {
   'src/pages/HvacSolutionPage.tsx': () => import('@/pages/HvacSolutionPage'),
   'src/pages/SolutionPage.tsx': () => import('@/pages/SolutionPage'),
   'src/pages/FeaturePage.tsx': () => import('@/pages/FeaturePage'),
+  'src/pages/CountryPage.tsx': () => import('@/pages/CountryPage'),
   'src/pages/PricingPage.tsx': () => import('@/pages/PricingPage'),
   'src/pages/BlogPage.tsx': () => import('@/pages/BlogPage'),
   'src/pages/BlogPostPage.tsx': () => import('@/pages/BlogPostPage'),

@@ -5,10 +5,10 @@ import { Logo } from '@/components/brand/Logo'
 import { ButtonLink } from '@/components/ui/Button'
 import { HEADER_CTA, PRIMARY_NAV } from '@/data/nav'
 import { cn } from '@/lib/cn'
-import { FeaturesMenu, MegaPanel, SolutionsMenu } from './MegaMenus'
+import { CountriesMenu, FeaturesMenu, MegaPanel, SolutionsMenu } from './MegaMenus'
 import { MobileMenu } from './MobileMenu'
 
-type MenuId = 'solutions' | 'features'
+type MenuId = 'solutions' | 'features' | 'countries'
 
 /**
  * Sticky, floating header. Desktop: Home | Solutions ▼ | Features ▼ | Pricing | Blog + Book a Demo.
@@ -65,7 +65,8 @@ export function Header({ scrolled }: { scrolled: boolean }) {
     closeTimer.current = window.setTimeout(() => setOpen(null), 160)
   }
 
-  const sectionActive = (id: MenuId) => pathname.startsWith(`/${id}/`)
+  const sectionActive = (id: MenuId) =>
+    id === 'countries' ? pathname.startsWith('/field-service-management-software-') : pathname.startsWith(`/${id}/`)
 
   return (
     <header className="sticky top-0 z-40 px-3 pt-3 sm:px-5">
@@ -147,7 +148,7 @@ export function Header({ scrolled }: { scrolled: boolean }) {
                     </button>
                     {/* The panel follows its trigger in the DOM so Tab flows straight into the open menu. */}
                     <MegaPanel id={`${uid}-${id}`} label={item.label} open={isOpen}>
-                      {id === 'solutions' ? <SolutionsMenu onNavigate={closeAll} /> : <FeaturesMenu onNavigate={closeAll} />}
+                      {id === 'solutions' ? <SolutionsMenu onNavigate={closeAll} /> : id === 'features' ? <FeaturesMenu onNavigate={closeAll} /> : <CountriesMenu onNavigate={closeAll} />}
                     </MegaPanel>
                   </li>
                 )

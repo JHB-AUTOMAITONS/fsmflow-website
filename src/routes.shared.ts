@@ -1,5 +1,6 @@
 import type { ComponentType } from 'react'
 import { matchRoutes } from 'react-router'
+import { COUNTRIES } from './data/countries'
 
 /**
  * Route definitions shared by the client (lazy) and server (eager) route tables.
@@ -9,7 +10,7 @@ import { matchRoutes } from 'react-router'
  * through to the shared 404 view inside those pages. HVAC has its own bespoke page
  * (a static segment outranks :slug).
  */
-export const ROUTE_DEFS = [
+const BASE_DEFS = [
   { path: '/', file: 'src/pages/HomePage.tsx' },
   { path: '/solutions/hvac-field-service-software', file: 'src/pages/HvacSolutionPage.tsx' },
   { path: '/solutions/:slug', file: 'src/pages/SolutionPage.tsx' },
@@ -26,7 +27,12 @@ export const ROUTE_DEFS = [
   { path: '*', file: 'src/pages/NotFoundPage.tsx' },
 ] as const
 
-export type PageFile = (typeof ROUTE_DEFS)[number]['file']
+/** Country landing pages share one data-driven page component; react-router ranks the static paths above '*'. */
+const COUNTRY_DEFS = COUNTRIES.map((c) => ({ path: c.path, file: 'src/pages/CountryPage.tsx' as const }))
+
+export const ROUTE_DEFS = [...BASE_DEFS, ...COUNTRY_DEFS]
+
+export type PageFile = (typeof BASE_DEFS)[number]['file'] | 'src/pages/CountryPage.tsx'
 
 export type PageModule = { default: ComponentType }
 

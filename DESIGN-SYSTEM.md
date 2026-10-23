@@ -1,7 +1,7 @@
 # FSMFlow.in — design system & build conventions
 
-Source of truth for structure, URLs and SEO: `FSM.docx` (23 approved pages). Do **not** add, remove
-or rename public pages. Login, a Field Service Management page, Guides, Free Templates and a public
+Source of truth for structure, URLs and SEO: `FSM.docx` (23 approved pages) plus the five country landing pages
+(`src/data/countries.ts`). Do **not** add, remove or rename other public pages. Login, a Field Service Management page, Guides, Free Templates and a public
 Settings page are explicitly excluded.
 
 ## Stack
@@ -63,3 +63,8 @@ lazy-loaded by `src/routes.tsx`.
 ## Copy
 Professional, simple English for Indian business owners. Concrete over clever. Sentence case. Active voice.
 Use ₹ and Indian digit grouping (`inr()` / `inrCompact()` in `lib/format`). AMC = annual maintenance contract (spell out on first use per page).
+
+## Country pages
+`/field-service-management-software-<country>` — metadata in `data/countries.ts`, unique copy in `data/countryPages.ts`, one shared
+`pages/CountryPage.tsx`. Each owns "field service management software <country>"; they must not target the industry/feature primary
+keywords. No local offices, customers, statistics, compliance, tax or payment claims — those answers go to the demo.

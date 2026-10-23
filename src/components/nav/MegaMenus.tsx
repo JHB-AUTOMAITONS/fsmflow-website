@@ -4,6 +4,7 @@ import { Link } from 'react-router'
 import { SplitAc } from '@/components/illustrations/Hvac'
 import { Bezel } from '@/components/ui/Bezel'
 import { IconTile } from '@/components/ui/IconTile'
+import { COUNTRIES } from '@/data/countries'
 import { FEATURES } from '@/data/features'
 import { HVAC_SOLUTION, SOLUTIONS } from '@/data/solutions'
 import { cn } from '@/lib/cn'
@@ -132,6 +133,24 @@ export function FeaturesMenu({ onNavigate }: { onNavigate: () => void }) {
           <ArrowRight className="size-4 transition-transform duration-500 ease-premium group-hover/promo:translate-x-1" aria-hidden="true" />
         </span>
       </Link>
+    </div>
+  )
+}
+
+export function CountriesMenu({ onNavigate }: { onNavigate: () => void }) {
+  return (
+    <div className="grid grid-cols-3 gap-1.5">
+      {COUNTRIES.map((c) => (
+        <Link
+          key={c.slug}
+          to={c.path}
+          onClick={onNavigate}
+          className="group/item block rounded-2xl p-3.5 transition-colors duration-300 hover:bg-brand-50/70"
+        >
+          <span className="block font-semibold tracking-[-0.01em] text-ink-900 transition-colors group-hover/item:text-brand-700">{c.name}</span>
+          <span className="mt-0.5 block text-[0.8125rem] leading-snug text-ink-500">{c.tagline}</span>
+        </Link>
+      ))}
     </div>
   )
 }
