@@ -423,7 +423,7 @@ const nigeria: CountryContent = {
       { solution: 'solar-software', text: 'Solar installation projects and after-sales service.' },
       { solution: 'construction-management-software', text: 'Site work, crews and client follow-ups for contractors.' },
     ],
-    other: 'Generators, appliance repair and other maintenance teams can start from the service business management software page.',
+    other: 'Appliance repair, electrical, plumbing and other maintenance teams can start from the service business management software page.',
   },
   benefits: {
     title: 'What organised coordination changes',
