@@ -1,5 +1,5 @@
 import { AirVent, BarChart3, Briefcase, Cctv, ClipboardList, Compass, HardHat, Navigation, Package, ReceiptText, Route, SunMedium, Users, Wrench, type LucideIcon } from 'lucide-react'
-import { CCTV_ARTICLE, CONSTRUCTION_ARTICLE, HVAC_ARTICLE, SERVICE_BUSINESS_ARTICLE, SOLAR_ARTICLE, DISPATCH_SOFTWARE_ARTICLE, PREVENTIVE_MAINTENANCE_ARTICLE, WHAT_IS_FSM_ARTICLE } from './blogArticles'
+import { CCTV_ARTICLE, CONSTRUCTION_ARTICLE, HVAC_ARTICLE, SERVICE_BUSINESS_ARTICLE, SOLAR_ARTICLE, CMMS_ARTICLE, DISPATCH_SOFTWARE_ARTICLE, PREVENTIVE_MAINTENANCE_ARTICLE, WHAT_IS_FSM_ARTICLE } from './blogArticles'
 
 /**
  * Blog content model.
@@ -227,6 +227,25 @@ export const BLOG_POSTS: BlogPost[] = [
     primaryKeyword: 'field service dispatch software',
     supports: '/features/work-order-management-software',
     body: DISPATCH_SOFTWARE_ARTICLE,
+  },
+  {
+    slug: 'computerized-maintenance-management-software-south-africa',
+    title: 'Computerized Maintenance Management Software in South Africa: Benefits, Features, and How to Choose the Right Solution',
+    seoTitle: 'Computerized Maintenance Management Software in South Africa',
+    seoDescription:
+      'Computerized maintenance management software explained for South African teams: key features, benefits and how to choose a CMMS that fits your workflow.',
+    excerpt:
+      'What computerized maintenance management software does, which features matter, and how a South African maintenance or field service team can choose a solution.',
+    category: 'Service Management',
+    readMinutes: 9,
+    status: 'published',
+    icon: ClipboardList,
+    accent: 'iris',
+    publishedAt: '2026-10-26',
+    author: 'FSMFlow Team',
+    primaryKeyword: 'Computerized Maintenance Management Software',
+    supports: '/features/work-order-management-software',
+    body: CMMS_ARTICLE,
   },
   {
     slug: 'run-amc-renewals-without-spreadsheets',

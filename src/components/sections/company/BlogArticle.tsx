@@ -40,18 +40,24 @@ function slugify(text: string): string {
     .replace(/(^-|-$)/g, '')
 }
 
-const LINK = /\[([^\]]+)\]\((\/[^)\s]*)\)/g
+const LINK = /\[([^\]]+)\]\(((?:\/|https:\/\/)[^)\s]*)\)/g
 
-/** Renders `[anchor](/internal-path)` as router links; everything else stays plain text. */
+/** Renders `[anchor](/internal-path)` as router links and `[anchor](https://…)` as external links; everything else stays plain text. */
 function Inline({ text }: { text: string }) {
   const nodes: React.ReactNode[] = []
   let last = 0
   for (const m of text.matchAll(LINK)) {
     if (m.index > last) nodes.push(text.slice(last, m.index))
     nodes.push(
-      <Link key={m.index} to={m[2]}>
-        {m[1]}
-      </Link>,
+      m[2].startsWith('/') ? (
+        <Link key={m.index} to={m[2]}>
+          {m[1]}
+        </Link>
+      ) : (
+        <a key={m.index} href={m[2]} rel="noopener noreferrer">
+          {m[1]}
+        </a>
+      ),
     )
     last = m.index + m[0].length
   }

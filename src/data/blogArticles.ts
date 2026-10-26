@@ -1087,3 +1087,146 @@ export const DISPATCH_SOFTWARE_ARTICLE: BlogBlock[] = [
     'For a summary of how FSMFlow fits a Malaysian service operation, see [field service management software in Malaysia](/field-service-management-software-malaysia). To see how job assignment, technician scheduling and live job status work together, [book a demo](/demo) and bring a typical week of jobs.',
   ),
 ]
+
+/* -------------------------------------------------------------------------- */
+/* Computerized maintenance management software (South Africa)                 */
+/* -------------------------------------------------------------------------- */
+
+export const CMMS_ARTICLE: BlogBlock[] = [
+  p(
+    'Computerized maintenance management software gives maintenance teams one place to record equipment, plan work and see what has been done. For many South African businesses, that place is still a mix of spreadsheets, paper job cards and WhatsApp messages. Breakdowns are handled as they arrive, equipment history lives in people’s heads, and nobody can say which service visits are overdue until something fails.',
+  ),
+  p(
+    'This guide explains what computerized maintenance management software (often shortened to CMMS) does, how it works, which features matter, and how to evaluate a solution for a South African maintenance, facilities or field service team.',
+  ),
+  h2('What Is Computerized Maintenance Management Software?'),
+  p(
+    'Computerized maintenance management software is a tool that centralises maintenance information so that work can be planned, assigned, tracked and reported. IBM describes a CMMS as [“a software solution that helps organizations automate and enhance their core maintenance operations”](https://www.ibm.com/ph-en/topics/what-is-a-cmms), and lists work order management, preventive maintenance scheduling, spare parts inventory, mobile access and reporting among its core features.',
+  ),
+  p(
+    'If you have searched for “what is maintenance management software”, this is the answer in one line: a shared record of your equipment and the work done on it, plus the tools to schedule that work and measure the results. “CMMS”, “maintenance management software” and “maintenance management system” are used almost interchangeably.',
+  ),
+  h2('How Does a CMMS Work?'),
+  p('Most systems are built around two things: assets and work.'),
+  ul(
+    'Assets are the equipment you maintain, such as a generator, a chiller, a conveyor or a set of CCTV cameras. Each has a record with details like model, location and service history.',
+    'Work is every task linked to an asset: a breakdown request, a scheduled inspection, a repair. Each task becomes a work order that moves from request to assignment to completion.',
+  ),
+  p('A typical cycle looks like this:'),
+  ul(
+    'Step 1: a fault is reported or a scheduled task falls due.',
+    'Step 2: a work order is created against the asset.',
+    'Step 3: it is assigned to a technician, who sees it on a phone or tablet.',
+    'Step 4: the technician records what was done, the parts used and any notes.',
+    'Step 5: the asset’s history is updated, and managers can report on the result.',
+  ),
+  p('The value is in the last step. Every job adds to a record that makes the next decision better informed.'),
+  h2('Why South African Businesses Need Maintenance Management Software'),
+  p('Maintenance problems are not unique to South Africa, but a few practical realities make a shared system more valuable:'),
+  ul(
+    'Spread-out sites and teams. Many businesses maintain equipment across several sites, towns or customer premises. Keeping everyone on the same job list by phone and chat gets harder as the team grows.',
+    'Mixed equipment. Older machines sit beside newer ones, with different service needs, spares and histories.',
+    'Power and connectivity. Power interruptions and patchy mobile coverage are part of operational planning in many workplaces, so a system should be judged on how it copes when connectivity is poor.',
+    'Safety duties. Under section 8 of the Occupational Health and Safety Act 85 of 1993, [employers must provide and maintain, as far as is reasonably practicable, a safe working environment](https://www.acts.co.za/occupational-health-/8__general_duties_of_employers_to_their_employees), which includes systems of work, plant and machinery. A maintenance system does not make a business compliant by itself, but clear records of inspections and repairs support good practice. For specific obligations, take advice from a qualified safety professional.',
+  ),
+  h2('Key Features to Look for in a CMMS'),
+  p('Use the table below as a starting checklist, then add what is specific to your operation.'),
+  {
+    type: 'table',
+    caption: 'CMMS features and the questions to ask a vendor about each',
+    head: ['Feature', 'What it does', 'Question to ask a vendor'],
+    rows: [
+      ['Work order management', 'Creates, assigns and tracks every job', 'Can I see the status of every job at a glance?'],
+      ['Asset records and history', 'Stores equipment details and past work', 'Can a technician see the full history before arriving?'],
+      ['Preventive maintenance scheduling', 'Plans recurring tasks and visits', 'Can schedules repeat by time, and can I move a visit easily?'],
+      ['Spare parts and inventory', 'Links parts to jobs and tracks stock', 'Can I see stock by location and set minimum levels?'],
+      ['Mobile access', 'Lets technicians update jobs on site', 'How does the app behave with weak or no signal?'],
+      ['Reporting', 'Turns job data into figures', 'Which reports come as standard, and can I export them?'],
+      ['Contract and warranty tracking', 'Tracks cover dates and renewals', 'Will I be reminded before cover lapses?'],
+    ],
+  },
+  h2('Benefits of Computerized Maintenance Management Software'),
+  p('The benefits are practical, and they depend on how consistently the team uses the system:'),
+  ul(
+    'Better visibility. Everyone sees open, overdue and completed work in one place.',
+    'More planned work. Recurring tasks are scheduled in advance, which shifts effort from emergency repairs towards preventive maintenance. Our [preventive maintenance guide](/blog/preventive-maintenance-guide-sri-lanka) explains how to build a schedule and checklist.',
+    'Useful history. Repeat faults and recurring parts failures become visible instead of being rediscovered.',
+    'Clearer accountability. Each job has an owner, a status and a record of what was done.',
+    'Less admin. Notes, parts and photos are captured once, not rewritten later.',
+  ),
+  h2('CMMS vs Spreadsheets and Manual Maintenance Tracking'),
+  p('Spreadsheets are a reasonable start, and for a very small team they can be enough. The differences appear as work and people grow.'),
+  {
+    type: 'table',
+    caption: 'Spreadsheets and paper compared with maintenance management software',
+    head: ['Area', 'Spreadsheets and paper', 'Maintenance management software'],
+    rows: [
+      ['Job status', 'Updated by hand, often late', 'Updated by the technician as work happens'],
+      ['Equipment history', 'Scattered across files and chats', 'Held against each asset'],
+      ['Reminders', 'Depend on someone remembering', 'Scheduled and visible'],
+      ['Multiple users', 'Version clashes and overwritten cells', 'One shared record'],
+      ['Reporting', 'Built manually each time', 'Generated from job data'],
+    ],
+  },
+  p('The honest test is simple: if finding what was done to a machine last time takes more than a minute, your records are costing you time.'),
+  h2('Where Fleet Maintenance Management Software Fits'),
+  p(
+    'Some readers searching for fleet maintenance management software are looking for something more specific: tools built around vehicles, such as service intervals based on mileage. A general CMMS can track vehicles as assets, but dedicated fleet tools often go deeper on vehicle-specific needs. If vehicles are your main concern, evaluate fleet tools separately; if vehicles are one part of a wider maintenance operation, check whether a single system can cover both.',
+  ),
+  h2('How to Choose the Right Maintenance Management Software in South Africa'),
+  ul(
+    'Map your current process. Write down how a job moves from report to completion and mark where it stalls.',
+    'List must-haves and nice-to-haves. Be specific, such as “technicians must update jobs from a phone”.',
+    'Test with real work. Run a trial using your own equipment, sites and team, not a sample dataset.',
+    'Involve the people who will use it. Technicians who find it slow will stop using it.',
+    'Check connectivity behaviour. Ask exactly what happens when the signal drops.',
+    'Understand pricing and support. Ask what is included, how cost changes as you add users, and what onboarding help exists.',
+    'Start small. Begin with one site or team and expand once it works.',
+  ),
+  h3('Common mistakes to avoid'),
+  ul(
+    'Buying a system far larger than your needs, then not using most of it.',
+    'Skipping data clean-up, so the new system starts with unreliable records.',
+    'Not agreeing who updates what, so records go stale.',
+    'Judging by a demo alone instead of a trial with your own jobs.',
+    'Ignoring mobile use, even though most maintenance work happens away from a desk.',
+  ),
+  h2('How FSMFlow Can Help Field Service and Maintenance Teams'),
+  p(
+    'FSMFlow is a field service management platform, built mainly for AC and HVAC service businesses and relevant to CCTV, solar, construction and other teams that send technicians to customer or site locations. It is not presented as a full enterprise CMMS, so it suits some maintenance operations better than others.',
+  ),
+  p('Where your maintenance work involves technicians, scheduled visits and service jobs, these parts of FSMFlow are relevant:'),
+  ul(
+    '[Work order management software](/features/work-order-management-software) to create, assign and track jobs, with checklists, parts, photos and a service report attached.',
+    'Equipment records that keep model, serial number, warranty and AMC status and service history together.',
+    '[Warranty and AMC management](/features/warranty-management-software) to track contract dates, scheduled visits and renewals.',
+    'Inventory tracking for warehouse and van stock, with low-stock alerts against minimum levels you set.',
+    '[Reporting software](/features/reporting-software) to review jobs, technician productivity and AMC renewals.',
+  ),
+  p(
+    'If your needs centre on a large industrial plant, sensor-based predictive maintenance or specialist fleet tools, evaluate those requirements separately. FSMFlow’s website does not claim them. We also do not claim South African customers, local offices or country-specific integrations; ask about anything specific to your business, including how the mobile app behaves with weak connectivity, in a demo. For a general service team, see the [service business management software](/solutions/service-business-management-software) page.',
+  ),
+  h2('Frequently Asked Questions'),
+  h3('What is computerized maintenance management software?'),
+  p(
+    'It is software that stores equipment records, schedules maintenance, issues and tracks work orders, and reports on completed work, so maintenance is planned and visible instead of reactive.',
+  ),
+  h3('How does CMMS software help maintenance teams?'),
+  p(
+    'It gives them one shared job list, equipment history on hand, reminders for recurring work and reports on what was done, which reduces missed tasks and repeat questions.',
+  ),
+  h3('What features should I look for in maintenance management software?'),
+  p('Work orders, asset records and history, preventive scheduling, spare parts tracking, mobile access and reporting. Test how each works with your own jobs.'),
+  h3('Is CMMS software suitable for small businesses?'),
+  p(
+    'Often yes, provided the system is simple enough for the team to use and priced for your size. A small team can start with one site and a few core features.',
+  ),
+  h3('How is maintenance management software different from a spreadsheet?'),
+  p(
+    'A spreadsheet stores data you enter by hand. Maintenance software links jobs, equipment, people and parts, updates status as work happens and generates reports from that data.',
+  ),
+  h2('Conclusion'),
+  p(
+    'Computerized maintenance management software helps South African maintenance and service teams replace scattered records with a shared, current picture of equipment and work. Start by mapping your process, shortlist systems against your real needs, and trial them with your own jobs. If your maintenance work is carried out by field technicians on scheduled visits and service jobs, [book an FSMFlow demo](/demo) to see whether it fits.',
+  ),
+]
