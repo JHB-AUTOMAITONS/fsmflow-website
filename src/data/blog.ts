@@ -250,7 +250,7 @@ export const BLOG_POSTS: BlogPost[] = [
   {
     slug: 'web-based-maintenance-management-software-nigeria',
     title: 'Web Based Maintenance Management Software in Nigeria: A Complete Guide for Businesses',
-    seoTitle: 'Web Based Maintenance Management Software in Nigeria',
+    seoTitle: 'Web Based Maintenance Management Software in Nigeria | FSMFlow',
     seoDescription:
       'Web based maintenance management software helps Nigerian teams track work orders, assets and maintenance schedules. See what to look for and book a demo.',
     excerpt:
