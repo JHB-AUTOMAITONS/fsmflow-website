@@ -1230,3 +1230,154 @@ export const CMMS_ARTICLE: BlogBlock[] = [
     'Computerized maintenance management software helps South African maintenance and service teams replace scattered records with a shared, current picture of equipment and work. Start by mapping your process, shortlist systems against your real needs, and trial them with your own jobs. If your maintenance work is carried out by field technicians on scheduled visits and service jobs, [book an FSMFlow demo](/demo) to see whether it fits.',
   ),
 ]
+
+/* -------------------------------------------------------------------------- */
+/* Web based maintenance management software (Nigeria)                         */
+/* -------------------------------------------------------------------------- */
+
+export const WEB_MAINTENANCE_NIGERIA_ARTICLE: BlogBlock[] = [
+  p(
+    'Web based maintenance management software lets a maintenance team plan, assign and track work from a browser, with equipment records and job history kept in one shared place. For businesses in Nigeria that manage plant, buildings, vehicles or customer equipment, that matters most when maintenance still runs on phone calls, paper job cards and spreadsheets that only one person updates.',
+  ),
+  p(
+    'The usual result is unplanned downtime, requests that wait too long, and no clear record of what was done to an asset last time. This guide explains what browser-based maintenance software does, which features to look for, how it compares with manual methods, and how to evaluate FSMFlow as an option.',
+  ),
+  h2('What Is Web Based Maintenance Management Software?'),
+  p(
+    'It is software for organising maintenance work that you use through a web browser after logging in, instead of installing a program on one computer. The maintenance information sits in a central system that authorised people can open from any supported device with an internet connection.',
+  ),
+  p('In practice, it usually brings together:'),
+  ul(
+    'Centralised maintenance information, such as assets, customers, sites and past work.',
+    'Work order tracking, from the first request to completion.',
+    'Team collaboration, so managers and technicians work from the same job list.',
+    'Maintenance reporting, built from the work that has been recorded.',
+  ),
+  h3('Browser-based vs installed software'),
+  p(
+    'Installed software lives on a particular computer, so the data is usually available only where that computer is. Browser-based software keeps data in a central system, so an office team and technicians in the field can see the same records. The trade-off is that you need an internet connection, so check how a system behaves when connectivity is poor.',
+  ),
+  h2('Why Nigerian Businesses Need Maintenance Management Software'),
+  p(
+    'Not every business faces the same problems, but these are common where maintenance is coordinated informally:',
+  ),
+  ul(
+    'Unplanned equipment downtime, because routine checks are not scheduled or are forgotten.',
+    'Delayed maintenance requests, since requests arrive by call or message and wait for someone to notice.',
+    'Manual record-keeping, which makes service history hard to find.',
+    'Difficulty tracking assets, such as which unit is where and when it was last serviced.',
+    'Poor coordination between technicians and managers, with status known only after a phone call.',
+  ),
+  p(
+    'In some workplaces, power interruptions and variable mobile data coverage also affect how teams work. That is a reason to test any system under your own conditions before committing.',
+  ),
+  h2('Key Features to Look for in Maintenance Management Software'),
+  h3('Work Order Management'),
+  p(
+    'Work order management software turns a maintenance request into a tracked job. Each work order records what needs doing, where, who is responsible, how urgent it is and whether it is open, in progress or done. That makes priorities visible and removes the guesswork about who is handling what. See FSMFlow’s [work order management software](/features/work-order-management-software) for how this works there.',
+  ),
+  h3('Preventive Maintenance Scheduling'),
+  p(
+    'Preventive maintenance software schedules recurring work, such as monthly inspections or quarterly servicing, and reminds the team before it falls due. Planned visits can find a worn part before it fails, which helps reduce unexpected breakdowns, although no system removes failures completely. For a practical method, read our [preventive maintenance guide](/blog/preventive-maintenance-guide-sri-lanka).',
+  ),
+  h3('Asset and Equipment Tracking'),
+  p(
+    'A central asset record holds the details of each piece of equipment and every job done on it. Technicians arrive knowing the history, and managers can spot repeat faults. [Asset management software](/features/asset-management-software) in FSMFlow keeps model, serial number, warranty and AMC status with the service history.',
+  ),
+  h3('Technician and Team Management'),
+  p(
+    'Look for a way to assign jobs by skill and availability and to see who is on a job, travelling or free. This cuts the calls needed to coordinate a team and makes it easier to move work when plans change.',
+  ),
+  h3('Maintenance Reports and Performance Tracking'),
+  p('Reports should answer practical questions:'),
+  ul(
+    'How many jobs were completed, and how many are overdue?',
+    'Which equipment keeps returning with the same fault?',
+    'Are planned visits being delivered on schedule?',
+  ),
+  h3('Browser-Based Access'),
+  p(
+    'Authorised users should be able to open the system in a supported browser, and technicians should have a simple way to update jobs on site. Ask the vendor which browsers and devices are supported, and how access is controlled for different users.',
+  ),
+  h2('Web Based Maintenance Management Software vs. Traditional Maintenance Methods'),
+  p('Spreadsheets and paper can work for a very small operation. The gaps show as the number of assets, sites and people grows. Capabilities vary between products, so treat the right-hand column as typical, not guaranteed.'),
+  {
+    type: 'table',
+    caption: 'Traditional maintenance methods compared with web based maintenance management software',
+    head: ['Area', 'Spreadsheets, paper and chat', 'Web-based maintenance software (typical)'],
+    rows: [
+      ['Maintenance records', 'Scattered across files and notebooks', 'Held centrally against each asset'],
+      ['Work order tracking', 'Status found by asking around', 'Status updated as work progresses'],
+      ['Preventive maintenance scheduling', 'Depends on someone remembering', 'Recurring schedules with reminders'],
+      ['Team coordination', 'Calls and messages', 'One shared job list'],
+      ['Reporting', 'Compiled by hand', 'Generated from recorded jobs'],
+      ['Accessibility', 'Tied to a person or a device', 'Available to authorised users via a browser'],
+    ],
+  },
+  h2('Understanding CMMS for Maintenance Operations'),
+  p(
+    'A computerized maintenance management system, or CMMS, is software that organises assets, work orders, maintenance schedules and service records. Web based maintenance management software is a CMMS delivered through the browser, so the two terms often describe the same kind of tool.',
+  ),
+  p(
+    'The word “CMMS” is also used for large systems built for industrial plants. If that is your need, compare those separately. We cover the topic in more depth in our [CMMS guide](/blog/computerized-maintenance-management-software-south-africa).',
+  ),
+  h2('How to Choose the Right Maintenance Management Software in Nigeria'),
+  p('Judge each option against your own operation using this list:'),
+  ul(
+    'Business and industry requirements: does it fit how your team actually works?',
+    'Essential features: work orders, schedules, asset records and reports.',
+    'Ease of use: will technicians and managers use it every day?',
+    'Browser and mobile compatibility: confirm supported browsers and devices.',
+    'Reporting: can you see overdue work and recurring faults?',
+    'Implementation and training: how long does set-up take, and what help is provided?',
+    'Pricing transparency: what is included and how does cost change as you grow?',
+    'Customer support: how do you reach the vendor, and when?',
+    'Data security and access controls: who can see and change what?',
+  ),
+  p('Run a trial using real jobs and equipment, and involve the people who will use it daily.'),
+  h2('How FSMFlow Can Help Businesses Manage Maintenance'),
+  p(
+    'FSMFlow is a cloud-based field service management platform for service businesses that send technicians to customer or site locations, such as AC and HVAC, CCTV, solar and construction teams. It is not presented as a full industrial CMMS, so it suits maintenance carried out by field teams through scheduled visits and service jobs.',
+  ),
+  p('Connecting FSMFlow to the problems above:'),
+  ul(
+    'Work orders carry the assignee, status, checklist, parts, photos and a service report, which tackles delayed requests and unclear status.',
+    'Equipment records keep service history, warranty and AMC status together, which helps with asset tracking.',
+    'Scheduled visits and [warranty and AMC tracking](/features/warranty-management-software) support planned maintenance.',
+    'Technicians use the [field service app](/features/field-service-app) to update jobs from their phones.',
+    '[Reporting software](/features/reporting-software) shows jobs, technician productivity and AMC renewals.',
+  ),
+  p(
+    'We have not described Nigeria-specific features, local integrations, naira pricing or Nigerian customers here, because the website does not claim them. Ask about anything specific to your business in a demo. You can also read about [field service management software for Nigeria](/field-service-management-software-nigeria).',
+  ),
+  h2('Frequently Asked Questions'),
+  h3('What is web-based maintenance management software?'),
+  p(
+    'It is software for planning and tracking maintenance that you use through a web browser. Work orders, asset records and reports sit in one central system that authorised users can access.',
+  ),
+  h3('How does maintenance management software help businesses in Nigeria?'),
+  p(
+    'It replaces scattered calls, messages and paper with one shared record of requests, jobs and equipment history. That makes status visible and planned work easier to schedule. Results depend on how consistently the team uses it.',
+  ),
+  h3('What is the difference between CMMS and maintenance management software?'),
+  p(
+    'The terms are used almost interchangeably. CMMS stands for computerized maintenance management system, and most web based maintenance management software performs the same role through a browser.',
+  ),
+  h3('How does preventive maintenance software help reduce equipment downtime?'),
+  p(
+    'It schedules recurring inspections and servicing and reminds the team, so faults are found during planned visits. It reduces the chance of unexpected failures but cannot prevent every one.',
+  ),
+  h3('What features should businesses look for in maintenance management software?'),
+  p('Work order tracking, preventive scheduling, asset records, technician assignment, reporting and simple access for field staff. Test each with your own jobs.'),
+  h3('How can a business get started with FSMFlow?'),
+  p(
+    'The simplest way is to [book a demo](/demo) and describe your maintenance workflow. You can also [contact the team](/contact) with questions first.',
+  ),
+  h2('Conclusion'),
+  p(
+    'Web based maintenance management software helps Nigerian businesses organise requests, equipment records and planned work in one place, so managers and technicians share the same picture. Start by mapping how maintenance jobs move today, then test options against that process with your own jobs.',
+  ),
+  p(
+    'If your maintenance is done by field technicians on scheduled visits and service jobs, [book an FSMFlow demo](/demo) to see whether it fits.',
+  ),
+]

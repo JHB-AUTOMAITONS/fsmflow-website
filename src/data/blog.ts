@@ -1,5 +1,5 @@
 import { AirVent, BarChart3, Briefcase, Cctv, ClipboardList, Compass, HardHat, Navigation, Package, ReceiptText, Route, SunMedium, Users, Wrench, type LucideIcon } from 'lucide-react'
-import { CCTV_ARTICLE, CONSTRUCTION_ARTICLE, HVAC_ARTICLE, SERVICE_BUSINESS_ARTICLE, SOLAR_ARTICLE, CMMS_ARTICLE, DISPATCH_SOFTWARE_ARTICLE, PREVENTIVE_MAINTENANCE_ARTICLE, WHAT_IS_FSM_ARTICLE } from './blogArticles'
+import { CCTV_ARTICLE, CONSTRUCTION_ARTICLE, HVAC_ARTICLE, SERVICE_BUSINESS_ARTICLE, SOLAR_ARTICLE, CMMS_ARTICLE, WEB_MAINTENANCE_NIGERIA_ARTICLE, DISPATCH_SOFTWARE_ARTICLE, PREVENTIVE_MAINTENANCE_ARTICLE, WHAT_IS_FSM_ARTICLE } from './blogArticles'
 
 /**
  * Blog content model.
@@ -246,6 +246,25 @@ export const BLOG_POSTS: BlogPost[] = [
     primaryKeyword: 'Computerized Maintenance Management Software',
     supports: '/features/work-order-management-software',
     body: CMMS_ARTICLE,
+  },
+  {
+    slug: 'web-based-maintenance-management-software-nigeria',
+    title: 'Web Based Maintenance Management Software in Nigeria: A Complete Guide for Businesses',
+    seoTitle: 'Web Based Maintenance Management Software in Nigeria',
+    seoDescription:
+      'Web based maintenance management software helps Nigerian teams track work orders, assets and maintenance schedules. See what to look for and book a demo.',
+    excerpt:
+      'What browser-based maintenance software does, which features matter, and how Nigerian maintenance and field service teams can evaluate their options.',
+    category: 'Service Management',
+    readMinutes: 8,
+    status: 'published',
+    icon: Wrench,
+    accent: 'mint',
+    publishedAt: '2026-10-27',
+    author: 'FSMFlow Team',
+    primaryKeyword: 'Web Based Maintenance Management Software',
+    supports: '/features/work-order-management-software',
+    body: WEB_MAINTENANCE_NIGERIA_ARTICLE,
   },
   {
     slug: 'run-amc-renewals-without-spreadsheets',
