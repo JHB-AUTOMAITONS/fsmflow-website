@@ -71,6 +71,8 @@ export interface BlogPost {
   seoDescription?: string
   /** Exact-match primary keyword this post targets (documentation + audit; not rendered). */
   primaryKeyword?: string
+  /** Supporting keywords the body should contain naturally (documentation + audit; not rendered). */
+  secondaryKeywords?: string[]
   /** The solution page this post supports (internal-link target, documentation + audit). */
   supports?: string
 }
@@ -263,6 +265,7 @@ export const BLOG_POSTS: BlogPost[] = [
     publishedAt: '2026-10-27',
     author: 'FSMFlow Team',
     primaryKeyword: 'Web Based Maintenance Management Software',
+    secondaryKeywords: ['Preventive Maintenance Software', 'Work Order Management Software', 'Maintenance Management Software'],
     supports: '/features/work-order-management-software',
     body: WEB_MAINTENANCE_NIGERIA_ARTICLE,
   },

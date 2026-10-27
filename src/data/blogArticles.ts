@@ -1314,12 +1314,9 @@ export const WEB_MAINTENANCE_NIGERIA_ARTICLE: BlogBlock[] = [
       ['Accessibility', 'Tied to a person or a device', 'Available to authorised users via a browser'],
     ],
   },
-  h2('Understanding CMMS for Maintenance Operations'),
+  h2('How Web-Based Maintenance Software Relates to CMMS'),
   p(
-    'A computerized maintenance management system, or CMMS, is software that organises assets, work orders, maintenance schedules and service records. Web based maintenance management software is a CMMS delivered through the browser, so the two terms often describe the same kind of tool.',
-  ),
-  p(
-    'The word “CMMS” is also used for large systems built for industrial plants. If that is your need, compare those separately. We cover the topic in more depth in our [CMMS guide](/blog/computerized-maintenance-management-software-south-africa).',
+    'CMMS (computerized maintenance management system) is the traditional name for software that organises assets, work orders, schedules and service records. Browser-delivered maintenance software generally does the same job, so the terms often overlap. Systems built for large industrial plants are also called CMMS, and those should be assessed separately. For the full definition and a feature checklist, see our [CMMS guide](/blog/computerized-maintenance-management-software-south-africa).',
   ),
   h2('How to Choose the Right Maintenance Management Software in Nigeria'),
   p('Judge each option against your own operation using this list:'),
