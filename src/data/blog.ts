@@ -1,5 +1,5 @@
-import { AirVent, BarChart3, Briefcase, Cctv, ClipboardList, Compass, HardHat, Navigation, Package, ReceiptText, Route, SunMedium, Users, Wrench, type LucideIcon } from 'lucide-react'
-import { CCTV_ARTICLE, CONSTRUCTION_ARTICLE, HVAC_ARTICLE, SERVICE_BUSINESS_ARTICLE, SOLAR_ARTICLE, CMMS_ARTICLE, WEB_MAINTENANCE_NIGERIA_ARTICLE, DISPATCH_SOFTWARE_ARTICLE, PREVENTIVE_MAINTENANCE_ARTICLE, WHAT_IS_FSM_ARTICLE } from './blogArticles'
+import { AirVent, BarChart3, Briefcase, Cctv, ClipboardList, Compass, HardHat, Navigation, Package, ReceiptText, Route, Smartphone, SunMedium, Users, Wrench, type LucideIcon } from 'lucide-react'
+import { CCTV_ARTICLE, CONSTRUCTION_ARTICLE, HVAC_ARTICLE, SERVICE_BUSINESS_ARTICLE, SOLAR_ARTICLE, CMMS_ARTICLE, MOBILE_FSM_ARTICLE, WEB_MAINTENANCE_NIGERIA_ARTICLE, DISPATCH_SOFTWARE_ARTICLE, PREVENTIVE_MAINTENANCE_ARTICLE, WHAT_IS_FSM_ARTICLE } from './blogArticles'
 
 /**
  * Blog content model.
@@ -268,6 +268,26 @@ export const BLOG_POSTS: BlogPost[] = [
     secondaryKeywords: ['Preventive Maintenance Software', 'Work Order Management Software', 'Maintenance Management Software'],
     supports: '/features/work-order-management-software',
     body: WEB_MAINTENANCE_NIGERIA_ARTICLE,
+  },
+  {
+    slug: 'mobile-field-service-management-software',
+    title: 'Mobile Field Service Management Software: A Complete Guide for Service Businesses',
+    seoTitle: 'Mobile Field Service Management Software Guide | FSMFlow',
+    seoDescription:
+      'Mobile field service management software explained: features to look for, how it helps AC, CCTV, solar and construction teams, and how to choose.',
+    excerpt:
+      'What mobile field service management software does, the features to evaluate, and how AC, CCTV, solar and construction teams can choose a solution.',
+    category: 'Field Service',
+    readMinutes: 9,
+    // DRAFT: set status to 'published' and add publishedAt to release this post.
+    status: 'upcoming',
+    icon: Smartphone,
+    accent: 'brand',
+    author: 'FSMFlow Team',
+    primaryKeyword: 'Mobile Field Service Management Software',
+    secondaryKeywords: ['Field Service Management App', 'Mobile Workforce Management Software', 'Field Service Technician App'],
+    supports: '/features/field-service-app',
+    body: MOBILE_FSM_ARTICLE,
   },
   {
     slug: 'run-amc-renewals-without-spreadsheets',

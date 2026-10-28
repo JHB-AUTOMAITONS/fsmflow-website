@@ -1378,3 +1378,196 @@ export const WEB_MAINTENANCE_NIGERIA_ARTICLE: BlogBlock[] = [
     'If your maintenance is done by field technicians on scheduled visits and service jobs, [book an FSMFlow demo](/demo) to see whether it fits.',
   ),
 ]
+
+/* -------------------------------------------------------------------------- */
+/* Mobile field service management software (India)                            */
+/* -------------------------------------------------------------------------- */
+
+export const MOBILE_FSM_ARTICLE: BlogBlock[] = [
+  p(
+    'Most service businesses start by coordinating jobs through phone calls, WhatsApp groups and a notebook. It works for a few technicians. Then jobs get double-booked, customer details sit in different places, and nobody can say whether a visit has actually started. Mobile field service management software puts jobs, technicians and customer records in one system, with an app in the technician’s hand.',
+  ),
+  p(
+    'This guide explains what it is, which features to evaluate, how it helps different trades, and how to choose a solution that suits a growing AC, CCTV, solar or construction service business.',
+  ),
+  h2('What Is Mobile Field Service Management Software?'),
+  p(
+    'Mobile field service management software is a system for planning, assigning and tracking work done at customer locations, with a mobile app that technicians use in the field. The office and the technicians work from the same job records instead of passing information by phone.',
+  ),
+  p('In practice it usually covers:'),
+  ul(
+    'Service requests and work orders, from the first enquiry to completion.',
+    'Technician scheduling and assignment.',
+    'Customer and equipment information, including service history.',
+    'Job progress updates from the field.',
+    'Coordination between office staff and technicians.',
+  ),
+  p(
+    'It is narrower than a full business suite. It focuses on the work itself: who is going where, what needs doing, and what happened. For a wider definition, see our guide to [what field service management is](/blog/what-is-field-service-management).',
+  ),
+  h2('Why Do Service Businesses Need Mobile Field Service Software?'),
+  p('The problems are usually operational, not technical:'),
+  ul(
+    'Service requests are missed or answered late because they arrive by call or message.',
+    'Assigning a technician means phoning around to see who is free.',
+    'Nobody has a clear view of which jobs are pending, running or done.',
+    'Customer and service records are scattered across phones, registers and sheets.',
+    'Reports are compiled by hand at the end of the week.',
+    'Managing several technicians across locations depends on one coordinator.',
+    'Recurring maintenance visits are remembered, not scheduled.',
+  ),
+  p(
+    'Software does not fix these by itself. It helps when the team actually records work in it, so the information is current. Used consistently, it makes status visible and removes many routine calls.',
+  ),
+  h2('Key Features to Look for in a Field Service Management App'),
+  p('A field service management app should cover the daily flow of a job. Judge each feature by how well it works with your own jobs.'),
+  h3('Service request and work order management'),
+  p(
+    'Every request becomes a work order with a customer, site, problem, priority, assignee and status. Look for a clear path from request to completion. FSMFlow’s [work order management software](/features/work-order-management-software) follows this model.',
+  ),
+  h3('Technician scheduling and assignment'),
+  p(
+    'You should see who is free and who has the right skills before assigning. Our [technician scheduling and workload tools](/features/employee-management-software) show how skills and availability can be kept in one place.',
+  ),
+  h3('Customer and service history'),
+  p(
+    'Technicians do better when they know the customer’s equipment and past visits before they arrive. [Asset management software](/features/asset-management-software) keeps this history with each unit.',
+  ),
+  h3('Job status tracking'),
+  p('Statuses should be updated by the technician as the job moves, so the office sees real progress without calling.'),
+  h3('Mobile access for field technicians'),
+  p('Check that technicians can open jobs, follow a checklist and record results from a phone, and ask how the app behaves with a weak signal.'),
+  h3('Preventive maintenance and AMC management'),
+  p(
+    'If you sell annual maintenance contracts (AMCs), look for contract dates, scheduled visits and renewal reminders. See [warranty and AMC management](/features/warranty-management-software).',
+  ),
+  h3('Service reports and dashboards'),
+  p('Look for reports on jobs completed, technician workload and renewals due, built from recorded work and not compiled by hand.'),
+  h3('Communication between office and technicians'),
+  p(
+    'Updates should travel through the job itself: status changes, notes, photos and sign-off. Ask the vendor exactly which communication features exist, instead of assuming messaging is included.',
+  ),
+  h2('How Mobile Workforce Management Software Helps Field Teams'),
+  p(
+    'Mobile workforce management software helps managers, office staff and technicians work from the same information. For field teams, the practical gains are:',
+  ),
+  ul(
+    'Access to job details on the phone, instead of a call or message.',
+    'Clear assignments, so each technician knows what is theirs today.',
+    'Job status updates that reach the office as work progresses.',
+    'Better visibility into pending and completed work.',
+    'Less dependence on one coordinator’s memory.',
+    'A more organised day, because visits can be sequenced by area.',
+  ),
+  p(
+    'If dispatch is your main pain point, our guide to [field service dispatch software](/blog/field-service-dispatch-software-malaysia) goes deeper on assignment and scheduling.',
+  ),
+  h2('Benefits of a Field Service Technician App'),
+  p('A good field service technician app should make the technician’s day easier, not add paperwork. From their side, the benefits are:'),
+  ul(
+    'Viewing the day’s assigned jobs in one list.',
+    'Seeing customer and equipment details before arriving.',
+    'Updating job progress as they travel, arrive and start work.',
+    'Recording what was done, parts used and photos, where the app supports it.',
+    'Fewer calls to the office to ask for addresses, history or next steps.',
+    'A clearer handover to the operations team at the end of each job.',
+  ),
+  p('You can see how FSMFlow handles this on the [field service app](/features/field-service-app) page.'),
+  h2('How Different Industries Can Use Mobile Field Service Software'),
+  h3('AC and HVAC Service Companies'),
+  p(
+    'AC firms juggle breakdown calls with planned servicing, especially before summer. Mobile software helps assign the right technician to a split AC or VRF fault, and keeps maintenance visits scheduled. See [HVAC field service software](/solutions/hvac-field-service-software).',
+  ),
+  h3('CCTV Installation and Maintenance Companies'),
+  p(
+    'CCTV teams manage installation jobs, maintenance requests and AMC visits. Keeping service history by site and camera helps technicians arrive prepared. See [CCTV software](/solutions/cctv-software).',
+  ),
+  h3('Solar Installation and Service Companies'),
+  p(
+    'Solar businesses coordinate site visits, installation crews and later maintenance requests. A shared job record keeps follow-up service visible. See [solar software](/solutions/solar-software).',
+  ),
+  h3('Construction and On-Site Service Businesses'),
+  p(
+    'Contractors assign work to crews across sites and need progress updates without constant calls. See [construction management software](/solutions/construction-management-software).',
+  ),
+  h2('Manual Field Service Management vs. Mobile Software'),
+  p('Manual methods can work for a very small team. The differences grow with the number of jobs and technicians.'),
+  {
+    type: 'table',
+    caption: 'Manual field service management compared with mobile field service software',
+    head: ['Area', 'Manual (calls, chats, registers)', 'Mobile field service software'],
+    rows: [
+      ['Job assignment', 'By phone or message, hard to confirm', 'Assigned in the system; the technician sees it on the phone'],
+      ['Customer records', 'Spread across notebooks and phones', 'Kept in one record with service history'],
+      ['Technician coordination', 'Depends on the coordinator', 'Shared schedule and job list'],
+      ['Service status tracking', 'Found by asking', 'Updated as the job progresses'],
+      ['Reporting', 'Compiled by hand', 'Generated from recorded jobs'],
+      ['Access to field information', 'Through calls to the technician', 'Notes, photos and sign-off on the job'],
+      ['Operational visibility', 'Limited to what people remember', 'A live view of pending and completed work'],
+    ],
+  },
+  p('Software does not remove every problem. Results depend on how consistently the team records work.'),
+  h2('How to Choose the Right Mobile Field Service Management Software'),
+  p('Use this checklist when comparing options:'),
+  ul(
+    'Ease of use: will technicians and office staff use it every day?',
+    'Mobile accessibility: which phones are supported, and how does it behave with a weak signal?',
+    'Required features: work orders, scheduling, service history, AMC tracking and reports.',
+    'Industry suitability: does it fit AC, CCTV, solar or construction workflows?',
+    'Team size and workflows: will it suit you now and as you add technicians?',
+    'Reporting requirements: can you see pending work, workload and renewals?',
+    'Integration requirements: list what you need and ask directly, instead of assuming.',
+    'Pricing and scalability: what is included and how does cost change as you grow?',
+    'Vendor support and onboarding: who helps set up and train the team?',
+  ),
+  p(
+    'Run a trial with real jobs and involve the dispatcher and a few technicians. Our guide on [choosing field service software for a small business](/blog/best-field-service-management-software-small-business) adds more detail.',
+  ),
+  h2('Why Consider FSMFlow for Your Field Service Operations?'),
+  p(
+    'FSMFlow is field service management software for Indian service businesses, built first for AC and HVAC teams and relevant to CCTV, solar, construction and other teams that send people to customer locations. Its verified capabilities map to the problems above:',
+  ),
+  ul(
+    'Work orders with an assignee, status, checklist, parts, photos and a service report.',
+    'Assignment by technician skill and availability, with the job appearing on the technician’s phone.',
+    'Statuses that move from assigned to en route, in progress and completed as the technician updates them.',
+    'A field service app showing jobs, directions, customer and unit details, checklists, and customer sign-off.',
+    'Equipment records with warranty, AMC status and service history, plus scheduled visits and renewals.',
+    'Reporting on jobs, technician productivity and AMC renewals.',
+  ),
+  p(
+    'We have not described integrations, pricing or customer results here, because they should be confirmed directly. For a general service team, see [service business management software](/solutions/service-business-management-software). To see FSMFlow on your own workflow, [request a demo](/demo).',
+  ),
+  h2('Frequently Asked Questions'),
+  h3('What is mobile field service management software?'),
+  p(
+    'It is software for planning, assigning and tracking work at customer locations, with a mobile app that technicians use to see and update jobs.',
+  ),
+  h3('How does a field service management app help service businesses?'),
+  p(
+    'It gives the office and technicians one shared record of jobs, customers and equipment, so assignment and status are visible without repeated calls.',
+  ),
+  h3('Can field service software help manage AC and HVAC technicians?'),
+  p(
+    'Yes. It can assign jobs by skill and availability, track status and keep maintenance visits scheduled. The result depends on consistent use by the team.',
+  ),
+  h3('What should businesses look for in a field service technician app?'),
+  p(
+    'A clear job list, customer and equipment details, simple status updates, a checklist, photos and sign-off, and reliable behaviour on a weak mobile signal.',
+  ),
+  h3('Is mobile field service management software suitable for small businesses?'),
+  p(
+    'Often yes, if it is simple enough for the team to adopt and priced for your size. Small teams can start with core features such as work orders and scheduling.',
+  ),
+  h3('How can a company choose the right field service management solution?'),
+  p(
+    'Map your current workflow, list must-have features, trial two or three options with real jobs, and involve the people who will use it daily.',
+  ),
+  h2('Conclusion'),
+  p(
+    'Choosing mobile field service management software is about giving your office and technicians one shared, current picture of the work. Start from your own workflow, test with real jobs, and judge each option on how well your team can use it.',
+  ),
+  p(
+    'To see how FSMFlow handles jobs, technicians and service history, [request a demo](/demo) or explore the [field service app](/features/field-service-app).',
+  ),
+]
