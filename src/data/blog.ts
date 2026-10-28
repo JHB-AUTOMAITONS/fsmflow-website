@@ -279,8 +279,8 @@ export const BLOG_POSTS: BlogPost[] = [
       'What mobile field service management software does, the features to evaluate, and how AC, CCTV, solar and construction teams can choose a solution.',
     category: 'Field Service',
     readMinutes: 9,
-    // DRAFT: set status to 'published' and add publishedAt to release this post.
-    status: 'upcoming',
+    status: 'published',
+    publishedAt: '2026-10-28',
     icon: Smartphone,
     accent: 'brand',
     author: 'FSMFlow Team',
