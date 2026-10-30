@@ -1571,3 +1571,203 @@ export const MOBILE_FSM_ARTICLE: BlogBlock[] = [
     'To see how FSMFlow handles jobs, technicians and service history, [request a demo](/demo) or explore the [field service app](/features/field-service-app).',
   ),
 ]
+
+/* -------------------------------------------------------------------------- */
+/* Service report format (India)                                               */
+/* -------------------------------------------------------------------------- */
+
+export const SERVICE_REPORT_FORMAT_ARTICLE: BlogBlock[] = [
+  p(
+    'A service report is the written record of a visit: what the customer reported, what the technician found, what was done and what still needs attention. Without a consistent service report format, every technician writes it differently, details go missing, and nobody can tell what happened the last time someone visited.',
+  ),
+  p(
+    'This guide sets out the fields a good service report should contain, with practical templates for AC, CCTV and solar service businesses, and explains how to keep reports consistent as your team grows.',
+  ),
+  h2('What Is a Service Report Format?'),
+  p(
+    'A service report format is a standard structure for documenting a service visit. It lists the same sections in the same order every time: who the customer is, what equipment was serviced, what was found, what was done and what comes next.',
+  ),
+  p(
+    'The format matters more than the wording. When every technician fills in the same fields, the office can read any report quickly, compare visits over time and spot repeat problems.',
+  ),
+  h2('Why Is a Standardised Service Report Important?'),
+  p('A consistent format helps in practical ways:'),
+  ul(
+    'Consistent documentation, so reports from different technicians look and read alike.',
+    'Better communication between technicians and office staff, because the office does not need to call to ask what was done.',
+    'Easier access to previous service records when the same customer calls again.',
+    'A clearer service history for each customer and each piece of equipment.',
+    'Better maintenance planning, since recommendations and follow-ups are written down instead of remembered.',
+  ),
+  p('None of this guarantees fewer faults. It makes your work visible and easier to follow up.'),
+  h2('Essential Fields Every Service Report Should Include'),
+  p('Some fields are essential for almost every business. Others are optional and depend on your trade and workflow.'),
+  {
+    type: 'table',
+    caption: 'Essential and optional fields in a service report',
+    head: ['Field', 'Why it matters', 'Essential or optional'],
+    rows: [
+      ['Report number or job reference', 'Lets you find the report later and link it to the job', 'Essential'],
+      ['Customer name and contact details', 'Identifies who the work was for', 'Essential'],
+      ['Service location', 'Records the exact site, especially for customers with several premises', 'Essential'],
+      ['Equipment or asset details', 'Shows what was serviced: type, model, serial number or position', 'Essential'],
+      ['Service date and time', 'Gives the visit a clear place in the history', 'Essential'],
+      ['Technician details', 'Shows who attended', 'Essential'],
+      ['Reported issue or service request', 'States what the customer asked for', 'Essential'],
+      ['Inspection findings', 'Records what the technician actually observed', 'Essential'],
+      ['Work performed', 'Describes what was done, specifically', 'Essential'],
+      ['Parts or materials used', 'Supports billing and stock records', 'Where applicable'],
+      ['Outstanding issues and recommendations', 'Flags what is not fixed or should be done next', 'Essential'],
+      ['Follow-up requirements', 'Sets the next visit or action and who owns it', 'Where applicable'],
+      ['Customer acknowledgement', 'Confirms the customer has seen the work', 'Optional, depending on workflow'],
+    ],
+  },
+  h2('AC Service Report Format: Example'),
+  p(
+    'An AC service report format should capture the unit as well as the visit. Here is a template you can adapt. The entries in the right column are examples of the kind of detail to write, not required values.',
+  ),
+  {
+    type: 'table',
+    caption: 'Sample AC service report template',
+    head: ['Section', 'What to record', 'Example entry'],
+    rows: [
+      ['Customer and site', 'Name, phone number, address, contact person on site', 'Office unit on the first floor, front desk contact'],
+      ['AC unit details', 'Type, brand, model, serial number, location', 'Split AC, indoor unit in the conference room'],
+      ['Reported problem', 'What the customer described', 'Not cooling properly, water dripping from the indoor unit'],
+      ['Inspection observations', 'What the technician found', 'Dirty filters, blocked drain line'],
+      ['Work performed', 'Cleaning, repair or adjustment done', 'Filters cleaned, drain line cleared, operation checked'],
+      ['Parts used', 'Item and quantity, if any', 'None'],
+      ['Recommendations', 'Advice for the customer', 'Schedule the next routine service'],
+      ['Follow-up', 'Next action and date', 'Planned service visit'],
+    ],
+  },
+  p(
+    'Many businesses also keep an AC maintenance checklist for routine servicing, which we cover below. The report records the outcome of the visit, while the checklist guides the steps. Our [preventive maintenance guide](/blog/preventive-maintenance-guide-sri-lanka) explains how to build a checklist and schedule.',
+  ),
+  h2('CCTV Service Report Format: Example'),
+  p(
+    'A CCTV service report format should identify each camera and recorder and note what was checked. Leave out AC-style fields such as refrigerant or filters, which do not apply.',
+  ),
+  {
+    type: 'table',
+    caption: 'Sample CCTV service report template',
+    head: ['Section', 'What to record', 'Example entry'],
+    rows: [
+      ['Customer and site', 'Name, address, contact person', 'Showroom, ground floor entrance'],
+      ['System identification', 'Recorder model, camera count, camera names or positions', 'Recorder in the back office, camera at the main entrance'],
+      ['Reported issue', 'What the customer reported', 'One camera shows no picture'],
+      ['Inspection findings', 'Camera view, recording status, storage, connectors, power', 'Loose connector at the camera end'],
+      ['Work completed', 'Repair, replacement or cleaning done', 'Connector re-fixed, picture restored'],
+      ['Unresolved issues', 'Anything still pending', 'Another camera needs a new power supply'],
+      ['Recommended next steps', 'Advice and follow-up', 'Quote for the power supply, schedule a revisit'],
+    ],
+  },
+  p(
+    'If your business sells AMCs, the report is also the proof that contracted visits were delivered. See our guide to the [CCTV AMC format and renewals](/blog/cctv-amc-format-installation-service-renewals).',
+  ),
+  h2('Solar Service Report Format: Example'),
+  p(
+    'A solar service report format records the system and the visit. Describe observations in words, and do not invent readings or performance figures. Record only what was actually measured or seen.',
+  ),
+  {
+    type: 'table',
+    caption: 'Sample solar service report template',
+    head: ['Section', 'What to record', 'Example entry'],
+    rows: [
+      ['Site and system details', 'Customer, site, system type, main components', 'Rooftop system at a small office'],
+      ['Reported issue', 'What the customer noticed', 'Inverter showing a warning'],
+      ['Inspection observations', 'Panels, mounting, cabling, inverter indication', 'Dust on panels, warning displayed on the inverter'],
+      ['Maintenance performed', 'Cleaning and checks done', 'Panels cleaned, connections visually checked'],
+      ['Faults or concerns identified', 'Anything abnormal', 'Warning remains, needs further diagnosis'],
+      ['Recommended follow-up', 'Next steps', 'Further inspection by a qualified technician'],
+    ],
+  },
+  p(
+    'Electrical checks on a solar system should be done by suitably qualified staff, following the manufacturer’s guidance. For the project side, see [solar installation project management](/blog/solar-installation-project-management).',
+  ),
+  h2('Field Service Report Format for Other Businesses'),
+  p(
+    'The same structure works for electrical service providers, equipment maintenance companies and other teams that visit customer sites. Start from the essential fields above, then add what your trade needs: for example, equipment readings, safety checks, or the test performed.',
+  ),
+  p(
+    'Keep one field service report format for the business, with small trade-specific sections, instead of a separate layout for every technician. That keeps records comparable across jobs.',
+  ),
+  h2('Service Report vs Job Sheet vs Maintenance Checklist'),
+  p('These three documents are often mixed up, but they do different jobs.'),
+  {
+    type: 'table',
+    caption: 'Service report compared with job sheet and maintenance checklist',
+    head: ['Document', 'Purpose', 'When it is used'],
+    rows: [
+      ['Job sheet or work order', 'Instructs and tracks the job: who, where, what, when', 'Before and during the visit'],
+      ['Maintenance checklist', 'Lists the steps to carry out, such as an AC maintenance checklist for filters and drain lines', 'During the visit'],
+      ['Service report', 'Records what was found, done and recommended', 'At the end of the visit'],
+    ],
+  },
+  p(
+    'In short, the job sheet says what to do, the checklist guides how, and the service report records what happened. Our guide to [technician management and AMC renewals](/blog/hvac-technician-management-amc-renewals) shows how these fit into a team’s daily work.',
+  ),
+  h2('How FSMFlow Helps You Manage Service Reports Digitally'),
+  p(
+    'Handling reports on paper or in chat creates familiar problems: customer and service records are scattered, coordinating several technicians takes constant calls, follow-ups are done by hand, nobody sees job progress, and recurring maintenance is hard to track.',
+  ),
+  p(
+    'FSMFlow is field service management software that keeps these in one workflow. Based on what its website describes, it can help in the following ways.',
+  ),
+  h3('Organising service jobs and customer information'),
+  p(
+    'Each request becomes a work order with the customer, site, problem, assignee and status. See [work order management software](/features/work-order-management-software).',
+  ),
+  h3('Improving field team coordination'),
+  p(
+    'Jobs are assigned by skill and availability and appear on the technician’s phone. Status moves from assigned to en route, in progress and completed as the technician updates it, so the office can follow progress.',
+  ),
+  h3('Capturing the report from the job'),
+  p(
+    'Technicians follow a checklist, record parts and photos, and take the customer’s sign-off on the phone. FSMFlow’s website says a service report is generated from the checklist, parts and photos on the job. See the [field service app](/features/field-service-app).',
+  ),
+  h3('Maintaining service history'),
+  p(
+    'Each completed visit is saved against the unit that was serviced, so teams can look back at previous visits and repeat issues. See [asset management software](/features/asset-management-software).',
+  ),
+  h3('Coordinating preventive maintenance'),
+  p(
+    'Scheduled AMC and maintenance visits appear on the calendar and are assigned like any other job, with a checklist and a report. See [warranty and AMC management](/features/warranty-management-software).',
+  ),
+  h3('Reducing manual coordination and supporting growth'),
+  p(
+    'With records in one place, the team depends less on spreadsheets and repeated calls. That matters more as customers, technicians and service requests increase.',
+  ),
+  p(
+    'We have not described PDF export, offline use or automatic customer notifications, because the website does not state them. Ask about them in a demo. To see how this works for your trade, explore the [HVAC](/solutions/hvac-field-service-software), [CCTV](/solutions/cctv-software) and [solar](/solutions/solar-software) pages, or [request a demo](/demo).',
+  ),
+  h2('Common Service Reporting Mistakes to Avoid'),
+  ul(
+    'Missing customer or equipment information. Make the unit and site mandatory fields.',
+    'Vague descriptions such as “serviced” or “checked”. Ask technicians to state what was done.',
+    'Incomplete inspection findings. Use a checklist so nothing is skipped.',
+    'Missing follow-up recommendations. Add a required field for next steps.',
+    'Inconsistent formats between technicians. Use one standard template.',
+    'Delayed documentation. Complete the report on site, while details are fresh.',
+  ),
+  h2('Frequently Asked Questions'),
+  h3('What is a service report format?'),
+  p('It is a standard structure for recording a service visit, so every report has the same sections: customer, equipment, findings, work done and follow-up.'),
+  h3('What details should a service report include?'),
+  p('Job reference, customer and site, equipment, date, technician, reported issue, findings, work done, parts used, recommendations and follow-up. Customer acknowledgement is optional.'),
+  h3('How do I prepare an AC service report?'),
+  p('Record the customer, site and unit details, the reported problem, what you observed, the work performed, parts used and any recommendation or follow-up.'),
+  h3('What should a CCTV service report contain?'),
+  p('The site, recorder and camera identification, the reported issue, findings, work completed, unresolved issues and next steps.'),
+  h3('What is the difference between a service report and a job sheet?'),
+  p('A job sheet or work order instructs and tracks the job. A service report records what was found and done at the end of the visit.'),
+  h3('How can service businesses manage reports digitally?'),
+  p('Use one template, record the work on site, and keep reports linked to the customer and equipment. A field service system can hold the job, checklist and report together.'),
+  h2('Conclusion'),
+  p(
+    'A consistent service report format makes your work easier to follow, check and repeat. Choose the essential fields, adapt them for AC, CCTV or solar work, and make sure every technician completes the same sections on every visit.',
+  ),
+  p(
+    'If you want to move reports from paper and chat into one workflow, [request a demo](/demo) to see how FSMFlow handles jobs, checklists, service history and reports.',
+  ),
+]

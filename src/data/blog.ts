@@ -1,5 +1,5 @@
-import { AirVent, BarChart3, Briefcase, Cctv, ClipboardList, Compass, HardHat, Navigation, Package, ReceiptText, Route, Smartphone, SunMedium, Users, Wrench, type LucideIcon } from 'lucide-react'
-import { CCTV_ARTICLE, CONSTRUCTION_ARTICLE, HVAC_ARTICLE, SERVICE_BUSINESS_ARTICLE, SOLAR_ARTICLE, CMMS_ARTICLE, MOBILE_FSM_ARTICLE, WEB_MAINTENANCE_NIGERIA_ARTICLE, DISPATCH_SOFTWARE_ARTICLE, PREVENTIVE_MAINTENANCE_ARTICLE, WHAT_IS_FSM_ARTICLE } from './blogArticles'
+import { AirVent, ClipboardCheck, BarChart3, Briefcase, Cctv, ClipboardList, Compass, HardHat, Navigation, Package, ReceiptText, Route, Smartphone, SunMedium, Users, Wrench, type LucideIcon } from 'lucide-react'
+import { CCTV_ARTICLE, CONSTRUCTION_ARTICLE, HVAC_ARTICLE, SERVICE_BUSINESS_ARTICLE, SOLAR_ARTICLE, CMMS_ARTICLE, MOBILE_FSM_ARTICLE, SERVICE_REPORT_FORMAT_ARTICLE, WEB_MAINTENANCE_NIGERIA_ARTICLE, DISPATCH_SOFTWARE_ARTICLE, PREVENTIVE_MAINTENANCE_ARTICLE, WHAT_IS_FSM_ARTICLE } from './blogArticles'
 
 /**
  * Blog content model.
@@ -288,6 +288,26 @@ export const BLOG_POSTS: BlogPost[] = [
     secondaryKeywords: ['Field Service Management App', 'Mobile Workforce Management Software', 'Field Service Technician App'],
     supports: '/features/field-service-app',
     body: MOBILE_FSM_ARTICLE,
+  },
+  {
+    slug: 'service-report-format-ac-cctv-solar',
+    title: 'Service Report Format: What AC, CCTV and Solar Service Businesses Should Include',
+    seoTitle: 'Service Report Format for AC, CCTV & Solar Services',
+    seoDescription:
+      'Learn what a service report format should include, with practical examples for AC, CCTV and solar service businesses and tips for improving digital reporting.',
+    excerpt:
+      'The fields a service report should contain, with sample templates for AC, CCTV and solar visits, and how to keep reports consistent.',
+    category: 'Field Service',
+    readMinutes: 9,
+    status: 'published',
+    icon: ClipboardCheck,
+    accent: 'aqua',
+    publishedAt: '2026-10-30',
+    author: 'FSMFlow Team',
+    primaryKeyword: 'service report format',
+    secondaryKeywords: ['AC service report format', 'field service report format', 'CCTV service report format', 'solar service report format', 'AC maintenance checklist'],
+    supports: '/features/work-order-management-software',
+    body: SERVICE_REPORT_FORMAT_ARTICLE,
   },
   {
     slug: 'run-amc-renewals-without-spreadsheets',
