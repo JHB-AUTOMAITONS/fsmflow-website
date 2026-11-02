@@ -1,5 +1,5 @@
-import { AirVent, ClipboardCheck, BarChart3, Briefcase, Cctv, ClipboardList, Compass, HardHat, Navigation, Package, ReceiptText, Route, Smartphone, SunMedium, Users, Wrench, type LucideIcon } from 'lucide-react'
-import { CCTV_ARTICLE, CONSTRUCTION_ARTICLE, HVAC_ARTICLE, SERVICE_BUSINESS_ARTICLE, SOLAR_ARTICLE, CMMS_ARTICLE, MOBILE_FSM_ARTICLE, SERVICE_REPORT_FORMAT_ARTICLE, WEB_MAINTENANCE_NIGERIA_ARTICLE, DISPATCH_SOFTWARE_ARTICLE, PREVENTIVE_MAINTENANCE_ARTICLE, WHAT_IS_FSM_ARTICLE } from './blogArticles'
+import { AirVent, ClipboardCheck, BarChart3, Briefcase, Cctv, ClipboardList, Compass, FileSignature, HardHat, Navigation, Package, ReceiptText, Route, Smartphone, SunMedium, Users, Wrench, type LucideIcon } from 'lucide-react'
+import { CCTV_ARTICLE, CONSTRUCTION_ARTICLE, HVAC_ARTICLE, SERVICE_BUSINESS_ARTICLE, SOLAR_ARTICLE, CMMS_ARTICLE, MOBILE_FSM_ARTICLE, SERVICE_CONTRACT_ARTICLE, SERVICE_REPORT_FORMAT_ARTICLE, WEB_MAINTENANCE_NIGERIA_ARTICLE, DISPATCH_SOFTWARE_ARTICLE, PREVENTIVE_MAINTENANCE_ARTICLE, WHAT_IS_FSM_ARTICLE } from './blogArticles'
 
 /**
  * Blog content model.
@@ -308,6 +308,26 @@ export const BLOG_POSTS: BlogPost[] = [
     secondaryKeywords: ['AC service report format', 'field service report format', 'CCTV service report format', 'solar service report format', 'AC maintenance checklist'],
     supports: '/features/work-order-management-software',
     body: SERVICE_REPORT_FORMAT_ARTICLE,
+  },
+  {
+    slug: 'service-contract-management-software',
+    title: 'Service Contract Management Software: How to Manage Contracts, Renewals and Service Visits',
+    seoTitle: 'Service Contract Management Software Guide | FSMFlow',
+    seoDescription:
+      'Service contract management software explained: how to track contracts, renewals and service visits, and what to look for. Built for Indian service teams.',
+    excerpt:
+      'How to keep service contracts, renewals and scheduled visits under control, the features to look for, and how to choose a tool.',
+    category: 'Service Management',
+    readMinutes: 8,
+    status: 'published',
+    icon: FileSignature,
+    accent: 'heat',
+    publishedAt: '2026-11-02',
+    author: 'FSMFlow Team',
+    primaryKeyword: 'Service Contract Management Software',
+    secondaryKeywords: ['Service Contract Software', 'HVAC Service Software', 'HVAC Maintenance Software', 'Service Agreement Management', 'Service Contract Renewal Management'],
+    supports: '/features/warranty-management-software',
+    body: SERVICE_CONTRACT_ARTICLE,
   },
   {
     slug: 'run-amc-renewals-without-spreadsheets',

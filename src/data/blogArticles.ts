@@ -1771,3 +1771,169 @@ export const SERVICE_REPORT_FORMAT_ARTICLE: BlogBlock[] = [
     'If you want to move reports from paper and chat into one workflow, [request a demo](/demo) to see how FSMFlow handles jobs, checklists, service history and reports.',
   ),
 ]
+
+/* -------------------------------------------------------------------------- */
+/* Service contract management software (India)                               */
+/* -------------------------------------------------------------------------- */
+
+export const SERVICE_CONTRACT_ARTICLE: BlogBlock[] = [
+  p(
+    'Service contracts are some of the steadiest income a service business has, and some of the easiest to lose. A renewal date passes unnoticed, a quarterly visit slips to once a year, and the customer quietly signs with someone else. Service contract management software keeps contracts, renewal dates and scheduled visits in one place, so that these things stop depending on memory and Excel sheets.',
+  ),
+  p(
+    'This guide explains what service contract management involves, the problems it solves, the features to look for, how to run renewals, and how to choose a tool. It is written for AC, CCTV, solar, electrical and other field service businesses.',
+  ),
+  h2('What Is Service Contract Management?'),
+  p(
+    'Service contract management is the practice of recording each customer agreement, keeping track of what it covers, and making sure the promised service is delivered and renewed on time. Many businesses also call it service agreement management.',
+  ),
+  p('A few practical examples:'),
+  ul(
+    'An AC company has a yearly contract with a clinic for four visits across six units.',
+    'A CCTV installer maintains cameras for a showroom and visits twice a year.',
+    'A solar business offers an annual maintenance plan with cleaning and inspection visits.',
+  ),
+  p(
+    'In India, many of these are called AMCs (annual maintenance contracts). An AMC is one common type of service contract, usually covering planned maintenance visits for a year. The exact terms differ from business to business, so what is covered should always be written in the contract itself.',
+  ),
+  h2('Why Do Service Businesses Need Service Contract Management Software?'),
+  p('Spreadsheets and notebooks work with a handful of contracts. As the list grows, the same problems appear:'),
+  ul(
+    'Missed contract renewals, because end dates are buried in a sheet nobody opens.',
+    'Forgotten customer follow-ups, since the renewal call depends on one person remembering.',
+    'Missed scheduled maintenance visits, so contracted service quietly turns into a visit when something breaks.',
+    'Manual Excel tracking, with several versions and no single source of truth.',
+    'Poor customer communication, because staff cannot say quickly what a customer is entitled to.',
+    'Difficulty tracking contract history, such as which visits were done and what was found.',
+  ),
+  p(
+    'Service contract software does not guarantee renewals. It makes the dates and obligations visible, so your team can act early.',
+  ),
+  h2('Important Features of Service Contract Management Software'),
+  p('Use this list when evaluating tools. Not every product covers all of it.'),
+  h3('Contract records and key dates'),
+  ul(
+    'Centralised contract records: customer, units covered, number of visits and contract value in one place.',
+    'Contract start and expiry dates, clearly visible.',
+    'Contract status tracking, such as active, due for renewal or expired.',
+  ),
+  h3('Visits and renewals'),
+  ul(
+    'Renewal reminders ahead of the expiry date.',
+    'Scheduled service visits created from the contract and shown on a calendar.',
+    'Technician assignment, so each visit has a named person.',
+  ),
+  h3('Context and visibility'),
+  ul(
+    'Customer and equipment details linked to the contract.',
+    'Service history showing visits done and visits remaining.',
+    'Reports and dashboards on renewals due and visits completed.',
+  ),
+  h2('How to Manage AMC and Service Contract Renewals'),
+  p('Service contract renewal management works best as a routine with clear steps, not a last-minute rescue.'),
+  ul(
+    'Step 1: keep every contract in one list with start date, end date, covered units and visits included.',
+    'Step 2: review contracts ending in the next 60 to 90 days every week.',
+    'Step 3: check what was delivered. How many visits were completed, and were there repeat faults?',
+    'Step 4: prepare the renewal quotation from the existing contract, with any changes in scope or price.',
+    'Step 5: contact the customer early, while the service relationship is fresh.',
+    'Step 6: record the outcome, and if renewed, schedule the new year’s visits straight away.',
+  ),
+  p(
+    'For example, an AC company reviewing contracts before summer can renew them while customers are thinking about cooling. For an industry-specific version, see our guides to [CCTV AMC format and renewals](/blog/cctv-amc-format-installation-service-renewals) and [HVAC technician management and AMC renewals](/blog/hvac-technician-management-amc-renewals).',
+  ),
+  p(
+    'Here is how it plays out. An AC company has 40 contracts and reviews them every Monday. A clinic’s contract ends in 45 days, so the team checks that all four visits were completed, notes that one unit needed repeated attention, and sends a renewal quotation that recommends a repair first. The customer decides with the full history in front of them, instead of finding out the contract lapsed after the next breakdown.',
+  ),
+  h3('Common contract tracking mistakes'),
+  ul(
+    'Keeping start dates but not end dates, so expiry surprises the team.',
+    'Recording the contract but not scheduling the visits it promises.',
+    'Waiting until the last week to contact the customer about renewal.',
+    'Not recording what each visit found, so there is nothing to discuss at renewal.',
+  ),
+  h2('Service Contract Management for Different Industries'),
+  h3('HVAC and AC maintenance'),
+  p(
+    'Contracts for clinics, offices and housing societies drive repeat work. HVAC service software and HVAC maintenance software should track the units covered, the visit schedule and the renewal date together. See [HVAC field service software](/solutions/hvac-field-service-software).',
+  ),
+  h3('CCTV AMC services'),
+  p('Camera and recorder lists, scheduled checks and renewals matter most. See [CCTV software](/solutions/cctv-software).'),
+  h3('Solar maintenance contracts'),
+  p('Cleaning and inspection visits repeat through the year, so the schedule matters as much as the contract. See [solar software](/solutions/solar-software).'),
+  h3('Electrical equipment maintenance'),
+  p('Electrical contractors often service panels, generators or building systems on a recurring basis, which makes visit tracking and history important.'),
+  h3('Commercial equipment servicing'),
+  p('Businesses servicing kitchen equipment, refrigeration or office machines need each asset tied to its contract and warranty.'),
+  h2('Manual Contract Tracking vs Software-Based Management'),
+  {
+    type: 'table',
+    caption: 'Manual service contract tracking compared with software-based management',
+    head: ['Area', 'Manual (Excel, notebooks)', 'Software-based'],
+    rows: [
+      ['Contract records', 'Scattered across files', 'Held in one central place'],
+      ['Renewal tracking', 'Depends on someone checking dates', 'Contracts nearing expiry can be flagged'],
+      ['Scheduled visits', 'Remembered or kept on a separate sheet', 'Created from the contract and scheduled'],
+      ['Customer follow-up', 'Ad hoc calls', 'Easier to plan from a renewal list'],
+      ['Service history', 'Found by searching old files', 'Linked to the contract and equipment'],
+      ['Reporting', 'Built by hand', 'Generated from recorded data'],
+    ],
+  },
+  p('Software only helps if the team keeps records current. Capabilities also differ between products.'),
+  h2('How to Choose the Right Service Contract Management Software'),
+  ul(
+    'Fit with your contracts: can it record units covered, visit counts, dates and value?',
+    'Renewals: does it flag contracts before they expire?',
+    'Scheduling: do contract visits become jobs with a technician?',
+    'Ease of use: will office staff and technicians use it daily?',
+    'Mobile access: can technicians see and update visits on a phone?',
+    'Reporting: can you see renewals due and visits completed?',
+    'Integrations: list what you need and ask directly.',
+    'Pricing and support: understand what is included and how onboarding works.',
+  ),
+  p('Trial it with a real batch of your own contracts before committing.'),
+  h2('How FSMFlow Helps Service Businesses Manage Their Operations'),
+  p(
+    'FSMFlow is field service management software for Indian service businesses, built first for AC and HVAC teams. Its [warranty and AMC management](/features/warranty-management-software) feature is the main destination for contract tracking: an AMC record holds the units covered, visits per year, start and end dates and contract value, and contracts nearing their end are flagged so you can quote a renewal before cover lapses.',
+  ),
+  p('Contract management connects to the rest of the workflow:'),
+  ul(
+    'Scheduled visits appear on the calendar and are assigned to technicians like any other job, using [work order management](/features/work-order-management-software).',
+    'Technicians see their jobs and complete checklists in the [field service app](/features/field-service-app).',
+    'Customer and equipment records, with service history, show what was done on earlier visits.',
+    'Reporting shows jobs and AMC renewals.',
+  ),
+  p(
+    'We have not described pricing or integrations here. To see FSMFlow on your own contracts, [request a demo](/demo), or read about the [service business management software](/solutions/service-business-management-software) for general service teams.',
+  ),
+  h2('Frequently Asked Questions'),
+  h3('What is service contract management software?'),
+  p(
+    'It is software that records service contracts, tracks their dates and renewals, schedules the visits they promise and keeps the history.',
+  ),
+  h3('How does service contract software work?'),
+  p(
+    'You record each contract with its customer, covered equipment, visits and dates. The software shows what is due, flags contracts nearing expiry and links visits to technicians and jobs.',
+  ),
+  h3('What is the difference between AMC and a service contract?'),
+  p(
+    'An AMC is a common type of service contract, usually for planned maintenance over a year. “Service contract” is the broader term, and the exact scope depends on what each agreement states.',
+  ),
+  h3('How can businesses track contract renewals?'),
+  p(
+    'Keep all contracts in one list with end dates, review those ending in the next 60 to 90 days weekly, and prepare the renewal quotation early. Software can flag contracts nearing expiry.',
+  ),
+  h3('Can HVAC companies manage service contracts using software?'),
+  p(
+    'Yes. HVAC companies can track units covered, scheduled visits and renewal dates, and assign visits to technicians, so contracted service is not missed.',
+  ),
+  h3('What should I look for in service contract management software?'),
+  p('Contract records, renewal flags, scheduled visits, technician assignment, service history, reports and ease of use for the team.'),
+  h2('Conclusion'),
+  p(
+    'Good service contract management software gives your team a clear view of which contracts are active, which are about to expire and which visits are due. Start by listing your contracts in one place, set a weekly renewal review, and test any tool with your own data.',
+  ),
+  p(
+    'To see how FSMFlow handles contracts, scheduled visits and service history, explore [warranty and AMC management](/features/warranty-management-software) or [request a demo](/demo).',
+  ),
+]
