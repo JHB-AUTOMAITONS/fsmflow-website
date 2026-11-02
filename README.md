@@ -84,7 +84,7 @@ These are deliberately placeholders — nothing was invented:
 - **Pricing** — `src/data/pricing.ts`: every plan has `price: null` (renders a clear placeholder). Set a number to show a real price.
   Plan names, inclusions and the comparison table are placeholders too.
 - **Contact details** — `src/data/site.ts` → `SITE.contact`: email is assumed (`hello@fsmflow.in`); phone, address and hours are empty and hidden until set.
-- **WhatsApp button** — `SITE.whatsapp` in `src/data/site.ts` holds the number (`917090006577`, +91 70900 06577) and the `FSMFLOW_SERVICE_ENQUIRY` keyword; `WHATSAPP_URL` is built from them. The floating button is `src/components/ui/WhatsAppButton.tsx`, rendered once in `MainLayout`. The keyword only labels the message; it does not track clicks.
+- **WhatsApp button** — `SITE.whatsapp` in `src/data/site.ts` holds the number (`917090006577`, +91 70900 06577); `WHATSAPP_URL` is built from it and the pre-filled message. The floating button is `src/components/ui/WhatsAppButton.tsx`, rendered once in `MainLayout`.
 - **Legal entity & policies** — `SITE.legalEntity` and the `CONFIRM:` constants at the top of `src/data/legal.ts` (refund window, notice period…). The policy text is a sensible starting draft; have it reviewed before publishing.
 - **Forms** — on Netlify, demo and contact submissions go to **Netlify Forms** automatically (`VITE_NETLIFY_FORMS=true` in `netlify.toml`;
   the forms are registered by the hidden `public/__forms.html`). After the first deploy open Netlify → *Forms → Form notifications → Add
