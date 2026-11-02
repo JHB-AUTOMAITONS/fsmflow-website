@@ -2,6 +2,7 @@ import { Suspense, useEffect, useRef, useState } from 'react'
 import { Outlet, useLocation, useNavigationType } from 'react-router'
 import { Footer } from '@/components/nav/Footer'
 import { AmbientMotion } from '@/components/ui/AmbientMotion'
+import { WhatsAppButton } from '@/components/ui/WhatsAppButton'
 import { Header, SkipLink } from '@/components/nav/Header'
 import { useOnView } from '@/hooks/useOnView'
 
@@ -47,6 +48,7 @@ export function MainLayout() {
         </Suspense>
       </main>
       <Footer />
+      <WhatsAppButton />
       <AmbientMotion />
       <p className="sr-only" role="status" aria-live="polite">
         {announcement}

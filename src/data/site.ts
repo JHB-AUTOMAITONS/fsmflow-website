@@ -27,6 +27,17 @@ export const SITE = {
   },
   /** CONFIRM: registered business name used in the legal pages. Empty → "FSMFlow". */
   legalEntity: '',
+  whatsapp: {
+    /** International format: country code + number, no "+", spaces or dashes (wa.me requires this). */
+    number: '917090006577',
+    /** Message identifier so enquiries from the site can be recognised in WhatsApp. It does not track anything by itself. */
+    keyword: 'FSMFLOW_SERVICE_ENQUIRY',
+  },
 } as const
+
+const WHATSAPP_MESSAGE = `Hello FSMFlow Team, I am interested in your Field Service Management Software. Please share details about features, pricing, and demo. Keyword: ${SITE.whatsapp.keyword}`
+
+/** wa.me link with the message pre-filled. WhatsApp never sends it automatically; the visitor reviews and sends. */
+export const WHATSAPP_URL = `https://wa.me/${SITE.whatsapp.number}?text=${encodeURIComponent(WHATSAPP_MESSAGE)}`
 
 export const BUILD_YEAR: number = typeof __BUILD_YEAR__ === 'number' ? __BUILD_YEAR__ : 2026
