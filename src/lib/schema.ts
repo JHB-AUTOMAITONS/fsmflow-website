@@ -14,7 +14,7 @@ export const organizationSchema = (): Json => ({
   '@id': `${SITE.url}/#organization`,
   name: SITE.name,
   url: SITE.url,
-  logo: absoluteUrl('/favicon.svg'),
+  logo: absoluteUrl('/logo.png'),
   description: SITE.description,
   areaServed: 'IN',
 })

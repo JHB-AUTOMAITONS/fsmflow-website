@@ -16,7 +16,7 @@ export function Footer() {
       <Container className="pt-16 pb-10 md:pt-20">
         <div className="grid gap-12 lg:grid-cols-12 lg:gap-8">
           <div className="lg:col-span-4">
-            <Logo />
+            <Logo size="lg" />
             <p className="mt-5 max-w-xs text-[0.9375rem] leading-relaxed text-ink-600">{SITE.tagline}</p>
             <p className="mt-3 max-w-xs text-sm leading-relaxed text-ink-500">
               Field service management software for HVAC, CCTV, solar, construction and other service businesses in India.

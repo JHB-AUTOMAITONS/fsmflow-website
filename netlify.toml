@@ -35,11 +35,6 @@
   [headers.values]
     Cache-Control = "public, max-age=86400"
 
-[[headers]]
-  for = "/favicon.svg"
-  [headers.values]
-    Cache-Control = "public, max-age=86400"
-
 # Baseline security headers for every response.
 [[headers]]
   for = "/*"
