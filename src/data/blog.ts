@@ -1,5 +1,5 @@
 import { AirVent, ClipboardCheck, BarChart3, Briefcase, Cctv, ClipboardList, Compass, FileSignature, HardHat, Navigation, Package, ReceiptText, Route, Smartphone, SunMedium, Users, Wrench, type LucideIcon } from 'lucide-react'
-import { CCTV_ARTICLE, CONSTRUCTION_ARTICLE, HVAC_ARTICLE, SERVICE_BUSINESS_ARTICLE, SOLAR_ARTICLE, CMMS_ARTICLE, MOBILE_FSM_ARTICLE, SERVICE_CONTRACT_ARTICLE, SERVICE_REPORT_FORMAT_ARTICLE, WEB_MAINTENANCE_NIGERIA_ARTICLE, DISPATCH_SOFTWARE_ARTICLE, PREVENTIVE_MAINTENANCE_ARTICLE, WHAT_IS_FSM_ARTICLE } from './blogArticles'
+import { CCTV_ARTICLE, CONSTRUCTION_ARTICLE, HVAC_ARTICLE, SERVICE_BUSINESS_ARTICLE, SOLAR_ARTICLE, CMMS_ARTICLE, MOBILE_FSM_ARTICLE, SERVICE_CONTRACT_ARTICLE, SERVICE_REPORT_FORMAT_ARTICLE, SERVICE_REQUEST_MANAGEMENT_ARTICLE, WEB_MAINTENANCE_NIGERIA_ARTICLE, DISPATCH_SOFTWARE_ARTICLE, PREVENTIVE_MAINTENANCE_ARTICLE, WHAT_IS_FSM_ARTICLE } from './blogArticles'
 
 /**
  * Blog content model.
@@ -328,6 +328,26 @@ export const BLOG_POSTS: BlogPost[] = [
     secondaryKeywords: ['Service Contract Software', 'HVAC Service Software', 'HVAC Maintenance Software', 'Service Agreement Management', 'Service Contract Renewal Management'],
     supports: '/features/warranty-management-software',
     body: SERVICE_CONTRACT_ARTICLE,
+  },
+  {
+    slug: 'service-request-management-for-service-businesses',
+    title: 'Service Request Management: How Service Businesses Turn Requests into Completed Jobs',
+    seoTitle: 'Service Request Management for Service Businesses | FSMFlow',
+    seoDescription:
+      'Service request management for service businesses: how to capture requests, assign technicians and track jobs to completion, plus features to look for.',
+    excerpt:
+      'How AC, CCTV, solar and construction teams can capture every service request, assign it, track it and bill it, and which features to look for.',
+    category: 'Service Management',
+    readMinutes: 9,
+    status: 'published',
+    icon: ClipboardList,
+    accent: 'brand',
+    publishedAt: '2026-11-03',
+    author: 'FSMFlow Team',
+    primaryKeyword: 'Service Request Management',
+    secondaryKeywords: ['Service Management Software', 'Service Management System', 'Service Business Software', 'Field Service Management', 'Service Business Automation', 'Technician Management Software', 'Service Scheduling Software'],
+    supports: '/solutions/service-business-management-software',
+    body: SERVICE_REQUEST_MANAGEMENT_ARTICLE,
   },
   {
     slug: 'run-amc-renewals-without-spreadsheets',

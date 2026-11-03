@@ -1937,3 +1937,202 @@ export const SERVICE_CONTRACT_ARTICLE: BlogBlock[] = [
     'To see how FSMFlow handles contracts, scheduled visits and service history, explore [warranty and AMC management](/features/warranty-management-software) or [request a demo](/demo).',
   ),
 ]
+
+/* -------------------------------------------------------------------------- */
+/* Service request management (India)                                          */
+/* -------------------------------------------------------------------------- */
+
+export const SERVICE_REQUEST_MANAGEMENT_ARTICLE: BlogBlock[] = [
+  p(
+    'Every service job starts as a request: a phone call about a dripping AC, a message about a camera that has gone offline, a website enquiry for a rooftop solar quote. What happens to that request in the next few hours decides whether the customer is kept or lost. Service request management is the process of capturing each request, assigning it, tracking it and closing it properly.',
+  ),
+  p(
+    'This guide explains how service businesses can manage requests from first contact to completed job, which features support that process, and how to choose service management software that fits an AC, CCTV, solar or construction team.',
+  ),
+  h2('What Is Service Request Management?'),
+  p(
+    'Service request management is how a business handles customer requests for work: recording the request, deciding who does it and when, keeping the customer informed, and capturing what was done. In IT departments the term has a specific meaning. For a field service business, it simply means getting every request into one system and following it through to a finished job and a paid invoice.',
+  ),
+  p(
+    'It sits at the front of field service management. Dispatch, technician scheduling and billing all depend on the request being recorded correctly in the first place. For the wider picture, see [what field service management is](/blog/what-is-field-service-management).',
+  ),
+  h2('Why Do Service Businesses Need Better Request Handling?'),
+  p('Most service businesses begin with calls, WhatsApp messages and a notebook. As volume grows, these problems appear:'),
+  ul(
+    'Manual job scheduling: someone phones around to find a free technician.',
+    'Technician coordination: instructions are given verbally and remembered differently.',
+    'Scattered customer information: addresses, equipment and history sit in phones and registers.',
+    'Missed service appointments: a request is noted but never scheduled.',
+    'Delayed quotations and invoices: the details have to be re-typed or recalled later.',
+    'Difficulty tracking operations: the owner cannot see which requests are open, in progress or complete.',
+  ),
+  p(
+    'None of these is a skills problem. They come from information living in too many places. A single record for each request fixes most of them.',
+  ),
+  h2('Essential Features for Managing Service Requests'),
+  p('Look for software that follows a request through the whole journey. Here is what each step needs.'),
+  h3('Customer management'),
+  p(
+    'Each request should attach to a customer record with contact details, sites and equipment, so staff do not ask the same questions again. FSMFlow keeps customers, sites and equipment with every past visit in its [asset management software](/features/asset-management-software).',
+  ),
+  h3('Capturing enquiries and service requests'),
+  p(
+    'Requests arrive from calls, website forms, referrals and walk-ins. A good system logs each with its source and a next step. FSMFlow’s [sales CRM software](/features/sales-crm-software) logs enquiries and sets follow-up reminders.',
+  ),
+  h3('Job and work order management'),
+  p(
+    'Once a request is accepted, it becomes a job with a checklist, parts and a status. See [work order management software](/features/work-order-management-software).',
+  ),
+  h3('Technician assignment, scheduling and dispatch'),
+  p(
+    'The office should see who is free and who has the right skills before assigning. Technician management software of this kind lets you keep skills, service areas and leave in one place, and service scheduling software works best when skills, availability and workload sit in one view. See [technician scheduling and workload tools](/features/employee-management-software), and our guide to [field service dispatch software](/blog/field-service-dispatch-software-malaysia).',
+  ),
+  h3('Quotations and invoices'),
+  p(
+    'Delays often happen between the request and the quotation. FSMFlow’s [quotation software](/features/quotation-software) can turn an approved quotation into a job and an invoice from the same line items.',
+  ),
+  h3('Inventory and spare parts'),
+  p(
+    'Parts used on a job should be recorded against it. See [inventory management software](/features/inventory-management-software) for warehouse and van stock.',
+  ),
+  h3('Reports and analytics'),
+  p(
+    'Reports should show open requests, completed jobs and technician workload without manual compilation. See [reporting software](/features/reporting-software).',
+  ),
+  h2('A Service Request from Call to Invoice: A Worked Example'),
+  p('Here is how one request might move through a well-organised system, using an AC company as an example.'),
+  ul(
+    'A clinic calls on Monday morning: one indoor unit is not cooling. The coordinator logs the request against the clinic’s record, which already lists its six units.',
+    'The request is marked urgent, because patients are waiting in that room.',
+    'The dispatcher checks who is free and has split AC experience, and assigns a technician. The job appears on the technician’s phone.',
+    'The technician travels, arrives and starts work, updating the status as they go. The office sees this without a call.',
+    'The fault needs a part. The technician records it on the job, and a quotation for the extra work is prepared.',
+    'The customer approves the quotation. The job is closed, an invoice is raised and the visit is added to the unit’s history.',
+  ),
+  p(
+    'Nothing in this flow is complicated. The difference is that every step is recorded in the same place, so no one has to ask what happened.',
+  ),
+  h2('How to Prioritise and Triage Incoming Requests'),
+  p(
+    'Not every request is equally urgent. A simple triage rule keeps the queue under control, especially during busy seasons:',
+  ),
+  ul(
+    'Urgent: equipment is down and business or safety is affected, such as a failed cooling unit in a clinic or a CCTV outage at a bank branch.',
+    'Scheduled: planned servicing and contract visits, booked for a date.',
+    'Routine: minor faults and general enquiries that can wait for the next available slot.',
+    'Quotation requests: new work, to be answered quickly with a site visit or an estimate.',
+  ),
+  p(
+    'Write these categories down and use them the same way every day. When urgent work consistently crowds out planned visits, that is a signal about capacity, not just about bad luck.',
+  ),
+  h2('Common Service Request Mistakes to Avoid'),
+  ul(
+    'Taking requests by phone but not logging them straight away.',
+    'Recording the problem but not the site or the equipment.',
+    'Assigning work without checking the technician’s skills or existing schedule.',
+    'Never telling the customer when to expect someone.',
+    'Closing a job without noting what was done, which leaves nothing for the next visit.',
+    'Re-typing the same details into the quotation, then the invoice.',
+  ),
+  h2('How Service Management Software Helps Different Industries'),
+  h3('HVAC service businesses'),
+  p(
+    'AC companies get breakdown calls and planned servicing requests at once, with demand peaking before summer. A single request queue helps the dispatcher decide what is urgent and who goes where. See [HVAC field service software](/solutions/hvac-field-service-software).',
+  ),
+  h3('CCTV installation and maintenance companies'),
+  p(
+    'Requests range from new installations to a camera that has stopped recording. Linking each request to the customer’s site and equipment history speeds up diagnosis. See [CCTV software](/solutions/cctv-software).',
+  ),
+  h3('Solar installation and service companies'),
+  p(
+    'Solar firms handle enquiries for new systems and later service requests for existing ones. Keeping both in one place avoids losing the follow-up. See [solar software](/solutions/solar-software).',
+  ),
+  h3('Construction and maintenance businesses'),
+  p(
+    'Contractors receive site requests, variations and maintenance calls across locations. A shared request list helps assign crews and track progress. See [construction management software](/solutions/construction-management-software).',
+  ),
+  h2('Manual Service Management vs Software-Based Management'),
+  {
+    type: 'table',
+    caption: 'Manual service request handling compared with software-based management',
+    head: ['Area', 'Manual (calls, chats, registers)', 'Software-based'],
+    rows: [
+      ['Scheduling', 'Phoning around to find a free technician', 'Shared schedule showing availability'],
+      ['Job tracking', 'Status found by asking', 'Status updated as the job progresses'],
+      ['Customer records', 'Scattered across phones and notebooks', 'One record with history'],
+      ['Technician coordination', 'Verbal instructions', 'Job details on the technician’s phone'],
+      ['Billing', 'Details re-typed into quotes and invoices', 'Quotation can carry through to the job and invoice'],
+      ['Reporting', 'Compiled by hand', 'Generated from recorded jobs'],
+    ],
+  },
+  p('Software does not fix everything. Results depend on the team recording work consistently.'),
+  h2('How to Choose the Right Service Management System'),
+  p('Use these criteria when comparing service business software:'),
+  ul(
+    'Ease of use: will office staff and technicians use it daily?',
+    'Mobile accessibility: can technicians see and update jobs on a phone?',
+    'Job management: does a request become a trackable job easily?',
+    'Scheduling and dispatch: can you see availability and skills?',
+    'Reporting: can you see open work and technician workload?',
+    'Scalability: will it still suit you with more technicians and customers?',
+    'Pricing and support: what is included, and who helps with setup? See [pricing](/pricing) for FSMFlow plans.',
+  ),
+  p(
+    'Run a trial with real requests. For small teams, our guide to [choosing field service software for a small business](/blog/best-field-service-management-software-small-business) adds more detail.',
+  ),
+  h2('How FSMFlow Helps Manage Service Business Operations'),
+  p(
+    'FSMFlow is field service management software for Indian service businesses, built first for AC and HVAC teams. On its website, the workflow for handling a request looks like this:',
+  ),
+  ul(
+    'Log enquiries from calls, website forms, referrals and walk-ins, with follow-up reminders.',
+    'Create a quotation from the lead, and convert the won deal into a job where the customer, site and scope carry over.',
+    'Assign the job to a technician by skill and availability, and see it on their phone in the field service app.',
+    'Follow status from assigned to en route, in progress and completed.',
+    'Turn the approved quotation into an invoice, and record advances and part-payments.',
+    'Review jobs and renewals in reports.',
+  ),
+  p(
+    'This kind of service business automation removes re-typing and chasing. It does not replace judgement, and we have not described integrations or customer results here. For the full overview, see FSMFlow’s [service business management software](/solutions/service-business-management-software) page, the [homepage](/), or [book a demo](/demo).',
+  ),
+  h2('Frequently Asked Questions'),
+  h3('What is service business management software?'),
+  p(
+    'It is software that helps a service business run its daily work: customers, requests, jobs, technicians, quotations, invoices and reports, in one system. It is sometimes called service management software.',
+  ),
+  h3('Who needs service management software?'),
+  p(
+    'Any business that sends people to customer locations, such as AC, CCTV, solar, electrical and construction teams, especially once calls and notebooks stop being enough.',
+  ),
+  h3('What features should service business software include?'),
+  p(
+    'Customer records, request capture, work orders, technician assignment and scheduling, quotations and invoices, inventory tracking and reports.',
+  ),
+  h3('How does service management software help technicians?'),
+  p(
+    'They see assigned jobs, customer and site details, and checklists on a phone, and update progress without repeated calls to the office.',
+  ),
+  h3('Can service businesses manage work orders using software?'),
+  p(
+    'Yes. Each request can become a work order with an assignee, status, checklist and parts, and the office can follow it to completion.',
+  ),
+  h3('Is service management software suitable for HVAC companies?'),
+  p(
+    'Yes. HVAC teams handle breakdown calls and planned servicing together, which makes shared scheduling and job history especially useful.',
+  ),
+  h3('Can small service businesses use management software?'),
+  p(
+    'Often yes, if it is simple enough for the team and priced for their size. Small teams can start with requests, jobs and scheduling.',
+  ),
+  h3('How do I choose the right service business management software?'),
+  p(
+    'Map your workflow, list must-have features, check mobile access and reporting, and trial two or three options of service business software with real requests.',
+  ),
+  h2('Conclusion'),
+  p(
+    'Good service request management means no request is lost, every job has an owner, and the office can see where work stands. Start by recording every request in one place, then add scheduling, quotations and reports as the business grows.',
+  ),
+  p(
+    'If you want to see this flow in practice, [book a FSMFlow demo](/demo) and bring a few typical requests.',
+  ),
+]
