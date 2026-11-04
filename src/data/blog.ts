@@ -1,5 +1,5 @@
 import { AirVent, ClipboardCheck, BarChart3, Briefcase, Cctv, ClipboardList, Compass, FileSignature, HardHat, Navigation, Package, ReceiptText, Route, Smartphone, SunMedium, Users, Wrench, type LucideIcon } from 'lucide-react'
-import { CCTV_ARTICLE, CONSTRUCTION_ARTICLE, HVAC_ARTICLE, SERVICE_BUSINESS_ARTICLE, SOLAR_ARTICLE, CMMS_ARTICLE, MOBILE_FSM_ARTICLE, SERVICE_CONTRACT_ARTICLE, SERVICE_REPORT_FORMAT_ARTICLE, SERVICE_REQUEST_MANAGEMENT_ARTICLE, WEB_MAINTENANCE_NIGERIA_ARTICLE, DISPATCH_SOFTWARE_ARTICLE, PREVENTIVE_MAINTENANCE_ARTICLE, WHAT_IS_FSM_ARTICLE } from './blogArticles'
+import { CCTV_ARTICLE, CONSTRUCTION_ARTICLE, HVAC_ARTICLE, SERVICE_BUSINESS_ARTICLE, SOLAR_ARTICLE, CMMS_ARTICLE, MOBILE_FSM_ARTICLE, SERVICE_CONTRACT_ARTICLE, SERVICE_REPORT_FORMAT_ARTICLE, SERVICE_REQUEST_MANAGEMENT_ARTICLE, AC_SERVICE_SOFTWARE_ARTICLE, WEB_MAINTENANCE_NIGERIA_ARTICLE, DISPATCH_SOFTWARE_ARTICLE, PREVENTIVE_MAINTENANCE_ARTICLE, WHAT_IS_FSM_ARTICLE } from './blogArticles'
 
 /**
  * Blog content model.
@@ -348,6 +348,26 @@ export const BLOG_POSTS: BlogPost[] = [
     secondaryKeywords: ['Service Management Software', 'Service Management System', 'Service Business Software', 'Field Service Management', 'Service Business Automation', 'Technician Management Software', 'Service Scheduling Software'],
     supports: '/solutions/service-business-management-software',
     body: SERVICE_REQUEST_MANAGEMENT_ARTICLE,
+  },
+  {
+    slug: 'how-to-choose-ac-service-management-software',
+    title: 'How to Choose the Right AC Service Management Software for Your Business',
+    seoTitle: 'AC Service Management Software: How to Choose | FSMFlow',
+    seoDescription:
+      'Choosing AC service management software? Compare 10 must-have features, AMC and technician tools, plus a buyer checklist for Indian AC and HVAC businesses.',
+    excerpt:
+      'A buyer’s guide for AC and HVAC businesses: the challenges software solves, 10 features to check, manual vs digital, and how to choose.',
+    category: 'HVAC',
+    readMinutes: 9,
+    status: 'published',
+    icon: AirVent,
+    accent: 'aqua',
+    publishedAt: '2026-11-04',
+    author: 'FSMFlow Team',
+    primaryKeyword: 'AC service management software',
+    secondaryKeywords: ['HVAC service management software', 'AC service software', 'AC repair management software', 'HVAC business management software', 'AC technician management software', 'AMC management software', 'HVAC scheduling software', 'field service management software', 'AC service tracking software', 'HVAC work order management software'],
+    supports: '/solutions/hvac-field-service-software',
+    body: AC_SERVICE_SOFTWARE_ARTICLE,
   },
   {
     slug: 'run-amc-renewals-without-spreadsheets',

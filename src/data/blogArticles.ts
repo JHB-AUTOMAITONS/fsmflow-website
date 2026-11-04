@@ -2136,3 +2136,196 @@ export const SERVICE_REQUEST_MANAGEMENT_ARTICLE: BlogBlock[] = [
     'If you want to see this flow in practice, [book a FSMFlow demo](/demo) and bring a few typical requests.',
   ),
 ]
+
+/* -------------------------------------------------------------------------- */
+/* AC service management software: how to choose                              */
+/* -------------------------------------------------------------------------- */
+
+export const AC_SERVICE_SOFTWARE_ARTICLE: BlogBlock[] = [
+  p(
+    'It is the first week of April. The phone has not stopped since morning, three customers have sent the same “AC not cooling” message on WhatsApp, two technicians are standing at the same site, and nobody can say whose AMC expired last month. Many AC and HVAC companies in India run like this for years, and it works until volume grows. That is when AC service management software stops being optional and starts deciding whether the business grows or just gets busier.',
+  ),
+  p(
+    'The market is crowded and most feature lists look alike. This guide covers what the software does, the problems it solves, ten features to check, a manual-versus-digital comparison and a practical way to choose.',
+  ),
+  h2('What Is AC Service Management Software?'),
+  p(
+    'AC service management software is a system that keeps every part of an AC or HVAC service business in one place: customers and their equipment, service requests, technician schedules, job cards, spare parts, quotations, invoices, AMC (annual maintenance contract) records and reports. It is a specialised form of field service management software, the wider category explained in our guide to [what field service management is](/blog/what-is-field-service-management), tuned for the way AC work actually happens.',
+  ),
+  p('In a typical day, it works like this:'),
+  ul(
+    'A request arrives by phone, website or referral and is logged against the customer and the AC unit.',
+    'The office creates a job and assigns a technician by skill and availability.',
+    'The technician opens the job on a phone, follows the checklist, records parts and photos, and takes the customer’s sign-off.',
+    'The job closes into a quotation or invoice, and the visit becomes part of the unit’s history.',
+    'The next AMC visit and the renewal date are already on the calendar.',
+  ),
+  p(
+    'It suits AC installation and repair companies, HVAC contractors, dealers who offer installation and after-sales service, and any business with several technicians or AMC customers. You will also see it called HVAC service management software, AC service software, AC repair management software, AC technician management software or HVAC business management software. The labels differ, but the job is the same.',
+  ),
+  h2('Common Challenges Faced by AC Service Businesses'),
+  p('Almost every AC company that outgrows notebooks hits the same problems:'),
+  ul(
+    'Too many request channels: calls, WhatsApp messages and walk-ins all land in different places, so requests get missed in peak summer.',
+    'Technician scheduling and assignment: the dispatcher decides from memory, without a clear view of skills, location or workload.',
+    'Missed customer appointments: a promised slot is never written anywhere, and the customer calls again.',
+    'Untracked ongoing jobs: the owner asks where a job stands and the only way to find out is to phone the technician.',
+    'AMC renewals: expiry dates sit in a sheet nobody opens until a competitor has already called the customer.',
+    'Spare parts: a capacitor or PCB is missing at the site, which means a second visit and an unhappy customer.',
+    'Quotations and billing: figures are re-typed from notes days later, and pending payments are chased from memory.',
+    'Customer service history: a new technician arrives without knowing what the last one found.',
+  ),
+  p('These are information problems, not skills problems. They ease when every job, customer and contract lives in one record.'),
+  callout(
+    'Looking to simplify your AC service operations? Explore FSMFlow and manage your service business more efficiently. [Book a Demo](/demo)',
+  ),
+  h2('10 Essential Features to Look for in AC Service Management Software'),
+  p('Use this list as a filter. The product need not be the biggest, but it should cover these basics well.'),
+  h3('1. Customer and lead management'),
+  p(
+    'Every enquiry should be logged with its source and a follow-up date, then linked to the customer’s sites and units. Example: a housing society asks for a quote on 12 split ACs in March; without a reminder, the lead is forgotten by April. Look for [sales CRM](/features/sales-crm-software) and [customer and equipment records](/features/asset-management-software) that carry straight into the job.',
+  ),
+  h3('2. Service request management'),
+  p(
+    'Calls, website forms and walk-ins should land in one queue with an urgency and a status. A compressor failure at a clinic should not sit behind a routine servicing request. For the full process, see our guide to [service request management](/blog/service-request-management-for-service-businesses).',
+  ),
+  h3('3. Technician scheduling and assignment'),
+  p(
+    'Good HVAC scheduling software shows who is free, what each technician is skilled at and how loaded their day is. Example: a VRF fault should go to the engineer who knows VRF systems, not just the nearest person. Look for [technician profiles and scheduling](/features/employee-management-software) that make that decision quick.',
+  ),
+  h3('4. Digital job cards and work orders'),
+  p(
+    'HVAC work order management software gives each job an assignee, status, checklist, parts list and photos, replacing paper job cards that get lost or wet. See [work order management software](/features/work-order-management-software), and our [service report format](/blog/service-report-format-ac-cctv-solar) guide for what to record.',
+  ),
+  h3('5. Mobile app for field technicians'),
+  p(
+    'The technician should see the day’s jobs, directions, unit details and history, update status, and take customer sign-off on a phone. Test it on your technicians’ own phones, because an app that is slow or confusing will simply not be used. Read more on the [field service app](/features/field-service-app) and in our guide to [mobile field service management software](/blog/mobile-field-service-management-software).',
+  ),
+  h3('6. AMC and preventive maintenance management'),
+  p(
+    'AMC management software should record the units covered, visits per year and validity dates, create the scheduled visits, and flag renewals before they lapse. Example: a hospital contract with four visits a year should show which are done and which are due. See [warranty and AMC management](/features/warranty-management-software) and our guide to [service contract management software](/blog/service-contract-management-software).',
+  ),
+  h3('7. Spare parts and inventory management'),
+  p(
+    'Look for warehouse and van stock in one view, parts linked to the jobs that use them, and low-stock alerts for fast movers such as capacitors, gas and PCBs. That is how repeat visits caused by missing parts get reduced. See [inventory management software](/features/inventory-management-software).',
+  ),
+  h3('8. Quotation and invoice management'),
+  p(
+    'You should be able to build an estimate with parts and labour, send it for approval, turn it into a job and an invoice, and record advances and part-payments. Ask whether invoices fit your GST needs. See [quotation software](/features/quotation-software).',
+  ),
+  h3('9. Real-time job tracking and status updates'),
+  p(
+    'AC service tracking software lets the office see each job move from assigned to en route, in progress and completed, without a single phone call.',
+  ),
+  h3('10. Reports and business performance analytics'),
+  p(
+    'A short list of numbers is enough: jobs completed, repeat visits, technician workload, revenue, AMC renewals due and pending payments. They should come from the work your team already records, not from copying between sheets. See [reporting software](/features/reporting-software).',
+  ),
+  callout(
+    'Want to see how these ten features work together in one flow? Explore FSMFlow and manage your service business more efficiently. [Book a Demo](/demo)',
+  ),
+  h2('Manual AC Service Management vs Digital Software'),
+  {
+    type: 'table',
+    caption: 'Manual AC service management compared with digital AC service management software',
+    head: ['Area', 'Manual (calls, chats, registers)', 'AC service management software'],
+    rows: [
+      ['Service request tracking', 'Requests spread across calls, chats and notebooks', 'One queue with urgency and status'],
+      ['Technician allocation', 'Decided from memory or by phoning around', 'Assigned by skill, availability and workload'],
+      ['Job card management', 'Paper cards that get lost or filled in late', 'Digital job card with checklist, parts and photos'],
+      ['AMC reminders', 'Dates in a sheet someone has to remember to open', 'Scheduled visits and renewal alerts'],
+      ['Inventory tracking', 'Stock discovered missing at the site', 'Warehouse and van stock linked to jobs'],
+      ['Billing', 'Details re-typed from notes after the visit', 'Quotation carries into the job and invoice'],
+      ['Reports', 'Compiled by hand at month end', 'Built from recorded jobs'],
+      ['Customer history', 'Scattered across phones and registers', 'One record per customer and unit'],
+    ],
+  },
+  p('Software does not fix everything. The gain comes from agreeing on one place where work is recorded and using it every day.'),
+  h2('How to Choose the Right AC Service Management Software'),
+  p('Feature lists look similar, so judge each option against your own business:'),
+  ul(
+    'Business size and requirements: a five-technician shop needs jobs, scheduling, quotations and AMC. A multi-branch company also needs roles and branch-wise reports. ',
+    'Ease of use: if office staff and technicians need long training, adoption will stall. Ask a technician to try it.',
+    'Mobile accessibility: check the technician app on real phones and in real locations, such as a basement or plant room with weak signal. ',
+    'Automation capabilities: reminders, status updates and quotation-to-invoice should happen without retyping.',
+    'Customization: can you set up your own job types, checklists and unit details for split, cassette or VRF systems?',
+    'Scalability: will it still work when you double the technicians or add a branch?',
+    'Data security: ask who can see what, how access is controlled by role, how data is backed up and whether you can export it if you leave.',
+    'Integration capabilities: ask plainly what it connects with, such as accounting tools, and what it does not. Do not assume.',
+    'Pricing and support: understand how pricing is calculated, often per technician, what onboarding is included and when support is available.',
+  ),
+  h3('Test before you buy'),
+  p(
+    'Take two or three shortlisted tools and run the same five real jobs through each, including one AMC customer and one emergency call. Let a technician use the app without help. Our guide to [choosing field service software for a small business](/blog/best-field-service-management-software-small-business) adds a trial checklist.',
+  ),
+  h2('Benefits of Using AC Service Management Software'),
+  p('When a team uses it consistently, the benefits are mostly about control and consistency:'),
+  ul(
+    'Fewer missed calls and appointments, because every request has a record and an owner.',
+    'Faster dispatch, because skills, location and workload are visible.',
+    'Fewer repeat visits, because parts are linked to jobs and history is on hand.',
+    'Steadier AMC revenue, because visits and renewals are tracked ahead of time.',
+    'Cleaner billing, because quotations flow into jobs and invoices.',
+    'Better visibility, because staff and owners can answer “when will the technician arrive?” without calling anyone.',
+  ),
+  p('These depend on how consistently your team records work.'),
+  h2('Why AC Service Companies Should Consider FSMFlow'),
+  p(
+    'FSMFlow is field service management software for Indian service businesses, built first for AC and HVAC teams. Here is how its modules answer the challenges above, based on what the product offers today:',
+  ),
+  ul(
+    'Requests and leads: log enquiries from calls, website forms and referrals with follow-up reminders, then turn a won deal into a quotation and a job.',
+    'Jobs and technicians: create work orders with checklists, parts, photos and a service report, and assign them by skill and availability.',
+    'Technician app: technicians see jobs, directions, customer and unit history, record parts and photos, take the customer’s signature, and move each job from assigned to en route, in progress and completed.',
+    'AMC and warranty: each contract records the customer, units, validity and visit schedule, and renewals are flagged before they lapse.',
+    'Spare parts: warehouse and van stock, parts linked to jobs and low-stock alerts.',
+    'Quotations and billing: estimates become jobs and invoices, with advances and part-payments recorded against them.',
+    'Reports: jobs, revenue, technician productivity, AMC renewals and pending payments.',
+  ),
+  p(
+    'The full flow, from enquiry to payment and the next visit, is on the [HVAC field service software](/solutions/hvac-field-service-software) page. For a deeper look at day-to-day dispatch and renewals, read [HVAC technician management and AMC renewals](/blog/hvac-technician-management-amc-renewals). If you have questions about plans, see [pricing](/pricing).',
+  ),
+  callout(
+    'Looking to simplify your AC service operations? Explore FSMFlow and manage your service business more efficiently. [Book a Demo](/demo)',
+  ),
+  h2('Frequently Asked Questions'),
+  h3('What is the best software for AC service businesses?'),
+  p(
+    'There is no single best option. The right one covers jobs, technician scheduling, AMC tracking, spare parts and billing, and is simple enough for your team to use daily. Shortlist two or three and test them with real jobs.',
+  ),
+  h3('How does AC service management software work?'),
+  p(
+    'It records each request against a customer and unit, turns it into a job, assigns a technician, tracks the job through completion, and carries the work into a quotation or invoice. AMC visits, spare parts and reports run from the same data.',
+  ),
+  h3('Can AC service software manage multiple technicians?'),
+  p(
+    'Yes. It lets you keep technician profiles and skills, assign jobs by availability and workload, and see who is doing what. This is one of its core uses.',
+  ),
+  h3('Can I manage AMC contracts using service management software?'),
+  p(
+    'Yes, if it includes contract records. Check that it stores units covered, visit schedules and validity dates, creates scheduled visits and flags renewals ahead of expiry.',
+  ),
+  h3('Is AC service management software suitable for small businesses?'),
+  p(
+    'Often, yes, provided it is simple and priced for your size. A small team can begin with jobs, scheduling and quotations, then add AMC and inventory as it grows.',
+  ),
+  h3('Can technicians update job status using a mobile app?'),
+  p(
+    'Yes. With a field service app, technicians update status as they travel, arrive and finish, record parts and photos, and take customer sign-off. The office sees each change without a phone call.',
+  ),
+  h3('How does HVAC software improve customer service?'),
+  p(
+    'Staff see the customer’s full history, can give a realistic arrival time, and are less likely to miss an appointment or a renewal. Customers repeat themselves less often.',
+  ),
+  h3('What should I check before purchasing AC service management software?'),
+  p(
+    'Check ease of use, the technician app on real phones, AMC and inventory features, data security, integrations, pricing and support. Then trial it with your own jobs.',
+  ),
+  h2('Conclusion'),
+  p(
+    'The right AC service management software removes the daily guesswork: which request is open, who is going, which part is needed and when a contract ends. Choose by testing against your real workflow, not by counting features. Focus on the basics: jobs, technicians, a usable mobile app, AMC tracking, spare parts and billing.',
+  ),
+  p(
+    'FSMFlow is built around these needs for AC and HVAC teams. If you would like to see it with your own workflow, [book a FSMFlow demo](/demo) and bring a few typical jobs and an AMC contract.',
+  ),
+]
