@@ -1,5 +1,5 @@
 import { AirVent, ClipboardCheck, BarChart3, Briefcase, Cctv, ClipboardList, Compass, FileSignature, HardHat, Navigation, Package, ReceiptText, Route, Smartphone, SunMedium, Users, Wrench, type LucideIcon } from 'lucide-react'
-import { CCTV_ARTICLE, CONSTRUCTION_ARTICLE, HVAC_ARTICLE, SERVICE_BUSINESS_ARTICLE, SOLAR_ARTICLE, CMMS_ARTICLE, MOBILE_FSM_ARTICLE, SERVICE_CONTRACT_ARTICLE, SERVICE_REPORT_FORMAT_ARTICLE, SERVICE_REQUEST_MANAGEMENT_ARTICLE, AC_SERVICE_SOFTWARE_ARTICLE, WEB_MAINTENANCE_NIGERIA_ARTICLE, DISPATCH_SOFTWARE_ARTICLE, PREVENTIVE_MAINTENANCE_ARTICLE, WHAT_IS_FSM_ARTICLE } from './blogArticles'
+import { CCTV_ARTICLE, CONSTRUCTION_ARTICLE, HVAC_ARTICLE, SERVICE_BUSINESS_ARTICLE, SOLAR_ARTICLE, CMMS_ARTICLE, MOBILE_FSM_ARTICLE, SERVICE_CONTRACT_ARTICLE, SERVICE_REPORT_FORMAT_ARTICLE, SERVICE_REQUEST_MANAGEMENT_ARTICLE, AC_SERVICE_SOFTWARE_ARTICLE, TECHNICIAN_SCHEDULING_ARTICLE, WEB_MAINTENANCE_NIGERIA_ARTICLE, DISPATCH_SOFTWARE_ARTICLE, PREVENTIVE_MAINTENANCE_ARTICLE, WHAT_IS_FSM_ARTICLE } from './blogArticles'
 
 /**
  * Blog content model.
@@ -370,6 +370,26 @@ export const BLOG_POSTS: BlogPost[] = [
     body: AC_SERVICE_SOFTWARE_ARTICLE,
   },
   {
+    slug: 'technician-scheduling-software-for-service-businesses',
+    title: 'How Technician Scheduling Software Improves Service Business Operations',
+    seoTitle: 'Technician Scheduling Software: Key Benefits | FSMFlow',
+    seoDescription:
+      'Technician scheduling software helps service teams assign jobs, avoid clashes and track work. See benefits, features and how to choose for AC, CCTV and solar.',
+    excerpt:
+      'How technician scheduling software helps AC, CCTV, solar and contracting teams assign jobs, avoid clashes and track work, plus the features to look for.',
+    category: 'Technician Management',
+    readMinutes: 9,
+    status: 'published',
+    icon: Users,
+    accent: 'mint',
+    publishedAt: '2026-11-05',
+    author: 'FSMFlow Team',
+    primaryKeyword: 'technician scheduling software',
+    secondaryKeywords: ['field technician scheduling software', 'field service scheduling software', 'technician management software', 'employee scheduling software', 'service technician management software', 'workforce scheduling software', 'field service management software', 'technician dispatch software', 'job scheduling software', 'service appointment scheduling software'],
+    supports: '/features/employee-management-software',
+    body: TECHNICIAN_SCHEDULING_ARTICLE,
+  },
+  {
     slug: 'run-amc-renewals-without-spreadsheets',
     title: 'How HVAC companies can run AMC renewals without chasing spreadsheets',
     excerpt:
@@ -401,17 +421,6 @@ export const BLOG_POSTS: BlogPost[] = [
     status: 'upcoming',
     icon: BarChart3,
     accent: 'iris',
-  },
-  {
-    slug: 'technician-scheduling-for-growing-teams',
-    title: 'Technician scheduling for teams of 10 to 50',
-    excerpt:
-      'How to balance skills, travel time and emergency calls without turning the dispatcher into a bottleneck.',
-    category: 'Technician Management',
-    readMinutes: 8,
-    status: 'upcoming',
-    icon: Users,
-    accent: 'mint',
   },
   {
     slug: 'why-quotation-speed-wins-service-jobs',
