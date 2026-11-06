@@ -1,5 +1,5 @@
 import { AirVent, ClipboardCheck, BarChart3, Briefcase, Cctv, ClipboardList, Compass, FileSignature, HardHat, Navigation, Package, ReceiptText, Route, Smartphone, SunMedium, Users, Wrench, type LucideIcon } from 'lucide-react'
-import { CCTV_ARTICLE, CONSTRUCTION_ARTICLE, HVAC_ARTICLE, SERVICE_BUSINESS_ARTICLE, SOLAR_ARTICLE, CMMS_ARTICLE, MOBILE_FSM_ARTICLE, SERVICE_CONTRACT_ARTICLE, SERVICE_REPORT_FORMAT_ARTICLE, SERVICE_REQUEST_MANAGEMENT_ARTICLE, AC_SERVICE_SOFTWARE_ARTICLE, TECHNICIAN_SCHEDULING_ARTICLE, WEB_MAINTENANCE_NIGERIA_ARTICLE, DISPATCH_SOFTWARE_ARTICLE, PREVENTIVE_MAINTENANCE_ARTICLE, WHAT_IS_FSM_ARTICLE } from './blogArticles'
+import { CCTV_ARTICLE, CONSTRUCTION_ARTICLE, HVAC_ARTICLE, SERVICE_BUSINESS_ARTICLE, SOLAR_ARTICLE, CMMS_ARTICLE, MOBILE_FSM_ARTICLE, SERVICE_CONTRACT_ARTICLE, SERVICE_REPORT_FORMAT_ARTICLE, SERVICE_REQUEST_MANAGEMENT_ARTICLE, AC_SERVICE_SOFTWARE_ARTICLE, TECHNICIAN_SCHEDULING_ARTICLE, SOLAR_SOFTWARE_BUYERS_ARTICLE, WEB_MAINTENANCE_NIGERIA_ARTICLE, DISPATCH_SOFTWARE_ARTICLE, PREVENTIVE_MAINTENANCE_ARTICLE, WHAT_IS_FSM_ARTICLE } from './blogArticles'
 
 /**
  * Blog content model.
@@ -388,6 +388,26 @@ export const BLOG_POSTS: BlogPost[] = [
     secondaryKeywords: ['field technician scheduling software', 'field service scheduling software', 'technician management software', 'employee scheduling software', 'service technician management software', 'workforce scheduling software', 'field service management software', 'technician dispatch software', 'job scheduling software', 'service appointment scheduling software'],
     supports: '/features/employee-management-software',
     body: TECHNICIAN_SCHEDULING_ARTICLE,
+  },
+  {
+    slug: 'best-solar-installation-software-for-service-businesses',
+    title: 'Best Solar Installation Software for Installation and Service Businesses',
+    seoTitle: 'Best Solar Installation Software: How to Choose | FSMFlow',
+    seoDescription:
+      'Looking for the best solar installation software? Compare must-have features, manual vs software, and how to choose for installation, EPC and AMC businesses.',
+    excerpt:
+      'A buyer’s guide for solar installers, EPC teams and AMC providers: the challenges, 10 features to check, manual vs software, and how to choose.',
+    category: 'Solar',
+    readMinutes: 9,
+    status: 'published',
+    icon: SunMedium,
+    accent: 'heat',
+    publishedAt: '2026-11-06',
+    author: 'FSMFlow Team',
+    primaryKeyword: 'solar installation software',
+    secondaryKeywords: ['solar business management software', 'solar project management software', 'solar service management software', 'solar installation management software', 'solar EPC software', 'solar maintenance management software', 'solar field service management software', 'solar technician management software', 'solar work order management software', 'solar AMC management software'],
+    supports: '/solutions/solar-software',
+    body: SOLAR_SOFTWARE_BUYERS_ARTICLE,
   },
   {
     slug: 'run-amc-renewals-without-spreadsheets',
