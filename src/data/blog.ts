@@ -1,5 +1,5 @@
 import { AirVent, ClipboardCheck, BarChart3, Briefcase, Cctv, ClipboardList, Compass, FileSignature, HardHat, Navigation, Package, ReceiptText, Route, Smartphone, SunMedium, Users, Wrench, type LucideIcon } from 'lucide-react'
-import { CCTV_ARTICLE, CONSTRUCTION_ARTICLE, HVAC_ARTICLE, SERVICE_BUSINESS_ARTICLE, SOLAR_ARTICLE, CMMS_ARTICLE, MOBILE_FSM_ARTICLE, SERVICE_CONTRACT_ARTICLE, SERVICE_REPORT_FORMAT_ARTICLE, SERVICE_REQUEST_MANAGEMENT_ARTICLE, AC_SERVICE_SOFTWARE_ARTICLE, TECHNICIAN_SCHEDULING_ARTICLE, SOLAR_SOFTWARE_BUYERS_ARTICLE, WEB_MAINTENANCE_NIGERIA_ARTICLE, DISPATCH_SOFTWARE_ARTICLE, PREVENTIVE_MAINTENANCE_ARTICLE, WHAT_IS_FSM_ARTICLE } from './blogArticles'
+import { CCTV_ARTICLE, CONSTRUCTION_ARTICLE, HVAC_ARTICLE, SERVICE_BUSINESS_ARTICLE, SOLAR_ARTICLE, CMMS_ARTICLE, MOBILE_FSM_ARTICLE, SERVICE_CONTRACT_ARTICLE, SERVICE_REPORT_FORMAT_ARTICLE, SERVICE_REQUEST_MANAGEMENT_ARTICLE, AC_SERVICE_SOFTWARE_ARTICLE, TECHNICIAN_SCHEDULING_ARTICLE, SOLAR_SOFTWARE_BUYERS_ARTICLE, CCTV_PROJECT_MANAGEMENT_ARTICLE, WEB_MAINTENANCE_NIGERIA_ARTICLE, DISPATCH_SOFTWARE_ARTICLE, PREVENTIVE_MAINTENANCE_ARTICLE, WHAT_IS_FSM_ARTICLE } from './blogArticles'
 
 /**
  * Blog content model.
@@ -408,6 +408,26 @@ export const BLOG_POSTS: BlogPost[] = [
     secondaryKeywords: ['solar business management software', 'solar project management software', 'solar service management software', 'solar installation management software', 'solar EPC software', 'solar maintenance management software', 'solar field service management software', 'solar technician management software', 'solar work order management software', 'solar AMC management software'],
     supports: '/solutions/solar-software',
     body: SOLAR_SOFTWARE_BUYERS_ARTICLE,
+  },
+  {
+    slug: 'cctv-installation-project-management',
+    title: 'CCTV Installation Project Management: How to Manage Projects and Maintenance Contracts',
+    seoTitle: 'CCTV Installation Project Management & AMC Guide | FSMFlow',
+    seoDescription:
+      'CCTV installation project management made practical: run enquiries, installers and AMC contracts with a clear step-by-step process and a software checklist.',
+    excerpt:
+      'A step-by-step guide for CCTV installers: run multiple installation projects, manage AMC contracts and maintenance visits, and choose the right software.',
+    category: 'CCTV',
+    readMinutes: 9,
+    status: 'published',
+    icon: Cctv,
+    accent: 'iris',
+    publishedAt: '2026-11-10',
+    author: 'FSMFlow Team',
+    primaryKeyword: 'CCTV installation project management',
+    secondaryKeywords: ['CCTV maintenance management', 'CCTV service management software', 'CCTV installation management software', 'CCTV AMC management', 'CCTV technician management', 'Security system maintenance software', 'CCTV service tracking', 'CCTV work order management'],
+    supports: '/solutions/cctv-software',
+    body: CCTV_PROJECT_MANAGEMENT_ARTICLE,
   },
   {
     slug: 'run-amc-renewals-without-spreadsheets',

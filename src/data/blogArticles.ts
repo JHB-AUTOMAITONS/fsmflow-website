@@ -2751,3 +2751,208 @@ export const SOLAR_SOFTWARE_BUYERS_ARTICLE: BlogBlock[] = [
     'FSMFlow is built around that flow for solar and other service teams. To see it with your own projects and AMC customers, [book a FSMFlow demo](/demo).',
   ),
 ]
+
+/* -------------------------------------------------------------------------- */
+/* CCTV installation project management                                       */
+/* -------------------------------------------------------------------------- */
+
+export const CCTV_PROJECT_MANAGEMENT_ARTICLE: BlogBlock[] = [
+  p(
+    'On a busy Monday, a CCTV company may have a bank branch installation half finished, a factory survey waiting for a quotation, a warehouse camera that stopped recording, and three AMC customers whose renewal dates nobody has checked. The technical work is rarely the problem. The problem is knowing which job is where, who is on it, and what is due next. Good CCTV installation project management answers those questions in one place instead of across phones, notebooks and chat threads.',
+  ),
+  p(
+    'This guide shows how to manage CCTV installation projects step by step, how to run maintenance contracts alongside them, and which software features help.',
+  ),
+  h2('Understanding CCTV Installation Project Management'),
+  p(
+    'CCTV installation project management means taking each customer from first enquiry to a completed, handed-over installation in a planned way: a recorded requirement, a site survey, a quotation, an assigned crew, tracked progress and a documented handover. Each installation is a small project with a start, stages and an end.',
+  ),
+  p(
+    'Structure matters because installations involve several people and several visits. When enquiry notes, survey details and equipment lists sit in one record, the office and the crew work from the same facts. That is the idea behind CCTV installation management software: one record per job instead of scattered messages.',
+  ),
+  h2('Common Challenges Faced by CCTV Installation Businesses'),
+  ul(
+    'Multiple installation requests: enquiries arrive by call, WhatsApp and referral, and some never get a reply.',
+    'Site inspections: surveys are agreed verbally and nobody puts them on a calendar.',
+    'Quotations and estimates: a quote is rebuilt from notes after the camera count changes.',
+    'Assigning installers: crews are chosen by phone, without a view of who is free.',
+    'Project progress: the owner cannot tell which sites are finished, ongoing or stuck.',
+    'Equipment: cameras, DVRs, NVRs, hard disks and cables run short because stock is counted in a notebook.',
+    'Office and field coordination: the crew arrives without the camera list or the customer’s contact.',
+    'Customer complaints: a call about a camera that went dark is noted on paper and forgotten.',
+    'AMC agreements: renewal dates sit in a sheet nobody opens.',
+    'Service history: nobody can say which camera was replaced last year.',
+  ),
+  callout(
+    'Managing multiple CCTV installation projects and AMC contracts? Simplify your service operations with FSMFlow. [Book a Demo](/demo)',
+  ),
+  h2('How to Manage CCTV Installation Projects Step by Step'),
+  h3('Step 1 – Manage customer enquiries'),
+  p(
+    'Log every enquiry with the contact, site, what they want covered and a follow-up date. A bank branch and a small shop need different answers, so write the requirement down at the start. [Sales CRM](/features/sales-crm-software) tools keep these follow-ups visible.',
+  ),
+  h3('Step 2 – Schedule site inspections'),
+  p(
+    'Book the survey as a scheduled visit with a named person. The surveyor records entry points, camera positions, cable routes, power and recorder location, with photos, against the job. Our [CCTV AMC and installation guide](/blog/cctv-amc-format-installation-service-renewals) covers survey detail.',
+  ),
+  h3('Step 3 – Prepare quotations and estimates'),
+  p(
+    'Build the quotation from the survey: cameras, recorder, storage, cabling, accessories, installation and labour as separate lines. Record the customer’s approval before work starts. [Quotation software](/features/quotation-software) can carry an approved quote into the job.',
+  ),
+  h3('Step 4 – Assign installation technicians'),
+  p(
+    'Allocate crews by availability, skills and location. A crew experienced with IP cameras should not be sent only because it was nearest. See our guide to [technician scheduling](/blog/technician-scheduling-software-for-service-businesses).',
+  ),
+  h3('Step 5 – Track installation progress'),
+  p(
+    'Give every job a clear status: assigned, ongoing, pending or completed. A short daily review of anything pending catches stalled sites early. CCTV service tracking works only if crews update status as they work.',
+  ),
+  h3('Step 6 – Manage equipment and inventory'),
+  p(
+    'Track cameras, DVRs, NVRs, cables, connectors, storage devices and small materials, and link what is used to each job. Check stock before a crew leaves, not at the site. See [inventory management](/features/inventory-management-software).',
+  ),
+  h3('Step 7 – Complete installation and customer handover'),
+  p(
+    'Close the job with a checklist, photos, the installed equipment list and customer confirmation. Save the camera and recorder details against the site, because they become the baseline for maintenance. [Asset records](/features/asset-management-software) hold them.',
+  ),
+  h2('What Is a CCTV Annual Maintenance Contract (AMC)?'),
+  p(
+    'A CCTV AMC is a service contract under which you look after a customer’s cameras and recorder for a set period, usually a year. Customers choose it for planned upkeep, a known contact when something fails, and predictable costs. Contract wording is a business decision, and our [CCTV AMC format guide](/blog/cctv-amc-format-installation-service-renewals) covers the clauses.',
+  ),
+  p('It helps to keep three kinds of work separate:'),
+  ul(
+    'Routine maintenance: basic upkeep, such as cleaning lenses and checking that cameras show a picture.',
+    'Preventive maintenance: planned visits to inspect cameras, cables, connections, DVR or NVR health, and storage and recording, so faults are found before they cause a gap in footage.',
+    'Breakdown service: reactive repair after something fails.',
+  ),
+  p(
+    'What an AMC includes varies. Preventive visits, camera cleaning, recorder health checks, cable inspection, storage checks and breakdown support are common, but each is optional and should be written into the contract only if you and the customer agree. Contract length and renewal terms are also agreed case by case.',
+  ),
+  h2('How to Manage CCTV Maintenance Contracts Efficiently'),
+  p('Good CCTV AMC management follows ten habits:'),
+  ul(
+    'Keep customer and equipment records together, including model, serial number and installation date.',
+    'Record each AMC’s start and end dates.',
+    'Schedule preventive visits in advance.',
+    'Track renewals due in the next 30 to 60 days.',
+    'Assign technicians to each maintenance visit.',
+    'Record what was checked and found on every visit.',
+    'Log breakdown requests as jobs with a priority.',
+    'Keep a service history for each site.',
+    'Watch pending maintenance jobs weekly.',
+    'Prepare simple maintenance reports for customers.',
+  ),
+  p(
+    'Example: a company with 40 AMC customers has quarterly visits due across the year. If every visit is created in advance and assigned, the coordinator sees each week’s visits and any contract about to lapse. If visits depend on memory, the quietest customers are forgotten first. See [service contract management software](/blog/service-contract-management-software).',
+  ),
+  h2('Essential Features to Look for in CCTV Service Management Software'),
+  p('Whether it is sold as CCTV service management software or security system maintenance software, check these twelve features from a CCTV business’s point of view:'),
+  ul(
+    'Customer and lead management: every enquiry has a source, next step and date.',
+    'Site visit management: surveys are scheduled jobs with notes and photos.',
+    'Quotation management: camera, recorder and labour lines, with approvals.',
+    'Technician scheduling and assignment: see who is free before assigning, which is core to CCTV technician management.',
+    'Job card and work order management: CCTV work order management gives each installation or repair a checklist, status and photos. See [work order management](/features/work-order-management-software).',
+    'Installation project tracking: all open installations and their status in one view.',
+    'Inventory management: cameras, hard disks and cable linked to jobs.',
+    'AMC and contract management: contract dates, covered sites and renewals. See [warranty and AMC management](/features/warranty-management-software).',
+    'Preventive maintenance scheduling: planned visits created ahead.',
+    'Service request management: complaints logged and turned into jobs. See [service request management](/blog/service-request-management-for-service-businesses).',
+    'Customer service history: every visit on the site record.',
+    'Reports and analytics: jobs, pending work and renewals. See [reporting](/features/reporting-software).',
+  ),
+  callout(
+    'Managing multiple CCTV installation projects and AMC contracts? Simplify your service operations with FSMFlow. [Book a Demo](/demo)',
+  ),
+  h2('Manual CCTV Project Management vs Digital Management Software'),
+  {
+    type: 'table',
+    caption: 'Manual CCTV project management compared with digital management software',
+    head: ['Activity', 'Manual management', 'Digital management'],
+    rows: [
+      ['Customer records', 'Paper files and spreadsheets', 'Centralized customer records'],
+      ['Site visits', 'Phone-based coordination', 'Organized visit scheduling'],
+      ['Technician assignment', 'Manual communication', 'Centralized job assignment'],
+      ['Installation tracking', 'Repeated follow-ups', 'Digital job status tracking'],
+      ['Inventory', 'Separate stock records', 'Organized inventory records'],
+      ['AMC renewals', 'Manual reminders', 'Digital contract tracking'],
+      ['Maintenance visits', 'Manual scheduling', 'Organized maintenance scheduling'],
+      ['Service history', 'Scattered records', 'Centralized service history'],
+      ['Reporting', 'Manual preparation', 'Digital reports'],
+    ],
+  },
+  h2('Benefits of Using CCTV Service Management Software'),
+  ul(
+    'Better visibility of installation projects, since every job has a status.',
+    'Improved technician coordination, with assignments in one place.',
+    'Organized customer information that nobody has to ask for twice.',
+    'Easier AMC tracking, with dates and renewals together.',
+    'Better maintenance scheduling, because visits are planned ahead.',
+    'Fewer manual follow-ups, as updates come from the field.',
+    'Better service history, kept per site and per device.',
+    'More useful operational reports, built from recorded work.',
+    'Clearer customer communication, as staff can answer from the record.',
+    'More organized operations overall.',
+  ),
+  p('These benefits depend on your team recording work consistently.'),
+  h2('Why CCTV Installation Businesses Should Consider FSMFlow'),
+  p(
+    'FSMFlow is field service management software for Indian service businesses, with a dedicated page for CCTV installers. It is not video surveillance or camera monitoring software: it manages the business around the cameras. Based on what the product offers today:',
+  ),
+  callout(
+    'Managing multiple CCTV installation projects and AMC contracts? Simplify your service operations with FSMFlow. [Book a Demo](/demo)',
+  ),
+  ul(
+    'Leads and quotations: enquiries with follow-up reminders, and quotations for cameras, NVR, storage, cabling and labour that convert into jobs and invoices.',
+    'Service requests and jobs: work orders with checklists, photos and notes, assigned to technicians.',
+    'Technician assignment: profiles with skills, availability and workload.',
+    'Field tracking: jobs move from assigned to en route, in progress and completed, and technicians use the [field service app](/features/field-service-app) for checklists, photos and sign-off.',
+    'Asset records: cameras, NVRs and DVRs on the customer’s site with serial number, installation date and warranty end.',
+    'AMC: contracts, visit schedules and renewal reminders.',
+    'Inventory: cameras, hard disks, cable and connectors, with low-stock alerts.',
+    'Billing and reports: quotations to invoices, and reports on jobs, revenue and pending payments.',
+  ),
+  p(
+    'It does not stream or record camera video, and it does not describe hardware integrations. For the full flow, see [CCTV software](/solutions/cctv-software).',
+  ),
+  h2('Frequently Asked Questions'),
+  h3('How do I manage multiple CCTV installation projects?'),
+  p(
+    'Give each installation one record with the survey, quotation, camera list, crew and status. Review open jobs daily, and assign crews by availability and skills.',
+  ),
+  h3('What software is used for CCTV installation project management?'),
+  p(
+    'Businesses use field service management software for enquiries, jobs, technicians, inventory, AMC and reports. It differs from video management software, which is used to view footage.',
+  ),
+  h3('How can CCTV companies manage AMC contracts?'),
+  p(
+    'Keep every contract’s dates, covered sites and visit schedule in one place, create visits in advance, and review renewals due in the next 30 to 60 days each week.',
+  ),
+  h3('What should a CCTV maintenance contract include?'),
+  p(
+    'Typically the parties and site, contract period, covered equipment, visit schedule, breakdown support, exclusions and charges. Optional items should appear only if agreed. See the AMC format guide for detail.',
+  ),
+  h3('How often should CCTV systems be maintained?'),
+  p(
+    'There is no single rule. Many contracts use quarterly, half-yearly or yearly preventive visits, depending on the site, its environment, how critical the cameras are and the equipment maker’s guidance.',
+  ),
+  h3('How can I track CCTV installation technicians?'),
+  p(
+    'Assign each job to a named technician and have them update status from their phone. The office can then see assigned, ongoing and completed jobs without calling.',
+  ),
+  h3('Can service management software track CCTV maintenance visits?'),
+  p(
+    'Yes. Visits can be scheduled, assigned and recorded against the customer’s site, with findings and photos, so service history builds up automatically.',
+  ),
+  h3('What is the difference between CCTV project management and CCTV maintenance management?'),
+  p(
+    'Project management follows a one-time installation from enquiry to handover. Maintenance management handles recurring work afterwards: contracts, preventive visits, breakdown calls and renewals.',
+  ),
+  h2('Conclusion'),
+  p(
+    'Organized CCTV installation project management, structured maintenance contracts and clear technician coordination all rest on one habit: every job, device and visit is recorded in the same place. With that in place, a growing CCTV business can add crews and AMC customers without losing track, and every site has a service history to work from.',
+  ),
+  p(
+    'FSMFlow is built for this kind of field service work. To see it with your own installations and AMC customers, [book a FSMFlow demo](/demo).',
+  ),
+]
