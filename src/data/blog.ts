@@ -1,5 +1,5 @@
 import { AirVent, ClipboardCheck, BarChart3, Briefcase, Cctv, ClipboardList, Compass, FileSignature, HardHat, Navigation, Package, ReceiptText, Route, Smartphone, SunMedium, Users, Wrench, type LucideIcon } from 'lucide-react'
-import { CCTV_ARTICLE, CONSTRUCTION_ARTICLE, HVAC_ARTICLE, SERVICE_BUSINESS_ARTICLE, SOLAR_ARTICLE, CMMS_ARTICLE, MOBILE_FSM_ARTICLE, SERVICE_CONTRACT_ARTICLE, SERVICE_REPORT_FORMAT_ARTICLE, SERVICE_REQUEST_MANAGEMENT_ARTICLE, AC_SERVICE_SOFTWARE_ARTICLE, TECHNICIAN_SCHEDULING_ARTICLE, SOLAR_SOFTWARE_BUYERS_ARTICLE, CCTV_PROJECT_MANAGEMENT_ARTICLE, WEB_MAINTENANCE_NIGERIA_ARTICLE, DISPATCH_SOFTWARE_ARTICLE, PREVENTIVE_MAINTENANCE_ARTICLE, WHAT_IS_FSM_ARTICLE } from './blogArticles'
+import { CCTV_ARTICLE, CONSTRUCTION_ARTICLE, HVAC_ARTICLE, SERVICE_BUSINESS_ARTICLE, SOLAR_ARTICLE, CMMS_ARTICLE, MOBILE_FSM_ARTICLE, SERVICE_CONTRACT_ARTICLE, SERVICE_REPORT_FORMAT_ARTICLE, SERVICE_REQUEST_MANAGEMENT_ARTICLE, AC_SERVICE_SOFTWARE_ARTICLE, TECHNICIAN_SCHEDULING_ARTICLE, SOLAR_SOFTWARE_BUYERS_ARTICLE, CCTV_PROJECT_MANAGEMENT_ARTICLE, INDUSTRIAL_MAINTENANCE_ARTICLE, WEB_MAINTENANCE_NIGERIA_ARTICLE, DISPATCH_SOFTWARE_ARTICLE, PREVENTIVE_MAINTENANCE_ARTICLE, WHAT_IS_FSM_ARTICLE } from './blogArticles'
 
 /**
  * Blog content model.
@@ -428,6 +428,26 @@ export const BLOG_POSTS: BlogPost[] = [
     secondaryKeywords: ['CCTV maintenance management', 'CCTV service management software', 'CCTV installation management software', 'CCTV AMC management', 'CCTV technician management', 'Security system maintenance software', 'CCTV service tracking', 'CCTV work order management'],
     supports: '/solutions/cctv-software',
     body: CCTV_PROJECT_MANAGEMENT_ARTICLE,
+  },
+  {
+    slug: 'industrial-maintenance-management',
+    title: 'Industrial Maintenance Management: How Software Improves Operations',
+    seoTitle: 'Industrial Maintenance Management: Software Guide | FSMFlow',
+    seoDescription:
+      'Industrial maintenance management explained: reactive vs preventive maintenance, work orders, scheduling and the software features to look for in your team.',
+    excerpt:
+      'The types of industrial maintenance, the problems software solves, the features to look for and how to choose, with a clear view of where FSMFlow fits.',
+    category: 'Service Management',
+    readMinutes: 9,
+    status: 'published',
+    icon: Wrench,
+    accent: 'iris',
+    publishedAt: '2026-11-11',
+    author: 'FSMFlow Team',
+    primaryKeyword: 'Industrial maintenance management',
+    secondaryKeywords: ['Industrial maintenance management software', 'Industrial maintenance software', 'Equipment maintenance management', 'Maintenance work order management', 'Preventive maintenance management', 'Industrial equipment maintenance', 'Maintenance scheduling software', 'Maintenance technician management', 'Industrial service management', 'Maintenance operations management'],
+    supports: '/features/work-order-management-software',
+    body: INDUSTRIAL_MAINTENANCE_ARTICLE,
   },
   {
     slug: 'run-amc-renewals-without-spreadsheets',

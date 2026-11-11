@@ -2956,3 +2956,220 @@ export const CCTV_PROJECT_MANAGEMENT_ARTICLE: BlogBlock[] = [
     'FSMFlow is built for this kind of field service work. To see it with your own installations and AMC customers, [book a FSMFlow demo](/demo).',
   ),
 ]
+
+/* -------------------------------------------------------------------------- */
+/* Industrial maintenance management                                          */
+/* -------------------------------------------------------------------------- */
+
+export const INDUSTRIAL_MAINTENANCE_ARTICLE: BlogBlock[] = [
+  p(
+    'When a conveyor stops at 2 pm, nobody in the plant is thinking about maintenance strategy. They are asking who is available, whether the part is in stock, and what was done to this machine last time. Industrial maintenance management is the discipline that makes those answers easy to find before the breakdown, not during it. Without it, teams live with unexpected failures, delayed maintenance, paper records, lost work orders and no clear view of what is pending.',
+  ),
+  p(
+    'This guide explains what industrial maintenance management involves, the main types of maintenance, how industrial maintenance management software improves operations, and how to choose a tool. It also says plainly where FSMFlow fits and where it does not.',
+  ),
+  h2('What Is Industrial Maintenance Management?'),
+  p(
+    'Industrial maintenance management is the planning, scheduling, tracking and recording of work that keeps machinery and equipment running. It covers who maintains which equipment, when, with what parts, and what happened afterwards. Factories, workshops, utilities and industrial service providers all do it, whether or not they call it that. Industrial equipment maintenance runs from lubricating a bearing to rebuilding a gearbox, and the equipment side, often called equipment maintenance management, focuses on each machine’s schedule and history.',
+  ),
+  p(
+    'Two groups carry the work. Technicians inspect, repair and service the equipment. Supervisors decide priorities, assign jobs and watch the backlog. The simplest distinction in practice is reactive versus planned: reactive work responds to a failure, while planned work is scheduled in advance to prevent one. Most operations need a healthy mix of both.',
+  ),
+  h2('Common Challenges in Industrial Maintenance Operations'),
+  ul(
+    'Unexpected equipment breakdowns: a gearbox fails mid-shift and production waits while someone finds the technician.',
+    'No preventive maintenance planning: lubrication and inspections happen when someone remembers.',
+    'Manual documentation: job sheets are filled on paper, filed late, and rarely searched.',
+    'Delayed work order assignments: a request waits in a supervisor’s inbox for hours.',
+    'Technician management: shifts, skills and leave are tracked on a whiteboard.',
+    'Spare parts coordination: a bearing is needed and the store register says one, but the shelf is empty.',
+    'No equipment service history: a technician repeats a diagnosis that was already made last quarter.',
+    'Ongoing jobs are hard to follow: the manager walks the floor to find out what is open.',
+    'Communication gaps: operations, stores and maintenance each hold a different version of the job.',
+    'Limited performance visibility: nobody can say how many planned tasks were completed on time.',
+  ),
+  callout(
+    'Looking to organize your industrial service and maintenance operations? Explore FSMFlow and manage your field service activities more efficiently. [Book a Demo](/demo)',
+  ),
+  h2('Types of Industrial Maintenance'),
+  h3('Reactive maintenance'),
+  p(
+    'Work done after equipment fails. It is sometimes acceptable for low-risk items, but it brings unplanned stoppages, rushed repairs and urgent part orders, and it makes the schedule unpredictable.',
+  ),
+  h3('Preventive maintenance'),
+  p(
+    'Scheduled work, such as inspections and servicing at set intervals, meant to reduce unexpected failures. Preventive maintenance management means setting intervals from the equipment maker’s guidance, operating conditions and your own history. Our guide to [preventive maintenance](/blog/preventive-maintenance-guide-sri-lanka) explains how to build a schedule.',
+  ),
+  h3('Predictive maintenance'),
+  p(
+    'Condition-based work that uses equipment data and monitoring, such as vibration or temperature readings, to estimate when service is needed. It needs sensors and analysis tools. FSMFlow does not provide predictive analytics.',
+  ),
+  h3('Corrective maintenance'),
+  p(
+    'Work that fixes a fault already identified, often during an inspection. The fault is recorded, assigned to a technician and closed with notes, so it does not resurface unnoticed.',
+  ),
+  h3('Routine maintenance'),
+  p(
+    'Regular recurring tasks: inspections, cleaning, lubrication and basic checks. They are simple, but they are the first to be skipped when the team is busy.',
+  ),
+  h2('How Maintenance Management Software Improves Industrial Operations'),
+  p('Used consistently, maintenance management software changes daily operations in eight ways.'),
+  h3('Centralized maintenance management'),
+  p(
+    'Requests, schedules, work orders and records sit in one place instead of in registers, chats and spreadsheets, so maintenance operations management no longer depends on memory.',
+  ),
+  h3('Better maintenance scheduling'),
+  p(
+    'Planned tasks are created as dated jobs and can be monitored. Maintenance scheduling software makes missed or overdue tasks visible instead of silent.',
+  ),
+  h3('Work order management'),
+  p(
+    'Maintenance work order management turns a request into a work order with an owner, priority, status and completion record. This is how to track industrial maintenance work orders without chasing people. See [work order management software](/features/work-order-management-software).',
+  ),
+  h3('Technician scheduling and assignment'),
+  p(
+    'Maintenance technician management starts with seeing skills, availability and workload, so the electrician is not sent to a mechanical fault. See [technician scheduling](/blog/technician-scheduling-software-for-service-businesses).',
+  ),
+  h3('Equipment maintenance history'),
+  p(
+    'A record of what was done, when and by whom helps technicians avoid repeat diagnosis and helps managers spot machines that keep failing.',
+  ),
+  h3('Spare parts and inventory coordination'),
+  p(
+    'Linking parts to jobs and tracking stock means the right material is available before the technician starts. See [inventory management software](/features/inventory-management-software).',
+  ),
+  h3('Improved team communication'),
+  p(
+    'When job details live in one record, managers and technicians stop relaying instructions by phone, and the office stops asking for updates.',
+  ),
+  h3('Maintenance reports and operational visibility'),
+  p(
+    'Reports show completed, ongoing and pending work, so managers can see backlog and workload without compiling sheets by hand.',
+  ),
+  h2('Essential Features to Look for in Industrial Maintenance Management Software'),
+  p('These are general capabilities. Later, we say which ones FSMFlow offers.'),
+  ul(
+    'Maintenance request management: requests are logged with urgency and location, not lost in calls.',
+    'Work order management: every task has an assignee, status, checklist and completion record.',
+    'Preventive maintenance scheduling: recurring tasks are created ahead and flagged when overdue.',
+    'Technician management: skills, availability and workload in one view.',
+    'Job assignment and tracking: assign quickly and follow progress.',
+    'Equipment and asset records: each machine with its details and warranty or contract status.',
+    'Maintenance history: every past job attached to the equipment.',
+    'Spare parts and inventory management: stock linked to jobs, with low-stock alerts.',
+    'Mobile access for field technicians: jobs, checklists and photos on a phone.',
+    'Reports and analytics: completed, pending and overdue work at a glance.',
+  ),
+  callout(
+    'Looking to organize your industrial service and maintenance operations? Explore FSMFlow and manage your field service activities more efficiently. [Book a Demo](/demo)',
+  ),
+  h2('Manual Maintenance Management vs Digital Maintenance Management'),
+  {
+    type: 'table',
+    caption: 'Manual maintenance management compared with digital maintenance management',
+    head: ['Maintenance activity', 'Manual management', 'Digital management'],
+    rows: [
+      ['Maintenance requests', 'Paper records and phone calls', 'Centralized digital records'],
+      ['Job assignment', 'Manual coordination', 'Organized job allocation'],
+      ['Maintenance scheduling', 'Spreadsheets and reminders', 'Digital scheduling'],
+      ['Work order tracking', 'Manual follow-ups', 'Centralized job status'],
+      ['Technician coordination', 'Calls and messages', 'Organized team communication'],
+      ['Equipment history', 'Scattered documents', 'Centralized records, where supported'],
+      ['Inventory', 'Separate stock registers', 'Organized inventory records'],
+      ['Reporting', 'Manual report preparation', 'Digital operational reports'],
+    ],
+  },
+  h2('Benefits of Industrial Maintenance Management Software'),
+  ul(
+    'Better maintenance planning, because tasks are scheduled and visible.',
+    'Improved coordination of equipment maintenance across teams.',
+    'Less manual administration and re-typing.',
+    'Clearer work order visibility for supervisors.',
+    'Improved technician utilization, since workload is visible.',
+    'Organized maintenance documentation.',
+    'Better inventory coordination for spare parts.',
+    'More useful operational reports.',
+    'More structured maintenance workflows overall.',
+  ),
+  p('These gains depend on consistent use. No software guarantees fewer breakdowns.'),
+  h2('How to Choose the Right Industrial Maintenance Management Software'),
+  p('Start from your actual maintenance requirements, then check these points:'),
+  ul(
+    'Business and operational requirements: do you maintain your own plant, or serve customers’ equipment?',
+    'Equipment and asset needs: how detailed must machine records be?',
+    'Scheduling: can it create recurring planned tasks?',
+    'Work orders: can a request become a tracked job easily?',
+    'Technician management: can you see skills and workload?',
+    'Inventory: can parts be linked to jobs?',
+    'Mobile access: will technicians use it on the shop floor?',
+    'Reporting: can you see pending and overdue work?',
+    'Scalability: will it cope with more sites and technicians?',
+    'Ease of use: can supervisors and technicians learn it quickly?',
+    'Data security: ask about roles, backups and export.',
+    'Pricing and support: understand how pricing works and what help is included.',
+  ),
+  p(
+    'Be clear about scope. Plants that need sensor monitoring, machine-level asset registers or predictive analytics should evaluate those separately. For the wider picture, see our guides to [computerized maintenance management software](/blog/computerized-maintenance-management-software-south-africa) and [web-based maintenance management software](/blog/web-based-maintenance-management-software-nigeria).',
+  ),
+  h2('Why Industrial Service Businesses Should Consider FSMFlow'),
+  p(
+    'FSMFlow is field service management software for service businesses that send technicians to customer or site locations. It is not presented as a full industrial CMMS or EAM platform, so it suits industrial service management for providers and maintenance contractors who work through scheduled visits and service jobs.',
+  ),
+  callout(
+    'Looking to organize your industrial service and maintenance operations? Explore FSMFlow and manage your field service activities more efficiently. [Book a Demo](/demo)',
+  ),
+  p('Of the ten features above, FSMFlow offers these:'),
+  ul(
+    'Customer and service management: enquiries with follow-up reminders and customer site records.',
+    'Work orders: jobs with priority, time window, checklist, parts, photos and status.',
+    'Technician scheduling: profiles with skills, a weekly schedule showing gaps and double bookings, leave and workload. See [employee and technician scheduling](/features/employee-management-software).',
+    'Job tracking: status from assigned to en route, in progress and completed, and the [field service app](/features/field-service-app) for technicians.',
+    'Equipment records: units you service, with model, serial number, warranty and AMC status and service history. See [asset management](/features/asset-management-software).',
+    'AMC and scheduled visits: contracts, visit schedules and renewal reminders. See [warranty and AMC management](/features/warranty-management-software).',
+    'Inventory: warehouse and van stock linked to jobs, with low-stock alerts.',
+    'Quotations, billing and reports: quotations that become jobs and invoices, and reports on jobs, revenue and pending payments.',
+  ),
+  p(
+    'FSMFlow does not provide sensor integration, IoT monitoring, machine diagnostics, predictive maintenance or AI-based maintenance. For the broader service workflow, see [service business management software](/solutions/service-business-management-software).',
+  ),
+  h2('Frequently Asked Questions'),
+  h3('What is industrial maintenance management?'),
+  p(
+    'It is the planning, scheduling, tracking and recording of maintenance work on industrial equipment, so machines are serviced on time and past work is documented.',
+  ),
+  h3('What is industrial maintenance management software?'),
+  p(
+    'It is software that organizes maintenance requests, work orders, schedules, technicians, equipment records and parts in one system, replacing registers and spreadsheets.',
+  ),
+  h3('How does software improve industrial maintenance operations?'),
+  p(
+    'It centralizes records, makes planned work visible, tracks work orders and technicians, and produces reports. The result depends on how consistently the team records work.',
+  ),
+  h3('What is the difference between preventive and reactive maintenance?'),
+  p(
+    'Preventive maintenance is scheduled in advance to reduce failures. Reactive maintenance happens after equipment fails. Most operations use both.',
+  ),
+  h3('How can businesses manage industrial maintenance work orders?'),
+  p(
+    'Log every request, create a work order with priority and an owner, assign a technician, update status as work progresses, and close it with notes and parts used.',
+  ),
+  h3('What features should industrial maintenance software include?'),
+  p(
+    'Request and work order management, preventive scheduling, technician management, equipment records and history, inventory, mobile access and reports.',
+  ),
+  h3('How can maintenance software help manage technicians?'),
+  p(
+    'It shows skills, availability and workload, so jobs are assigned sensibly, and it lets technicians update job status from their phones.',
+  ),
+  h3('Is field service management software suitable for industrial maintenance companies?'),
+  p(
+    'It can be, if your work is done by technicians on scheduled visits and service jobs. If you need sensor monitoring or a full plant asset register, assess a dedicated CMMS or EAM too.',
+  ),
+  h2('Conclusion'),
+  p(
+    'Sound industrial maintenance management comes down to a few habits: plan the recurring work, route every request through a work order, assign the right technician, keep equipment history and watch what is pending. Digital workflows make those habits easier to keep and give managers real visibility.',
+  ),
+  p(
+    'If your maintenance runs through technicians and scheduled service jobs, see how FSMFlow handles it: [book a FSMFlow demo](/demo).',
+  ),
+]
