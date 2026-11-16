@@ -14,8 +14,21 @@ const SCATTERED = [
   { icon: Notebook, label: 'Notebooks', rot: '-rotate-2' },
 ]
 
-const PROBLEMS = ['Job details live in five places', 'AMC renewals depend on someone remembering', 'Payments are chased from memory']
-const GAINS = ['One record per customer, unit and job', 'Reminders for visits and renewals', 'Pending payments visible by customer']
+const PROBLEMS = [
+  'Job details live in five places',
+  'Nobody is sure which technician has the right skills or is free',
+  'AMC renewals depend on someone remembering',
+  'Spare parts run out mid-job',
+  'Payments are chased from memory',
+]
+const GAINS = [
+  'Centralised service operations: one record per customer, unit and job',
+  'Better job visibility: status the office can see without calling',
+  'Technician coordination: skills, availability and workload in one view',
+  'AMC and warranty tracking with reminders for visits and renewals',
+  'Spare parts management tied to jobs, with low-stock alerts',
+  'Quotations, invoices and pending payments by customer, plus operational reports',
+]
 
 export function BeforeAfter() {
   return (
@@ -27,7 +40,7 @@ export function BeforeAfter() {
             eyebrow="Why FSMFlow"
             align="center"
             title="Replace scattered tools with one flow"
-            lead="Many service teams run on WhatsApp groups, Excel sheets and paper job cards. It works until the team grows. FSMFlow is service management software that keeps every job, customer and payment connected."
+            lead="Many service teams run on WhatsApp groups, Excel sheets and paper job cards. It works until the team grows. FSMFlow is service business management software that keeps every job, customer, part and payment connected."
           />
         </Reveal>
 

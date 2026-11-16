@@ -12,10 +12,14 @@ import { SectionHeading } from '@/components/ui/SectionHeading'
 import { HVAC_SOLUTION, SOLUTIONS } from '@/data/solutions'
 
 const BLURB: Record<string, string> = {
-  'cctv-software': 'Site surveys, camera installations, handover records and AMC visits for security installers.',
-  'solar-software': 'Leads, site surveys, installation projects and after-sales service for solar EPC teams.',
-  'construction-management-software': 'Enquiries, quotations, site crews, materials and payments across every project.',
-  'service-business-management-software': 'Scheduling, dispatch, quotations and payments for any team that visits customers.',
+  'cctv-software':
+    'Site surveys, camera installation, DVR/NVR records, installation handover, equipment warranty, AMC visits and repair history for security installers.',
+  'solar-software':
+    'Customer enquiries, site surveys, quotations, installation projects, equipment records, commissioning and maintenance for solar EPC teams.',
+  'construction-management-software':
+    'Enquiries, quotations, site work, crew allocation, materials and work progress, with service and maintenance after handover.',
+  'service-business-management-software':
+    'Electricians, plumbers, appliance repair and other service contractors: scheduling, dispatch, job history, quotations and payments.',
 }
 
 /** One platform, five industries — HVAC gets the 2×2 hero tile. */
@@ -44,12 +48,12 @@ export function SolutionsSection() {
                 </Link>
               </h3>
               <p className="mt-4 max-w-md text-[1.0625rem] leading-relaxed text-ink-600">
-                From AC installation to AMC renewals, FSMFlow gives HVAC companies one system for jobs, technicians, spare parts, quotations and
-                payments.
+                From AC installation and repair to preventive maintenance and AMC renewals, FSMFlow gives HVAC companies one system for jobs,
+                technicians, spare parts, equipment service history, quotations and payments.
               </p>
               <CheckList
                 className="mt-6"
-                items={['Installation, repair and breakdown jobs', 'AMC contracts and warranty tracking', 'Spare parts on every van']}
+                items={['Installation, repair and breakdown jobs', 'AMC contracts and warranty tracking', 'Service history for every unit', 'Spare parts on every van']}
               />
               <div className="relative mt-8 flex flex-1 items-end justify-between gap-6">
                 <ButtonLink href={HVAC_SOLUTION.path}>Explore HVAC</ButtonLink>

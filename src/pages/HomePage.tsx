@@ -7,14 +7,16 @@ import { CountriesSection } from '@/sections/home/CountriesSection'
 import { FeaturesSection } from '@/sections/home/FeaturesSection'
 import { Hero } from '@/sections/home/Hero'
 import { HOME_FAQS, HomeFaq } from '@/sections/home/HomeFaq'
+import { GettingStarted } from '@/sections/home/GettingStarted'
 import { HvacSection } from '@/sections/home/HvacSection'
 import { IndustryStrip } from '@/sections/home/IndustryStrip'
+import { OperationsLifecycle } from '@/sections/home/OperationsLifecycle'
 import { ProductShowcase } from '@/sections/home/ProductShowcase'
 import { SolutionsSection } from '@/sections/home/SolutionsSection'
 
-const TITLE = 'Field Service Management Software India | FSMFlow'
+const TITLE = 'Field Service Management Software for Businesses | FSMFlow'
 const DESCRIPTION =
-  'Field service management software for Indian service businesses. Manage technicians, jobs, customers, AMC and inventory in one platform, built for HVAC teams.'
+  'FSMFlow field service management software for Indian service businesses. Manage jobs, technicians, work orders, AMC and inventory in one FSM software platform.'
 
 export default function HomePage() {
   return (
@@ -33,11 +35,13 @@ export default function HomePage() {
       />
       <Hero />
       <IndustryStrip />
+      <OperationsLifecycle />
       <HvacSection />
       <ProductShowcase />
       <FeaturesSection />
       <SolutionsSection />
       <BeforeAfter />
+      <GettingStarted />
       <CountriesSection />
       <HomeFaq />
       <CtaBand

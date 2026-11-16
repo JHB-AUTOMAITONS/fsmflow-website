@@ -20,21 +20,39 @@ const COPY: Record<string, { text: string; points?: string[] }> = {
     points: ['Quotes from your price list', 'Approval and revision tracking', 'Invoices and payment status'],
   },
   'work-order-management-software': {
-    text: 'Every service job has an owner, a checklist, parts, photos and a status the whole team can see.',
-    points: ['Create and assign in seconds', 'Checklists, photos and notes', 'Service reports from the job'],
+    text: 'Every service job has an owner, a priority, a checklist, parts, photos and a status the whole team can see, from service request to completed report.',
+    points: [
+      'Create, prioritise and assign in seconds',
+      'Status the office can follow: assigned, en route, in progress, completed',
+      'Checklists, photos and notes on the job',
+      'Service report ready when the job closes',
+    ],
   },
   'field-service-app': {
-    text: 'The technician’s day on a phone: jobs, customer history, navigation, checklists and sign-off.',
-    points: ['Today’s jobs and navigation', 'Checklists, parts and photos', 'Live status back to the office'],
+    text: 'The technician’s day on a phone: assigned jobs, customer details and location, checklists, parts, photos and sign-off.',
+    points: [
+      'Today’s jobs, customer history and navigation',
+      'Checklists, parts used and photos',
+      'Customer sign-off and completion report',
+      'Live status back to the office',
+    ],
   },
   'employee-management-software': {
-    text: 'Technician profiles, skills, schedules and workload, so assigning work is a decision, not a guess.',
-    points: ['Skills and availability', 'Weekly schedule board', 'Workload at a glance'],
+    text: 'Technician profiles with skills, availability and workload, so assigning work is a decision, not a guess.',
+    points: ['Skills and specialisation on every profile', 'Availability and weekly schedule board', 'Workload visible before you assign', 'Jobs completed per technician'],
   },
-  'asset-management-software': { text: 'Every customer site and installed unit, with its full service history.' },
-  'warranty-management-software': { text: 'Warranty status, AMC contracts, scheduled visits and renewal reminders.' },
-  'inventory-management-software': { text: 'Spare parts across warehouse and vans, tied to jobs, with low-stock alerts.' },
-  'reporting-software': { text: 'Jobs, revenue, technician productivity and pending payments in clear dashboards.' },
+  'asset-management-software': {
+    text: 'Every installed unit with its model, serial number, customer site and install date, plus warranty, AMC cover and full service history, for ACs, CCTV systems and solar plants alike.',
+  },
+  'warranty-management-software': {
+    text: 'Warranty and AMC contracts on each unit, with recurring service visits, upcoming-service dates and renewal reminders, so equipment is serviced on schedule instead of after it fails.',
+  },
+  'inventory-management-software': {
+    text: 'Spare parts across warehouse and vans, with stock history, parts used on each job and low-stock alerts, so technicians carry what the job needs.',
+  },
+  'reporting-software': {
+    text: 'Open, completed and pending jobs, revenue, pending payments, technician productivity, part usage and AMC renewals in clear dashboards.',
+  },
 }
 
 function Peek({ slug, className, height = 250 }: { slug: string; className?: string; height?: number }) {

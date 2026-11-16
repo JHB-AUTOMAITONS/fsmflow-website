@@ -43,8 +43,9 @@ export function Hero() {
             </h1>
 
             <p className="text-lead hero-in mt-6 max-w-xl text-ink-600" style={delay(190)}>
-              FSMFlow is field service management software built for Indian service businesses. Manage technicians, service jobs, customers,
-              AMC, inventory and field operations from one powerful platform.
+              FSMFlow is field service management software built for Indian service businesses. This FSM software connects customers, work
+              orders, technician scheduling, assets and AMC, inventory, quotations and invoicing, so your whole field operation runs from one
+              platform.
             </p>
 
             <div className="hero-in mt-9 flex flex-col gap-3 sm:flex-row sm:items-center" style={delay(290)}>
