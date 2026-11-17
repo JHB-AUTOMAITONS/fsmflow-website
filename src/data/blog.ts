@@ -1,5 +1,5 @@
 import { AirVent, ClipboardCheck, BarChart3, Briefcase, Cctv, ClipboardList, Compass, FileSignature, HardHat, Navigation, Package, ReceiptText, Route, Smartphone, SunMedium, Users, Wrench, type LucideIcon } from 'lucide-react'
-import { CCTV_ARTICLE, CONSTRUCTION_ARTICLE, HVAC_ARTICLE, SERVICE_BUSINESS_ARTICLE, SOLAR_ARTICLE, CMMS_ARTICLE, MOBILE_FSM_ARTICLE, SERVICE_CONTRACT_ARTICLE, SERVICE_REPORT_FORMAT_ARTICLE, SERVICE_REQUEST_MANAGEMENT_ARTICLE, AC_SERVICE_SOFTWARE_ARTICLE, TECHNICIAN_SCHEDULING_ARTICLE, SOLAR_SOFTWARE_BUYERS_ARTICLE, CCTV_PROJECT_MANAGEMENT_ARTICLE, INDUSTRIAL_MAINTENANCE_ARTICLE, WEB_MAINTENANCE_NIGERIA_ARTICLE, DISPATCH_SOFTWARE_ARTICLE, PREVENTIVE_MAINTENANCE_ARTICLE, WHAT_IS_FSM_ARTICLE } from './blogArticles'
+import { CCTV_ARTICLE, CONSTRUCTION_ARTICLE, HVAC_ARTICLE, SERVICE_BUSINESS_ARTICLE, SOLAR_ARTICLE, CMMS_ARTICLE, MOBILE_FSM_ARTICLE, SERVICE_CONTRACT_ARTICLE, SERVICE_REPORT_FORMAT_ARTICLE, SERVICE_REQUEST_MANAGEMENT_ARTICLE, AC_SERVICE_SOFTWARE_ARTICLE, TECHNICIAN_SCHEDULING_ARTICLE, SOLAR_SOFTWARE_BUYERS_ARTICLE, CCTV_PROJECT_MANAGEMENT_ARTICLE, INDUSTRIAL_MAINTENANCE_ARTICLE, WEB_MAINTENANCE_NIGERIA_ARTICLE, DISPATCH_SOFTWARE_ARTICLE, PREVENTIVE_MAINTENANCE_ARTICLE, WHAT_IS_FSM_ARTICLE, FIELD_SERVICE_INDUSTRY_SOFTWARE_ARTICLE, FIELD_SERVICE_INDUSTRY_SOFTWARE_FAQS } from './blogArticles'
 
 /**
  * Blog content model.
@@ -65,6 +65,8 @@ export interface BlogPost {
   updatedAt?: string
   author?: string
   body?: BlogBlock[]
+  /** FAQs shown in the body. When set, the article page also emits matching FAQPage JSON-LD. */
+  faqs?: { q: string; a: string }[]
   /** Full <title> override (include the brand suffix yourself). Defaults to "<title> | FSMFlow", shortened to 60 chars. */
   seoTitle?: string
   /** Meta description override. Defaults to the excerpt. */
@@ -448,6 +450,31 @@ export const BLOG_POSTS: BlogPost[] = [
     secondaryKeywords: ['Industrial maintenance management software', 'Industrial maintenance software', 'Equipment maintenance management', 'Maintenance work order management', 'Preventive maintenance management', 'Industrial equipment maintenance', 'Maintenance scheduling software', 'Maintenance technician management', 'Industrial service management', 'Maintenance operations management'],
     supports: '/features/work-order-management-software',
     body: INDUSTRIAL_MAINTENANCE_ARTICLE,
+  },
+  {
+    slug: 'field-service-industry-software',
+    title: 'How to Choose the Right Field Service Industry Software for Your Business',
+    seoTitle: 'How to Choose Field Service Industry Software | FSMFlow',
+    seoDescription:
+      'Choosing field service industry software? See the 12 features that matter, industry use cases, a buyer checklist and mistakes to avoid before you book a demo.',
+    excerpt:
+      'A buyer’s guide for AC, CCTV, solar, construction and maintenance businesses: what the software does, which features to check and how to compare options.',
+    category: 'Field Service',
+    readMinutes: 14,
+    status: 'published',
+    icon: ClipboardCheck,
+    accent: 'brand',
+    image: {
+      src: '/blog-images/field-service-industry-software-dashboard.svg',
+      alt: 'Illustration of a field service management dashboard showing technician assignments, job status columns and AMC renewals for a service business',
+    },
+    publishedAt: '2026-11-17',
+    author: 'FSMFlow Team',
+    primaryKeyword: 'Field Service Industry Software',
+    secondaryKeywords: ['Field Service Management Software', 'Field Service Software', 'Technician Management Software', 'Work Order Management Software', 'Job Management Software', 'Service Scheduling Software', 'AMC Management Software', 'Field Service Automation', 'Service Operations Management', 'Field Service Mobile App'],
+    supports: '/solutions/service-business-management-software',
+    body: FIELD_SERVICE_INDUSTRY_SOFTWARE_ARTICLE,
+    faqs: FIELD_SERVICE_INDUSTRY_SOFTWARE_FAQS,
   },
   {
     slug: 'run-amc-renewals-without-spreadsheets',

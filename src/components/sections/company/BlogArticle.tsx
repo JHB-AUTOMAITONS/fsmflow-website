@@ -8,7 +8,7 @@ import { CtaBand } from '@/components/ui/CtaBand'
 import { Reveal } from '@/components/ui/Reveal'
 import { Section } from '@/components/ui/Section'
 import { PUBLISHED_POSTS, type BlogBlock, type BlogPost } from '@/data/blog'
-import { articleSchema, breadcrumbSchema } from '@/lib/schema'
+import { articleSchema, breadcrumbSchema, faqSchema } from '@/lib/schema'
 import { BlogCard } from './BlogCard'
 import { BlogImage } from './BlogImage'
 
@@ -161,6 +161,7 @@ export function BlogArticle({ post }: { post: BlogPost }) {
           }),
         ]
       : []),
+    ...(post.faqs?.length ? [faqSchema(post.faqs)] : []),
   ]
 
   return (
