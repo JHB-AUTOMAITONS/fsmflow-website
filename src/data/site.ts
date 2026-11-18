@@ -31,6 +31,13 @@ export const SITE = {
     /** International format: country code + number, no "+", spaces or dashes (wa.me requires this). */
     number: '917090006577',
   },
+  /** Hosted lead form (GoHighLevel) embedded on /demo. Submissions go to that account, not to Netlify Forms. */
+  demoForm: {
+    id: 'LOaZQsUtzPRjJtJsWGBq',
+    url: 'https://connect.automationclub.in/widget/form/LOaZQsUtzPRjJtJsWGBq',
+    /** Resizes the iframe to fit the form and passes page details to it. */
+    embedScript: 'https://connect.automationclub.in/js/form_embed.js',
+  },
 } as const
 
 const WHATSAPP_MESSAGE =
