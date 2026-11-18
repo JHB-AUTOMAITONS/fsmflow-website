@@ -130,7 +130,7 @@ for (const route of routes) {
     if (!headings.some((h) => h.level === 2 && norm(h.text).includes(k.split(' ').slice(0, 2).join(' ')))) warn('no blog H2 with the primary keyword or a close variation')
     const opening = norm(strip(body.slice(body.indexOf('<main'), body.indexOf('<main') + 9000))).slice(0, 2500)
     if (!opening.includes(k)) warn('primary keyword not found in the opening content')
-    if (!headings.some((h) => h.level === 2 && /^frequently asked questions$/i.test(h.text)) || headings.filter((h) => h.level === 3 && h.text.endsWith('?')).length < 3) err('blog post must have a "Frequently asked questions" section with at least 3 questions')
+    if (!headings.some((h) => h.level === 2 && /^frequently asked questions( about .+)?$/i.test(h.text)) || headings.filter((h) => h.level === 3 && h.text.endsWith('?')).length < 3) err('blog post must have a "Frequently asked questions" section with at least 3 questions')
     for (const sk of post.secondaryKeywords ?? []) {
       if (!norm(strip(body)).includes(norm(sk))) warn(`blog body does not contain secondary keyword "${sk}"`)
     }

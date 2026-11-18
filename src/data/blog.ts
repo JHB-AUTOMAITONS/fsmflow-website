@@ -1,5 +1,5 @@
 import { AirVent, ClipboardCheck, BarChart3, Briefcase, Cctv, ClipboardList, Compass, FileSignature, HardHat, Navigation, Package, ReceiptText, Route, Smartphone, SunMedium, Users, Wrench, type LucideIcon } from 'lucide-react'
-import { CCTV_ARTICLE, CONSTRUCTION_ARTICLE, HVAC_ARTICLE, SERVICE_BUSINESS_ARTICLE, SOLAR_ARTICLE, CMMS_ARTICLE, MOBILE_FSM_ARTICLE, SERVICE_CONTRACT_ARTICLE, SERVICE_REPORT_FORMAT_ARTICLE, SERVICE_REQUEST_MANAGEMENT_ARTICLE, AC_SERVICE_SOFTWARE_ARTICLE, TECHNICIAN_SCHEDULING_ARTICLE, SOLAR_SOFTWARE_BUYERS_ARTICLE, CCTV_PROJECT_MANAGEMENT_ARTICLE, INDUSTRIAL_MAINTENANCE_ARTICLE, WEB_MAINTENANCE_NIGERIA_ARTICLE, DISPATCH_SOFTWARE_ARTICLE, PREVENTIVE_MAINTENANCE_ARTICLE, WHAT_IS_FSM_ARTICLE, FIELD_SERVICE_INDUSTRY_SOFTWARE_ARTICLE, FIELD_SERVICE_INDUSTRY_SOFTWARE_FAQS } from './blogArticles'
+import { CCTV_ARTICLE, CONSTRUCTION_ARTICLE, HVAC_ARTICLE, SERVICE_BUSINESS_ARTICLE, SOLAR_ARTICLE, CMMS_ARTICLE, MOBILE_FSM_ARTICLE, SERVICE_CONTRACT_ARTICLE, SERVICE_REPORT_FORMAT_ARTICLE, SERVICE_REQUEST_MANAGEMENT_ARTICLE, AC_SERVICE_SOFTWARE_ARTICLE, TECHNICIAN_SCHEDULING_ARTICLE, SOLAR_SOFTWARE_BUYERS_ARTICLE, CCTV_PROJECT_MANAGEMENT_ARTICLE, INDUSTRIAL_MAINTENANCE_ARTICLE, WEB_MAINTENANCE_NIGERIA_ARTICLE, DISPATCH_SOFTWARE_ARTICLE, PREVENTIVE_MAINTENANCE_ARTICLE, WHAT_IS_FSM_ARTICLE, FIELD_SERVICE_INDUSTRY_SOFTWARE_ARTICLE, FIELD_SERVICE_INDUSTRY_SOFTWARE_FAQS, FIELD_WORKFORCE_ARTICLE, FIELD_WORKFORCE_FAQS } from './blogArticles'
 
 /**
  * Blog content model.
@@ -475,6 +475,31 @@ export const BLOG_POSTS: BlogPost[] = [
     supports: '/solutions/service-business-management-software',
     body: FIELD_SERVICE_INDUSTRY_SOFTWARE_ARTICLE,
     faqs: FIELD_SERVICE_INDUSTRY_SOFTWARE_FAQS,
+  },
+  {
+    slug: 'field-workforce-management-software',
+    title: 'Best Field Workforce Management Software for Small and Growing Businesses',
+    seoTitle: 'Best Field Workforce Management Software | FSMFlow',
+    seoDescription:
+      'Choosing Field Workforce Management Software? See the 12 features that matter, industry use cases, a buyer checklist and how to pick the right fit.',
+    excerpt:
+      'What field workforce management software does, the 12 features to check, how AC, CCTV, solar and construction teams use it, and how to choose with confidence.',
+    category: 'Technician Management',
+    readMinutes: 14,
+    status: 'published',
+    icon: Users,
+    accent: 'aqua',
+    image: {
+      src: '/blog-images/field-workforce-management-software-dashboard.svg',
+      alt: 'Illustration of a field workforce management dashboard showing technician schedules, job assignments and job status for a service team',
+    },
+    publishedAt: '2026-11-18',
+    author: 'FSMFlow Team',
+    primaryKeyword: 'Field Workforce Management Software',
+    secondaryKeywords: ['Field Workforce Management System', 'Field Employee Management Software', 'Field Staff Management Software', 'Field Technician Management Software', 'Workforce Management Software for Small Businesses', 'Field Staff Scheduling Software', 'Field Employee Tracking Software', 'Field Service Workforce Management', 'Workforce Scheduling Software', 'Field Team Management Software', 'Field Service Management Software', 'Technician Scheduling Software'],
+    supports: '/features/employee-management-software',
+    body: FIELD_WORKFORCE_ARTICLE,
+    faqs: FIELD_WORKFORCE_FAQS,
   },
   {
     slug: 'run-amc-renewals-without-spreadsheets',
