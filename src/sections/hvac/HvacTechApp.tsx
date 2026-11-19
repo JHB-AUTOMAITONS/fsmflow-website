@@ -39,8 +39,17 @@ export function HvacTechApp() {
                 'Customer sign-off and an automatic service report',
               ]}
             />
+            <p className="mt-6 text-[0.9688rem] leading-relaxed text-ink-600">
+              For the office, this works as HVAC technician scheduling software: each technician’s skills, service area, leave and daily
+              workload sit beside the job, so a VRF fault goes to the VRF engineer and a breakdown call can go to the nearest qualified
+              technician. Status updates from the phone replace the “where are you?” call, and jobs completed per technician feed the reports
+              below.
+            </p>
             <div className="mt-8">
               <TextLink href="/features/field-service-app">Explore the field service app for technicians</TextLink>
+            </div>
+            <div className="mt-3">
+              <TextLink href="/features/employee-management-software">Explore technician scheduling software</TextLink>
             </div>
           </Reveal>
 

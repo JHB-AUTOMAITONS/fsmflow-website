@@ -19,7 +19,7 @@ import { HvacTechApp } from '@/sections/hvac/HvacTechApp'
 const FAQS: Faq[] = [
   {
     q: 'What is HVAC field service software?',
-    a: 'HVAC field service software helps air conditioning, heating and ventilation companies run installation, repair, preventive maintenance and AMC work from one system. It covers service requests, quotations, technician scheduling, job tracking, spare parts, invoices, payments and contract renewals, so the office and the technicians work from the same information.',
+    a: 'HVAC field service software, also known as HVAC field service management software, helps air conditioning, heating and ventilation companies run installation, repair, preventive maintenance and AMC work from one system. It covers service requests, quotations, technician scheduling, job tracking, spare parts, invoices, payments and contract renewals, so the office and the technicians work from the same information.',
   },
   {
     q: 'How does FSMFlow manage AMC contracts for AC service?',
@@ -36,6 +36,10 @@ const FAQS: Faq[] = [
   {
     q: 'Does FSMFlow work for AC installation companies as well as service companies?',
     a: 'Yes. Installation businesses can manage enquiries, site visits, quotations and installation jobs with checklists and a handover record, then move the customer into AMC and service. Service-only companies can start with jobs, technicians and AMC.',
+  },
+  {
+    q: 'Does FSMFlow work as HVAC technician scheduling software?',
+    a: 'Yes. Each technician’s skills, service area, leave and workload sit on a weekly schedule, so you can give a VRF fault to the VRF engineer and spot double bookings before the day starts. For a breakdown call you can assign the nearest qualified technician, and the job status updates from their phone as it moves from assigned to en route, in progress and completed.',
   },
   {
     q: 'How do we get started?',

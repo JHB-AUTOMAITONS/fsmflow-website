@@ -213,6 +213,10 @@ export function HvacAmc() {
                 "Customer history across every visit",
               ]}
             />
+            <p className="mt-6 text-[0.9688rem] leading-relaxed text-ink-600">
+              As HVAC maintenance management software, FSMFlow turns each scheduled visit into a job with a checklist and a service report,
+              so preventive maintenance is recorded against the unit and the contract shows visits used and visits remaining.
+            </p>
             <div className="mt-8">
               <TextLink href="/features/warranty-management-software">
                 Explore warranty management software
