@@ -1,5 +1,5 @@
-import { AirVent, ClipboardCheck, BarChart3, Briefcase, Cctv, ClipboardList, Compass, FileSignature, HardHat, Navigation, Package, ReceiptText, Route, Smartphone, SunMedium, Users, Wrench, type LucideIcon } from 'lucide-react'
-import { CCTV_ARTICLE, CONSTRUCTION_ARTICLE, HVAC_ARTICLE, SERVICE_BUSINESS_ARTICLE, SOLAR_ARTICLE, CMMS_ARTICLE, MOBILE_FSM_ARTICLE, SERVICE_CONTRACT_ARTICLE, SERVICE_REPORT_FORMAT_ARTICLE, SERVICE_REQUEST_MANAGEMENT_ARTICLE, AC_SERVICE_SOFTWARE_ARTICLE, TECHNICIAN_SCHEDULING_ARTICLE, SOLAR_SOFTWARE_BUYERS_ARTICLE, CCTV_PROJECT_MANAGEMENT_ARTICLE, INDUSTRIAL_MAINTENANCE_ARTICLE, WEB_MAINTENANCE_NIGERIA_ARTICLE, DISPATCH_SOFTWARE_ARTICLE, PREVENTIVE_MAINTENANCE_ARTICLE, WHAT_IS_FSM_ARTICLE, FIELD_SERVICE_INDUSTRY_SOFTWARE_ARTICLE, FIELD_SERVICE_INDUSTRY_SOFTWARE_FAQS, FIELD_WORKFORCE_ARTICLE, FIELD_WORKFORCE_FAQS } from './blogArticles'
+import { AirVent, ClipboardCheck, BarChart3, FileText, Briefcase, Cctv, ClipboardList, Compass, FileSignature, HardHat, Navigation, Package, ReceiptText, Route, Smartphone, SunMedium, Users, Wrench, type LucideIcon } from 'lucide-react'
+import { CCTV_ARTICLE, CONSTRUCTION_ARTICLE, HVAC_ARTICLE, SERVICE_BUSINESS_ARTICLE, SOLAR_ARTICLE, CMMS_ARTICLE, MOBILE_FSM_ARTICLE, SERVICE_CONTRACT_ARTICLE, SERVICE_REPORT_FORMAT_ARTICLE, SERVICE_REQUEST_MANAGEMENT_ARTICLE, AC_SERVICE_SOFTWARE_ARTICLE, TECHNICIAN_SCHEDULING_ARTICLE, SOLAR_SOFTWARE_BUYERS_ARTICLE, CCTV_PROJECT_MANAGEMENT_ARTICLE, INDUSTRIAL_MAINTENANCE_ARTICLE, WEB_MAINTENANCE_NIGERIA_ARTICLE, DISPATCH_SOFTWARE_ARTICLE, PREVENTIVE_MAINTENANCE_ARTICLE, WHAT_IS_FSM_ARTICLE, FIELD_SERVICE_INDUSTRY_SOFTWARE_ARTICLE, FIELD_SERVICE_INDUSTRY_SOFTWARE_FAQS, FIELD_WORKFORCE_ARTICLE, FIELD_WORKFORCE_FAQS, CONTRACT_MANAGEMENT_ARTICLE, CONTRACT_MANAGEMENT_FAQS } from './blogArticles'
 
 /**
  * Blog content model.
@@ -500,6 +500,31 @@ export const BLOG_POSTS: BlogPost[] = [
     supports: '/features/employee-management-software',
     body: FIELD_WORKFORCE_ARTICLE,
     faqs: FIELD_WORKFORCE_FAQS,
+  },
+  {
+    slug: 'contract-management-software',
+    title: 'Contract Management Software: A Complete Guide for Businesses',
+    seoTitle: 'Contract Management Software: A Complete Guide | FSMFlow',
+    seoDescription:
+      'Learn what contract management software is, how it works, its key features and benefits, and how businesses can manage contracts, agreements and renewals.',
+    excerpt:
+      'What contract management software does, how it works, the features and benefits that matter, who should use it and how to choose the right system for your contracts and renewals.',
+    category: 'Service Management',
+    readMinutes: 17,
+    status: 'published',
+    icon: FileText,
+    accent: 'iris',
+    image: {
+      src: '/blog-images/contract-management-software-dashboard.svg',
+      alt: 'Illustration of a contract management software dashboard listing customer contracts with status, expiry dates and renewals due',
+    },
+    publishedAt: '2026-11-20',
+    author: 'FSMFlow Team',
+    primaryKeyword: 'Contract Management Software',
+    secondaryKeywords: ['Contract Management System', 'Contract Management Software for Businesses', 'Digital Contract Management Software', 'Service Contract Management Software', 'Maintenance Contract Management Software', 'Contract Tracking Software', 'Contract Lifecycle Management Software', 'Contract Renewal Management', 'Agreement Management Software', 'Business Contract Management', 'Customer Contract Management', 'Contract Management Solution'],
+    supports: '/features/warranty-management-software',
+    body: CONTRACT_MANAGEMENT_ARTICLE,
+    faqs: CONTRACT_MANAGEMENT_FAQS,
   },
   {
     slug: 'run-amc-renewals-without-spreadsheets',

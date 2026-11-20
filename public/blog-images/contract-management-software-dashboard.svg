@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-label="Contract management software dashboard illustration">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f1efff"/><stop offset="1" stop-color="#e6f1ff"/></linearGradient>
+    <linearGradient id="hd" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#5b4bd6"/><stop offset="1" stop-color="#2563eb"/></linearGradient>
+    <filter id="sh" x="-10%" y="-10%" width="120%" height="130%"><feDropShadow dx="0" dy="14" stdDeviation="16" flood-color="#0f2a5c" flood-opacity=".16"/></filter>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <g filter="url(#sh)">
+    <rect x="170" y="90" width="1260" height="720" rx="28" fill="#fff"/>
+    <path d="M170 118a28 28 0 0 1 28-28h1204a28 28 0 0 1 28 28v52H170z" fill="url(#hd)"/>
+    <circle cx="214" cy="130" r="9" fill="#fff" opacity=".85"/><circle cx="244" cy="130" r="9" fill="#fff" opacity=".6"/><circle cx="274" cy="130" r="9" fill="#fff" opacity=".4"/>
+    <text x="330" y="138" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" fill="#fff">Contracts</text>
+  </g>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <g transform="translate(210 210)">
+      <rect width="280" height="110" rx="16" fill="#f3f7ff"/><text x="22" y="40" font-size="20" fill="#51607a">Active contracts</text><text x="22" y="86" font-size="42" font-weight="700" fill="#0f2a5c">86</text>
+      <rect x="310" width="280" height="110" rx="16" fill="#fff6ec"/><text x="332" y="40" font-size="20" fill="#51607a">Renewals due (60 days)</text><text x="332" y="86" font-size="42" font-weight="700" fill="#0f2a5c">9</text>
+      <rect x="620" width="280" height="110" rx="16" fill="#eefaf8"/><text x="642" y="40" font-size="20" fill="#51607a">Visits scheduled</text><text x="642" y="86" font-size="42" font-weight="700" fill="#0f2a5c">31</text>
+      <rect x="930" width="280" height="110" rx="16" fill="#fdeeee"/><text x="952" y="40" font-size="20" fill="#51607a">Expired</text><text x="952" y="86" font-size="42" font-weight="700" fill="#0f2a5c">4</text>
+    </g>
+    <g transform="translate(210 362)">
+      <rect width="1210" height="52" rx="12" fill="#f5f6fa"/>
+      <g font-size="19" font-weight="700" fill="#51607a"><text x="24" y="33">Contract</text><text x="230" y="33">Customer</text><text x="560" y="33">Covers</text><text x="800" y="33">Ends</text><text x="1000" y="33">Status</text></g>
+      <g font-size="21" fill="#0f2a5c">
+        <g transform="translate(0 66)"><rect width="1210" height="70" rx="12" fill="#fff" stroke="#e4e8f1"/><text x="24" y="43" font-weight="700">AMC-0188</text><text x="230" y="43">City Clinic</text><text x="560" y="43">6 AC units · 4 visits</text><text x="800" y="43">31 Mar 2027</text><rect x="1000" y="17" width="120" height="36" rx="18" fill="#e3f7ee"/><text x="1028" y="42" font-size="18" font-weight="700" fill="#147a4b">Active</text></g>
+        <g transform="translate(0 146)"><rect width="1210" height="70" rx="12" fill="#fff" stroke="#e4e8f1"/><text x="24" y="43" font-weight="700">AMC-0174</text><text x="230" y="43">Metro Showroom</text><text x="560" y="43">16 cameras · 2 visits</text><text x="800" y="43">12 Dec 2026</text><rect x="1000" y="17" width="180" height="36" rx="18" fill="#fff1dc"/><text x="1022" y="42" font-size="18" font-weight="700" fill="#a35b00">Renewal due</text></g>
+        <g transform="translate(0 226)"><rect width="1210" height="70" rx="12" fill="#fff" stroke="#e4e8f1"/><text x="24" y="43" font-weight="700">AMC-0169</text><text x="230" y="43">Green Residency</text><text x="560" y="43">Solar plant · 4 visits</text><text x="800" y="43">30 Jun 2027</text><rect x="1000" y="17" width="120" height="36" rx="18" fill="#e3f7ee"/><text x="1028" y="42" font-size="18" font-weight="700" fill="#147a4b">Active</text></g>
+        <g transform="translate(0 306)"><rect width="1210" height="70" rx="12" fill="#fff" stroke="#e4e8f1"/><text x="24" y="43" font-weight="700">AMC-0151</text><text x="230" y="43">Park View Offices</text><text x="560" y="43">12 AC units · 4 visits</text><text x="800" y="43">02 Nov 2026</text><rect x="1000" y="17" width="130" height="36" rx="18" fill="#fde7e7"/><text x="1026" y="42" font-size="18" font-weight="700" fill="#b42318">Expired</text></g>
+      </g>
+    </g>
+  </g>
+</svg>
