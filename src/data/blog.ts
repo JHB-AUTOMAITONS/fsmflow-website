@@ -1,5 +1,5 @@
 import { AirVent, ClipboardCheck, BarChart3, FileText, Briefcase, Cctv, ClipboardList, Compass, FileSignature, HardHat, Navigation, Package, ReceiptText, Route, Smartphone, SunMedium, Users, Wrench, type LucideIcon } from 'lucide-react'
-import { CCTV_ARTICLE, CONSTRUCTION_ARTICLE, HVAC_ARTICLE, SERVICE_BUSINESS_ARTICLE, SOLAR_ARTICLE, CMMS_ARTICLE, MOBILE_FSM_ARTICLE, SERVICE_CONTRACT_ARTICLE, SERVICE_REPORT_FORMAT_ARTICLE, SERVICE_REQUEST_MANAGEMENT_ARTICLE, AC_SERVICE_SOFTWARE_ARTICLE, TECHNICIAN_SCHEDULING_ARTICLE, SOLAR_SOFTWARE_BUYERS_ARTICLE, CCTV_PROJECT_MANAGEMENT_ARTICLE, INDUSTRIAL_MAINTENANCE_ARTICLE, WEB_MAINTENANCE_NIGERIA_ARTICLE, DISPATCH_SOFTWARE_ARTICLE, PREVENTIVE_MAINTENANCE_ARTICLE, WHAT_IS_FSM_ARTICLE, FIELD_SERVICE_INDUSTRY_SOFTWARE_ARTICLE, FIELD_SERVICE_INDUSTRY_SOFTWARE_FAQS, FIELD_WORKFORCE_ARTICLE, FIELD_WORKFORCE_FAQS, CONTRACT_MANAGEMENT_ARTICLE, CONTRACT_MANAGEMENT_FAQS } from './blogArticles'
+import { CCTV_ARTICLE, CONSTRUCTION_ARTICLE, HVAC_ARTICLE, SERVICE_BUSINESS_ARTICLE, SOLAR_ARTICLE, CMMS_ARTICLE, MOBILE_FSM_ARTICLE, SERVICE_CONTRACT_ARTICLE, SERVICE_REPORT_FORMAT_ARTICLE, SERVICE_REQUEST_MANAGEMENT_ARTICLE, AC_SERVICE_SOFTWARE_ARTICLE, TECHNICIAN_SCHEDULING_ARTICLE, SOLAR_SOFTWARE_BUYERS_ARTICLE, CCTV_PROJECT_MANAGEMENT_ARTICLE, INDUSTRIAL_MAINTENANCE_ARTICLE, WEB_MAINTENANCE_NIGERIA_ARTICLE, DISPATCH_SOFTWARE_ARTICLE, PREVENTIVE_MAINTENANCE_ARTICLE, WHAT_IS_FSM_ARTICLE, FIELD_SERVICE_INDUSTRY_SOFTWARE_ARTICLE, FIELD_SERVICE_INDUSTRY_SOFTWARE_FAQS, FIELD_WORKFORCE_ARTICLE, FIELD_WORKFORCE_FAQS, CONTRACT_MANAGEMENT_ARTICLE, CONTRACT_MANAGEMENT_FAQS, SOLAR_FSM_ARTICLE, SOLAR_FSM_FAQS } from './blogArticles'
 
 /**
  * Blog content model.
@@ -525,6 +525,31 @@ export const BLOG_POSTS: BlogPost[] = [
     supports: '/features/warranty-management-software',
     body: CONTRACT_MANAGEMENT_ARTICLE,
     faqs: CONTRACT_MANAGEMENT_FAQS,
+  },
+  {
+    slug: 'field-service-management-software-solar-installation',
+    title: 'Best Field Service Management Software for Solar Installation and Service Businesses',
+    seoTitle: 'Field Service Management Software for Solar Installation',
+    seoDescription:
+      'See how field service management software for solar installation helps manage technicians, installation jobs, maintenance visits and customer records.',
+    excerpt:
+      'How solar installers and service providers can organize jobs, site visits, technicians, maintenance and customer records, plus the features to check and how to choose.',
+    category: 'Solar',
+    readMinutes: 19,
+    status: 'published',
+    icon: SunMedium,
+    accent: 'heat',
+    image: {
+      src: '/blog-images/field-service-management-software-solar-installation-dashboard.svg',
+      alt: 'Illustration of field service management software for solar installation showing installation jobs, site visits, assigned technicians and service requests on one dashboard',
+    },
+    publishedAt: '2026-11-24',
+    author: 'FSMFlow Team',
+    primaryKeyword: 'Field Service Management Software for Solar Installation',
+    secondaryKeywords: ['Field Service Management Software for Solar', 'Solar Field Service Management Software', 'Solar Service Management Software', 'Solar Installation Management Software', 'Solar Maintenance Management Software', 'Solar Service Software', 'Field Service Software for Solar Companies', 'Solar Project Management Software', 'Solar Technician Management Software', 'Solar Maintenance Software', 'Field Service Management Software', 'Solar Installation and Maintenance Software', 'Solar Operations Management Software', 'Solar Service Business Software'],
+    supports: '/solutions/solar-software',
+    body: SOLAR_FSM_ARTICLE,
+    faqs: SOLAR_FSM_FAQS,
   },
   {
     slug: 'run-amc-renewals-without-spreadsheets',

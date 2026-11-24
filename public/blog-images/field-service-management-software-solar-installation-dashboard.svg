@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900" role="img" aria-label="Solar installation and service jobs dashboard illustration">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff4e3"/><stop offset="1" stop-color="#e6f1ff"/></linearGradient>
+    <linearGradient id="hd" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#f08a1c"/><stop offset="1" stop-color="#2563eb"/></linearGradient>
+    <linearGradient id="pv" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2f5fb8"/><stop offset="1" stop-color="#15336e"/></linearGradient>
+    <filter id="sh" x="-10%" y="-10%" width="120%" height="130%"><feDropShadow dx="0" dy="14" stdDeviation="16" flood-color="#0f2a5c" flood-opacity=".16"/></filter>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <g filter="url(#sh)">
+    <rect x="170" y="90" width="1260" height="720" rx="28" fill="#fff"/>
+    <path d="M170 118a28 28 0 0 1 28-28h1204a28 28 0 0 1 28 28v52H170z" fill="url(#hd)"/>
+    <circle cx="214" cy="130" r="9" fill="#fff" opacity=".85"/><circle cx="244" cy="130" r="9" fill="#fff" opacity=".6"/><circle cx="274" cy="130" r="9" fill="#fff" opacity=".4"/>
+    <text x="330" y="138" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" fill="#fff">Solar jobs and service</text>
+  </g>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <g transform="translate(210 210)">
+      <rect width="280" height="110" rx="16" fill="#f3f7ff"/><text x="22" y="40" font-size="20" fill="#51607a">Installations in progress</text><text x="22" y="86" font-size="42" font-weight="700" fill="#0f2a5c">7</text>
+      <rect x="310" width="280" height="110" rx="16" fill="#fff6ec"/><text x="332" y="40" font-size="20" fill="#51607a">Site visits today</text><text x="332" y="86" font-size="42" font-weight="700" fill="#0f2a5c">5</text>
+      <rect x="620" width="280" height="110" rx="16" fill="#eef9f3"/><text x="642" y="40" font-size="20" fill="#51607a">Open service requests</text><text x="642" y="86" font-size="42" font-weight="700" fill="#0f2a5c">12</text>
+      <rect x="930" width="280" height="110" rx="16" fill="#f1efff"/><text x="952" y="40" font-size="20" fill="#51607a">Maintenance visits due</text><text x="952" y="86" font-size="42" font-weight="700" fill="#0f2a5c">9</text>
+    </g>
+    <g transform="translate(210 350)" font-size="20" fill="#51607a">
+      <text x="24" y="0">Job</text><text x="230" y="0">Customer / site</text><text x="560" y="0">Type · Technician</text><text x="860" y="0">Date</text><text x="1000" y="0">Status</text>
+    </g>
+    <g transform="translate(210 370)" font-size="22" fill="#0f2a5c">
+      <g><rect width="1210" height="70" rx="12" fill="#fff" stroke="#e4e8f1"/><text x="24" y="43" font-weight="700">JOB-2041</text><text x="230" y="43">Sharma Residence</text><text x="560" y="43">Rooftop install · Team A</text><text x="860" y="43">26 Nov</text><rect x="1000" y="17" width="140" height="36" rx="18" fill="#fff0d6"/><text x="1024" y="42" font-size="18" font-weight="700" fill="#a05a00">In progress</text></g>
+      <g transform="translate(0 80)"><rect width="1210" height="70" rx="12" fill="#fff" stroke="#e4e8f1"/><text x="24" y="43" font-weight="700">JOB-2042</text><text x="230" y="43">Orchid Textiles</text><text x="560" y="43">Site survey · Ravi K.</text><text x="860" y="43">26 Nov</text><rect x="1000" y="17" width="120" height="36" rx="18" fill="#e3edff"/><text x="1022" y="42" font-size="18" font-weight="700" fill="#1d4ed8">Assigned</text></g>
+      <g transform="translate(0 160)"><rect width="1210" height="70" rx="12" fill="#fff" stroke="#e4e8f1"/><text x="24" y="43" font-weight="700">JOB-2043</text><text x="230" y="43">Green Residency</text><text x="560" y="43">Panel cleaning · Imran S.</text><text x="860" y="43">27 Nov</text><rect x="1000" y="17" width="120" height="36" rx="18" fill="#e3edff"/><text x="1022" y="42" font-size="18" font-weight="700" fill="#1d4ed8">Assigned</text></g>
+      <g transform="translate(0 240)"><rect width="1210" height="70" rx="12" fill="#fff" stroke="#e4e8f1"/><text x="24" y="43" font-weight="700">JOB-2044</text><text x="230" y="43">Patel Villa</text><text x="560" y="43">Inverter fault · Ravi K.</text><text x="860" y="43">25 Nov</text><rect x="1000" y="17" width="130" height="36" rx="18" fill="#e3f7ee"/><text x="1022" y="42" font-size="18" font-weight="700" fill="#147a4b">Completed</text></g>
+    </g>
+    <g transform="translate(1180 660)">
+      <circle cx="40" cy="40" r="22" fill="#f6a623"/>
+      <g stroke="#f6a623" stroke-width="5" stroke-linecap="round"><path d="M40 4v10M40 66v10M4 40h10M66 40h10M14 14l7 7M59 59l7 7M14 66l7-7M59 21l7-7"/></g>
+      <g transform="translate(90 18) skewX(-12)"><rect width="120" height="64" rx="6" fill="url(#pv)"/><path d="M40 0v64M80 0v64M0 21h120M0 42h120" stroke="#9db8e8" stroke-width="2"/></g>
+    </g>
+  </g>
+</svg>

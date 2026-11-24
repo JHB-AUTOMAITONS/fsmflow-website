@@ -4233,3 +4233,338 @@ export const CONTRACT_MANAGEMENT_ARTICLE: BlogBlock[] = [
     'If your contracts are service and maintenance agreements, explore FSMFlow’s [warranty and AMC management](/features/warranty-management-software) or [request a demo](/demo) to see it with your own workflow.',
   ),
 ]
+
+/* -------------------------------------------------------------------------- */
+/* Field service management software for solar installation                   */
+/* -------------------------------------------------------------------------- */
+
+export const SOLAR_FSM_FAQS: { q: string; a: string }[] = [
+  {
+    q: 'What is field service management software for solar installation?',
+    a: 'Field service management software for solar installation is a system that helps a solar business organize installation jobs, site visits, service requests, technician assignments, maintenance visits and customer records in one place. The office and the field team work from the same job record, so everyone can see what is planned, in progress or completed.',
+  },
+  {
+    q: 'What is the best field service management software for solar installation businesses?',
+    a: 'There is no single best option for every solar business. The best software is the one that matches how your team works: it should handle installation jobs, work orders, technician scheduling, customer records and maintenance visits, and be simple enough for your office staff and technicians to use daily. Shortlist two or three products and test them with your own jobs.',
+  },
+  {
+    q: 'How does field service management software help solar companies?',
+    a: 'It helps solar companies replace phone calls, paper notes and spreadsheets with one organized system. Jobs are assigned to technicians, site visits are scheduled, progress is updated from the field, and service history is kept against each customer. That gives the office a clearer picture of ongoing work and reduces manual follow-ups.',
+  },
+  {
+    q: 'What features should solar field service management software include?',
+    a: 'Look for job and work order management, site visit and service request tracking, technician scheduling and assignment, customer and site records, maintenance and follow-up management, job documentation, mobile access for technicians, and reporting. Features differ between products, so confirm each one in a demo rather than assuming it is included.',
+  },
+  {
+    q: 'Can field service management software manage solar installation jobs?',
+    a: 'Yes, field service management software can manage solar installation jobs as work orders with a customer, site, scheduled date, assigned technician or team, checklist and status. It tracks the work, not the engineering. System design, electrical calculations and procurement are usually handled in separate tools.',
+  },
+  {
+    q: 'Can solar service businesses use field service management software?',
+    a: 'Yes, solar service businesses are a natural fit for solar service business software of this kind, because their work is made of service requests, site visits, repairs and recurring maintenance. Field service software lets them log each request, assign a technician, record what was done and keep a service history for every customer site.',
+  },
+  {
+    q: 'How can solar companies manage technicians using field service software?',
+    a: 'Solar companies can keep a profile for each technician, assign jobs by skill and availability, and see each person’s workload before scheduling more work. Technicians then receive job details on their phones and update the status as they work, so the office does not have to chase updates by phone.',
+  },
+  {
+    q: 'Can field service software help manage solar maintenance visits?',
+    a: 'Yes, field service software can schedule maintenance visits such as cleaning and inspection, assign them to technicians and record the outcome. If the product supports warranty or AMC records, it can also show which customers are due for a visit or renewal. Always confirm how a product handles recurring visits.',
+  },
+  {
+    q: 'What is the difference between solar project management software and field service management software?',
+    a: 'Solar project management software follows a large installation through stages, tasks, deadlines, procurement and engineering. Field service management software organizes the day-to-day field work: jobs, site visits, technicians, service requests and maintenance. Many solar businesses use field service software for operations and add a separate tool if they need detailed engineering or procurement planning.',
+  },
+  {
+    q: 'How do I choose field service management software for my solar business?',
+    a: 'Start by listing your installation and service workflows, the number of technicians and the number of active jobs. Then compare products on job and work order management, scheduling, customer records, maintenance tracking, mobile access, reporting, pricing and support. Finish with a trial using real jobs and ask your technicians to try the mobile experience.',
+  },
+]
+
+export const SOLAR_FSM_ARTICLE: BlogBlock[] = [
+  p(
+    'Solar businesses grow fast, and so does the work behind them. One week there are three rooftop installations, a commercial site survey, a dozen cleaning requests and an inverter fault that cannot wait. Each job needs the right technician, the right day and the right information, and each customer expects a clear answer when they call. Field service management software for solar installation gives the office and the field one shared place to plan, assign and track that work, instead of relying on phone calls, WhatsApp groups and notebooks.',
+  ),
+  p(
+    'This guide explains what that software does, why solar installation and service businesses need it, the features worth checking, how it supports installation and maintenance workflows, and how to choose a product. It is written for solar installers, maintenance providers, EPC teams and the owners and coordinators who run their field operations.',
+  ),
+  h2('What Is Field Service Management Software for Solar Installation?'),
+  p(
+    'Field service management software for solar installation is a system that helps a solar business organize installation jobs, site visits, service requests, technician assignments, maintenance visits and customer records in one central place. It connects the office team that plans the work with the technicians who carry it out on site.',
+  ),
+  p(
+    'Field service management software, often shortened to FSM software, is used across trades such as AC service, CCTV and solar. In a solar business it is sometimes called solar field service management software, solar service management software, solar service software or solar operations management software. The names differ, but the purpose is the same: make sure every job has an owner, a date, the right details and a visible status. For a trade-neutral explanation, see our guide to [what field service management is](/blog/what-is-field-service-management).',
+  ),
+  p('In practice, a solar business uses it to:'),
+  ul(
+    'Create a job for each installation, inspection, repair or maintenance visit.',
+    'Schedule site visits and assign them to technicians or installation teams.',
+    'Give technicians the customer, site and job details on their phones.',
+    'Record progress, completed work and service reports against each job.',
+    'Keep one record per customer, with the sites they own and the history of work done.',
+    'Follow up on service requests and recurring maintenance so nothing is forgotten.',
+  ),
+  p(
+    'The result is a digital workflow for the whole life of a customer: first visit, installation, handover and years of service afterwards.',
+  ),
+  h2('Why Solar Installation and Service Businesses Need Field Service Management Software'),
+  p(
+    'Solar work looks simple from the outside, but it is spread across many locations, people and dates. Managing it manually works while a company has a few jobs. It breaks down as the number of customers grows. These are the pressure points owners notice first.',
+  ),
+  ul(
+    'Multiple installation jobs at once: A company with ten active rooftop jobs needs to know which are waiting for material, which are in progress and which are ready for handover. Without one list, that knowledge sits with individual supervisors.',
+    'Site visits that are agreed but not scheduled: A customer is told that someone will inspect the roof “this week”, and the visit is never put on a calendar.',
+    'Technician coordination: Two installation teams are promised to the same site on the same day, or a repair call is given to a technician who is already across the city.',
+    'Technicians in different locations: When crews are spread over several sites, the office finds out what happened only when someone phones in.',
+    'Customer service requests: A cleaning request, an inverter alarm or a billing question arrives by call or message, is written on a scrap of paper and is forgotten.',
+    'Tracking ongoing work: The owner cannot say which jobs are assigned, started, delayed or completed without ringing around.',
+    'Installation completion records: Photos, notes and handover details are scattered across phones, so a customer asking a year later gets a vague answer.',
+    'Maintenance requests and follow-up visits: A customer who needed a second visit after a repair is never called back, because the reminder lived in someone’s head.',
+    'Customer information: Addresses, contact numbers and site details are stored in several places and are often out of date.',
+    'Operational communication: Instructions pass through calls and group chats, which are hard to search and easy to misread.',
+    'A growing workload: What one coordinator handled last year now needs three people, and the extra people need the same information.',
+  ),
+  p(
+    'For example, a rooftop installer with five crews may start the day with two surveys, three installations and four service calls. If assignments are made by phone, it is easy to double-book a crew or to send a technician to a site without the customer’s latest details. A shared system makes those conflicts visible before the day starts.',
+  ),
+  h2('Key Features of Field Service Management Software for Solar Installation'),
+  p(
+    'Not every product offers every feature, and not every solar business needs every feature. Use the list below as a checklist for your own evaluation and confirm each item in a demo.',
+  ),
+  h3('Solar Installation Job Management'),
+  p(
+    'Each installation should exist as a job record with the customer, site address, scope of work, planned dates, assigned team and current status. For a residential rooftop installation, that may be a single job with a short checklist. For a commercial installation, it may be a larger job with several stages and more than one crew. Solar installation management software keeps these details together so a supervisor can open one record instead of searching through messages.',
+  ),
+  h3('Site Visit and Service Request Management'),
+  p(
+    'Customer requests arrive in different forms: a site survey for a new enquiry, a cleaning visit, a fault report or a complaint after installation. Good software logs each one with the customer, site, request type and priority, then turns it into a scheduled visit. This stops requests from living only in phone call logs and makes it possible to see what is waiting and how long it has been waiting.',
+  ),
+  h3('Technician Scheduling and Assignment'),
+  p(
+    'Scheduling means putting the right person on the right job on the right day. Look for a calendar or schedule view, technician profiles with skills and service areas, and some indication of who is available and how busy each person is. Solar technician management software helps the coordinator avoid double bookings and assign a roof-work team and a service technician to the jobs that suit them. Our guide to [technician scheduling software](/blog/technician-scheduling-software-for-service-businesses) goes deeper.',
+  ),
+  h3('Solar Installation Work Tracking'),
+  p(
+    'Tracking shows which jobs are assigned, ongoing and completed. Depending on the software, this may be a status that technicians update from the field, a stage-based view or a simple list filtered by status. The goal is visibility: a manager should be able to see the state of all installation work without calling each team.',
+  ),
+  h3('Customer Management'),
+  p(
+    'A customer record should hold contact details, site information, installation records, service history and notes. When a customer calls, whoever answers can see what was installed, when it was installed and what service has been done since. Some products keep this as a customer record, others link it to the installed equipment; see how [asset management](/features/asset-management-software) can tie a customer to the units installed at a site.',
+  ),
+  h3('Solar Maintenance Management'),
+  p(
+    'Solar plants need routine attention such as cleaning and inspection, and customers expect help when something goes wrong. Solar maintenance management software should let you log maintenance requests, schedule recurring or one-off visits, assign technicians and record follow-up work. If you sell annual maintenance contracts (AMC), check how contract records and visit schedules are handled, for example through [warranty and AMC management](/features/warranty-management-software).',
+  ),
+  h3('Work Order Management'),
+  p(
+    'A work order is the instruction and record for one piece of work: what to do, where, for whom, by whom and with what outcome. Work order management ties together the job details, the assigned technician, the status and the service activities. It is the backbone of any field service system. See what to expect from [work order management software](/features/work-order-management-software).',
+  ),
+  h3('Field Technician Coordination'),
+  p(
+    'Coordination is the daily exchange between office and field: the office sends the job, and the technician replies with progress, problems and completion. A mobile experience for technicians makes this smoother, because jobs, customer details and updates live in one place instead of in phone calls. Check what the [field service app](/features/field-service-app) of any product lets a technician do on site.',
+  ),
+  h3('Service Reports and Job Documentation'),
+  p(
+    'Installation and maintenance documentation protects both the business and the customer. It records what was done, when, by whom and with which result, and it can include photos, checklists and customer sign-off where the software supports them. Not every product supports all of these, so ask to see a completed job record. Our guide to the [service report format](/blog/service-report-format-ac-cctv-solar) shows what a useful report contains.',
+  ),
+  h3('Operational Visibility and Reporting'),
+  p(
+    'Reporting answers the owner’s questions: how many jobs are pending, which technicians are busy, how many service requests are open and what was completed this month. Reports are only as good as the data that goes in, so judge a reporting feature by whether it uses the work your team already records. See what [reporting software](/features/reporting-software) typically covers.',
+  ),
+  h2('How Field Service Management Software Helps Solar Installation Companies'),
+  p(
+    'A solar installation passes through a predictable series of stages. Here is how software can support each one. Where a stage needs engineering or design, remember that field service software organizes the work; it does not perform it.',
+  ),
+  h3('Customer Inquiry and Service Request'),
+  p(
+    'Every customer starts with a requirement: a new installation, a quotation or a service need. Recording it immediately, with contact details, location and what the customer wants, gives the business a starting point and a follow-up date. For new enquiries, [sales CRM software](/features/sales-crm-software) can keep the pipeline organized before a job exists.',
+  ),
+  h3('Site Inspection and Visit Scheduling'),
+  p(
+    'Before an installation, someone usually visits the site to check the roof or the available space and to collect basic information. Treat this visit as a scheduled job: assign a technician, set a date and record the notes afterwards. That way the quotation is built on recorded observations rather than on memory.',
+  ),
+  h3('Installation Job Planning'),
+  p(
+    'Once an order is confirmed, the installation becomes a job. Planning means deciding the location, the schedule and the team, and noting the requirements that the crew should know before arriving. This is operational planning. Field service software does not design the solar system or calculate electrical configurations, so keep using your design tools for that and record the results on the job.',
+  ),
+  h3('Technician Assignment'),
+  p(
+    'Assign the installation team or technician by skill, availability and location. A coordinator who can see who is free, who is on leave and who is already booked can build a realistic plan for the week. Our guide to [field workforce management software](/blog/field-workforce-management-software) covers this in more depth.',
+  ),
+  h3('Installation Progress Tracking'),
+  p(
+    'During the installation, technicians update the job status and add notes. The office sees which jobs are underway and which have stalled, and can respond early, for example by rescheduling a visit or arranging missing material. If you also need stage-based project tracking across a larger installation, read about [solar installation project management](/blog/solar-installation-project-management).',
+  ),
+  h3('Installation Completion and Documentation'),
+  p(
+    'When the work is finished, record what was completed, the installation details, any customer sign-off and relevant photos. This becomes the customer’s installation record. It is the document you open when the customer calls a year later and you need to know what was done on site.',
+  ),
+  h3('Post-Installation Service Management'),
+  p(
+    'After handover, the relationship continues through service. Customers ask for cleaning, report faults and expect follow-up. The same system that managed the installation can log those requests, schedule visits and keep the history on the customer’s record, which is how installation and maintenance become one connected workflow rather than two separate processes. That is why many businesses look for solar installation and maintenance software as a single system. Our guide to [service request management](/blog/service-request-management-for-service-businesses) explains how to handle the queue.',
+  ),
+  h2('How Field Service Management Software Helps Solar Maintenance Businesses'),
+  p(
+    'A solar maintenance business is different from an installer: its work is a steady stream of service requests, recurring visits and repairs across many customer sites. Solar maintenance management software, or more broadly solar maintenance software, helps in these ways.',
+  ),
+  ul(
+    'Customer maintenance requests: Every request is logged with the customer, site, issue and priority, so none is left in a message thread.',
+    'Site visit scheduling: Visits are placed on a calendar, grouped sensibly and confirmed with the customer.',
+    'Technician assignment: A technician is assigned by skill and availability, and sees the job details before leaving.',
+    'Service job tracking: The office sees which visits are scheduled, in progress or complete.',
+    'Maintenance records: What was done at each visit is recorded against the site, not left in a notebook.',
+    'Customer service history: Before a visit, the technician can see earlier visits and repairs for that customer.',
+    'Follow-up visits: If a repair needs a second visit, the follow-up is scheduled as a job rather than remembered.',
+    'Service documentation: Completed work is recorded in a report that the customer or the office can refer to later.',
+    'Ongoing maintenance coordination: Recurring visits, such as periodic cleaning or inspection, are scheduled in advance.',
+    'Multiple customer locations: One customer with several sites, or one technician with several stops, stays organized.',
+  ),
+  p(
+    'A realistic example: a maintenance company handles forty customer sites. Without a system, the coordinator keeps a spreadsheet of cleaning dates and a phone full of fault calls. With one, every request becomes a job, each technician has a daily list, and the history of each site is a click away. The software does not monitor the plants or diagnose faults remotely; it organizes the people, visits and records around the work.',
+  ),
+  h2('Benefits of Field Service Management Software for Solar Businesses'),
+  p(
+    'The benefits below come from having work recorded in one place. They depend on the team using the system consistently, and results will vary by business.',
+  ),
+  ul(
+    'Better installation job organization: Every installation is a record with an owner, a date and a status, so the status of ten sites is visible without ten phone calls.',
+    'Improved technician coordination: Assignments are visible to everyone, which reduces double bookings and missed handovers.',
+    'Organized site visit scheduling: Surveys, inspections and service visits sit on one calendar instead of in separate notebooks.',
+    'Better service request tracking: Open requests are visible, so the oldest can be addressed first.',
+    'Reduced manual administrative work: Details are entered once and reused, rather than retyped into messages and sheets.',
+    'Improved customer information management: A single customer record replaces scattered contact lists.',
+    'Better installation progress visibility: Managers can see assigned, ongoing and completed jobs at a glance.',
+    'Organized maintenance workflows: Recurring and one-off visits follow the same process.',
+    'Improved service documentation: Completed work is recorded when it happens, which makes later questions easier to answer.',
+    'Easier follow-up management: Follow-up visits and callbacks are scheduled items, not memories.',
+    'Better coordination between office and field teams: Both sides work from the same job record.',
+    'Improved operational scalability: Adding technicians and customers adds records to a system instead of adding chaos to a routine.',
+  ),
+  h2('Manual Solar Service Management vs Field Service Management Software'),
+  p(
+    'The table below compares common manual methods with a field service management approach. The software column describes what such systems typically support; confirm specific capabilities with each vendor.',
+  ),
+  {
+    type: 'table',
+    caption: 'Manual solar service management compared with field service management software',
+    head: ['Business activity', 'Manual management', 'Field service management software'],
+    rows: [
+      ['Installation job tracking', 'Notebooks, messages and phone calls to check status', 'Each job is a record with an assigned team and a visible status'],
+      ['Site visit scheduling', 'Verbal agreements and personal calendars', 'Visits are scheduled on a shared calendar and assigned to a technician'],
+      ['Technician assignment', 'Phone calls; availability is guessed', 'Assignments based on availability and skills, visible to the office'],
+      ['Customer records', 'Spreadsheets, contact lists and paper files', 'One searchable record per customer and site'],
+      ['Service request management', 'Calls and messages noted informally', 'Requests are logged, prioritized and converted into jobs'],
+      ['Installation progress', 'The coordinator asks each supervisor', 'Status is updated from the field and visible to the office'],
+      ['Maintenance visits', 'Reminders in a diary or in memory', 'Visits are scheduled, assigned and recorded'],
+      ['Service history', 'Scattered across notebooks and chats', 'History is stored against the customer and site'],
+      ['Job documentation', 'Photos on personal phones, handwritten notes', 'Notes, checklists and reports attached to the job, where supported'],
+      ['Follow-up management', 'Depends on someone remembering', 'Follow-up visits are created as scheduled jobs'],
+    ],
+  },
+  h2('Who Needs Field Service Management Software in the Solar Industry?'),
+  p(
+    'Field service software for solar companies suits any business that sends people to customer sites and needs to know what they did. The details differ by business type.',
+  ),
+  h3('Residential Solar Installation Companies'),
+  p(
+    'Residential installers handle many small jobs at once, each with its own customer, schedule and site. Software helps coordinate site visits, installation dates and technician assignments, and keeps each home’s record ready for the service calls that follow.',
+  ),
+  h3('Commercial Solar Installation Companies'),
+  p(
+    'Commercial installations are larger and often involve several crews, longer timelines and more people at the customer’s end. Field service software helps organize the jobs, assign the field teams and keep installation workflows visible. Very large sites may also need a dedicated project planning tool alongside it.',
+  ),
+  h3('Solar Maintenance Companies'),
+  p(
+    'Maintenance providers live on recurring and reactive visits. Software organizes service requests, maintenance schedules, customer records and technician assignments, which is the core of what field service tools are built for.',
+  ),
+  h3('Solar EPC Companies'),
+  p(
+    'EPC businesses design, procure and build. Field service software can support the field-service side: scheduling site work, assigning crews, tracking job status and managing after-sales service. It does not replace engineering, procurement or detailed solar project management software, so many EPC firms use it alongside those systems or choose a product with project-style stages. Our buyer’s guide to [solar installation software](/blog/best-solar-installation-software-for-service-businesses) compares the wider options.',
+  ),
+  h3('Solar Repair and Troubleshooting Businesses'),
+  p(
+    'Repair work is unpredictable. Software helps log repair requests, schedule service visits, coordinate technicians and record what was found and fixed, so the next technician who visits the same site starts with the history.',
+  ),
+  h2('Field Service Management Software for Solar Installation: What Businesses Should Look For'),
+  p(
+    'Solar businesses should evaluate software against their actual workflows rather than the length of a feature list. A product with fifty features that your team ignores is worth less than one with twenty that they use every day. Weigh these criteria:',
+  ),
+  ul(
+    'Ease of use: Can office staff and technicians learn it quickly, without long training?',
+    'Installation job management: Can you create, track and close installation jobs the way your business does?',
+    'Work order management: Are job details, assignment, status and completion recorded in one place?',
+    'Technician scheduling and assignment: Can you see availability and workload before assigning work?',
+    'Customer management: Does each customer have a record with sites, history and contact details?',
+    'Service request tracking: Can you log, prioritize and follow requests to completion?',
+    'Maintenance management: Can you schedule recurring visits and follow-ups?',
+    'Service history: Is past work easy to find for each customer and site?',
+    'Mobile accessibility: Can technicians see jobs and update them from a phone?',
+    'Job documentation: Can you capture notes, photos and completion details?',
+    'Reporting and operational visibility: Can you see pending, ongoing and completed work without spreadsheets?',
+    'Scalability: Will it cope with more technicians, customers and sites?',
+    'Pricing: Is it clear how cost scales with users or features?',
+    'Customer support and onboarding: Who helps you set up and import existing customers?',
+    'Software flexibility: Can the workflows be adapted to installation, maintenance and repair work?',
+  ),
+  h2('How to Choose the Right Field Service Management Software for Solar Businesses'),
+  p('Work through these steps in order. Each one narrows the list.'),
+  ul(
+    'Identify your installation and service workflows: Write down how a job moves from enquiry to completion, and how a service request moves from call to closure.',
+    'Understand your technician numbers: Ten technicians and two technicians need different scheduling depth.',
+    'Count your ongoing installation jobs: This shows how much tracking you really need.',
+    'Evaluate site visit management: Check how surveys, inspections and service visits are scheduled.',
+    'Evaluate job scheduling and assignment: See how a coordinator builds the day and avoids double booking.',
+    'Check work order management: Confirm that job details, status and completion are recorded.',
+    'Evaluate customer management: Make sure customers, sites and history are linked.',
+    'Check maintenance and follow-up workflows: Look at recurring visits and follow-up jobs.',
+    'Evaluate technician usability: Ask a technician, not just the owner, to try it.',
+    'Check mobile accessibility: Test it on the phones your team actually uses.',
+    'Understand reporting capabilities: Ask to see the standard reports, not just a promise of custom ones.',
+    'Consider future business growth: Think about the business you expect to run in two years.',
+    'Review pricing: Understand what is included in each plan and what costs extra.',
+    'Evaluate onboarding and support: Ask who helps with setup and what happens when you get stuck.',
+    'Test the software before deciding: Run a real installation, a service request and a maintenance visit through it.',
+  ),
+  h3('A practical checklist for solar business owners'),
+  ul(
+    'Can I create an installation job and assign it to a team in a few minutes?',
+    'Can I see all of today’s site visits and who is attending them?',
+    'Can a technician see job and customer details on a phone?',
+    'Can I find the full service history of a customer’s site quickly?',
+    'Can I log a service request and turn it into a scheduled visit?',
+    'Can I see which jobs are pending, ongoing and completed?',
+    'Is the pricing clear for my team size?',
+    'Did my own technicians find it easy to use during the trial?',
+  ),
+  h2('Why FSMFlow Can Be Considered for Solar Service Businesses'),
+  p(
+    'FSMFlow is [field service management software](/) built for Indian service businesses, including AC and HVAC, CCTV and solar teams. It has a dedicated page for [solar software](/solutions/solar-software). Based on what the FSMFlow website describes today, these capabilities are relevant to solar installation and service operations:',
+  ),
+  ul(
+    'Work orders and service jobs: Create, assign and track jobs from request to completion, with checklists, parts, photos and service reports, using [work order management](/features/work-order-management-software).',
+    'Technician assignment: Keep technician profiles with skills and availability, and assign jobs with [employee management](/features/employee-management-software) that also shows workload.',
+    'Field operations on a phone: Technicians receive jobs and customer details, follow the checklist, add photos, record parts and take customer sign-off in the [field service app](/features/field-service-app).',
+    'Customer and site records: Keep customers, sites and installed units together with service history, using [asset management](/features/asset-management-software).',
+    'Warranty, AMC and service visits: Record warranty and AMC details, schedule maintenance visits and receive renewal reminders through [warranty and AMC management](/features/warranty-management-software).',
+    'Leads and quotations: Follow enquiries in [sales CRM](/features/sales-crm-software) and prepare estimates with [quotation software](/features/quotation-software).',
+    'Reports: View jobs and other operational numbers in [reporting](/features/reporting-software).',
+  ),
+  p(
+    'FSMFlow organizes the business side of solar field operations. It does not design solar systems, calculate generation or electrical configurations, or monitor solar plants, so keep using specialist tools for those tasks and record the outcome on the job. Which modules are included depends on the plan you choose, so check the [pricing page](/pricing) against your requirements.',
+  ),
+  callout(
+    'Want to see how installation jobs, technicians, service requests and AMC visits fit together for your solar business? [Book a demo](/demo) and walk through it with your own workflow in mind.',
+  ),
+  h2('Frequently Asked Questions About Field Service Management Software for Solar Installation'),
+  ...SOLAR_FSM_FAQS.flatMap((f) => [h3(f.q), p(f.a)]),
+  h2('Conclusion'),
+  p(
+    'Solar installation and service businesses carry a heavy operational load: site visits to schedule, technicians to coordinate, installations to track, service requests to answer and maintenance visits to follow up. When that coordination lives in calls and notebooks, it breaks as the business grows. Field service management software for solar installation gives the office and the field one shared record of every job, customer and visit.',
+  ),
+  p(
+    'When you evaluate products, focus on job and work order management, technician scheduling, customer and service history, maintenance workflows, mobile access, reporting, pricing and support, and test them against your real workflows rather than a feature list. Choose the software your team will actually use every day.',
+  ),
+  p(
+    'To see how this works for solar installation and maintenance, explore FSMFlow’s [solar software](/solutions/solar-software) page or [request a demo](/demo).',
+  ),
+]
