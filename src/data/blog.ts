@@ -1,5 +1,5 @@
 import { AirVent, ClipboardCheck, BarChart3, FileText, Briefcase, Cctv, ClipboardList, Compass, FileSignature, HardHat, Navigation, Package, ReceiptText, Route, Smartphone, SunMedium, Users, Wrench, type LucideIcon } from 'lucide-react'
-import { CCTV_ARTICLE, CONSTRUCTION_ARTICLE, HVAC_ARTICLE, SERVICE_BUSINESS_ARTICLE, SOLAR_ARTICLE, CMMS_ARTICLE, MOBILE_FSM_ARTICLE, SERVICE_CONTRACT_ARTICLE, SERVICE_REPORT_FORMAT_ARTICLE, SERVICE_REQUEST_MANAGEMENT_ARTICLE, AC_SERVICE_SOFTWARE_ARTICLE, TECHNICIAN_SCHEDULING_ARTICLE, SOLAR_SOFTWARE_BUYERS_ARTICLE, CCTV_PROJECT_MANAGEMENT_ARTICLE, INDUSTRIAL_MAINTENANCE_ARTICLE, WEB_MAINTENANCE_NIGERIA_ARTICLE, DISPATCH_SOFTWARE_ARTICLE, PREVENTIVE_MAINTENANCE_ARTICLE, WHAT_IS_FSM_ARTICLE, FIELD_SERVICE_INDUSTRY_SOFTWARE_ARTICLE, FIELD_SERVICE_INDUSTRY_SOFTWARE_FAQS, FIELD_WORKFORCE_ARTICLE, FIELD_WORKFORCE_FAQS, CONTRACT_MANAGEMENT_ARTICLE, CONTRACT_MANAGEMENT_FAQS, SOLAR_FSM_ARTICLE, SOLAR_FSM_FAQS } from './blogArticles'
+import { CCTV_ARTICLE, CONSTRUCTION_ARTICLE, HVAC_ARTICLE, SERVICE_BUSINESS_ARTICLE, SOLAR_ARTICLE, CMMS_ARTICLE, MOBILE_FSM_ARTICLE, SERVICE_CONTRACT_ARTICLE, SERVICE_REPORT_FORMAT_ARTICLE, SERVICE_REQUEST_MANAGEMENT_ARTICLE, AC_SERVICE_SOFTWARE_ARTICLE, TECHNICIAN_SCHEDULING_ARTICLE, SOLAR_SOFTWARE_BUYERS_ARTICLE, CCTV_PROJECT_MANAGEMENT_ARTICLE, INDUSTRIAL_MAINTENANCE_ARTICLE, WEB_MAINTENANCE_NIGERIA_ARTICLE, DISPATCH_SOFTWARE_ARTICLE, PREVENTIVE_MAINTENANCE_ARTICLE, WHAT_IS_FSM_ARTICLE, FIELD_SERVICE_INDUSTRY_SOFTWARE_ARTICLE, FIELD_SERVICE_INDUSTRY_SOFTWARE_FAQS, FIELD_WORKFORCE_ARTICLE, FIELD_WORKFORCE_FAQS, CONTRACT_MANAGEMENT_ARTICLE, CONTRACT_MANAGEMENT_FAQS, SOLAR_FSM_ARTICLE, SOLAR_FSM_FAQS, FSA_ARTICLE, FSA_FAQS } from './blogArticles'
 
 /**
  * Blog content model.
@@ -550,6 +550,31 @@ export const BLOG_POSTS: BlogPost[] = [
     supports: '/solutions/solar-software',
     body: SOLAR_FSM_ARTICLE,
     faqs: SOLAR_FSM_FAQS,
+  },
+  {
+    slug: 'field-service-application-software',
+    title: 'Field Service Application Software: Manage Service Jobs & Technicians',
+    seoTitle: 'Field Service Application Software Guide | FSMFlow',
+    seoDescription:
+      'Field service application software helps you manage service jobs, schedule technicians and track work orders and customers. See features, workflow and FAQs.',
+    excerpt:
+      'What field service application software does, the features to check, how the job workflow runs from request to report, and how to choose the right fit for your service business.',
+    category: 'Field Service',
+    readMinutes: 13,
+    status: 'published',
+    icon: Smartphone,
+    accent: 'brand',
+    image: {
+      src: '/blog-images/field-service-application-software.jpg',
+      alt: 'Field service application software dashboard showing technician schedules and service jobs, with a mobile app for technicians beside it',
+    },
+    publishedAt: '2026-11-25',
+    author: 'FSMFlow Team',
+    primaryKeyword: 'Field Service Application Software',
+    secondaryKeywords: ['Field Service Management Software', 'Field Service Software', 'Field Service Scheduling Software', 'Technician Management Software', 'Work Order Management Software', 'Mobile Field Service Software', 'Field Service Tracking Software', 'Field Service Operations Software', 'Service Job Management Software', 'Field Service Automation Software', 'Field Service App for Technicians', 'Field Service Management System', 'Service Business Software', 'Field Service CRM Software', 'Technician Scheduling Software'],
+    supports: '/solutions/service-business-management-software',
+    body: FSA_ARTICLE,
+    faqs: FSA_FAQS,
   },
   {
     slug: 'run-amc-renewals-without-spreadsheets',

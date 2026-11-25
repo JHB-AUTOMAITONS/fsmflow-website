@@ -4568,3 +4568,277 @@ export const SOLAR_FSM_ARTICLE: BlogBlock[] = [
     'To see how this works for solar installation and maintenance, explore FSMFlow’s [solar software](/solutions/solar-software) page or [request a demo](/demo).',
   ),
 ]
+
+/* -------------------------------------------------------------------------- */
+/* Field service application software                                          */
+/* -------------------------------------------------------------------------- */
+
+export const FSA_FAQS: { q: string; a: string }[] = [
+  {
+    q: 'What is field service application software?',
+    a: 'Field service application software is a system that helps a service business manage service requests, jobs, technicians, work orders, customer records and maintenance in one place. The office plans the work, and technicians receive and update jobs from a mobile device.',
+  },
+  {
+    q: 'How does field service application software work?',
+    a: 'A service request is logged, turned into a job and assigned to a technician. The technician sees it on a phone, visits the customer and records status, notes and parts. The completed job feeds invoices, reports and dashboards.',
+  },
+  {
+    q: 'Who needs field service application software?',
+    a: 'Any business that sends technicians to customer sites, such as AC, CCTV, solar, electrical, plumbing and equipment maintenance companies. It matters most once jobs and customers outgrow memory, calls and spreadsheets.',
+  },
+  {
+    q: 'What are the main features of field service application software?',
+    a: 'Core features are job management, technician scheduling, work orders, a technician mobile app, customer records with service history, inventory, AMC, reporting, and quotations and billing. Confirm each in a demo.',
+  },
+  {
+    q: 'Can field service application software manage technicians?',
+    a: 'Yes. It keeps a profile for each technician, shows availability and workload, and lets a coordinator assign jobs by skill. Technicians receive jobs on their phones, so the office does not need to call.',
+  },
+  {
+    q: 'Can field service application software track service jobs?',
+    a: 'Yes. Each job carries a status such as assigned, in progress or completed, plus notes, parts used and completion details, so managers see pending and finished work without ringing technicians.',
+  },
+  {
+    q: 'Is field service application software suitable for small businesses?',
+    a: 'Yes. Even a few technicians can create scheduling conflicts and lost customer details. Choose a product that is simple to learn, clearly priced for your team size and usable on existing phones.',
+  },
+  {
+    q: 'Can field service application software manage AMC contracts?',
+    a: 'Many products can. They record the contract, units covered, visit schedule and renewal date, then remind the team before visits and renewals fall due. Support varies, so confirm how recurring visits are handled.',
+  },
+  {
+    q: 'How does field service software improve technician productivity?',
+    a: 'Technicians get job details, customer history and checklists on their phones, so they spend less time on calls and paperwork. Coordinators can balance workloads and avoid double bookings.',
+  },
+  {
+    q: 'What is the difference between field service software and CRM software?',
+    a: 'CRM software manages leads, customer relationships and sales follow-up. Field service software manages the delivery of work: jobs, scheduling, work orders, parts and visits. Some platforms include CRM features.',
+  },
+]
+
+export const FSA_ARTICLE: BlogBlock[] = [
+  p(
+    'Every field service business reaches the same point. Service requests arrive by phone, WhatsApp and email. Technicians are assigned by memory, visits live in a notebook, customer history is spread over spreadsheets, spare parts are missing at the customer’s door, and invoices go out late because nobody is sure what was done. Field service application software fixes this by centralizing and automating how service jobs and technicians are managed.',
+  ),
+  p(
+    'This guide covers what it is, the problems it solves, the features to check, the workflow from request to report, who benefits most and how to choose. It is written for business owners, field service managers and service coordinators.',
+  ),
+  h2('What Is Field Service Application Software?'),
+  p(
+    'Field service application software is a system that helps a service business receive service requests, assign jobs, schedule technicians, manage work orders, keep customer and service history, and track completed work. The office and the technicians work from the same job record, through a web dashboard and a mobile app.',
+  ),
+  p(
+    'It is also called field service management software, field service software, a field service management system, field service operations software or service business software. For a trade-neutral explanation, read [what field service management is](/blog/what-is-field-service-management).',
+  ),
+  h3('How it works'),
+  p(
+    'A request becomes a job. The job is assigned to a technician, who receives it on a phone, visits the customer and records status, notes and parts. The completed job feeds reports, invoices and dashboards, and every step is stored against the customer.',
+  ),
+  h3('Manual management versus software-based field operations'),
+  p(
+    'In a manual setup, the owner or coordinator is the system: jobs live in their head, call logs and chat threads. With software, the system holds the job list, schedule, customer history and status of every visit, so people decide without chasing updates.',
+  ),
+  h2('Why Field Service Businesses Need Field Service Application Software'),
+  p(
+    'Most service businesses struggle with coordination, not technical work, and it gets harder with every technician and customer added:',
+  ),
+  ul(
+    'Manual job assignments: Jobs are handed out by phone, so two people get one job or an urgent one is missed.',
+    'Missed appointments: A promised visit is never written in a shared place.',
+    'Technician scheduling conflicts: Someone is double-booked or sent across the city when a colleague was closer.',
+    'Poor communication: Instructions pass through calls and group chats that are hard to search.',
+    'Untracked service requests: A request noted on paper is forgotten, and the customer calls again.',
+    'Lost customer records: Addresses, equipment details and past repairs sit in different files.',
+    'Delayed invoicing: The office waits for technician reports before billing.',
+    'Lack of operational visibility: Owners cannot see pending, running or late jobs without phoning around.',
+  ),
+  p(
+    'Field service application software makes the job record the single source of truth. Requests are logged on arrival, assignments are visible to all, and technicians update status from the field. See our guide to [service request management](/blog/service-request-management-for-service-businesses).',
+  ),
+  h2('Key Features of Field Service Application Software'),
+  p(
+    'Use this section as an evaluation checklist; no product has every feature.',
+  ),
+  h3('Service Request and Job Management'),
+  p(
+    'Service job management software gives every request a record with the customer, address, problem, priority and preferred time. Requests become jobs that are assigned and tracked to completion.',
+  ),
+  h3('Technician Scheduling and Dispatch'),
+  p(
+    'Field service scheduling software shows who is available, what skills each person has and how much work they carry. A coordinator can assign by availability, location, skills and workload, and reassign when an urgent job arrives. Technician scheduling software with a weekly grid shows double bookings before the day starts, and technician management software keeps skills and workload on each profile. See our guide to [technician scheduling software](/blog/technician-scheduling-software-for-service-businesses).',
+  ),
+  h3('Work Order Management'),
+  p(
+    'A work order is the job instruction and record: task details, checklist, status, service notes, parts used and completion. Work order management software keeps these together. Explore [work order management software](/features/work-order-management-software).',
+  ),
+  h3('Mobile Application for Field Technicians'),
+  p(
+    'A field service app for technicians puts today’s jobs, customer details and work instructions on a phone. Technicians update status, add notes and photos, and record parts, and mobile field service software shows the office those updates as they happen. See the [field service app for technicians](/features/field-service-app) and our guide to [mobile field service management software](/blog/mobile-field-service-management-software).',
+  ),
+  h3('Customer Management and Service History'),
+  p(
+    'Field service CRM software capabilities keep contacts, sites, equipment and every past visit in one record, so a technician can see what was done last time. See [customer and asset management](/features/asset-management-software).',
+  ),
+  h3('Service Appointment Management'),
+  p(
+    'Appointment management covers scheduling a visit, rescheduling it, reminding the team before it is due and recording that it happened, replacing promises made on the phone.',
+  ),
+  h3('Inventory and Spare Parts Management'),
+  p(
+    'Inventory features track warehouse and van stock, record parts used against each job and flag items running low, so the right part is on the van. See [inventory management software](/features/inventory-management-software).',
+  ),
+  h3('AMC and Preventive Maintenance Management'),
+  p(
+    'Annual maintenance contract (AMC) features record the contract, units covered, visit schedule and renewal date, then remind the team before each visit and renewal. See [AMC and warranty management](/features/warranty-management-software) and our guide to [service contract management software](/blog/service-contract-management-software).',
+  ),
+  h3('Service Reports and Performance Analytics'),
+  p(
+    'Reporting turns daily work into dashboards: jobs completed, pending work, technician productivity and renewals due. Field service tracking software like this lets managers decide from records, not impressions. See [reporting software](/features/reporting-software).',
+  ),
+  h3('Service Billing and Quotation Management'),
+  p(
+    'Estimates, quotations and invoices should connect to the job: an approved quotation becomes a job, and the parts and labour recorded on it support the invoice. See [quotation software](/features/quotation-software).',
+  ),
+  h2('How Field Service Application Software Works: The Service Workflow'),
+  p(
+    'Field service automation software removes much of the manual hand-off between these steps.',
+  ),
+  {
+    type: 'table',
+    caption: 'Field service workflow from customer request to management review',
+    head: ['Step', 'What happens', 'Who acts'],
+    rows: [
+      ['1. Request received', 'The customer submits a service request.', 'Customer'],
+      ['2. Job created', 'The service manager creates a service job with customer, site, problem and priority.', 'Service manager'],
+      ['3. Job assigned', 'The job is assigned to a technician by availability, skills and workload.', 'Coordinator'],
+      ['4. Job received', 'The technician receives the job in the mobile application.', 'Technician'],
+      ['5. Customer visit', 'The technician visits the customer with job and customer details in hand.', 'Technician'],
+      ['6. Status and notes', 'The technician updates job status and service notes.', 'Technician'],
+      ['7. Parts recorded', 'Parts and materials used are recorded against the job.', 'Technician'],
+      ['8. Job completed', 'The job is closed and customer confirmation is recorded.', 'Technician, customer'],
+      ['9. Invoice or report', 'An invoice or service report is generated from the job.', 'Office'],
+      ['10. Performance review', 'Management tracks performance through dashboards.', 'Owner, manager'],
+    ],
+  },
+  h2('Benefits of Field Service Application Software'),
+  ul(
+    'Improved technician productivity: Less time on calls and paperwork, and better preparation for each visit.',
+    'Faster service response times: Requests are logged at once and assigned without hunting for the right person.',
+    'Better job scheduling: Availability, skills and workload are visible, so double bookings are easier to avoid.',
+    'Reduced manual administrative work: Job details are entered once and reused in reports and invoices.',
+    'Improved customer satisfaction: Clearer appointments and an accurate record of work done.',
+    'Better service visibility: Pending, running and completed work is visible without phoning around.',
+    'Centralized customer information: Contacts, sites, equipment and history in one place.',
+    'Better inventory control: Parts used on jobs update stock, so shortages show sooner.',
+    'Improved service revenue tracking: Jobs, quotations and invoices can be reviewed together.',
+    'More efficient field operations: One shared record replaces scattered notes as you grow.',
+  ),
+  p(
+    'Results depend on consistent use, so we quote no percentages. Compare your own numbers, such as missed visits and invoice delays, before and after.',
+  ),
+  h2('Who Should Use Field Service Application Software?'),
+  p(
+    'These trades benefit most.',
+  ),
+  h3('AC and HVAC Service Businesses'),
+  p(
+    'AC businesses mix installations, repairs and recurring maintenance. Software keeps unit records, schedules technicians around breakdowns and tracks AMC visits and renewals. See [HVAC field service software](/solutions/hvac-field-service-software).',
+  ),
+  h3('CCTV Installation and Maintenance Companies'),
+  p(
+    'CCTV companies handle installations, troubleshooting and maintenance contracts across many sites. Software keeps equipment details per site and shows which contracts and visits are due. See [CCTV service software](/solutions/cctv-software).',
+  ),
+  h3('Solar Installation and Service Businesses'),
+  p(
+    'Solar teams coordinate site visits, installations, panel maintenance, inverter servicing and after-sales requests. Software ties each visit to a technician and a record. See [solar service software](/solutions/solar-software).',
+  ),
+  h3('Electrical Service Businesses'),
+  p(
+    'Electrical businesses handle repair calls and maintenance visits at short notice. Software helps assign a suitable technician and keep a history for each customer.',
+  ),
+  h3('Plumbing and Home Service Businesses'),
+  p(
+    'Home service work is driven by urgent customer requests. Software logs each request, dispatches a technician and carries the job through to billing. See [service business management software](/solutions/service-business-management-software).',
+  ),
+  h3('Construction and Equipment Maintenance Companies'),
+  p(
+    'Equipment servicing and site jobs involve recurring maintenance and several crews. Software tracks work orders and job status across sites. See [construction management software](/solutions/construction-management-software).',
+  ),
+  h2('Field Service Application Software vs Excel and WhatsApp'),
+  p(
+    'Excel and WhatsApp are free, familiar and workable for a very small team. This is where they start to strain as volume grows.',
+  ),
+  {
+    type: 'table',
+    caption: 'Excel and WhatsApp compared with field service application software',
+    head: ['Area', 'Excel and WhatsApp', 'Field service application software'],
+    rows: [
+      ['Job tracking', 'Jobs sit in a sheet or in chats.', 'Every job is a record with an owner, status and history.'],
+      ['Technician scheduling', 'Manual; conflicts are easy to miss.', 'Availability and workload are visible.'],
+      ['Customer records', 'Spread across sheets and phone contacts.', 'Stored with sites and equipment.'],
+      ['Service history', 'Found by searching old chats or files.', 'Listed against each customer and site.'],
+      ['Work order management', 'Instructions sent as messages.', 'Details, checklist, notes and completion held together.'],
+      ['Job status tracking', 'Technicians message updates; the office compiles them.', 'Technicians update status; the office sees it.'],
+      ['Inventory management', 'A separate stock sheet updated by hand.', 'Parts can be recorded against jobs and stock.'],
+      ['Reporting', 'Built by hand from several sheets.', 'Dashboards draw on live job data.'],
+      ['Mobile access', 'WhatsApp suits phones; sheets are awkward to edit.', 'A dedicated mobile app for jobs and updates.'],
+      ['Automation', 'Almost entirely manual.', 'Reminders and reports reduce repeat work.'],
+    ],
+  },
+  p(
+    'WhatsApp stays useful for quick customer conversations, and your current sheet can seed the customer data. The case for software rests on structure as you grow.',
+  ),
+  h2('How to Choose the Right Field Service Application Software'),
+  p('Start with your own workflow, then test each product against it. Look for:'),
+  ul(
+    'Easy-to-use interface: Office staff and technicians should be productive within days.',
+    'Mobile application: Technicians must see and update jobs from a phone.',
+    'Job scheduling and dispatch: Check how work is assigned and reassigned.',
+    'Work order management: Checklists, notes, parts and completion should be recorded.',
+    'Customer management: Customers, sites and service history in one record.',
+    'Technician tracking: Ask exactly what is tracked and how progress is shown.',
+    'Inventory management: Do parts used on jobs update stock?',
+    'AMC management: How are recurring visits and renewals handled?',
+    'Reporting and analytics: Ask to see the standard reports.',
+    'Scalability: Will it cope with more technicians, customers and jobs?',
+    'Pricing and implementation: What does each plan include, and who helps with setup?',
+    'Integration capabilities: If other tools must connect, ask for specifics.',
+  ),
+  h3('A practical checklist for business owners'),
+  ul(
+    'Can I create a job and assign it to a technician in a few minutes?',
+    'Can technicians open job and customer details on their own phones?',
+    'Can I find a customer’s full service history quickly?',
+    'Can I see which jobs are pending, in progress and completed?',
+    'Can I manage AMC visits and renewals?',
+    'Did my own technicians find it easy during a trial?',
+  ),
+  h2('How FSMFlow Helps Manage Field Service Operations'),
+  p(
+    'FSMFlow is [field service management software](/) built for Indian service businesses, including AC and HVAC, CCTV, solar and general service teams. Based on what the FSMFlow website describes today, it addresses the problems above like this:',
+  ),
+  ul(
+    'Service job management and work order tracking: Create, assign and track jobs from request to completion, with checklists, parts, photos and service reports, using [work order management](/features/work-order-management-software).',
+    'Technician assignment and scheduling: Keep technician profiles with skills, availability and workload, and schedule jobs on a weekly view with [employee management](/features/employee-management-software).',
+    'Mobile field operations: Technicians get jobs, customer details, checklists, photos and customer sign-off on a phone through the [field service app](/features/field-service-app).',
+    'Customer management and service visits: Keep customers, sites and installed units with service history in [asset management](/features/asset-management-software).',
+    'Maintenance management: Track warranty, AMC contracts, visit schedules and renewal alerts with [warranty and AMC management](/features/warranty-management-software).',
+    'Inventory management: Track warehouse and van stock, parts used on jobs and low-stock alerts in [inventory management](/features/inventory-management-software).',
+    'Service reporting: See jobs, technician productivity, AMC renewals and pending payments in [reporting](/features/reporting-software).',
+  ),
+  p(
+    'FSMFlow also includes [sales CRM](/features/sales-crm-software) and [quotation software](/features/quotation-software), so work flows from enquiry to payment. Plans are on the [pricing page](/pricing).',
+  ),
+  callout(
+    'Want to see how service jobs, technicians, work orders and AMC visits fit together for your business? [Book a demo of FSMFlow](/demo) and walk through it with your own workflow in mind.',
+  ),
+  h2('Frequently Asked Questions'),
+  ...FSA_FAQS.flatMap((f) => [h3(f.q), p(f.a)]),
+  h2('Conclusion'),
+  p(
+    'Field service application software helps service businesses centralize service requests, schedule technicians, manage work orders, track service activities and improve operational efficiency. Instead of depending on calls, chat threads and scattered sheets, the whole team works from one job record that shows what is planned, in progress and complete.',
+  ),
+  p(
+    'When you evaluate products, test job and work order management, technician scheduling, customer history, mobile access, maintenance, inventory, reporting and pricing with your own jobs. To see it in practice, explore [FSMFlow](/) or [request a demo](/demo) at FSMFlow.in.',
+  ),
+]
