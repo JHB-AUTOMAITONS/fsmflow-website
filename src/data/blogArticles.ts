@@ -4842,3 +4842,249 @@ export const FSA_ARTICLE: BlogBlock[] = [
     'When you evaluate products, test job and work order management, technician scheduling, customer history, mobile access, maintenance, inventory, reporting and pricing with your own jobs. To see it in practice, explore [FSMFlow](/) or [request a demo](/demo) at FSMFlow.in.',
   ),
 ]
+
+/* -------------------------------------------------------------------------- */
+/* Job card software (South Africa)                                            */
+/* -------------------------------------------------------------------------- */
+
+export const JOB_CARD_FAQS: { q: string; a: string }[] = [
+  {
+    q: 'What is job card software?',
+    a: 'Job card software is a system that replaces paper job cards with digital ones. Each job card holds the customer, site, problem, assigned technician, parts, labour, photos, status and completion details, so the office and the field work from the same record.',
+  },
+  {
+    q: 'What is the best job card software in South Africa?',
+    a: 'There is no single best product. The right job card software in South Africa is the one your technicians will use on their own phones, that handles your job types, quotes and invoices, and is priced for your team size. Shortlist two or three options and trial each with real jobs.',
+  },
+  {
+    q: 'How does digital job card software work?',
+    a: 'A service request becomes a job card, the job is assigned to a technician, and the technician sees it on a phone or tablet. They record work, parts and photos on site and update the status. The completed card feeds quotes, invoices and reports.',
+  },
+  {
+    q: 'Can job card software help small businesses?',
+    a: 'Yes. A team of three technicians can still double-book, lose a card or forget to invoice. A simple online job card system gives a small business one reliable record from the first call, without hiring an admin person to chase paperwork.',
+  },
+  {
+    q: 'Can technicians use job card software on mobile phones?',
+    a: 'Yes, with mobile job card software. Technicians open the day’s jobs, update status, add notes and photos and capture customer sign-off on a phone or tablet. Check how any product behaves when mobile signal is weak, as coverage varies between customer sites.',
+  },
+  {
+    q: 'What is the difference between a job card and a work order?',
+    a: 'A job card is the record of the work a technician does on a job. A work order is the instruction to do the work. In practice many South African businesses use the two terms for the same document, and software usually combines them into one job record.',
+  },
+  {
+    q: 'Can job card software manage quotes and invoices?',
+    a: 'Many products can. Look for quotes that become jobs once approved, and invoices built from the same labour and parts lines. If you are VAT-registered, confirm that quotes and invoices show VAT correctly before you commit.',
+  },
+  {
+    q: 'How much does job card software cost in South Africa?',
+    a: 'Pricing varies by vendor, and many charge per user or per technician each month. Ask for the price in rand, whether VAT is included, what each plan covers and what happens to the cost when you add technicians. Compare on total cost, not the headline price.',
+  },
+]
+
+export const JOB_CARD_ARTICLE: BlogBlock[] = [
+  p(
+    'A technician finishes a call-out in Randburg, scribbles the details on a paper job card and tucks it behind the sun visor. Back at the office, the invoice cannot go out because nobody knows which parts were used. Across town, another customer is still waiting for a callback that was only ever promised in a WhatsApp message.',
+  ),
+  p(
+    'Digital job cards fix this. Job card software South Africa service teams use keeps every job, from the customer and site to the technician, parts, photos and status, in one record that the office and the field can both see. This guide explains what it does, why it matters for plumbing, electrical, HVAC, solar, CCTV and maintenance businesses, and how to choose a system that fits.',
+  ),
+  p(
+    'Digital job management is becoming a necessity rather than a nice-to-have. Customers expect to be told when a technician is coming. Owners need to know which jobs are done but not yet invoiced. As a team grows past a handful of people, memory, notebooks and chat threads stop being a system.',
+  ),
+  h2('What Is Job Card Software?'),
+  p(
+    'Job card software is a system that creates, assigns and tracks job cards digitally. A job card is the record of a single piece of work: who the customer is, where the job is, what needs doing, who is doing it and what was done. Moving that record from paper to digital job card software South Africa teams can open on any phone means it can be updated from anywhere and found in seconds. Because it runs over the internet, it is also called online job card software.',
+  ),
+  p('A good digital job card records and manages:'),
+  ul(
+    'Customer information: name, contact details and site address.',
+    'Job descriptions and service requests: what was reported and how urgent it is.',
+    'Technician assignments: who is responsible and when they are booked.',
+    'Job status: where the job is right now.',
+    'Materials and spare parts used on the job.',
+    'Labour details: time spent and work performed.',
+    'Photos and attachments: before-and-after images and supporting documents.',
+    'Customer approvals: confirmation that the customer accepts the quote or the finished work.',
+    'Service reports and job completion details.',
+  ),
+  p(
+    'The idea is sold under several names, including a job card system South Africa buyers will recognise from paper, job management software and work order management software. The names overlap, and the core idea is the same: one record per job. For a trade-neutral overview, see [what field service management is](/blog/what-is-field-service-management).',
+  ),
+  h2('Why South African Service Businesses Need Digital Job Cards'),
+  p(
+    'Most service businesses do not struggle with the technical work. They struggle with coordination, which gets harder with every technician and customer added. Paper and WhatsApp-based systems tend to fail in the same ways:',
+  ),
+  ul(
+    'Lost paper job cards. A card left in a bakkie, soaked on a roof or never handed in means no proof of work and no invoice.',
+    'Delayed communication. Instructions and changes travel by phone call and group chat, and the technician arrives with half the story.',
+    'Unorganised technician schedules. Two people are sent to one job while an urgent call-out waits.',
+    'Lack of job visibility. The owner cannot say which jobs are pending, running or finished without phoning around.',
+    'Missed customer appointments. A promised visit lives in one person’s head.',
+    'Manual quotation and invoicing. Details are retyped from handwriting, so billing is slow and mistakes creep in.',
+    'Difficulty tracking completed and pending jobs. Completed work sits uninvoiced because nobody is sure it was finished.',
+    'Poor customer communication. Customers call to ask where the technician is, and nobody can answer.',
+    'Limited reporting. Without job data, questions about busy periods, repeat faults or technician workload are guesses.',
+  ),
+  p(
+    'Picture a plumbing company in Durban with five technicians. A burst geyser call comes in on Saturday morning. The dispatcher texts a technician, who is already on another site; a second technician is closer but nobody knows. With a shared job list, the dispatcher sees who is free and nearby, assigns the job in a minute and the customer is told someone is on the way.',
+  ),
+  p(
+    'Practical realities add pressure. Teams drive between sites across wide areas, mobile coverage varies, and power interruptions affect how and when work is done. A system should help the team cope with these conditions, not assume perfect ones. See our guide to [service request management](/blog/service-request-management-for-service-businesses) for how requests should flow into jobs.',
+  ),
+  h2('Key Features of Job Card Software'),
+  p('No product has every feature, and job management software South Africa teams can choose from varies widely. Use this list to check what matters for your trade.'),
+  h3('Digital Job Card Creation'),
+  p(
+    'Creating, assigning and managing service jobs digitally means a job is logged once, at the time of the call, with the customer, address, problem and priority. Templates for common job types save time and keep records consistent.',
+  ),
+  h3('Technician Scheduling and Assignment'),
+  p(
+    'Job scheduling software South Africa teams rely on should show who is available, what skills each person has and how much work they already carry. Field technician management software should also keep each person’s skills and workload on their profile. That lets a coordinator assign by availability, workload and job requirements, and move a job quickly when an emergency arrives. Our guide to [technician scheduling software](/blog/technician-scheduling-software-for-service-businesses) goes deeper.',
+  ),
+  h3('Mobile Job Management'),
+  p(
+    'Mobile job card software puts job details in the technician’s hand at the customer site: address, history, checklist, parts and notes. It is the difference between a system the team uses and one that only the office touches. See our overview of [mobile field service management software](/blog/mobile-field-service-management-software).',
+  ),
+  h3('Job Status Tracking'),
+  p('Every job should move through clear stages that everyone understands, such as:'),
+  ul('New', 'Scheduled', 'Assigned', 'In progress', 'Completed', 'Cancelled'),
+  p('Different products name these stages differently. What matters is that the status is true, because technicians update it as work happens.'),
+  h3('Customer Information Management'),
+  p(
+    'Customer details, site addresses, service history and previous jobs should sit in one place. When a repeat customer calls, whoever answers should see what was done last time.',
+  ),
+  h3('Quotes and Invoices'),
+  p(
+    'Look for quotations that convert into jobs once approved, and labour, parts and service charges that flow into the invoice without retyping. If you are VAT-registered, quotes and invoices must show VAT correctly (the standard rate is 15%), so ask how the product handles it.',
+  ),
+  h3('Photo and Document Attachments'),
+  p('Attach images, reports and relevant documents to the job, so proof of work travels with the record.'),
+  h3('Job Completion Reports'),
+  p('Record what was done, the parts used and any follow-up needed, so a clear service report is ready when the technician leaves site.'),
+  h3('Customer Approval and Sign-Off'),
+  p('Capture the customer’s confirmation when work is complete. A signed-off job is far easier to invoice and to defend if a query comes later.'),
+  h3('Reports and Analytics'),
+  p(
+    'Reports should show job volumes, completed versus pending work, technician productivity and where time and money go. They turn day-to-day job data into decisions.',
+  ),
+  h2('How Job Card Software Works: From Call-Out to Completion'),
+  p('Most service businesses follow the same flow, whatever the trade:'),
+  ul(
+    'Step 1: Receive a customer service request.',
+    'Step 2: Create a digital job card.',
+    'Step 3: Schedule and assign a technician.',
+    'Step 4: The technician receives the job details on a phone or tablet.',
+    'Step 5: The technician visits the customer site.',
+    'Step 6: Record the work performed, materials used and photos.',
+    'Step 7: Update the job status.',
+    'Step 8: Complete the service report.',
+    'Step 9: Generate a quote or invoice where required.',
+    'Step 10: Record job completion and customer confirmation.',
+  ),
+  h3('Example: an air conditioning service business in Johannesburg'),
+  p(
+    'Take an illustrative example of a company with six technicians servicing offices and homes in the northern suburbs. On Monday morning, an office manager in Sandton calls: the split unit in the boardroom is blowing warm air.',
+  ),
+  p(
+    'The coordinator creates a job card with the address, unit model and complaint. She sees that Sipho is free after 10:00 and has gas on his bakkie, so she assigns the job. Sipho gets it on his phone, including the note that the same unit was topped up in March. On site he finds a leak, takes photos, records the parts used and the time spent, and sets the job to in progress.',
+  ),
+  p(
+    'The repair needs a new component, so the office sends a quote of R3 850 including VAT. The customer approves, Sipho completes the work, the manager signs on the tablet and the job is marked complete. The invoice is built from the same labour and parts lines. Nothing was retyped, and the unit’s history now shows this visit for next time.',
+  ),
+  h2('Benefits of Job Card Software for Different Industries'),
+  h3('Plumbing businesses'),
+  p(
+    'Plumbing work is often urgent and unpredictable. Digital job cards let a dispatcher send the nearest available plumber to a burst pipe, while the technician sees the site history before arriving. Photos of the repair and the parts used protect the business if a customer later disputes the work, and call-outs are less likely to go uninvoiced.',
+  ),
+  h3('Electrical contractors'),
+  p(
+    'Contractor job management software suits electrical contractors, who juggle quotes, site visits and compliance paperwork. A job record that holds the quote, the work done, photos and sign-off keeps everything for one customer together. For jobs that require a certificate of compliance, the job record is the natural place to note that it has been issued and filed.',
+  ),
+  h3('HVAC and air conditioning companies'),
+  p(
+    'AC businesses run seasonal peaks, repeat servicing and spare-parts logistics. A job card system shows the unit’s service history, helps assign technicians who carry the right parts and keeps recurring service visits from slipping. Our guide to [AC service management software](/blog/how-to-choose-ac-service-management-software) covers this in depth.',
+  ),
+  h3('Solar installation and maintenance companies'),
+  p(
+    'Solar work spans site surveys, installations, commissioning and later maintenance. Digital job cards keep each stage in one record, with inverter and panel details and installation photos attached. When a customer reports an inverter fault months later, the technician arrives knowing what was installed. See our [solar installation software guide](/blog/best-solar-installation-software-for-service-businesses).',
+  ),
+  h3('CCTV and security installation businesses'),
+  p(
+    'CCTV jobs involve cameras, recorders, cabling and often several visits. A job card records what was installed and where, who attended and what remains open. Photos of camera positions and cable routes make later maintenance quicker. Read more in our guide to [CCTV installation project management](/blog/cctv-installation-project-management).',
+  ),
+  h3('Facilities maintenance companies'),
+  p(
+    'Facilities teams look after lighting, plumbing, air conditioning and equipment across buildings such as offices, schools and retail sites. Job cards give each request an owner, a status and a history. Managers can see which sites generate the most call-outs and which jobs are overdue. This overlaps with maintenance management software South Africa facilities teams use; see our guide to [computerized maintenance management software](/blog/computerized-maintenance-management-software-south-africa).',
+  ),
+  h2('Digital Job Cards vs Paper Job Cards'),
+  p('Paper works for a one-person operation. The differences show up as the business grows:'),
+  {
+    type: 'table',
+    caption: 'Paper job cards compared with digital job cards',
+    head: ['Area', 'Paper job cards', 'Digital job cards'],
+    rows: [
+      ['Job creation', 'Handwritten, often after the call', 'Created once on the call, using templates'],
+      ['Job tracking', 'Known only when someone asks', 'Status updated as work happens'],
+      ['Technician communication', 'Phone calls and group chats', 'Job details sent to the technician’s phone'],
+      ['Scheduling', 'Whiteboard or memory', 'Shared schedule showing availability and workload'],
+      ['Customer records', 'Scattered across files and notebooks', 'One customer record with sites and past jobs'],
+      ['Photo attachments', 'Photos sit on personal phones', 'Photos attached to the job'],
+      ['Reporting', 'Built by hand, if at all', 'Generated from job data'],
+      ['Job history', 'Hard to find, easily lost', 'Searchable, stored against the customer'],
+      ['Customer approvals', 'Paper signature that may be lost', 'Sign-off captured and stored on the job'],
+      ['Accessibility', 'Only where the paper is', 'Available to the office and field, wherever they are'],
+    ],
+  },
+  p(
+    'For a growing business, the real difference is time. Every hour spent chasing a card, retyping a quote or answering “where is the technician?” is an hour not spent on billable work. Digital records also make it far easier to hand a customer relationship or a route to someone else without losing history.',
+  ),
+  h2('Job Card Software South Africa: How to Choose the Right One'),
+  p('Use this checklist to compare options. Whatever service business software South Africa vendors pitch, test each point with your own jobs, not a sample dataset.'),
+  ul(
+    'Ease of use: Can a technician learn it in an afternoon? If the team finds it slow, they will go back to paper.',
+    'Mobile accessibility: Does it work well on the phones your technicians already own?',
+    'Job scheduling: Can you see availability and workload and move jobs easily?',
+    'Technician assignment: Can you assign by skills and location?',
+    'Customer management: Are customers, sites and service history easy to find?',
+    'Job tracking: Is status clear and updated by the person doing the work?',
+    'Quotes and invoices: Do they flow from the job, and do they handle VAT in rand?',
+    'Reporting: Can you see completed and pending jobs and technician workload?',
+    'Scalability: Will it cope when you add technicians, sites or job types?',
+    'Pricing: Is it priced in rand, per user or per technician, and what changes as you grow?',
+    'Cloud access: Can the office and the field both reach it from anywhere?',
+    'Data security: How is customer information protected, and where is it stored? Customer details are personal information, so ask how the vendor supports your obligations under POPIA.',
+    'Customer support: Is help available in your working hours, and how is onboarding handled?',
+  ),
+  p(
+    'Also ask what happens with weak signal. Some customer sites have poor coverage, so find out exactly how the mobile app behaves when the connection drops. Be wary of any vendor that promises results without knowing your workflow. Start small, with one team or one trade, and expand once the habit is established.',
+  ),
+  h2('How FSMFlow Helps South African Service Businesses'),
+  p(
+    'FSMFlow is [field service management software](/) built mainly for AC and HVAC service businesses, and relevant to CCTV, solar, construction and other teams that send technicians to customer sites. FSMFlow calls the job card a work order, and based on what its website describes today, it can help with:',
+  ),
+  ul(
+    'Service jobs and job cards: create, assign and track jobs from request to completion, with checklists, parts, photos and a service report, using [work order management software](/features/work-order-management-software).',
+    'Customer information: keep customers, sites and installed equipment with service history in [asset and customer management](/features/asset-management-software).',
+    'Technician assignment and scheduling: keep technician profiles with skills, availability and workload in [employee management](/features/employee-management-software).',
+    'Job tracking: jobs move through assigned, en route, in progress and completed as technicians update them from the [field service app](/features/field-service-app).',
+    'Job completion workflows: technicians complete the checklist, record parts and photos and take the customer’s sign-off on the phone.',
+    'Quotes and invoices: [quotation software](/features/quotation-software) turns an approved quotation into a job and an invoice, with payments tracked against it.',
+    'Business visibility: [reporting](/features/reporting-software) shows jobs, revenue, technician productivity and pending payments.',
+  ),
+  p(
+    'To be clear about the limits: FSMFlow’s website does not currently claim South African customers, rand pricing, VAT-specific features or offline use. If any of those matter to you, ask in a demo and get a direct answer before you decide. Our [field service management software South Africa](/field-service-management-software-south-africa) page explains how the platform fits teams working across several sites, and the [pricing page](/pricing) lists plans.',
+  ),
+  callout(
+    'Want to see how a digital job card moves from request to sign-off for your kind of work? [Book an FSMFlow demo](/demo) and walk through it with your own jobs in mind.',
+  ),
+  h2('Frequently Asked Questions'),
+  ...JOB_CARD_FAQS.flatMap((f) => [h3(f.q), p(f.a)]),
+  h2('Conclusion'),
+  p(
+    'Job card software South Africa businesses can adopt today replaces lost paper, scattered messages and guesswork with one job record that the whole team can see. It helps plumbing, electrical, HVAC, solar, CCTV and maintenance teams schedule technicians, track jobs, quote, invoice and report from a single place.',
+  ),
+  p(
+    'Start by mapping how a job moves through your business today and where it stalls. Then trial two or three systems with real jobs and ask the hard questions about mobile use, VAT and support. To see how it works in practice, explore [FSMFlow](/) or [request a demo](/demo).',
+  ),
+]

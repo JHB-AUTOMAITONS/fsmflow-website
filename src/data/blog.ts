@@ -1,5 +1,5 @@
 import { AirVent, ClipboardCheck, BarChart3, FileText, Briefcase, Cctv, ClipboardList, Compass, FileSignature, HardHat, Navigation, Package, ReceiptText, Route, Smartphone, SunMedium, Users, Wrench, type LucideIcon } from 'lucide-react'
-import { CCTV_ARTICLE, CONSTRUCTION_ARTICLE, HVAC_ARTICLE, SERVICE_BUSINESS_ARTICLE, SOLAR_ARTICLE, CMMS_ARTICLE, MOBILE_FSM_ARTICLE, SERVICE_CONTRACT_ARTICLE, SERVICE_REPORT_FORMAT_ARTICLE, SERVICE_REQUEST_MANAGEMENT_ARTICLE, AC_SERVICE_SOFTWARE_ARTICLE, TECHNICIAN_SCHEDULING_ARTICLE, SOLAR_SOFTWARE_BUYERS_ARTICLE, CCTV_PROJECT_MANAGEMENT_ARTICLE, INDUSTRIAL_MAINTENANCE_ARTICLE, WEB_MAINTENANCE_NIGERIA_ARTICLE, DISPATCH_SOFTWARE_ARTICLE, PREVENTIVE_MAINTENANCE_ARTICLE, WHAT_IS_FSM_ARTICLE, FIELD_SERVICE_INDUSTRY_SOFTWARE_ARTICLE, FIELD_SERVICE_INDUSTRY_SOFTWARE_FAQS, FIELD_WORKFORCE_ARTICLE, FIELD_WORKFORCE_FAQS, CONTRACT_MANAGEMENT_ARTICLE, CONTRACT_MANAGEMENT_FAQS, SOLAR_FSM_ARTICLE, SOLAR_FSM_FAQS, FSA_ARTICLE, FSA_FAQS } from './blogArticles'
+import { CCTV_ARTICLE, CONSTRUCTION_ARTICLE, HVAC_ARTICLE, SERVICE_BUSINESS_ARTICLE, SOLAR_ARTICLE, CMMS_ARTICLE, MOBILE_FSM_ARTICLE, SERVICE_CONTRACT_ARTICLE, SERVICE_REPORT_FORMAT_ARTICLE, SERVICE_REQUEST_MANAGEMENT_ARTICLE, AC_SERVICE_SOFTWARE_ARTICLE, TECHNICIAN_SCHEDULING_ARTICLE, SOLAR_SOFTWARE_BUYERS_ARTICLE, CCTV_PROJECT_MANAGEMENT_ARTICLE, INDUSTRIAL_MAINTENANCE_ARTICLE, WEB_MAINTENANCE_NIGERIA_ARTICLE, DISPATCH_SOFTWARE_ARTICLE, PREVENTIVE_MAINTENANCE_ARTICLE, WHAT_IS_FSM_ARTICLE, FIELD_SERVICE_INDUSTRY_SOFTWARE_ARTICLE, FIELD_SERVICE_INDUSTRY_SOFTWARE_FAQS, FIELD_WORKFORCE_ARTICLE, FIELD_WORKFORCE_FAQS, CONTRACT_MANAGEMENT_ARTICLE, CONTRACT_MANAGEMENT_FAQS, SOLAR_FSM_ARTICLE, SOLAR_FSM_FAQS, FSA_ARTICLE, FSA_FAQS, JOB_CARD_ARTICLE, JOB_CARD_FAQS } from './blogArticles'
 
 /**
  * Blog content model.
@@ -575,6 +575,31 @@ export const BLOG_POSTS: BlogPost[] = [
     supports: '/solutions/service-business-management-software',
     body: FSA_ARTICLE,
     faqs: FSA_FAQS,
+  },
+  {
+    slug: 'job-card-software-south-africa',
+    title: 'Job Card Software South Africa: A Complete Guide for Service Businesses',
+    seoTitle: 'Job Card Software South Africa: Complete Guide | FSMFlow',
+    seoDescription:
+      'Job card software South Africa guide: how digital job cards help plumbing, electrical, HVAC and solar field teams manage jobs, technicians, quotes and invoices.',
+    excerpt:
+      'What job card software does, why paper job cards and WhatsApp stop working, the features to look for, and how South African service businesses can choose the right system.',
+    category: 'Field Service',
+    readMinutes: 11,
+    status: 'published',
+    icon: ClipboardCheck,
+    accent: 'brand',
+    image: {
+      src: '/blog-images/job-card-software-south-africa.jpg',
+      alt: 'Tablet showing a digital job card for an air conditioning repair, with checklist, photos and customer sign-off, illustrating job card software South Africa service teams use',
+    },
+    publishedAt: '2026-11-26',
+    author: 'FSMFlow Team',
+    primaryKeyword: 'Job Card Software South Africa',
+    secondaryKeywords: ['Digital Job Card Software South Africa', 'Job Card System South Africa', 'Online Job Card Software', 'Job Management Software South Africa', 'Field Service Management Software South Africa', 'Mobile Job Card Software', 'Job Scheduling Software South Africa', 'Work Order Management Software', 'Field Technician Management Software', 'Service Business Software South Africa', 'Maintenance Management Software South Africa', 'Contractor Job Management Software'],
+    supports: '/solutions/service-business-management-software',
+    body: JOB_CARD_ARTICLE,
+    faqs: JOB_CARD_FAQS,
   },
   {
     slug: 'run-amc-renewals-without-spreadsheets',
