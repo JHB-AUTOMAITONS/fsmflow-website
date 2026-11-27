@@ -71,7 +71,7 @@ export function ProductShowcase() {
             className="lg:col-span-5"
             delay={120}
             caption="Technician tracking"
-            description="See where every technician is and what they are working on, so dispatch decisions are made on live information."
+            description="See where every technician is and what they are working on, so service dispatch decisions are made on live information."
           >
             <ProductWindow
               className="h-full"
@@ -89,7 +89,7 @@ export function ProductShowcase() {
           <Panel
             className="lg:col-span-5"
             caption="Job card"
-            description="Assigned, en route, in progress, completed. Every job carries its customer, location, checklist, photos and status history."
+            description="Track each service job from assigned to en route, in progress and completed. Every job carries its customer, location, checklist, photos and status history."
           >
             <ProductWindow
               className="h-full"
@@ -107,7 +107,7 @@ export function ProductShowcase() {
             className="lg:col-span-7"
             delay={120}
             caption="Customer profile"
-            description="Customer details, assets, service history, AMC and warranty status, and previous jobs, all in one record."
+            description="Customer details, installed assets, service history, AMC and warranty status, and previous jobs, all in one record."
           >
             <ProductWindow
               className="h-full"

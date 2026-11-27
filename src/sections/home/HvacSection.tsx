@@ -75,11 +75,12 @@ export function HvacSection() {
               <Snowflake className="size-3" aria-hidden="true" /> HVAC &amp; AC service
             </Eyebrow>
             <h2 id="hvac-heading" className="text-h2 mt-5 font-semibold text-ink-900">
-              Built for HVAC service teams
+              HVAC service software built for AC service teams
             </h2>
             <p className="text-lead mt-5 text-ink-600">
-              AC installation, repair, preventive maintenance and AMC (annual maintenance contract) work follow the same path every day. FSMFlow
-              turns that path into one connected flow, from the first call to the final payment.
+              HVAC service operations follow the same path every day: AC installation, AC repair, preventive maintenance and AMC (annual
+              maintenance contract) visits. FSMFlow turns that path into one connected flow of work orders, technician scheduling and service
+              history, from the first call to the final payment.
             </p>
             <div className="mt-6">
               <TextLink href={HVAC_SOLUTION.path}>Explore {HVAC_SOLUTION.primaryKeyword}</TextLink>
@@ -136,7 +137,7 @@ export function HvacSection() {
               icon={Wrench}
               title="AC repair"
               tone="iris"
-              text="Log the fault, send the nearest technician and record the fix and parts used against the unit."
+              text="Log the fault as a work order, send the nearest technician and record the fix and parts used against the unit."
             >
               <Mini className="flex items-center gap-2 text-[11.5px] font-semibold">
                 <Tag tone="coral">Not cooling</Tag>
@@ -177,7 +178,7 @@ export function HvacSection() {
               icon={CalendarClock}
               title="Preventive maintenance"
               tone="aqua"
-              text="Recurring service plans create jobs on schedule, so units get serviced before they fail."
+              text="Recurring service plans create preventive maintenance jobs on schedule, so units get serviced before they fail."
             >
               <Mini>
                 <div className="grid grid-cols-4 gap-1.5 text-center font-mono text-[10px] font-semibold">
@@ -229,7 +230,7 @@ export function HvacSection() {
               icon={CalendarRange}
               title="Technician scheduling"
               tone="brand"
-              text="A day board of who is where, with workload visible at a glance."
+              text="Schedule and dispatch from a day board of who is where, with workload visible at a glance."
             >
               <Mini className="space-y-1.5">
                 {[
@@ -277,7 +278,7 @@ export function HvacSection() {
               icon={History}
               title="Customer history"
               tone="aqua"
-              text="Every unit, visit, invoice and note in one customer record."
+              text="Service history for every unit: visits, invoices and notes in one customer record."
             >
               <Mini>
                 <ol className="relative space-y-2 border-l border-ink-900/10 pl-3 text-[11px] text-ink-600">

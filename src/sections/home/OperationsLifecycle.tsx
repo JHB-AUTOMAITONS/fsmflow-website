@@ -121,7 +121,7 @@ export function OperationsLifecycle() {
             id="lifecycle-heading"
             eyebrow="How it works"
             title="How Field Service Management Software Transforms Service Operations"
-            lead="Service work rarely fails at one big step. It slips at the handoffs: between the enquiry and the quote, the quote and the job, the job and the invoice. FSM software like FSMFlow passes each step’s details to the next, so nobody retypes or chases anything. Here is one job, followed from the first call to the last payment."
+            lead="Service work rarely fails at one big step. It slips at the handoffs: between the enquiry and the quote, the quote and the job, the job and the invoice. FSM software like FSMFlow passes each step’s details to the next, so nobody retypes or chases anything. Here is one job, followed from the first call to the last payment and the next AMC visit."
           />
         </Reveal>
 

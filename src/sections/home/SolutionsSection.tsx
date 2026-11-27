@@ -13,13 +13,13 @@ import { HVAC_SOLUTION, SOLUTIONS } from '@/data/solutions'
 
 const BLURB: Record<string, string> = {
   'cctv-software':
-    'Site surveys, camera installation, DVR/NVR records, installation handover, equipment warranty, AMC visits and repair history for security installers.',
+    'CCTV service management for security installers: site surveys, camera installation, DVR/NVR records, handover, equipment warranty, AMC visits and repair history.',
   'solar-software':
-    'Customer enquiries, site surveys, quotations, installation projects, equipment records, commissioning and maintenance for solar EPC teams.',
+    'Solar service management for EPC teams: enquiries, site surveys, quotations, installation projects, equipment records, commissioning and maintenance.',
   'construction-management-software':
-    'Enquiries, quotations, site work, crew allocation, materials and work progress, with service and maintenance after handover.',
+    'Construction service management: enquiries, quotations, site work, crew allocation, materials and work progress, with service and maintenance after handover.',
   'service-business-management-software':
-    'Electricians, plumbers, appliance repair and other service contractors: scheduling, dispatch, job history, quotations and payments.',
+    'Electricians, plumbers, appliance repair and other service contractors: technician scheduling, dispatch, job history, quotations and payments.',
 }
 
 /** One platform, five industries — HVAC gets the 2×2 hero tile. */

@@ -20,7 +20,7 @@ const COPY: Record<string, { text: string; points?: string[] }> = {
     points: ['Quotes from your price list', 'Approval and revision tracking', 'Invoices and payment status'],
   },
   'work-order-management-software': {
-    text: 'Every service job has an owner, a priority, a checklist, parts, photos and a status the whole team can see, from service request to completed report.',
+    text: 'Work order management where every service job has an owner, a priority, a checklist, parts, photos and a status the whole team can see, from service request to completed report.',
     points: [
       'Create, prioritise and assign in seconds',
       'Status the office can follow: assigned, en route, in progress, completed',
@@ -38,17 +38,17 @@ const COPY: Record<string, { text: string; points?: string[] }> = {
     ],
   },
   'employee-management-software': {
-    text: 'Technician profiles with skills, availability and workload, so assigning work is a decision, not a guess.',
+    text: 'Technician management with profiles for skills, availability and workload, so assigning work is a decision, not a guess.',
     points: ['Skills and specialisation on every profile', 'Availability and weekly schedule board', 'Workload visible before you assign', 'Jobs completed per technician'],
   },
   'asset-management-software': {
-    text: 'Every installed unit with its model, serial number, customer site and install date, plus warranty, AMC cover and full service history, for ACs, CCTV systems and solar plants alike.',
+    text: 'Asset management for every installed unit, with its model, serial number, customer site and install date, plus warranty, AMC cover and full service history, for ACs, CCTV systems and solar plants alike.',
   },
   'warranty-management-software': {
-    text: 'Warranty and AMC contracts on each unit, with recurring service visits, upcoming-service dates and renewal reminders, so equipment is serviced on schedule instead of after it fails.',
+    text: 'AMC and warranty management for each unit, with recurring service visits, upcoming-service dates and renewal reminders, so equipment is serviced on schedule instead of after it fails.',
   },
   'inventory-management-software': {
-    text: 'Spare parts across warehouse and vans, with stock history, parts used on each job and low-stock alerts, so technicians carry what the job needs.',
+    text: 'Service inventory management for spare parts across warehouse and vans, with stock history, parts used on each job and low-stock alerts, so technicians carry what the job needs.',
   },
   'reporting-software': {
     text: 'Open, completed and pending jobs, revenue, pending payments, technician productivity, part usage and AMC renewals in clear dashboards.',
@@ -140,7 +140,7 @@ export function FeaturesSection() {
             id="features-heading"
             eyebrow="Features"
             title="Field service management software that covers the whole job"
-            lead="Nine connected modules take a job from first enquiry to final payment and then into the next AMC visit. Use what you need today and switch on the rest as you grow."
+            lead="Nine connected modules cover scheduling and dispatch, work orders, technicians, assets, AMC, inventory, quotations, billing and reporting, taking a job from first enquiry to final payment and into the next AMC visit. Use what you need today and switch on the rest as you grow."
           />
         </Reveal>
 

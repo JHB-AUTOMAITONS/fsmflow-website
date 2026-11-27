@@ -23,8 +23,8 @@ const PROBLEMS = [
 ]
 const GAINS = [
   'Centralised service operations: one record per customer, unit and job',
-  'Better job visibility: status the office can see without calling',
-  'Technician coordination: skills, availability and workload in one view',
+  'Better job visibility: pending and completed jobs, with status the office sees without calling',
+  'Technician assignment by skills, availability and workload in one view',
   'AMC and warranty tracking with reminders for visits and renewals',
   'Spare parts management tied to jobs, with low-stock alerts',
   'Quotations, invoices and pending payments by customer, plus operational reports',

@@ -14,9 +14,23 @@ import { OperationsLifecycle } from '@/sections/home/OperationsLifecycle'
 import { ProductShowcase } from '@/sections/home/ProductShowcase'
 import { SolutionsSection } from '@/sections/home/SolutionsSection'
 
-const TITLE = 'Field Service Management Software for Businesses | FSMFlow'
+const TITLE = 'Field Service Management Software | FSMFlow'
 const DESCRIPTION =
-  'FSMFlow field service management software for Indian service businesses. Manage jobs, technicians, work orders, AMC and inventory in one FSM software platform.'
+  'FSMFlow is field service management software and FSM software for managing technicians, service jobs, scheduling, work orders, AMC, inventory and billing.'
+
+/** Only capabilities already described on the homepage and the feature pages. */
+const SOFTWARE_FEATURES = [
+  'Technician scheduling and dispatch',
+  'Work order management',
+  'Technician management',
+  'Field technician mobile app',
+  'Customer and sales CRM',
+  'Quotations and invoicing',
+  'Asset management and service history',
+  'AMC and warranty management',
+  'Spare parts and inventory management',
+  'Service reporting',
+]
 
 export default function HomePage() {
   return (
@@ -29,7 +43,11 @@ export default function HomePage() {
           organizationSchema(),
           websiteSchema(),
           webPageSchema({ name: 'Field Service Management Software', description: DESCRIPTION, path: '/' }),
-          softwareSchema({ name: `${SITE.name} — Field Service Management Software`, description: DESCRIPTION, path: '/' }),
+          {
+            ...softwareSchema({ name: `${SITE.name} — Field Service Management Software`, description: DESCRIPTION, path: '/' }),
+            applicationSubCategory: 'Field Service Management Software',
+            featureList: SOFTWARE_FEATURES,
+          },
           faqSchema(HOME_FAQS),
         ]}
       />
