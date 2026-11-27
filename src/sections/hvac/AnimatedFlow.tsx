@@ -128,11 +128,14 @@ export function AnimatedFlow({ stages, loop, autoMs = 3600, className, ariaLabel
     )
   }
 
-  const panel = (stage: FlowStage) => (
+  /** The mobile (inline) and desktop panels are both in the DOM; only the desktop one carries the <h3> so the heading is not duplicated. */
+  const panel = (stage: FlowStage, headingTag: 'h3' | 'div' = 'h3') => {
+    const Heading = headingTag
+    return (
     <div key={stage.id} className="animate-panel-in grid items-center gap-6 md:grid-cols-[minmax(0,0.9fr)_minmax(0,1.1fr)] md:gap-10">
       <div>
         <p className="eyebrow-mono text-brand-600">Stage {stages.findIndex((s) => s.id === stage.id) + 1} of {n}</p>
-        <h3 className="mt-3 text-h3 font-semibold text-ink-900">{stage.heading}</h3>
+        <Heading className="mt-3 text-h3 font-semibold text-ink-900">{stage.heading}</Heading>
         <p className="mt-3 text-[1.0625rem] leading-relaxed text-ink-600">{stage.text}</p>
         {stage.chips && (
           <ul className="mt-5 flex flex-wrap gap-2">
@@ -146,7 +149,8 @@ export function AnimatedFlow({ stages, loop, autoMs = 3600, className, ariaLabel
       </div>
       <div className="min-w-0">{stage.detail}</div>
     </div>
-  )
+    )
+  }
 
   return (
     <div
@@ -219,7 +223,7 @@ export function AnimatedFlow({ stages, loop, autoMs = 3600, className, ariaLabel
                 {/* Mobile: the detail opens inline under the active stage */}
                 {i === active && (
                   <div role="region" aria-labelledby={`${uid}-s${i}`} className="relative z-10 bg-white pt-3 pb-5 pl-0 md:hidden">
-                    {panel(stage)}
+                    {panel(stage, 'div')}
                   </div>
                 )}
               </div>

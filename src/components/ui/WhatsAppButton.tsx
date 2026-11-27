@@ -11,6 +11,7 @@ import { WHATSAPP_URL } from '@/data/site'
  */
 export function WhatsAppButton() {
   return (
+    <aside aria-label="Chat on WhatsApp">
     <a
       href={WHATSAPP_URL}
       target="_blank"
@@ -30,5 +31,6 @@ export function WhatsAppButton() {
         </svg>
       </span>
     </a>
+    </aside>
   )
 }

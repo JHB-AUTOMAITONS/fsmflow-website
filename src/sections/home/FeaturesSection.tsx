@@ -101,7 +101,7 @@ function Group({ label, children, id }: { label: string; children: ReactNode; id
   return (
     <div className="mt-16 first:mt-0 md:mt-20">
       <Reveal className="mb-7 flex items-center gap-4">
-        <h3 id={id} className="eyebrow-mono shrink-0 text-ink-500">
+        <h3 id={id} className="eyebrow-mono text-ink-500">
           {label}
         </h3>
         <span className="h-px flex-1 bg-ink-900/[0.08]" aria-hidden="true" />

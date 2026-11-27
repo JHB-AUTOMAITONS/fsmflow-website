@@ -131,7 +131,7 @@ export function OperationsLifecycle() {
               <Bezel interactive className="h-full" coreClassName="flex h-full gap-4 p-5 md:p-6">
                 <div className="flex flex-col items-center gap-2">
                   <IconTile icon={s.icon} tone={i % 3 === 0 ? 'brand' : i % 3 === 1 ? 'aqua' : 'mint'} />
-                  <span className="font-mono text-[11px] font-semibold text-ink-400" aria-hidden="true">
+                  <span className="font-mono text-[11px] font-semibold text-ink-500" aria-hidden="true">
                     {String(i + 1).padStart(2, '0')}
                   </span>
                 </div>
